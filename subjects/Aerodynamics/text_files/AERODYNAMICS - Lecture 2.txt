@@ -1,0 +1,186 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPB•Basics of aeronautics
+xz
+y
+V∞L
+D
+Relative 
+windINCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Basics of aeronautics
+V∞xz
+y
+AirfoilWingINCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil nomenclature
+V∞xz
+Chord (c)Thickness (t) Mean camber line
+Chord lineLeading 
+edge (LE)
+Trailing 
+edge (TE)CamberINCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil families –Historical note
+INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil examples
+Airplane Airfoil
+Beechcraft Sundowner NACA 63A415
+INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil examples
+Airplane Airfoil
+Beechcraft Bonanza NACA 23016,5 (at root)
+NACA 23012 (at tip)
+INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil examples
+Airplane Airfoil
+Cessna 150 NACA 2412
+INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil examples
+Airplane Airfoil
+Fairchild A -10 NACA 6716 (at root)
+NACA 6713 (at tip)
+INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil examples
+Airplane Airfoil
+Gates Learjet 24D NACA 64A109
+INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil examples
+Airplane Airfoil
+General Dynamics F -16 NACA 64A206
+INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•NACA airfoils families (1930 -1938)
+•4 digits –NACA zxtt
+•z: maximum camber in chord hundreds ( 1/100 [%] )
+•x: location of max. camber from the l.e. in chord tenths ( 1/10 [%] )
+•tt: max. thickness in chord hundreds ( 1/100 [%] )INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•NACA airfoils families (1930 -1938)
+•5 digits –NACA zxxtt
+•z: maximum camber in chord hundreds ( 1/100 [%] ) . The design lift 
+coefficient is 3/2of zin tenths ( 1/10 [%] )
+•xx: location of max. camber from the l.e. in chord hundreds 
+(1/2)(1/100 [%] )
+•tt: max. thickness in chord hundreds ( 1/100 [%] )INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•NACA airfoils families (1930 -1938)
+•6 digits –NACA zxnmtt
+•z: series designation
+•x: location of the minimum pressure in tenths of the chord from 
+the l.e. (1/10 [%] )
+•n: drag coefficient near its minimum value over a range of lift 
+coefficients of 0.3above and below the design lift coefficient
+•m: design lift coefficient in tenths ( 1/10 [%] )
+•tt: max. thickness in chord hundreds ( 1/100 [%] )INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil nomenclature
+•NACA 4 digits
+NACA zxtt
+•zmax–maximum value of the camber line in the yaxis
+•xz_max–position of zmaxin the xaxis
+•tt–maximum airfoil thicknessINCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil nomenclature
+•NACA 4 digits –how to plot it (symmetrical)
+•x–camber line position (per point)
+•t–airfoil thickness
+•y–contour position (per point)
+𝑦𝑙=−𝑦𝑢𝑦𝑢=𝑡𝑚𝑎𝑥
+0.20.2969𝑥
+𝑐−0.126𝑥
+𝑐−0.3516𝑥
+𝑐2
++0.2843𝑥
+𝑐3
+−0.1015𝑥
+𝑐4INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil nomenclature
+•NACA 4 digits –how to plot it (asymmetrical)
+•z–camber line height (per point)
+•x–camber line position (per point)
+𝑧=𝑧𝑚𝑎𝑥𝑥
+𝑥𝑧𝑚𝑎𝑥22𝑥𝑧𝑚𝑎𝑥−𝑥
+𝑐𝑓𝑜𝑟0≤𝑥≤𝑥𝑧𝑚𝑎𝑥
+𝑧=𝑧𝑚𝑎𝑥𝑐−𝑥
+1−𝑥𝑧𝑚𝑎𝑥21+𝑥
+𝑐−2𝑥𝑧𝑚𝑎𝑥𝑓𝑜𝑟𝑥𝑧𝑚𝑎𝑥≤𝑥≤𝑐INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil nomenclature
+•NACA 4 digits –how to plot it (asymmetrical)
+•z–camber line height (per point)
+•x–camber line position (per point)
+𝑎=1.4845𝑥
+𝑐
+𝑓=0.63𝑥
+𝑐
+𝑔=1.758𝑥
+𝑐2ℎ=1.4215𝑥
+𝑐3
+𝑖=0.5075𝑥
+𝑐4𝑦𝑢=𝑧+𝛿𝑢
+𝑦𝑙=𝑧+𝛿𝑙𝛿𝑢=𝑡𝑚𝑎𝑥𝑎−𝑓−𝑔+ℎ−𝑖
+𝛿𝑙=−𝑡𝑚𝑎𝑥𝑎−𝑓−𝑔+ℎ−𝑖INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Airfoil usage -examples
+Family Advantages Disadvantages Applications 
+4-Digit1.Good stall characteristics
+2.Small centre of pressure 
+movement across large 
+speed range
+3.Roughness has little effect 1.Low maximum lift
+coefficient
+2.Relatively high drag
+3.High pitching 
+moment 1. General aviation
+2. Horizontal tails
+Symmetrical:
+3. Supersonic jets
+4. Helicopter blades
+5. Shrouds
+6. Missile/rocket fins 
+5-Digit 1.Higher maximum lift 
+coefficient
+2.Low pitching moment
+3.Roughness has little effect1.Poor stall behaviour
+2.Relatively high drag 1. General aviation
+2. Piston -powered 
+bombers,
+transports
+3. Commuters
+4. Business jets 
+1 or 16 -Series 1.Avoids low pressure peaks
+2.Low drag at high speed 1.Relatively low lift 1. Aircraft propellers
+2. Ship propellers AIRFOIL USAGE 
+CHARACTERISTICS•Airfoil usage -examples
+Family Advantages Disadvantages Applications 
+6-Series1.High maximum lift 
+coefficient
+2.Very low drag over a small 
+range of operating 
+conditions
+3.Optimized for high speed 1.High drag outside of 
+theoptimum range 
+of operating
+conditions
+2.High pitching 
+moment
+3.Poor stall behaviour
+4.Very susceptible to
+roughnessconditions
+2. High pitching moment
+3. Poor stall behaviour
+4. Very susceptible to 
+roughness
+1. Piston -powered fighters
+2. Business jets
+3. Jet trainers
+4. Supersonic jets 
+7-Series1.Very low drag over a small 
+range of operating 
+conditions
+2.Low pitching moment1.Reduced maximum 
+liftcoefficient
+High drag outside of 
+theoptimum range 
+of operating
+conditions
+2.Poor stall behaviour
+3.Very susceptible to
+roughness Seldom used AIRFOIL USAGE 
+CHARACTERISTICS•Exercise:
+Develop a pseudocode and flow -chart programming the 
+calculation of the coordinates to plot different types of 
+NACA 4 digits airfoils .INCOMPRESSIBLE FLOW 
+OVER AIRFOILS

@@ -1,0 +1,1072 @@
+LIFTING LINE THEORY ( LLT) 
+TUTORIAL & EXAMPLE  
+Prepared by  Juan Pablo Alvarado P.  
+ 
+ 
+This document presents a step -by-step methodology for applying the Lifting Line Theory (LLT) to 
+subsonic straight wings. It complements  the aerodynamics lecture.  
+ 
+LLT assumes that even though the flow around an aircraft’s wing is 3-D, it may be satisfactorily 
+approximated by a linear summation of flows around the elemental airfoils , which makes up the 
+overall wing, where the flow around each airfoil  is assumed to be 2 -D. This approach gives a 
+reasonable result , provided that the model flow considers th e effect of the vortex sheet, which is shed 
+at the wing's trailing edge . The trailing vortex sheet induces a downwash velocity, which varies  along 
+the spanwise  direction.  
+ 
+The wing is assumed to be a flat plate on the x-y plane. Therefore, the theory does not consider  the 
+wing’s thickness distribution. It is also unable to handle any dihedral or sweepback angle. However, 
+it can model a tapered wing with geometrical and aerodynamic twists  (c/4 = 0 [deg]). 
+ 
+For the analysis of a wing with LLT, the following wing information is needed : 
+ 
+Wing geometry:  
+• Wingspan  (bw) 
+• Wing taper ratio ( w) 
+• Wing reference area ( Sw) 
+• Wing twist angle ( tip) 
+• Wing geometric angle of attack ( geo) 
+ 
+Airfoil  aerodynamic characteristics:  
+• Airfoil  reference – name or reference of the tip and root airfoils  
+• Lift slope ( a0) [1/rad ] – tip and root airfoils  
+• Angle of attack for L = 0  (L=0) [deg] 
+• Profile drag ( Cd_0) 
+ 
+Flying (airflow) characteristics:  
+• Air density ( ∞) 
+• Airspeed  (V∞) 
+• Air dynamic viscosity ( ∞) 
+ 
+The LLT procedure  is described in the following steps:  
+ 
+Identify the wing geometry to be analyzed   
+ 
+ 
+ 
+ 
+ 
+Calculate the wing aspect ratio  
+SbAR2
+w=
+ 
+ 
+Calculate the wing average chord  
+( ) ( )w tip
+ww root
+wav 1c211c21
+bSc  + = + = =
+ 
+ 
+Calculate the root airfoil  chord distance  
+( )w wroot1bS2c+=
+ 
+ 
+Calculate the tip airfoil  chord distance  
+root w tip c c  =
+ 
+ 
+Calculate the root-to-tip leading edge height difference (geometrical twist)   
+tiptip
+tipch=sin 
+ 
+Calculate the wing mean aerodynamic chord  
+( )
+( )w2
+w w
+root11c32c 
+++ +=
+ 
+ 
+Calculate the location of the mean aerodynamic chord  
+( )
+( )
+
+++=
+ww wbY
+121
+6
+ 
+ 
+Calculate the Reynolds number  
+= cVRe
+ 
+ 
+With the previous information, the computational procedure can begin:  
+ 
+Divide the wing into a  defined  number of spanwise stations. Here , k + 1 stations are shown, 
+with n designating any specific station  
+ 
+ 
+ 
+For k = 1, 2, 3,  .., N points, calculate the following : The N points along the span are chosen 
+to be  equally spaced. In other words, the wingspan  is divided into N equal intervals, and each 
+interval's midpoint is chosen as  a control point. The port (left) wing tip is located at y = -bw 
+/2, whereas the starboard (right) wing tip is located at y = b w /2. 
+ 
+The coordinates of the control points are then given as follows : for each value of k, from 1 
+to N, we have:  
+ 
+() 
+
+ −− −=N21k212bkyw
+ 
+ 
+Transforming the points:  
+ 
+()()
+
+
+
+− =−
+w1
+bky2kcos 
+ 
+ 
+The following equation then gives the chord length at y : 
+ 
+() ()
+
+
+ −− = kyb121 ckc
+wroot
+ 
+ 
+The specification for aerodynamic twist  is quite complicated  since it requires knowledge of the shape 
+of the airfoil section at each station y along the span. In the absence of such information, this problem 
+can be somewhat by requiring that the tip airfoil  differs only slightly from the root airfoil  such that 
+the following linear relationships give the lift coefficient and zero angle of attack at y  
+ 
+() ()kyba a2 aka
+wroot0 tip0
+root0 0_ _
+_−− =
+ 
+() ()kyb2 k
+wroot0L tip0L
+root0L 0L_ _
+_= =
+= =−− =  
+ 
+ 
+The geometric angle of attack (geo) may vary as a funct ion of y if the wing is given a geometric twist. 
+A wing without twist is one where t he geo is constant for all values of y, such that the leading edge 
+and the trailing edge of the wing are straight lines, which lie on the same horizontal pl ane when geo 
+= 0. 
+ 
+A wing may be given a wash -out, where the wing is twisted such that t he leading edge of the wing 
+tip airfoil  is now lower than the leading edge of the root airfoil  (the root airfoil  is the airfoil  located 
+at the plane of symmetry if it is imagined  that the fuselage is not there,  and the two halves of the wing 
+meet at the plane of symmetry). A wing with wash -in is one where the leading edge of the tip airfoil  
+is now high er than the root airfoil’s  leading edge, whereas the wing's trailing edge  rema ins on the 
+horizontal plane. Therefore,  the airfoil  chord  at y may have negative or positive geometric angle of 
+attack values when geo = 0 at the wing  root, depending on whether the wing has a wash -out or a 
+wash -in. 
+  
+ 
+Let the height difference between the wing tip airfoil's leading edge and the root airfoil's leading edge  
+be htip, which is negati ve for wash -out and positive for wash -in. 
+ 
+ 
+ 
+It should be noted that the wing's leading edge must  remain in a straight line. Therefore, the twist 
+angle or the geometric angle  of attack at y relative to the geometric angle of attack at the wing root 
+can be calculated as follows : 
+ 
+()()
+()tip tip tip tip
+w1c h hkcbky2k   sin ; sin =
+
+
+− =−
+ 
+ 
+Let´s now apply LLT to find the solution in the form of span -wise wing load or lift per unit span 
+length distribution, the overall wing’s lift coefficient (C L_w), and the induced drag coefficient of the 
+wing  (CDi_w). From the Kutta -Joukowski  Lift Theorem , it is known that lift is directly proportional to 
+circulation or vortex strength. Therefore, the theory must be capable of predicting the span -wise 
+bound vortex strength per unit length distribution. The unknown vortex strength distribution, (y), is 
+approximated by a Fourier  series:  
+ 
+() 
+= = N
+1nn w n A Vb2 ) sin(  
+ 
+ 
+The fundamental  problem is calculating  the unknown Fourier  series coefficients or amplitudes, An. 
+The Fourier series approximation  becomes more accurate as the number of terms, N, increases. The 
+lifting line equation that needs to be solved is:  
+ 
+()()() ( )() ( )
+()()() ()  
+==
+=− = +N
+1n0L geo nN
+1nnwy yyynnA yn Aycyab4 sinsinsin
+ 
+ 
+Rearranging the equation:  
+ 
+()() ()()() ( ) () ()y y Aynyn
+ycyab4
+0L geoN
+1nnw
+=
+=− ==
+
+
+
+
+
+
++    sinsin
+ 
+ 
+Defining quantities:  
+ 
+()()() ()()() ( )
+
+
+
+
+
+
++ = ynyn
+ycyab4nyCwsinsin,
+ 
+ 
+()nA nA =
+ 
+ 
+() () ()y y yD0L geo =− =  
+ 
+ 
+With this , the lifting line equation can be written as:  
+ 
+()()() 
+==N
+1nyD nAnyC,
+ 
+ 
+This equation contains N unknowns, A(n)  for n = 1  to N. It is , therefore, necessary to apply the last 
+equation at N different control points or values of distance along the span, y  so that we have a system 
+of equations that can be solved simultaneously to calculate the values of A(n) . The points chosen 
+should not include the wing tips  since , regardless of the values of the Fourier coefficients, the vortex 
+strength distribution ( ( )) is always satisfied at those points. Selecting those 2 points will not 
+provide any new information regarding the values of the Fourier amplitudes. It is also recommended 
+that the midpoint ( y = 0 ) should not be selected as a control point  for similar reasons. The following 
+method for selecting the control points is recommended to get the most accurate result for a given 
+number of control points . First, N should be chosen as an even integer, such as N = 2M . 
+ 
+The N points along the span are chosen to be  equally spaced. In other words, the span is divided into 
+N equal intervals, and each interval's midpoint is chosen as  a control point. The port (left) wing tip is 
+at y = -bw /2, whereas the starboard (right) wing tip is at y = b w /2. 
+ 
+ 
+ 
+The equation ( ) can be rewritten in a way  which separates the even terms from the odd terms as 
+follows:  
+ 
+() () ( ) ( ) ()
++ − = =    
+= = =N
+1nN
+1nn nN
+1nw n n2 A 1n2 A Vb2 n A     sin sin sin
+ 
+ 
+Therefore, if the load distribution is symmetrical , then the last equation is simplified to:  
+ 
+() ( ) ( ) ( )( ) ( )
+− − = − =   
+= = −N
+1nnN
+1nw 1n2 1n2 1n2A Vb2 1n2 A    sin sin
+ 
+ 
+Keep in mind that is always assumed that the load distribution is symmetrical.  
+ 
+The lifting line equation, which is a system of equations  that must be solved to calculate the Fourier 
+sine coefficients , can now be written as follows  
+ 
+( )( )() 
+==− −N
+1nn kD1n2A1n2kC,
+ 
+ 
+where the values of y are given by the equation of y(k) and  
+ 
+()() 
+
+ −− = = =−
+N21k21 y k1
+k k cos   
+ 
+ 
+( )( )()() ()( ) ( )k
+kw
+k 1n21n2
+kckab41n2 C1n2kC  −
+
+
+ −+ =− =− sinsin, ,
+ 
+ 
+() () () () ()k 0L k geo 0L geo y y k k kD= = − = − =    
+ 
+ 
+It should be noted that c(k) is the airfoil’s  chord length at the station y(k), or  (k ), whereas geo and 
+L = 0 (k) are the geometric and zero lift angle of attacks at y(k). The geometric angle of attack may 
+vary as a function of y if the wing is given a geometric twist. A wing without a twist is one where the 
+geometric angle of attack is constant for all values of y, such that the wing's leading edge and trailing 
+edge are straight lines, which lie on the same horizontal plane when geo = 0. 
+ 
+A wing may be given a wash -out, where the wing is twisted such that the leading edge of the wing 
+tip airfoil  is no w lower than the leading edge of the root airfoil  (the root airfoil  is the airfoil  located 
+at the plane of symmetry if it is imagined  that the fuselage is not there,  and the two halves of the wing 
+meet at the plane of s ymmetry).  
+ 
+A wing with wash -in is one where the leading edge of the tip airfoil  is now high er than the root 
+airfoil’s  leading edge, whereas the wing's trailing edge  rema ins on the horizontal plane. Therefore,  
+the airfoil  chord  at y may have negative or positive geometric angle of attack values when geo = 0 at 
+the wing  root, depending on whether the wing has a wash -out or a wash -in. 
+ 
+The height difference between the wing tip airfoil's leading edge and the root airfoil’s  leading edge  
+is htip, which is negative for wash -out and positive for wash -in. It should be noted that the wing's 
+leading edge must  remain in a straight line. Therefore, the twist angle or the geometric angle of attack 
+at y relative to the geometric angle of attack at the wing root can be calculated as follows  
+ ()()
+() 
+
+
+
+
+
+ −− =
+
+
+− =
+
+
+
+=− − −
+tiptip 1
+tip
+w1
+tiptip 1
+ch
+N1k21 hkcbky2
+chk sin sin sin  
+ 
+The angle of attack of the wing or the aircraft is denoted by the angle of attack at the wing root  and 
+is given the symbol of geo. This angle obviously can be varied and represents the aircraft's attitude  
+(when the aircraft is at a level cruising flight this angle may have a small positive value of not more 
+than 3 degrees). Using this definition,  it can now calculate the geometric angle of attack at y as follows  
+ 
+() ()k kgeo geo    + =
+ 
+ 
+The equation  of D(k) can now be rewritten as follows:  
+ 
+() ()()k k kD0L geo    + − ==
+ 
+ 
+A wing may be given an aerodynamic twist and a geometric twist. This means that the airfoil  shape 
+at the wing root is different from that at the wing tip. The shape of the airfoil  in between the two 
+limiting stations is then determined by insisting that the wing cross -section should have a smoothly 
+varying shape along the spanwise  direction. Since the airfoil  shape at the wing tip is different from 
+that at the root, therefore the value of the sectional lift coefficient , as well as its zero -lift angle of 
+attack, may also vary along the span -wise direction. Provided the variation of a0 (y) and L = 0 (y) are 
+given, the equation of C (k, 2n -1) can still be used to compute the matrix coefficients. Thus,  the lifting 
+line theory can handle such a problem.  
+ 
+The theory can also handle the problem involving a variation in the chord length of the sections as a 
+function of y if the functional form of c(y) is given. This means the theory is also applicable for 
+analyzing  tapered wing shape, so long as the quarter chord line is normal or almost normal to the 
+aircraft’s longitudinal axis. Obviously, the theory is not valid for a highly swept wing. A more 
+elaborated methodology , like the Vortex Lattice Method (VLM),  should be used for swept wings . 
+ 
+For each value of n = 1, 2, 3, …, N  calculate the matrix coefficients:  
+ 
+()()() ()()( )() ( )
+
+
+−
+
+
+ −+ = k1n2k1n2
+yckab4nkC
+0wsinsin,
+ 
+ 
+The next  step in the LLT methodology is to solve the following system of simultaneous equations:  
+ 
+()()() 
+==N
+1nkD nAnkC,
+, for k = 1, 2, 3, …, N  
+ 
+The Gaussian elimination method is a simple direct method for computing the solutions of A(n). 
+Other methods, such as the Jacobi or Gauss -Seidel iterative methods,  may also be used.  
+ 
+After the Fourier  coefficients, A(n), have been calculated it can now compute  the non -dimensional 
+wing load distribution as follows:  
+ ()()()( ) ( )  − == 
+N
+1 wND 1n2 nAVb2yk  sin 
+ 
+()
+
+
+− =−
+w1
+by2kcos 
+ 
+ 
+The wing´s lift coefficient can be calculated now:  
+ 
+()1AAR CL =
+ 
+ 
+The Oswald efficiency factor, e, is 
+ 
+( )11e−+= 
+, where: 
+()
+()
+=
+
+
+=N
+2n2
+1AnAn   
+ 
+The induced drag coefficient CDi is obtained by:  
+ 
+2
+L2
+L
+Di CkAReCC ==
+, where: 
+ARe1k=  
+ 
+  Example:  
+ 
+For the acrobatic monoplane Extra EA -300, calculate (1) the aerodynamic characteristics of flight to 
+see if the actual geometry can counteract the Maximum Take -Off Weight (MTOW) for an average  
+cruise  condition with a wing  incidence angle  of 2 [deg ] and (2) find the distributed aerodynamic load 
+(Lift force) over the wing. An airplane 3 -view picture is shown:  
+ 
+ 
+ 
+Specifications:  
+ 
+• MTOW = 950 [kg]  
+• Wingspan  (bw) = 8 .0 [m] 
+• Taper ratio ( w) = 0.45  
+• Wing reference area (S w) = 10.7 [m2] 
+• Airfoil  information:  
+o Root – NACA 0015  
+o Tip – NACA 0012  
+ 
+Performance:  
+ 
+• Vcruise = 317.0 [km/h]  
+• Vstall = 102.0 [km/h]  
+• VNE = 408.0 [km/h]  
+ 
+Solution:  
+ 
+ 
+First,  the geometric characteristics of the wing must be determined , beginning  with the LLT 
+methodology.  
+ 
+ 
+The Aspect Ratio of the wing is:  
+ 
+𝐴𝑅=𝑏𝑤2
+𝑆=8.02
+10.7=5.98 
+ 
+The average wing chord:  
+ 
+𝑐𝑎𝑣=𝑆
+𝑏𝑤=10.7
+8.0=1.34[𝑚] 
+ 
+Chord length at the root:  
+ 
+𝑐𝑟𝑜𝑜𝑡=2⋅𝑆
+𝑏𝑤(1+𝜆𝑤)=2𝑐𝑎𝑣
+(1+𝜆)=2⋅(1.34)
+(1+0.45)=1.84[𝑚] 
+ 
+Chord length at the tip:  
+ 
+𝑐𝑡𝑖𝑝=𝜆𝑤𝑐𝑟𝑜𝑜𝑡=0.45⋅1.84=0.83[𝑚] 
+ 
+Mean aerodynamic chord:  
+ 
+𝑐̄=2
+3𝑐𝑟𝑜𝑜𝑡(1+𝜆𝑤+𝜆𝑤2)
+(1+𝜆𝑤)=2
+3(1.84)[(1+0.45+0.452)
+(1+0.45)]=1.40[𝑚] 
+ 
+Mean aerodynamic chord distance:  
+ 
+𝑌̄=𝑏𝑤
+6[(1+2𝜆𝑤)
+(1+𝜆𝑤)]=8.0
+6[(1+2(0.45))
+(1+0.45)]=1.75[𝑚] 
+ 
+Assuming sea -level conditions  (∞ = 1.225 [kg/m3]; ∞ = 1.789 x 10-5 [kg/(m sec)]) , and cruise flight 
+conditions, then:  
+ 
+𝑅𝑒=𝜌∞𝑉∞𝑐̄
+𝜇∞=1.225×(317×1000
+3600)×1.40
+1.789×10−5=8451241  
+ 
+With this Reynolds number, the airfoil  characteristics can be obtained. The characteristic curves of 
+the two wing airfoils  aerodynamic characteristics are presented in the following graphs:  
+ 
+cl vs.  [deg] and c d vs.  [deg]  
+  0,0000,0020,0040,0060,0080,0100,0120,014
+-1,2-1,0-0,8-0,6-0,4-0,20,00,20,40,60,81,01,21,41,6
+-12-9-6-303691215cl
+[deg ]cd
+CL NACA 0015
+CL NACA 0012
+CD NACA 0015
+CD NACA 0012 
+cm_a.c. vs.  [deg]  
+ 
+ 
+ 
+cl vs. c d 
+ 
+ -0,002-0,0010,0000,0010,0020,0030,004
+-12-9-6-303691215cm_a.c.
+[deg]cm NACA 0015
+cm NACA 0012
+0,0000,0020,0040,0060,0080,0100,0120,014
+-1,5 -1,0 -0,5 0,0 0,5 1,0 1,5 2,0cd
+clcl/cd NACA 0015
+cl/cd NACA 0012 
+(cl /cd) vs.  [deg]  
+ 
+ 
+These curves were obtained through software that uses the Vortex Panel Method to give the 
+characteristics of cl, cd,  and c m_a.c. at different angles of attack [deg] for the two airfoils  used in this 
+wing. These curves were analyzed  at a Reynolds number of 8 x106. From the curves,  the following 
+information is obtained:  
+ 
+Wing position  Airfoil  a0 [1/rad]  L=0 [deg]  
+Root  NACA 0015  6,436  0 
+Tip NACA 0012  6,363 0 
+ 
+As this wing has an aerodynamic twist, it can be assumed there is no need for a geometric twist; 
+therefore tip = 0. 
+ 
+𝑠𝑖𝑛𝛽𝑡𝑖𝑝=ℎ𝑡𝑖𝑝
+𝑐𝑡𝑖𝑝⇒ℎ𝑡𝑖𝑝=𝑐𝑡𝑖𝑝𝑠𝑖𝑛𝛽𝑡𝑖𝑝 
+ -160-120-80-4004080120160
+-12 -8 -4 0 4 8 12 16cl/cd
+[deg](cl/cd)-alpha NACA 0015
+(cl/cd)-alpha NACA 0012If no geometrical twist ( tip = 0) is needed  for the win g, then the length h tip = 0. 
+ 
+First, the wing is divided in to two symmetrical section s, the left wing  (port side) and the right -wing  
+(starboard side):  
+ 
+ 
+ 
+Then , we can establish the number of control points (k) calculated for the wing. In this case, we will 
+put eight control points, which means there will  be four per half-wing.  
+ 
+ 
+ 
+Establishing  the above, the y -stations on the wingspan  (half in this case) can be found as follows:  
+ 
+𝑦(𝑘)=−𝑏𝑤
+2(1−2𝑘−1
+2𝑁) 
+ 
+Results are shown in the following table:  
+ 
+k y(k) [m]  
+1 -3.5 
+2 -2.5 
+3 -1.5 
+4 -0.5 
+ 
+The local chord length values at each station (control point) are found by:  
+ 
+𝑐(𝑘)=𝑐𝑟𝑜𝑜𝑡(1−2𝜆−1
+𝑏𝑤𝑦(𝑘)) 
+ 
+Results are shown in the following table:  
+ 
+k c(k) [m]  
+1 0.957  
+2 1.211  
+3 1.464  
+4 1.718  
+ 
+Next, the twist angle distribution is calculated using the relations:  
+ 
+𝛽(𝑘)=𝑠𝑖𝑛−1(−2𝑦(𝑘)
+𝑏𝑤⋅𝑐(𝑘)⋅ℎ𝑡𝑖𝑝);ℎ𝑡𝑖𝑝=𝑐𝑡𝑖𝑝𝑠𝑖𝑛𝛽𝑡𝑖𝑝 
+ 
+In this airplane , the wing has an aerodynamical twist instead of a geometric one therefor the results 
+are: 
+ 
+k  (k) [deg]  
+1 0 
+2 0 
+3 0 
+4 0 
+ 
+The variation of the lift slope along the wing will vary because the root and tip airfoils  have different 
+references. This also happens with the zero-lift angle of attack for the different points of control. The 
+variations are calculated using:  
+ 𝑎0(𝑘)=𝑎0_𝑟𝑜𝑜𝑡−2𝑎0_𝑡𝑖𝑝−𝑎0_𝑟𝑜𝑜𝑡
+𝑏𝑤𝑦(𝑘) 
+𝛼𝐿=0(𝑘)=𝛼𝐿=0_𝑟𝑜𝑜𝑡−2𝛼𝐿=0_𝑡𝑖𝑝−𝛼𝐿=0_𝑟𝑜𝑜𝑡
+𝑏𝑤𝑦(𝑘) 
+ 
+The results are shown in the following table:  
+ 
+k a0(k)  L=0(k) 
+1 6.372  0 
+2 6.390  0 
+3 6.408  0 
+4 6.427  0 
+ 
+Note that for this wing, as booth airfoils  are symmetrical , the zero-lift angle of attack is equal to zero 
+for both cases; therefore,  the variation will also have this same value along the span.  
+ 
+Now, let’s calculate the transformation (k) using:  
+ 
+𝜃(𝑘)=𝑐𝑜𝑠−1(−2𝑦
+𝑏𝑤) 
+ 
+The results  of this relation are shown as follows,  
+ 
+k  (k) [deg] 
+1 28.955  
+2 51.318  
+3 67.976  
+4 82.819  
+ 
+With these values  now, the D(k) variation can be calculated:  
+ 
+𝐷(𝑘)=𝛼𝑔𝑒𝑜−𝛼𝐿=0(𝑘)+𝛽(𝑘) 
+ 
+The results  for this equation are:  
+ 
+k D(k) [rad] 
+1 0.035  
+2 0.035  
+3 0.035  
+4 0.035  
+ 
+Next, we want to create the 4x4-sized  matrix coefficients with the following formula:  
+ 
+𝐶(𝑘,𝑛)=[(4𝑏𝑤
+𝑎0(𝑘)𝑐(𝑘)+2𝑛−1
+𝑠𝑖𝑛(𝜃(𝑘)))𝑠𝑖𝑛((2𝑛−1)𝜃(𝑘))] 
+ Where k = n = 4, this is because we are taking advantage of the symmetry of the wing loading 
+distribution,  we have N = 4 , and we can use n =  1, 2, 3 , and 4 (port wing only) or n = 5, 6, 7  and 8 
+(starboard wing only). We can calculate each point's variation if only port wing control points are 
+chosen . For this example, we present only 4 points as references : 
+ 
+For k = 1 and n =1  
+𝐶(1,1)=[(4(8.0)
+𝑎0(1)𝑐(1)+2(1)−1
+𝑠𝑖𝑛(𝜃(1)))𝑠𝑖𝑛((2(1)−1)𝜃(1))] 
+ 
+𝐶(1,1)=[(4(8.0)
+(6.372)(0.957)+2(1)−1
+𝑠𝑖𝑛(28.955))𝑠𝑖𝑛((2(1)−1)(28.955))] 
+ 
+𝐶(1,1)=3.541 
+ 
+For k = 2 and n =1 
+𝐶(2,1)=[(4(8.0)
+𝑎0(2)𝑐(2)+2(1)−1
+𝑠𝑖𝑛(𝜃(2)))𝑠𝑖𝑛((2(1)−1)𝜃(2))] 
+ 
+𝐶(2,1)=[(4(8.0)
+(6.39)(1.211)+2(1)−1
+𝑠𝑖𝑛(51.318))𝑠𝑖𝑛((2(1)−1)(51.318))] 
+ 
+𝐶(2,1)=4.229 
+ 
+For k = 1 and n =2  
+𝐶(1,2)=[(4(8.0)
+𝑎0(1)𝑐(1)+2(2)−1
+𝑠𝑖𝑛(𝜃(1)))𝑠𝑖𝑛((2(2)−1)𝜃(1))] 
+ 
+𝐶(1,2)=[(4(8.0)
+(6.372)(0.957)+2(2)−1
+𝑠𝑖𝑛(28.955))𝑠𝑖𝑛((2(2)−1)(28.955))] 
+ 
+𝐶(1,1)=11.428 
+ 
+For k = 2 and n =2  
+𝐶(2,2)=[(4(8.0)
+𝑎0(2)𝑐(1)+2(2)−1
+𝑠𝑖𝑛(𝜃(2)))𝑠𝑖𝑛((2(2)−1)𝜃(2))] 
+ 
+𝐶(2,2)=[(4(8.0)
+(6.39)(1.211)+2(2)−1
+𝑠𝑖𝑛(51.318))𝑠𝑖𝑛((2(2)−1)(51.318))] 
+ 
+𝐶(2,2)=3.504 
+ 
+Results for this equation are given in the following matrix:  
+ 
+𝐶(𝑘=4,𝑛=4)=|3.54111.4288.984 −7.6
+4.2293.504−10.254−0.177
+4.161−2.696−3.0299.866
+3.876−5.5086.43−6.363| 
+ The next  step in the LLT methodology is to solve the following system of simultaneous equations:  
+ 
+∑𝐶(𝑘,𝑛)𝐴(𝑛)=𝐷(𝑘)𝑁
+𝑛=1 , for k = 1, 2, 3, …, N  
+ 
+For this case , the equation system gives:  
+ 
+∑𝐶(𝑘,𝑛)𝐴(𝑛)=𝐷(𝑘)𝑁
+𝑛=1⇒(𝐶(1,1)𝐶(1,2)𝐶(1,3)𝐶(1,4)
+𝐶(2,1)𝐶(2,2)𝐶(2,3)𝐶(2,4)
+𝐶(3,1)𝐶(3,2)𝐶(3,3)𝐶(3,4)
+𝐶(4,1)𝐶(4,2)𝐶(4,3)𝐶(4,4))⋅(𝐴(1)
+𝐴(2)
+𝐴(3)
+𝐴(4))=(𝐷(1)
+𝐷(2)
+𝐷(3)
+𝐷(4)) 
+ 
+∑𝐶(𝑘,𝑛)𝐴(𝑛)=𝐷(𝑘)𝑁
+𝑛=1⇒(3.54111.4288.984 −7.6
+4.2293.504−10.254−0.177
+4.161−2.696−3.0299.866
+3.876−5.5086.43−6.363)⋅(𝐴(1)
+𝐴(2)
+𝐴(3)
+𝐴(4))=(0.035
+0.035
+0.035
+0.035) 
+ 
+The Gaussian elimination method can solve this equation system . Other methods, such as the Jacobi 
+or Gauss -Seidel iterative methods , may also be used.  
+ 
+The solution of an equation system (matrices) by the Gaussian Elimination is:  
+ 
+𝐶(𝑘,𝑛)𝐴(𝑛)=𝐷(𝑘)⇒𝐴(𝑛)=[𝐶(𝑘,𝑛)]−1⋅𝐷(𝑘) 
+ 
+This means  that the inverse of the matrix C(k,n) must be found  first, to solve the system, this is done 
+in this case by the Gauss -Jordan method:  
+ 
+[𝐶(𝑘,𝑛)]−1=(3.54111.4288.984 −7.6
+4.2293.504−10.254−0.177
+4.161−2.696−3.0299.866
+3.876−5.5086.43−6.363|1000
+0100
+0010
+0001) 
+ 
+[𝐶(𝑘,𝑛)]−1=(1000
+0100
+0010
+0001|0.0380.0570.0790.076
+0.0550.0090.002−0.063
+0.034−0.0700.0320.011
+0.010−0.0430.079−0.046) 
+ 
+With the matrix inverse result, the system can be solve for A(n) by multiplying [C(k,n)]-1 by D(k):  
+ 
+𝐴(𝑛)=[𝐶(𝑘,𝑛)]−1⋅𝐷(𝑘)=(𝐴(1)
+𝐴(2)
+𝐴(3)
+𝐴(4))=(0.0380.0570.0790.076
+0.0550.0090.002−0.063
+0.034−0.0700.0320.011
+0.010−0.0430.079−0.046)⋅(0.035
+0.035
+0.035
+0.035) 
+ 
+(𝐴(1)
+𝐴(2)
+𝐴(3)
+𝐴(4))=(0.008734
+0.000133
+0.000244
+−0.000034) 
+ 
+With these results, the wing lift coefficient can now be found by the relation:  
+ 𝐶𝐿_𝑤=𝜋⋅𝐴𝑅⋅𝐴(1)=𝜋⋅(5.98)⋅(0.008734)=0.164 
+ 
+The total lift force exerted by the wing is:  
+ 
+𝐿𝑤=𝑞∞𝑆𝑤𝐶𝐿_𝑤=1
+2𝜌∞𝑉∞2𝑆𝑤𝐶𝐿_𝑤=1
+2(1.225)(88.056)2(10.7)(0.164)=8340.38[𝑁] 
+ 
+𝐿𝑤=8340.38[𝑁]=850.192[𝑘𝑔] 
+ 
+Analyzing  this result and comparing it with the opposing force (airplane´s MTOW) , the geometric 
+angle of attack of two degrees is not enough to lift off  the aircraft  from the ground; L w < MTOW.  
+ 
+This means the airplane still needs more lift force to counteract the MTOW for a geometric angle of 
+attack (incidence angle) of two degrees . Some considerations must be made to ensure the wing, with 
+its geometric and aerodynamic characteristics, can achieve enough lift force; then, different incidence 
+angles must be studied  to study the possibilities of wing attitude with respect to the horizontal plane 
+of the aircraft.  
+ 
+The following figure illustrates the differences between the geometric (incidence) angle of attack, the 
+effective angle of attack , and the induced angle of attack:  
+ 
+ 
+ 
+Examining the profile drag curves of both airfoils , it is decided that the wing's total profile drag 
+coefficient is c d_0 = 0.0054 for a geometric angle of two degrees.  
+ 
+Now, let´s calculate the total wing drag force at the established conditions:  
+ 
+The Oswald efficiency planform factor is crucial for calculating the wing -induced  drag under the 
+given flight conditions . The equation to find it is:  
+ 
+( )11e−+= 
+, where: 𝛿=∑𝑛(𝐴(𝑛)
+𝐴(1))2𝑁
+𝑛=2  
+ 
+The delta coefficient depends on the Fourier series coefficients, which were calculated previously.  
+ 
+𝛿=∑𝑛(𝐴(𝑛)
+𝐴(1))2 𝑁
+𝑛=2=2⋅(0.000133
+0.008734)2
++3⋅(0.000244
+0.008734)2
++4⋅(−0.000034
+0.008734)2
+=0.002876  
+ 
+𝑒=(1+𝛿)−1=(1+0.002876)−1=0.9971  
+ 
+As a result, it shows a high value, so it should be checked with another methodology that predicts 
+wing efficiency.  
+ 
+The induced drag coefficient C Di is obtained by:  
+ 
+𝐶𝐷𝑖=𝐶𝐿2
+𝜋⋅𝑒⋅𝐴𝑅=𝑘⋅𝐶𝐿2, where: 𝑘=1
+𝜋⋅𝑒⋅𝐴𝑅=1
+𝜋(0.9971)(5.98)=0.0534  
+ 
+𝐶𝐷𝑖=𝐶𝐿2
+𝜋⋅𝑒⋅𝐴𝑅=𝑘⋅𝐶𝐿2=(0.0534)(0.164)2=0.00144  
+ 
+The total wing drag coefficient will be:  
+ 
+𝐶𝐷_𝑤=𝑐𝑑_𝑝𝑟𝑜𝑓+𝐶𝐷𝑖=𝑐𝑑_𝑝𝑟𝑜𝑓+𝐶𝐿2
+𝜋⋅𝑒⋅𝐴𝑅=0.00684  
+ 
+So, for this flight condition , the total wing drag will be equal to:  
+ 
+𝐷𝑤=𝑞∞𝑆𝑤𝐶𝐷_𝑤=1
+2𝜌∞𝑉∞2𝑆𝑤𝐶𝐷_𝑤=1
+2(1.225)(88.056)2(10.7)0.00684=347.466[𝑁] 
+ 
+𝐷𝑤=347.466[𝑁]=35.42[𝑘𝑔] 
+ 
+ 
+Analyzing  the wing load distribution:  
+ 
+The main idea of this analysis is to establish how the lift load distribution over the wing will be. For 
+this, a distribution that describes an elliptical shape is expected to be obtained to make it as 
+aerodynamically efficient as possible. First , define the stations where you want to study the local lift 
+load; this helps you with already established stations . In this case , we are analyzing  half span 
+beginning at the root of the wing:  
+ 
+ 
+Station y(k)  Points of control + c tip and c root – y Location [m]  
+y(0) = b w /2 0 4.0 
+y(1) 1 3.5 
+y(2) 2 2.5 
+y(3) 3 1.5 
+y(4) 4 0.5 
+y(5) 5 0 
+ 
+Recalling the transformation (k) using:  
+ 
+𝜃(𝑘)=𝑐𝑜𝑠−1(−2𝑦
+𝑏𝑤) 
+  
+ 
+ 
+This time , the results include the values at the root and the tip of the wing,  
+ 
+Points of control + c tip and c root – y y [m]  (y) [deg] 
+0   
+1 3.5 28.955  
+2 2.5 51.318  
+3 1.5 67.976  
+4 0.5 82.819  
+5 0 90.0 
+ 
+Keeping in mind that the load distribution is symmetrical then , the equation can calculate circulation 
+on each station over the wing : 
+ 
+𝛤(𝑦)=𝛤(𝜃(𝑦))=2𝑏𝑤𝑉∞[𝐴(1)𝑠𝑖𝑛𝜃(𝑦)+(𝐴(2))𝑠𝑖𝑛(3⋅𝜃(𝑦))] 
+ 
+Results are presented in the following table : 
+ 
+Points of control + c tip and c root – y y [m]   (y) [m2/sec] 
+0   
+1 3.5 5.958  
+2 2.5 9.606  
+3 1.5 11.408  
+4 0.5 12.209  
+5 0 12.306  
+ 
+Non-dimensionalizing  the circulation is obtained ( 0 – circulation at the root of the wing) : 
+ 
+𝛤𝑁𝐷=𝛤(𝑦)
+𝛤0 
+ 
+Points of control + c tip and c root – y y [m]  ND 
+0   
+1 3.5 0.484  
+2 2.5 0.781  
+3 1.5 0.927  
+4 0.5 0.992  
+5 0 1.0 
+ 
+Now, let´s compute  the wing lift coefficient and the force in each station of the half -span. The 
+equations can calculate the local wing lift coefficient and the correspondent force : 
+ 
+𝐶𝐿_𝑤(𝑦)=2𝛤(𝑦)
+𝑉∞𝑐(𝑦)⇒𝐶𝐿_𝑤(𝑦)
+𝐶𝐿_𝑤=1
+𝐶𝐿_𝑤(2𝛤(𝑦)
+𝑉∞𝑐(𝑦)) 
+ 
+𝐿(𝑦)=1
+2𝜌∞𝑉∞2𝑐(𝑦)𝐶𝐿_𝑤(𝑦)
+𝐶𝐿_𝑤 
+ 
+Points of control + c tip and c root – y y [m]  y/(b w /2) CL_w (y)/C L_w L(y) [N]  
+0     
+1 3.5 0.875  0.862  3915.515  
+2 2.5 0.625 1.098  6313.475  
+3 1.5 0.375 1.078  7497.437  
+4 0.5 0.125 0.983  8024.157  
+5 0 0 0.923  8087.584  
+ 
+Using this information, the normalized local lift coefficient and the local circulation are plotted as 
+shown in the following graph:  
+ 
+ 0,00,20,40,60,81,01,2
+00,20,40,60,811,2
+0,0 0,2 0,4 0,6 0,8 1,0CL_w(y)/CL_w
+y/(bw/2)ND
+Normalized Local Lift Coefficient
+Normalized Circulation 
+In addition, the lift distribution is plotted along the half wingspan to get the values of the distributed 
+load over the wing:  
+ 
+ 
+ 
+As established before, the net lift produced by this wing is not enough to counteract the MTOW. 
+Further studies  should be done to ensure  proper values of the wing incidence angle of attack.  
+ 
+Using the LLT mathematical model , we can find different values of the net wing lift coefficient at 
+different angles of attack. The following graphs show the results of this procedure:  
+ 
+CL_w vs.  [deg] and C D_w vs.  [deg]  
+ 
+ 
+0,000,010,020,030,040,050,060,070,08
+-0,8-0,6-0,4-0,20,00,20,40,60,81,01,2
+-10-8-6-4-202468101214CL_w
+[deg]CD_w
+CL_w vs. alpha
+CD_w vs. alpha 
+CD_w .= c d_prof + C D_w vs.  [deg]  
+ 
+ 
+ 
+Polar curve: C L_w vs. CD_w 
+ 
+ 0,000,010,020,030,040,050,060,070,08
+-10-8-6-4-202468101214CD_w
+[deg]Cd_prof
+Cd_i
+CD_w
+-0,8-0,6-0,4-0,20,00,20,40,60,81,01,2
+0,000,010,020,030,040,050,060,070,08CL_w
+CD_w 
+(CL /CD)w vs.  [deg]  
+ 
+ 
+ 
+The following graph shows the comparison between the airfoil  lift coefficient and the wing lift 
+coefficient , showing the changes in the lift slope:  
+ 
+ -40-30-20-10010203040
+-10-8-6-4-202468101214(CL/CD)w
+[deg](CL/CD)w vs. alpha
+-1,2-1,0-0,8-0,6-0,4-0,20,00,20,40,60,81,01,21,41,6
+-1,2-1,0-0,8-0,6-0,4-0,20,00,20,40,60,81,01,21,41,6
+-12-9-6-303691215CL_w
+[deg]cl
+cl 0015
+cl 0012
+CL_w 
+A new net wing lift coefficient value can be found with all this information . We must first be clear 
+that in normal cruise flight at constant acceleration , the MTOW of the airplane is equal to the total 
+net lift produced by the wing:  
+ 
+𝐿𝑤=𝑀𝑇𝑂𝑊=1
+2𝜌∞𝑉∞2𝑆𝑤𝐶𝐿_𝑤=𝑞∞𝑆𝑤𝐶𝐿_𝑤 
+ 
+From this relation , the net wing lift coefficient is obtained:  
+ 
+𝐶𝐿_𝑤=𝑀𝑇𝑂𝑊
+𝑞∞𝑆𝑤=0.1834  
+ 
+From the graph C L_w vs.  [deg] , the wing lift slope is calculated:  
+ 
+𝑎=𝐶𝐿_𝑤
+𝛼−𝛼𝐿=0=0.08213[1𝑑𝑒𝑔⁄]=4.715[1𝑟𝑎𝑑⁄] 
+ 
+With this same relation, the net wing lift coefficient is calculated. It is to note that in this graph (CL_w 
+vs.  [deg]) , it can be seen that L=0 = 0 for this particular wing, then  
+ 
+𝐶𝐿_𝑤=𝑎(𝛼−𝛼𝐿=0)=𝐶𝐿_𝑤=𝑎⋅𝛼 
+ 
+Equating the last relation,  the angle of attack required for the cruise condition is found to be:  
+ 
+𝛼=𝐶𝐿_𝑤
+𝑎=0.1834
+0.08213≈2.24[𝑑𝑒𝑔] 
+ 
+With this new value of the geometric (wing incidence) angle of attack, the values of the wing 
+aerodynamic characteristics are:  
+ 
+Wing Aerodynamic Characteristic  Value  Units  
+Lift force  (Lw) 952.2 2 kgf 
+Induced drag coefficient  (CD_i) 0.0018  - 
+Total drag force  (Dw) 37.32 kgf 
+ 
+You could study more about the response to changes in variables like altitude (height), velocity, 
+different airfoils, the application of a geometric twist angle, and even the change in the geometric 
+shape of the wing to check the consequences for  the aerodynamic characteristics of this airplane wing.  

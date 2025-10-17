@@ -1,0 +1,42 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPB1DRAG -DIRVERGENCE MACH NUMBER
+DRAG -DIRVERGENCE MACH NUMBER
+111DRAG -DIRVERGENCE MACH NUMBER
+1DESIGNING FOR 
+TRANSONIC RANGE
+MDD
+-0,2-0,100,10,2
+0,00,10,20,30,40,50,60,70,80,91,0x/c
+1NACA 2315
+Drag divergence occurs when
+the drag onanairfoil increases
+faster asthe Mach number
+increases .
+MDDofanaircraft isusually
+defined asthe point on the
+CD−M∞curve ofaconstant CL
+atwhich theslope becomes 0.1.
+The value ofMDDistypically 5%
+and10%greater than theMcrit.DESIGNING FOR TRANSONIC RANGE
+DESIGNING FOR TRANSONIC RANGE
+The X -1-1 (serial number 46 -062) had a wing with an 8% ( t/c)max
+The X -1-2 (serial number 46 -063) had a 10% (t/c)max
+Bell X -1 Case study
+DESIGNING FOR TRANSONIC RANGE
+Bell X -1 –Lessons learned (Design and tests)
+Bell was battling thepitch control problem dueto"blanking"
+the elevators (conventional horizontal tail).Avariable -
+incidence tail (horizontal tailtoall-moving or"all-flying ")
+appeared tobethemost promising solution, which theBritish
+have already decided toapply intheMiles M.52.
+1
+DESIGNING FOR 
+TRANSONIC AND 
+SUPERSONIC 
+SPEED RANGE
+DESIGNING FOR TRANSONIC RANGE
+DESIGNING FOR TRANSONIC RANGE
+DESIGNING FOR TRANSONIC RANGE
+DESIGNING FOR TRANSONIC RANGE

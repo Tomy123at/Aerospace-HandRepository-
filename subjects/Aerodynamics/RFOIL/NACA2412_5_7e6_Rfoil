@@ -1,0 +1,13 @@
+  
+       RFOIL         Version 1.1
+  
+ Calculated polar for: NACA 2412                       
+  
+ 1  Reynolds number fixed
+  
+ xtrf =   1.000 (suction)    1.000 (pressure)
+ Rot. Parameters:  f0 =   1.000 c/r =   0.000
+ Mach =   0.300     Re =     5.700 e 6     Ncrit =   9.000
+  
+   alpha     CL        CD      Re(CL)     CM     S_xtr   P_xtr    CDp  
+  ------- -------- --------- --------- -------- ------- ------- -------- 

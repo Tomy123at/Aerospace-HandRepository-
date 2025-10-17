@@ -1,0 +1,229 @@
+ 
+AERONAUTICAL ENGINEERING FACULTY  
+ 
+ 
+ 
+NRC: 20493  AERODYNAMICS  
+3rd Mid-term exam  – Professor: Juan Pablo Alvarado P.  
+Due: April  29th at 10:00 am 
+ 
+ 
+Directions:  This mid -term exam is to be completed without help from any other individual. This 
+includes help from other students (whether or not they are taking Aerodynamics), the monitor 
+(Teaching Assistant ), other faculty staff, people on the Internet, etc. You are NOT permitted to use 
+your books, class notes, library resources, etc. You only need  a pen, pencil, eraser, and your 
+calculator. You must provide the numerical or text answer as asked in each prob lem or question. The 
+extra sheets given to you will  be used  as a calculation aid. The procedure will be graded , as well as 
+the answer, by  the grade breakdown table below . Answers in the English language is compulsory 
+for this exam. Answers with wrong or incorrect  units will be penalized. The error percentage of the 
+numerical answers is 5.0%.  The exam will be  in a maximum of one hour and fifty minutes. Absolutely 
+no late exams will be accepted.  
+ 
+ 
+Please sign this cover sheet and turn it in with your solution . 
+ 
+I understand and have followed the directions for this exam. The solutions I have turned in represent 
+my understanding :  
+ 
+Name: ________________________________ Signature: _________________________________  
+Name: ________________________________ Signatu re: _________________________________  
+ 
+Grade breakdown:  
+ 
+Problem No.  Percentage [%]  Value  Grade  
+1 10 0.5  
+Procedure  8 0.4  
+2 32 1.6  
+Procedure  8 0.4  
+3 12 0.6  
+4 10 0.5  
+Procedure  8 0.4  
+5 12 0.6  
+TOTAL GRADE   
+   
+AERONAUTICAL ENGINEERING FACULTY  
+ 
+ 
+For points  1, 2 and 3, use the following information:  
+ 
+As part of a group of aerodynamicists, you are assigned a wing design  for a general aviation airplane. 
+This aircraft  is powered by a single engine -propeller -driven  combination located at the front of the 
+vehicle. The aircraft design has a conventional configuration with a horizontal stabilizer at the tail . 
+The MTOW of this airplane is 2041 [kg]. The wingspan is 12.8 meters , with a chord at the root of 1.3 
+meters. The horizontal tail span  is 4.68 meters, the chord at the tip is 0.8 meters long , and the taper 
+ratio is 1.0 . The following table gives some useful information about the wing and stabilizers:  
+ 
+Surface  Airfoil type  a0 
+[1/deg] L=0 
+[deg]  cd,0 
+Wing  Asymmetrical  0.1123  -4.1 5.032×10−3𝑐𝑙2−3.307×10−3𝑐𝑙+5.389×10−3 
+Horizontal 
+tail Symmetrical  0.1118  0 4.680×10−3𝑐𝑙2−4.225×10−5𝑐𝑙+5.040×10−3 
+ 
+The cruise speed of this aircraft is 82.0 [m/s] at sea level conditions ( ∞ = 1.225 [kg/m3]). So far, the 
+research group knows that the horizontal stabilizer needs to provide  a down lift force  (Lht) of -5820 
+[N] ( eht = 0.92).  
+ 
+You must  decide which of the six wing platforms best suits  the design. The researchers already 
+developed  an LLT study that tested the wings at a geometric angle of attack of 4 degrees, giving the 
+following results:  
+ 
+Wing No.  w ew w [deg]  A(1)  
+1 1.0 0.92 0 0.023379  
+2 -1.0 0.022037  
+3 0.75 0.95 0 0.021164  
+4 -1.0 0.020110  
+5 0.65 0.96 0 0.020221  
+6 -1.0 0.019288  
+ 
+Calculate for a cruise flight condition the following:  
+ 
+1. The wing’s net lift force required  for the cruise condition:  Lw = __________ [N]  
+2. Complete the following table:  
+Wing No.  w CL,w_req.  geo,w [ deg]  i,w [ deg]  L/D* w [m/s]  iw [deg]  
+1 1.0       
+2      
+3 0.75       
+4      
+5 0.65       
+6      
+*both lifting surfaces   
+AERONAUTICAL ENGINEERING FACULTY  
+ 
+3. Analyzing your results, which of the six wings is optimized and why? Explain and j ustify your 
+answer , giving technical reasons and engineering criteria for this aircraft's operational behavior . 
+For points  4 and 5, use the following information:  
+ 
+The Short SC.7 Skyvan  airplane is a twin-turboprop  engine freighter with a fixed landing gear 
+designed to carry heavy payloads and possibly  fly to difficult areas. The followings  are the 
+specifications and flying characteristics of this aircraft: total Take -off weight of 5670 [kg], cruise 
+speed of 317 kilometers  per hour, a service ceiling of 22500 [ft] ( ∞ = 0.6 [kg/m3]), the cabin 
+height/width is 1.97 [m], the wings extend 8.905 [m] from the fuselage on each side and the root 
+chord is 1.47 [m] ( e = 0.82 ).  
+ 
+According to the drag coefficient study, this airplane has the following sources of parasite drag:  
+ 
+No. Component  CD_0 Parasite drag [%]  
+1 Fuselage  0.0057  15.00%  
+2 Spinner  0.00057  1.50%  
+3 Wing  0.00874  23.00%  
+4 Horizontal tail  0.0024396  6.42%  
+5 Vertical tail  0.001976  5.20%  
+6 Landing gear  0.00684  18.00%  
+7 Wing struts  0.0038  10.00%  
+8 External appendages  0.000076  0.20%  
+9 Interference  0.00076  2.00%  
+10 Engine cooling  0.00304  8.00%  
+11 Antennas  0.0000304  0.08%  
+12 Pitot  0.000038  0.10%  
+13 Miscellaneous  0.0019  5.00%  
+14 Leakage  0.00057  1.50%  
+15 Rivets and screws  0.00152  4.00%  
+ 
+Use the correction factor K c = 1.2. With the previous information, c alculate:  
+ 
+4. The total aircraft drag force - Dtotal = ________________ [N]  
+ 
+5. Which component will you recommend modifying, why , and what would be your optimization 
+proposal ? (Explain  your answer) . 
+ 
+The 3 views of this aircraft are shown in the following figure:  
+  
+AERONAUTICAL ENGINEERING FACULTY  
+ 
+ 
+  
+ 
+AERONAUTICAL ENGINEERING FACULTY  
+ 
+Sheet of useful formulas:  
+• 
+( )
+( )
++++=11
+322
+rootc c  
+• 
+( )
+( )
+
+++=
+121
+6bY  
+Reynolds number:  
+• 
+  = xV
+xRe  
+Aerodynamic characteristics of a wing:  
+• 
+AReK K CLD
+wL
+wiw
+i=  =
+
+
+=−
+1; sin__ 1  
+• 
+ARea3571aa
+00
++=
+. ; where: a0 [1/deg ] 
+• 
+w acm wfacMARARc C 01.0cos2cos2
+, _, + +=  
+From LLT: 
+• 
+() ()()k k kD0L geo    + − ==  
+• 
+()()() ()()( )() ( )
+
+
+−
+
+
+ −+ = k1n2k1n2
+kckab4nkC
+0wsinsin,  
+• 
+()()() 
+==N
+1nkD nAnkC, , for k = 1, 2, 3, …, N 
+• 
+()()() () ()   ()kD nkC nA kDnAnkC1 =  =−, ,  
+• 
+()1AAR CwL =_  
+• 
+( )11e−+=  ; where: 
+()
+()
+=
+
+
+=N
+2n2
+1AnAn   
+• 
+()()
+()() ()
+()
+
+
+= =
+  ycVy2
+C1
+Cy C
+ycVy2y C
+wL wLwL
+wL
+_ __
+_  
+• 
+() ()()
+wLwL 2
+Cy CycV21yL
+__
+ =  
+ 
+ 
+ 

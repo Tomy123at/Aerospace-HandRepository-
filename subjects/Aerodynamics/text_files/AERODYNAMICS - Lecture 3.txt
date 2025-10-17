@@ -1,0 +1,494 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPB• Aerodynamic forces exerted by airflow comes from only 2 sources:
+1. Pressure, p, distribution on the surface.
+• Acts normal to surface.
+2. Shear stress, w, (friction) on surface.
+• Acts tangentially to surface.
+• Pressure and shear are in units of force per unit area ( N/m2).
+• Net unbalance creates an aerodynamic force.
+ “No matter how complex the flow field, and no matter how complex the shape of the body, the only 
+way nature has of communicating an aerodynamic force to a solid object or surface is through the 
+pressure and shear stress distributions that exist on the surface”.
+ “The pressure and shear stress distributions are the two hands of nature that reach out and grab 
+the body, exerting a force on the body – the aerodynamic force”.
+WHAT CREATES 
+AERODYNAMIC FORCES?•Pressure and Shear Stress – correlation with aerodynamic forces.
+S V∞
+V∞Pressure – Acts perpendicular to the surface
+Shear stress – Acts parallel to the surface
+)(Spp=
+)(S=INCOMPRESSIBLE FLOW 
+OVER AIRFOILSV∞
+N →pu(Su)
+A →u(Su)
+𝑅=ඵ
+𝑆𝑝𝑁𝑑𝑆+ඵ
+𝑆𝜏𝐴𝑑𝑆INCOMPRESSIBLE FLOW 
+OVER AIRFOILS
+•Pressure and Shear Stress – correlation with aerodynamic forces.Relative  Wind : Direction  of V∞
+•We use the subscript  ∞ to indicate  far 
+upstream  conditions .
+Angle  of Attack  (AoA ),  Angle  between  
+relative  wind  (V∞) and the chord  line.
+Total  aerodynamic  force , R, can be 
+resolved  into two force  components .
+Lift, L: Component  of aerodynamic  force  
+perpendicular  to the relative  wind .
+Drag,  D: Component  of aerodynamic  
+force  parallel  to the relative  wind .
+RESOLVING THE 
+AERODYNAMIC FORCE
+V∞•Aerodynamic force, R, may also be 
+resolved into components perpendicular 
+and parallel to the chord line.
+•Normal Force, N: Perpendicular to the 
+chord line.
+•Axial Force, A: Parallel to the chord line.
+•L and D are easily related to N and A.
+•For airfoils and wings, L and D are the 
+most common.
+•For rockets, missiles, bullets, etc. N and A 
+more useful.
+RESOLVING THE 
+AERODYNAMIC FORCE
+V∞•Aerodynamic forces and moments are a direct consequence of 
+pressure distribution.
+V∞V∞
+LL
+DDRR
+MMN
+A
+  sin cos A NL − =
+  cos sin A ND + =INCOMPRESSIBLE FLOW 
+OVER AIRFOILSAoA = 2°
+AoA = 3°
+AoA = 6°
+AoA = 9°
+AoA = 12 °
+AoA = 20 °
+AoA = 60 °
+AoA = 90 °•Behavior  of L, D, and M depends  on 
+, but also on velocity  and altitude .
+•V∞, ∞, Wing  Reference  Area  (S), Wing  
+Shape,  ∞, compressibility .
+•Characterize  the behavior  of L, D, M 
+with  coefficients  (cl, cd, cm).
+( )Re,,2121
+22
+
+
+== =
+M f cSqL
+SVLcScV L
+lll
+Matching  Mach  and Reynolds
+(called  similarity  parameters)
+M∞, Re
+M∞, Re
+cl, cd, cm identicalLIFT , DRAG AND MOMENT 
+COEFFICIENTS•Behavior  of L, D, and M depend  on , but also on velocity  and altitude .
+•V∞, ∞, Wing  Reference  Area  (S), Wing  Shape,  ∞, compressibility .
+•Characterize  the behavior  of L, D, M with  coefficients  (cl, cd, cm).
+( )Re,,2121
+322
+
+
+== =
+M f cScqM
+ScVMcSccV M
+mmm
+
+( )Re,,2121
+222
+
+
+== =
+M f cSqD
+SVDcScV D
+ddd
+
+( )Re,,2121
+122
+
+
+== =
+M f cSqL
+SVLcScV L
+lll
+
+Important note: Comment on Notation for the coefficients:
+•Lowercase, cl, cd, and cm for infinite wings (airfoils).
+•Uppercase,  CL, CD, and CM for finite wings (actual 3D objects).LIFT , DRAG AND MOMENT 
+COEFFICIENTS•Lift coefficient  (or lift) linear  variation  with  angle  of 
+attack,  .
+•Cambered  airfoils  have  positive  lift when   = 0.
+•Symmetric  airfoils  have  zero  lift when   = 0.
+•At a high  enough  angle  of attack,  the performance  of the 
+airfoil  rapidly  degrades  → stall.
+Cambered airfoil has lift at  = 0
+At negative , the airfoil will have zero liftSAMPLE DATA TRENDS•Lift, Drag and 
+Moment 
+Coefficients
+INCOMPRESSIBLE 
+FLOW OVER 
+AIRFOILScl
+cl, maxLift Coefficient
+Angle of Attack, 
+A symmetric airfoil 
+generates zero lift at 
+zero SAMPLE DATA: 
+SYMMETRIC AIRFOILA cambered airfoil 
+generates positive 
+lift at zero SAMPLE DATA: 
+CAMBERED AIRFOIL
+Lift Coefficient
+Angle of Attack, •Lift slope
+𝑎0=𝑐𝑙𝛼=𝑑𝑐𝑙
+𝑑𝛼=𝑐𝑙−𝑐𝑙0
+𝛼−01
+𝑑𝑒𝑔
+𝑐𝑙=𝑐𝑙0+𝑎0𝛼=𝑎0𝛼−𝛼𝐿=0
+𝑐𝑙0=−𝑎0𝛼𝐿=0INCOMPRESSIBLE FLOW 
+OVER AIRFOILS
+𝑎0=𝑐𝑙𝛼=𝑑𝑐𝑙
+𝑑𝛼=𝑐𝑙−0
+𝛼−𝛼𝐿=01
+𝑑𝑒𝑔cl
+cl, max•Lift, Drag, and Moment on an airfoil  or wing will change as  changes.
+•Variations of these quantities are some of the most essential information that 
+an airplane designer needs to know.
+•Aerodynamic Center
+•Point about which moments essentially do not vary with .
+•Mac = constant (independent of ).
+•For low -speed airfoils , the aerodynamic center  is near the quarter -chord point.VARIATION OF L, D AND 
+M WITH •To understand  drag  and actual  airfoil/wing  behavior,  we need  an understanding  of viscous  flows  
+(all real flows  have  friction ).
+•Inviscid  (frictionless)  flow  around  a body  will result  in zero  drag!
+•Called  d’Alembert’s  paradox .
+• Friction  (viscosity,  m) must  be included  in theory .
+•Flow  adheres  to the surface  because  of friction  between  gas and solid  boundary .
+•At surface  flow, velocity  is zero  → called  ‘No-Slip Condition ’.
+•Thin  region  of retarded  flow  in the vicinity  of the surface,  called  a ‘Boundary  Layer’.
+•At the outer  edge  of B.L., V∞
+•At the solid  boundary,  V = 0
+ “The  presence  of friction  in the flow  causes  a shear  stress  at the surface  of a body,  which,  in turn,  
+contributes  to the aerodynamic  drag  of the body : skin friction  drag” .REAL EFFECTS: 
+VISCOSITY ( ) xV
+forces viscuosforces inercial = =Re = Density [ kg/m3]
+V = Velocity [m/s]
+x = Length (characteristic object length) [m]
+ = Dynamic viscosity [ kg/ms]
+Sometimes, the Reynolds number can be expressed 
+in terms of the kinematic viscosity ( v [s/m2]):
+vxV=Re
+Osborne Reynolds 
+(1842 –1912)REYNOLDS NUMBERLift Coefficient
+cl = L/( ½V2S)
+Moment Coefficient
+cm, c/ 4
+Flow 
+separation
+Stall
+SAMPLE 
+DATA: NACA 
+23012  
+AIRFOILcl
+cm,c/4Re dependence at high 
+Separation and Stall
+ clcd
+cm,a.c .cl vs. 
+Independent of Recd vs. 
+Dependent on Re
+cm,a.c . vs. cl very flatR = ReAIRFOIL 
+DATA: NACA 
+23012  WING 
+SECTION28A constant  chord  length  model  wing  is 
+placed  in a low-speed  subsonic  wind  
+tunnel  spanning  the test section . The 
+wing  has a NACA  2412  airfoil  and a 
+chord  length  of 1.3 m. The flow  in the 
+test section  is at a velocity  of 50 m/s at 
+standard  sea-level  conditions . If the 
+wing  is at a 4° angle  of attack,  calculate  
+the following :
+a.cl, cd and cm_c/4 and
+b. the lift, drag,  and moments  about  
+the quarter  chord  per unit spanEXAMPLE NACA 2412
+𝑅𝑒=𝜌∞𝑉∞𝑐
+𝜇∞=1.225ൗ𝑘𝑔
+𝑚350Τ𝑚𝑠1.3𝑚
+1.789×10−5ൗ𝑘𝑔
+𝑚𝑠
+𝑅𝑒=4450810 .51Incompressible Flow over Aerofoils
+•Lift, Drag and Moment Coefficients
+For a 4° 
+angle  of 
+attack
+40.63
+0.630.007
+-0.03530A constant  chord  length  model  
+wing  is placed  in a low-speed  
+subsonic  wind  tunnel  spanning  
+the test section . The wing  has a 
+NACA  2412  airfoil  and a chord  
+length  of 1.3 m. The flow  in the 
+test section  is at a velocity  of 50 
+m/s at standard  sea-level  
+conditions . If the wing  is at a 4° 
+angle  of attack,  calculate  the 
+following :
+a.cl, cd. and cm_c/4 and
+b. the lift, drag,  and moments  
+about  the quarter  chord  per 
+unit spanEXAMPLE NACA 2412
+𝑞∞=1
+2𝜌∞𝑉∞2=1
+21.225ൗ𝑘𝑔
+𝑚350Τ𝑚𝑠2=1531.25𝑃𝑎
+𝑆=𝑏∙𝑐=1𝑐=1.3𝑚2
+𝐿=𝑞∞𝑆𝑐𝑙=1531.25ൗ𝑁
+𝑚21.3𝑚20.63=1254.09𝑁
+𝐷=𝑞∞𝑆𝑐𝑑=1531.25ൗ𝑁
+𝑚21.3𝑚20.007=13.93𝑁
+𝑀ൗ𝑐4=𝑞∞𝑆𝑐𝑚ൗ𝑐4𝑐=1531.25ൗ𝑁
+𝑚21.3𝑚2−0.0351.3𝑚=−90.57𝑁∙𝑚
+V∞
+c
+b = 1S31The NACA  2412  wing,  in the same  
+flow  as in the previous  example,  is 
+pitched  to an angle  of attack  such  
+that the lift per unit span  is 700 N 
+(157 lb).
+a.What  is the angle  of attack?
+b.To what  angle  of attack  must  the 
+infinite  wing  be pitched  to obtain  
+zero  lift?EXERCISE 1
+𝑞∞=1
+2𝜌∞𝑉∞2=1
+21.225ൗ𝑘𝑔
+𝑚350Τ𝑚𝑠2=1531.25𝑃𝑎
+𝑆=𝑏∙𝑐=1𝑐=1.3𝑚2Consider  a NACA  23012  airfoil  at 8 degrees  of angle  of attack . Calculate  
+the normal  and axial  force  coefficients . Assume  that Re = 8.8 x 106
+.EXERCISE 2
+V∞•NACA  2415  flying  upside  down  at certain  AoA will generate  positive  lift but less than  the same  airfoil  right  side up at the 
+same  AoA.
+•Here  is a way to understand  this:
+•If we take  the airfoil  on the left and turn  it upside  down,  it is the same  as the airfoil  right  side up but with  a negative  AoA.
+•Therefore,  the lift coefficient  for upside  down  airfoil  at a positive  angle  of attack  is given  by data  for negative  AoA.
+•The negative  cl connotes  a downward  lift on the ordinary  right -side-up airfoil  when  pitched  to a negative  Aoa.
+•In an upside -down  orientation  (airfoil  on the right),  the lift is directed  upward .
+ CAN AN AIRFOIL PRODUCE LIFT 
+WHEN IT IS FLYING UPSIDE DOWN?•NACA  2415  flying  right  side up.
+•Zero  angle  of attack .
+•Lift in the positive  vertical  direction .
+•NACA  2415  upside  down .
+•Zero  angle  of attack .
+•Lift in the negative  vertical  direction .
+•Positive  angle  of attack .
+•Say  =10º.
+•Lift in the positive  vertical  direction .•Positive  angle  of attack .
+•Say  =10º.
+•Lift in the positive  vertical  direction,  but less 
+than  the right  side up airfoil . CAN AN AIRFOIL PRODUCE LIFT 
+WHEN IT IS FLYING UPSIDE DOWN?•NACA  2415  AIRFOIL
+•Zero -lift , L=0 = -2°
+•The airfoil  will generate  positive  lift 
+(when  right  side up) for  > -2º
+•Now  turn  the airfoil  upside  down
+•If  = 0º, negative  lift
+•If  = 2º, zero  lift
+•If  is greater  than  2º (but reading  –
+ range),  the airfoil  will generate  
+lift in the positive  vertical  direction
+•Upside -down  airfoil  at same   generates  
+less lift
+•Example :
+•Right  side up:  = 10º, cl = 1.2
+•Upside  down :  = 10º, cl = - 0.8CAN AN AIRFOIL PRODUCE 
+LIFT WHEN IT IS FLYING 
+UPSIDE DOWN?36The question  is sometimes  asked : Can an airfoil  product  lift when  
+flying  upside -down?  This exercise  will answer  that question .
+a.Consider,  a NACA  2415  airfoil  flying  right  side up at an angle  of 
+attack  of 6°. The airfoil  has a chord  length  of 1.5 m and is flying  at 
+a standard  altitude  of 2 km at a velocity  of 150 m/s. Calculate  the 
+lift per unit span .
+b.Now,  turn  this airfoil  upside -down  at the same  flight  conditions  at 
+an angle  of attack  of 6°. Calculate  the lift per unit span .
+c.Compare  and discuss  the results .EXERCISE 3•Aerodynamic  forces  and moments  as a 
+consequence  of pressure  distribution
+•Total  aerodynamic  force  on the airfoil  is the 
+summation  of F1 and F2
+•Lift is obtained  when  F2 > F1
+•Misalignment  of F1 and F2 creates  
+Moments,  M, which  tend  to rotate  
+airfoil/wing
+•Value  of the induced  moment  depends  on 
+the point  about  which  it is taken
+•Moments  about  leading  edge,  MLE or 
+quarter -chord  point,  c/4, (Mc/4)
+•In general,  MLE ≠ Mc/4
+F1
+F2V∞INCOMPRESSIBLE FLOW 
+OVER AIRFOILSINCOMPRESSIBLE FLOW 
+OVER AIRFOILS
+•Aerodynamic Moments
+•Essentially  linear  over  a practical  range  
+of AoA.
+•Slope  is positive  for some  airfoils  and 
+negative  for others .
+•Variation  becomes  non-linear  at high  
+AoA, when  the flow  is separated .
+• The linear  portion  of the curve  is 
+essentially  independent  of Re.•Aerodynamic Moments
+Mc/4V∞
+Dc/4Lc/4
+xc/4
+cINCOMPRESSIBLE FLOW 
+OVER AIRFOILS
+•The aerodynamic  moment  exerted  on 
+the body  depends  on the point  about  
+which  the moments  are taken .
+•Considering  moments  about  the L.E.: 
+moments  that tend  to increase  the AoA 
+(pitch  up – positive) .
+(-)L.E.
+(+)T.E. xacLac
+Dac MacMc/4V∞
+Dc/4Lc/4
+xc/4
+cL.E.
+T.E. xacLac
+Dac Mac
+𝑀𝐿𝐸=𝑀ൗ𝑐4−𝐿ൗ𝑐4𝑥ൗ𝑐4cos𝛼−𝐷ൗ𝑐4𝑥ൗ𝑐4sin𝛼
+𝑀𝐿𝐸=𝑀𝑎𝑐−𝐿𝑎𝑐𝑥𝑎𝑐cos𝛼−𝐷𝑎𝑐𝑥𝑎𝑐sin𝛼
+0=𝑀ൗ𝑐4−𝑀𝑎𝑐−𝐿ൗ𝑐4𝑥ൗ𝑐4cos𝛼+𝐿𝑎𝑐𝑥𝑎𝑐cos𝛼−𝐷ൗ𝑐4𝑥ൗ𝑐4sin𝛼+𝐷𝑎𝑐𝑥𝑎𝑐sin𝛼𝐿ൗ𝑐4=𝐿𝑎𝑐=𝐿
+𝐷ൗ𝑐4=𝐷𝑎𝑐=𝐷
+0=𝑀ൗ𝑐4−𝑀𝑎𝑐+𝐿cos𝛼𝑥𝑎𝑐−𝑥ൗ𝑐4+𝐷sin𝛼𝑥𝑎𝑐−𝑥ൗ𝑐4
+𝑀𝑎𝑐=𝑀ൗ𝑐4+𝐿cos𝛼𝑥𝑎𝑐−𝑥ൗ𝑐4+𝐷sin𝛼𝑥𝑎𝑐−𝑥ൗ𝑐40 1
+𝑀𝑎𝑐=𝑀ൗ𝑐4+𝐿𝑥𝑎𝑐−𝑥ൗ𝑐4
+𝑐𝑚𝑎𝑐=𝑐𝑚ൗ𝑐4+𝑐𝑙𝑥𝑎𝑐−𝑥ൗ𝑐4
+𝑐
+𝑐𝑚𝑎𝑐=𝑐𝑚ൗ𝑐4+𝑐𝑙ℎ𝑎𝑐−ℎൗ𝑐4•Aerodynamic  center  – The point  of reference  on 
+the airfoil  about  which  aerodynamic  moments  
+do not vary  with  AoA, assuming  V∞ = const .
+•If L = 0, the moment  is a pure  couple  equal  to 
+the Ma.c.
+•Simple  airfoil  theory  places  a.c.:
+•At c/4 for low-speed  airfoils
+•At c/2 for supersonic  airfoils
+AERODYNAMIC CENTER•The a.c. is that reference  point  on a body  about  which  the aerodynamically  
+generated  moment  is independent  of the AoA ().
+•For most  airfoils,  it is close  to, but not exactly  at xc/4.
+AERODYNAMIC CENTER
+𝑑𝑐𝑚𝑎𝑐
+𝑑𝛼=0
+𝑑𝑐𝑚𝑎𝑐
+𝑑𝛼=𝑑𝑐𝑚ൗ𝑐4
+𝑑𝛼+𝑑𝑐𝑙
+𝑑𝛼ℎ𝑎𝑐−ℎൗ𝑐4
+m0 a0
+𝑑𝑐𝑚𝑎𝑐
+𝑑𝛼=0=𝑚0+𝑎0ℎ𝑎𝑐−ℎൗ𝑐4
+ℎ𝑎𝑐=−𝑚0
+𝑎0+ℎൗ𝑐4•Example Aerodynamic Moments.
+Mc/4 V∞ Dc/4Lc/4
+xc/4
+cINCOMPRESSIBLE FLOW 
+OVER AIRFOILS
+L.E.
+T.E. xacLac
+Dac Mac
+ [deg] cl cm,c/4
+-4 0 -0.095
+-3 0.1 -0.095
+-2 0.2 -0.095
+-1 0.3 -0.095
+0 0.4 -0.090
+1 0.5 -0.087
+2 0.6 -0.086
+3 0.7 -0.080
+4 0.8 -0.079
+5 0.9 -0.077
+6 1.0 -0.075NACA  4415•Example Aerodynamic MomentsINCOMPRESSIBLE FLOW 
+OVER AIRFOILS
+ [deg] cl cm,c/4
+-4 0 -0.095
+-3 0.1 -0.095
+-2 0.2 -0.095
+-1 0.3 -0.095
+0 0.4 -0.090
+1 0.5 -0.087
+2 0.6 -0.086
+3 0.7 -0.080
+4 0.8 -0.079
+5 0.9 -0.077
+6 1.0 -0.075𝑑𝑐𝑙
+𝑑𝛼=𝑎0=1−0.2
+6−−2=0.1ൗ1𝑑𝑒𝑔
+𝑑𝑐𝑚ൗ𝑐4
+𝑑𝛼=𝑚0=−0.075−−0.095
+6−−2=0.0025ൗ1𝑑𝑒𝑔
+𝑑𝑐𝑚𝑎𝑐
+𝑑𝛼=0=𝑚0+𝑎0ℎ𝑎𝑐−ℎൗ𝑐4
+ℎ𝑎𝑐=−𝑚0
+𝑎0+ℎൗ𝑐4=−0.0025
+0.1+0.25=0.225=22.5%NACA  4415INCOMPRESSIBLE FLOW 
+OVER AIRFOILS
+•Example Aerodynamic Moments
+                                         If
+   For this example:𝐿=0→𝑐𝑚𝐿=0
+𝑐𝑚𝑎𝑐=𝑐𝑚ൗ𝑐4+𝑐𝑙ℎ𝑎𝑐−ℎൗ𝑐4 [deg] cl cm,c/4
+-4 0 -0.095
+-3 0.1 -0.095
+-2 0.2 -0.095
+-1 0.3 -0.095
+0 0.4 -0.090
+1 0.5 -0.087
+2 0.6 -0.086
+3 0.7 -0.080
+4 0.8 -0.079
+5 0.9 -0.077
+6 1.0 -0.0750
+𝑐𝑚𝑎𝑐=𝑐𝑚ൗ𝑐4=𝑐𝑚𝐿=0=𝑐𝑜𝑛𝑠𝑡.
+𝑐𝑚𝑎𝑐=−0.095NACA  4415•Center  of pressure  – location  on the 
+airfoil  where  the pitching  moment  is 
+zero .
+•The resultant  forces  (L and D) acting  
+at c.p. produce  no moment  (use  
+centroid  rule to find R location) .
+•Since  the pressure  distribution  over  
+the airfoil  changes  with  AoA, the 
+location  of c.p. varies  with  AoA.
+CENTER OF PRESSURE
+𝑐𝑚𝑐𝑝=0CENTER OF PRESSURE
+•Example
+                                         If
+   ForNACA  4415
+𝑐𝑚𝑐𝑝=0
+𝑐𝑚𝑎𝑐=𝑐𝑚𝑐𝑝+𝑐𝑙ℎ𝑎𝑐−ℎ𝑐𝑝 [deg] cl cm,c/4
+-4 0 -0.095
+-3 0.1 -0.095
+-2 0.2 -0.095
+-1 0.3 -0.095
+0 0.4 -0.090
+1 0.5 -0.087
+2 0.6 -0.086
+3 0.7 -0.080
+4 0.8 -0.079
+5 0.9 -0.077
+6 1.0 -0.0750
+ℎ𝑐𝑝=−𝑐𝑚𝑎𝑐
+𝑐𝑙+ℎ𝑎𝑐
+𝑐𝑙=0.2→ℎ𝑐𝑝
+ℎ𝑐𝑝=−−0.095
+0.2+0.225
+ℎ𝑐𝑝=0.7=70%EXERCISE 
+AERODYNAMIC 
+MOMENTS
+Consider  the NACA  63-210 airfoil  at 
+6 [deg] angle  of attack . Calculate  the 
+moment  coefficient  about  the 
+leading  edge .
+𝑐𝑚𝐿𝐸=?

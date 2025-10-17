@@ -1,0 +1,38 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBCRITICAL MACH NUMBER Mcrit
+(in this example )CRITICAL MACH NUMBER Mcrit
+Point of minimum pressure / Maximum velocityCRITICAL MACH NUMBER Mcrit
+Point of minimum pressure / Maximum velocity:CRITICAL MACH NUMBER McritCRITICAL MACH NUMBER Mcrit
+1
+CRITICAL MACH NUMBER
+1
+=
+CRITICAL MACH NUMBER McritCRITICAL MACH NUMBER Mcrit
+11
+AIRFOIL McritESTIMATION
+1
+1
+AIRFOIL McritESTIMATION
+1
+1
+AIRFOIL McritESTIMATION
+1
+1AIRFOIL McritVALIDATION
+1
+1
+1
+1
+1AIRFOIL McritVALIDATION
+11
+1
+(t/c)max
+1
+IMPROVED COMPRESSIBILITY 
+CORRECTIONS
+Republic XP-47JSuperbolt had
+amaximum speed of507 [mph ].
+1IMPROVED COMPRESSIBILITY 
+CORRECTIONS
+0,0 0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1,0x/c

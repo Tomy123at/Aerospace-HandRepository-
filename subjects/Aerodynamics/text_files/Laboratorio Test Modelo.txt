@@ -1,0 +1,123 @@
+1 Aerodynamics Laboratory - Final Proyect 
+Model Test 
+Miguel Ángel Rendón Hoyos 
+Tomás Atencia Tatis 
+Andrés Giraldo Obando 
+ 
+ 
+1 Introducción 
+En este informe se presentan las pruebas aerodinámicas y de estabilidad estática de un 
+modelo a escala de un planeador, diseñado como parte del trabajo ﬁnal. Utilizando el túnel 
+de viento se llevaron a cabo mediciones de las fuerzas aerodinámicas actuantes sobre la 
+aeronave, así como una evaluación visual de su estabilidad estática. Asimismo, se 
+identiﬁcaron y analizaron los errores experimentales y discrepancias observadas entre las 
+mediciones reales y los resultados esperados, además de los errores de diseño del modelo. 
+2 Modelo a escala del planeador 
+ 
+Figura 1. Modelo del planeador (vista lateral) 
+ 
+Para el planeador del trabajo ﬁnal, hemos optado por un planeador con una conﬁguración 
+convencional, perﬁl NACA 4415 para el ala y placa plana para el estabilizador horizontal y 
+vertical. El modelo a escala probado en el túnel de viento tiene una envergadura de 50cm, 
+una cuerda del ala de 6.8cm y la longitud del fuselaje es de 47cm. Al momento de imprimir 
+el modelo a escala se ha intentado ubicar el soporte delantero justo en la posición 
+2 longitudinal del centro de masa, sin embargo, debido a que el modelo no fue impreso de 
+forma maciza en su totalidad, el centro de masa fue desplazado ligeramente hacia atrás de 
+donde estaba previsto.  
+3 Prueba del prototipo  
+Para empezar a probar el modelo, debíamos primero nivelar el modelo y hacer que el centro 
+de masa se aproximara al soporte de adelante de la aeronave, para así poder veriﬁcar 
+visualmente si nuestro prototipo cumplía con una condición de estabilidad estática. Para 
+esto, se ubicaron y pegaron con cinta, monedas en la parte de adelante del fuselaje, para que 
+estas nivelaran un poco el peso a ambos lados de donde queríamos que quedara el centro de 
+masa, y así, intentar desplazarlo muy cerca del soporte delantero.  
+ 
+Figura 2. Monedas pegadas al fuselaje  
+Después de esto, se preparó el túnel para las pruebas y se ubicó el prototipo en los soportes. 
+Para empezar a medir, se intentó ubicar el ángulo geométrico del ala en 0°, tomar datos y 
+empezar a variar cada 1.5°. Sin embargo, surgieron bastantes problemas en la medición: Al 
+momento de aumentar la velocidad del túnel de viento, notamos que el ángulo de ataque 
+variaba al estar el túnel a altas velocidades. Al principio se pensó que se trataba de un error 
+de medición debido a que el perﬁl no es precisamente grande, por lo que se pueden presentar 
+errores humanos, pero al veriﬁcar varias veces el ángulo por distintas personas y obtener 
+valores discrepantes con el túnel apagado y encendido, se planteó la hipótesis de que esto se 
+debía a un error en el modelo.  
+A pesar de esto, se intentaron obtener valores de las fuerzas aerodinámicas con las mediciones 
+que obteníamos, estos fueron los resultados:  
+ 
+ 
+ 
+ 
+ 
+3 Humidity 100 % 
+P∞ 101727.12 Pa 
+T∞ 295.25 K 
+∞ 1.823E-05 kg/(m*s) 
+Rair 287 N*m/kg*K 
+Tabla 1. Condiciones a la que se realizó la prueba 
+ 
+ 
+Re1 174668.77      
+Data No, geo [deg] L [kg] D [kg] c l c d c l/cd 
+7 3.00 3.620 0.743 1.144 0.2348 4.87 
+8 4.50 4.000 0.677 1.264 0.2140 5.91 
+9 6.00 4.580 0.586 1.447 0.1852 7.82 
+10 7.50 5.060 0.544 1.599 0.1719 9.30 
+11 9.00 5.220 0.460 1.650 0.1454 11.35 
+12 10.50 5.270 0.454 1.665 0.1435 11.61 
+13 12.00 5.370 0.403 1.697 0.1274 13.33 
+14 13.50 5.290 0.454 1.672 0.1435 11.65 
+Tabla 2. Resultados obtenidos 
+ 
+ 
+Si graﬁcamos con respecto a los datos teóricos, obtenemos lo siguiente: 4  
+Figura 3. CL vs Alpha (Modelo vs Teórico LLT)  
+ 
+5 Figura 4. CD vs Alpha (Modelo vs Teórico LLT)  
+ 
+ 
+Figura 5. CL/CD vs Alpha (Modelo vs Teórico LLT)  
+ 
+Se puede observar claramente como los datos experimentales se alejan ampliamente de los 
+teóricos, incluso se puede apreciar que el CL experimental supera con creces valores que 
+están en el rango de operación del planeador.  
+Para veriﬁcar que el ángulo de Lift equivalente a cero del perﬁl, coincidía con el mismo 
+ángulo medido con el nivel electrónico, se ubicaron dos hilos en las puntas de las alas y se 
+observó el comportamiento de ellas, si está en el ángulo de cero Lift, debería quedarse inmóvil 
+sin oscilar. Al momento de ubicar visualmente este angulo de cero Lift a máxima velocidad 
+se obtuvo un Alpha de -6°. Bastante alejado del Alpha de -3.2° teórico que no debería 
+cambiar, además se observó a que, al disminuir ligeramente la velocidad, los hilos empezaban 
+a vibrar y el ángulo de cero Lift variaba.  
+Creemos que esto se debe a que el modelo estructuralmente no resiste las fuerzas ejercidas y 
+el empenaje genera una especie de palanca o momento que ﬂexiona todo el fuselaje generando 
+un aumento en el ángulo de ataque, es decir, el ángulo real es menor al ángulo que debería 
+estar. 
+6 Por último, se hizo la prueba de la estabilidad estática del prototipo, esto quitando el soporte 
+trasero con el que se varía el ángulo de ataque. Se concluyó que la aeronave no es estable, 
+eso se debe a que el CG esta brevemente desplazado, esto era poco predecible ya que no se 
+tenía forma de calcular el peso completo de la impresión por el tipo de estructura y densidad 
+que se utiliza para la impresión por lo que el Cg se desplaza como se había previsto y las 
+monedas no fueron suﬁciente para balancearlo.  
+ 
+Figura 6. Prueba de estabilidad del modelo a escala 
+4 Conclusión 
+Durante las pruebas realizadas, se evidenció que el modelo de planeador experimentó 
+deformaciones en su fuselaje al estar sometido a cargas aerodinámicas, lo que generó 
+variaciones no deseadas en el ángulo de ataque y, en consecuencia, en los coeﬁcientes de 
+sustentación y arrastre. Estas discrepancias respecto a los valores teóricos sugieren que la 
+estructura del modelo no era lo suﬁcientemente rígida para resistir las fuerzas actuantes, lo 
+cual afectó la precisión de las mediciones obtenidas. Este hallazgo subraya la importancia de 
+mejorar la construcción del modelo en futuras pruebas, utilizando materiales más resistentes 
+o métodos de impresión más precisos que eviten la ﬂexión del fuselaje, además de un posible 
+7 cambio de medidas, volviendo a escalar el modelo dejando menos superﬁcie para que las 
+fuerzas puedan deformarlo, y que, en última instancia, contribuyan a obtener resultados 
+experimentales más conﬁables y cercanos a las condiciones teóricas. 
+En cuanto a la estabilidad estática del modelo, se observó que el desplazamiento inesperado 
+del centro de masa afectó signiﬁcativamente el comportamiento del planeador, lo que no 
+pudo ser corregido de manera efectiva mediante la adición de peso en el fuselaje. Esto pone 
+de maniﬁesto la importancia de una correcta estimación y distribución de la masa en los 
+prototipos, ya que la ubicación precisa del centro de gravedad es un factor clave para 
+asegurar la estabilidad de la aeronave. Estos errores cometidos, deben de ser corregidos si se 
+desea un buen desempeño de la aeronave a la hora de realizar la prueba. 
+ 
+ 

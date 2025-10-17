@@ -1,0 +1,753 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBNECESSARY TOOL
+•Return to vortex filament, which in general may be curved
+•General treatment accomplished with Biot-Savart Law
+3rrdl
+4dVˆ =
+•Electromechanical Analogy:
+•Think of vortex filament as a wire carrying an electrical current I
+•The magnetic field strength, dB, induced at point Pby segment dlis:
+3rrdl
+4IdBˆ=EXAMPLE APPLICATIONS
+hV4=
+hV2=
+•Case 1 : Biot-Savart Law applied between ±∞
+•Case 2 : Biot-Savart Law applied between fixed point Aand ∞
+3rrdl
+4dVˆ =
+Case 1 Case 2HELMHOLTZ’S VORTEX 
+THEOREMS
+1.The strength of a vortex filament is constant along its length
+2.A vortex filament cannot end in a fluid; it must extend to boundaries of fluid (which can be ±∞) or 
+form a closed path
+Note: The statement that “vortex lines do not end in the fluid” is kinematic due to the definition 
+of vorticity, x, and general
+•Helmholtz’ s vortex theorems are going to be used for the calculation of lift distribution, which will 
+provide expressions for induced drag
+L’=L’ (y)=r∞V∞(y)AIRFOIL: TAT
+Each is a vortex line
+One each vortex line 1= constant
+Strength can vary from line to line
+Along airfoil, g= g (s)
+Integrations done:
+L.E. to T.E.
+Side view
+Entire airfoil has 14 7L’=L’ (y)=r∞V∞(y)
+w(y)APPLYING IT TO FINITE WINGS
+PRANDTL’S LIFTING LINE 
+THEORY
+•Replace finite wing (span = b) with bound vortex filament extending from y = -b/2to y = b/ 2and 
+origin located at the center of the bound vortex (center of the wing)
+•Helmholtz’ s vorticity theorem: A vortex filament cannot end in a fluid
+•Filament continues as two free vortices trailing from wing tips to infinity
+•This is called a ‘ Horseshoe Vortex ’
+HorseshoeTrailing vortices induce velocity along
+bound vortex with both contributions
+inadownward direction (wisin
+negative z-direction)
+()
+()
+22
+2424244
+ybbywybybywhV
+−−=−−
++−==
+ Contribution from left trailing vortex
+(trailing from –b/2)
+Contribution from right trailing
+vortex (trailing from b/2)
+•This has problems: It does not simulate the downwash distribution of a real finite wing
+•Problem is that as y → ±b/2, w → ∞
+•Physical basis for solution: The finite wing is not represented by uniform single -bound vortex filament but rather has a distrib ution of (y)PRANDTL’S LIFTING LINE 
+THEORY•Represent wing by a large number of horseshoe vortices, each with a different length of bound vortex, but with all bound vort ices coincident 
+along a single line
+•This line is called the Lifting Line 
+•Circulation, , varies along the line of bound vortices
+•Also have a series of trailing vortices distributed over the span
+•Strength of each trailing vortex = change in circulation along lifting line
+Instead of  = const.
+We need a way to let  = (y)PRANDTL’S LIFTING LINE 
+THEORY•Example shown here will use 3 horseshoe vortices
+d1PRANDTL’S LIFTING LINE 
+THEORYd1
+d2PRANDTL’S LIFTING LINE 
+THEORY•Represent wing by a large number of horseshoe 
+vortices, each with a different length of bound 
+vortex, but with all bound vortices coincident along 
+a single line
+•This line is called the Lifting Line 
+•Circulation, , varies along line of bound vortices
+•Also have a series of trailing vortices distributed 
+over the span
+•Strength of each trailing vortex = change in 
+circulation along lifting line
+•Example shown here uses 3 horseshoe vortices
+→ Consider an infinite number of horseshoe 
+vortices superimposed on the lifting linePRANDTL’S LIFTING LINE 
+THEORY
+d1
+d2
+d3•Infinite number of horseshoe vortices 
+superimposed along the lifting line
+•Now have a continuous 
+distribution such that = (y), 
+at origin = 0
+•Trailing vortices are now a continuous 
+vortex sheet (parallel to V∞)
+•Total strength integrated across 
+the sheet of the wing is zero
+PRANDTL’S LIFTING LINE 
+THEORY•Consider arbitrary location y0along lifting line
+•Segment dxwill induce velocity at y0given by Biot-Savart law
+•Velocity dwat y0induced by semi -infinite trailing vortex at yis:
+•Circulation at yis (y)
+•Change in circulation over dyis d= (d/dy)dy
+•Strength of trailing vortex at y = dalong lifting 
+line
+( )yydydyd
+dw−
+
+
+
+−=
+0 4PRANDTL’S LIFTING LINE 
+THEORY•Total velocity winduced aty0bythe
+entire trailing vortex sheet can be
+found byintegrating from –b/2to+b/2:
+()( ) 
+− −
+
+
+
+−=2
+20041b
+bdyyydyd
+yw
+This equation gives the value of downwash 
+at y0due to all trailing vortices.PRANDTL’S LIFTING LINE 
+THEORY
+SUMMARY SO FAR
+•We’ve done a lot of theory so far; what have we accomplished?
+•We have replaced a finite wing with a mathematical model
+•We did the same thing with a 2-Dairfoil
+•Mathematical model is called a Lifting Line
+•Circulation (y)varies continuously along lifting line
+•Obtained an expression for downwash, w, below the lifting line
+•What we want is an expression so we can calculate (y)for finite wing (WHY?)
+•Calculate Lift, L(Kutta -Joukowski theorem)
+•Calculate CL
+•Calculate aeff
+•Calculate Induced Drag, CD,i(drag due to lift)FINITE WING DOWNWASH
+•Recall: Wing tip vortices induce a downward component of air velocity near wing by 
+dragging surrounding air with them
+() 
+− −
+
+
+
+=2
+20041b
+bi dyyydyd
+Vya
+ai
+()()
+()()
+−
+−
+
+
+−=
+VywyVywy
+ii
+0
+00 1
+0tan
+aa
+Equation for the induced angle of attack 
+along the finite wing in terms of (y).
+y0
+[rad][deg]EFFECTIVE ANGLE OF ATTACK, aeff, 
+EXPRESSION
+()
+()   ()  
+() ()
+()
+()
+()  
+()
+()0
+000 0000 020 0 0 0 00
+22212
+=
+= = =
++=− == = =− = − ==
+L effL eff lllL eff L eff leff eff
+ycVyy cycVycy V cycV Ly y acy
+aaa ar ra a a aa a
+aeffseen locally by airfoil
+a0= lift slope = 2
+Definition of lift coefficient and 
+Kutta -Joukowski
+Relating both expressions
+Solve for aeff
+COMBINE RESULTS FOR 
+GOVERNING EQUATION
+()
+()
+() 
+−=
+
+−
+
+
+
+=+=
+2b
+2b 00i0L
+00
+eff
+dyyydyd
+V41yycVy
+aaa
+Effective angle of attack
+(from previous slide)
+Induced angle of attack
+(from two slides back)
+Geometric angle of attack      =       Effective angle of attack     +       Induced angle of attack
+i eff a a a + =
+()()
+() 
+−=
+ −
+
+
+
++ +=2b
+2b 00L
+00
+0 dyyydyd
+V41
+ycVyyaa
+•Fundamental Equation of Prandtl’ s Lifting Line Theory
+•In Words: Geometric angle of attack is equal to the sum of the effective angle of 
+attack plus the induced angle of attack
+•Mathematically: a= aeff+ ai
+•Integro -differential equation in which the only unknown is (y)
+•V∞, c, a, aL=0are known for a finite wing of a given design at a given a
+•Solution gives (y0), where –b/2≤ y0≤ +b/ 2along span
+()()
+() 
+−=
+ −
+
+
+
++ +=2
+200
+00
+041b
+bL dyyydyd
+V ycVyyaaPRANDTL’S LIFTING LINE 
+EQUATIONWHAT DO WE GET OUT OF 
+THIS EQUATION?
+1.Lift distribution
+2.Total Lift and Lift Coefficient
+3.Induced Drag
+() ()
+()
+()
+()
+()() ()()
+()()dyy ySVSqDCdyy y V dyy yL DL DdyySVSqLCdyy V LdyyL Ly V yL
+b
+bii
+iDib
+bib
+biii ib
+bLb
+bb
+b
+ 
+−  −
+−−  −−
+ = = =  = = = = = = 
+2
+2,2
+22
+22
+22
+22
+20 0
+22
+aa r aarrELLIPTICAL LIFT DISTRIBUTION
+For a wing with same airfoil shape across span and no twist, an elliptical 
+lift distribution is characteristic of an elliptical wing planform
+ARCCARC
+L
+iDL
+i
+a
+2
+,==
+SPECIAL SOLUTION:
+ELLIPTICAL LIFT DISTRIBUTION
+Points to Note:
+1. At origin (y = 0) = 0
+2. Circulation varies elliptically with distance yalong the span
+3. At wing tips (-b/2) = (b/2) = 0
+• Circulation and Lift → 0at wing tips ( ±b/2)
+()
+()2
+02
+0
+2121
+
+
+−  =
+
+− = 
+byV yLbyy
+r
+0/Elliptic distribution
+Equation for downwash
+Coordinate transformation → q
+()
+ = −=−=
+bV2 Vwb2w
+0
+i0
+0
+aq
+Downwash is constant over span for an elliptical lift distribution.
+The induced angle of attack is constant along the span
+Note: wand ai→ 0as b → ∞ (infinite wing = airfoil)
+()
+( )
+() 
+−−=−= =−
+
+
+−=−−=
+−
+
+qq qq
+qqq q
+0 00
+02b
+2b
+021
+2220
+02220
+db2wd2bdy2bydy
+yy
+by41y
+bywby41y
+b4
+dyd
+cos coscossin cosSPECIAL SOLUTION:
+ELLIPTICAL LIFT DISTRIBUTION()
+ARCCdyySV2CARCSbARbSC4bV dyby41 V L
+2
+L
+iD2b
+2bi
+iDL
+i22L
+i02b
+2b21
+22
+0
+aaa r r
+= === =
+
+
+−  =
+
+− 
+−
+__CD,iis directly proportional to square of CL, also 
+called ‘ Drag due to Lift ’We can develop a more useful expression for ai
+Combine Ldefinition for elliptic profile with 
+previous result for ai
+Define ARbecause it occurs frequently
+Useful expression for ai
+Calculate CD,iSPECIAL SOLUTION:
+ELLIPTICAL LIFT DISTRIBUTIONSUMMARY: TOTAL DRAG ON 
+SUBSONIC WING
+eARCcSqDc CD D D D DD
+2
+L
+profiledi
+profiled Dinduced profile induced pressure friction
++ = + =+ = + + =
+, ,
+Induced drag
+Also called drag due to liftProfile Drag
+Profile Drag coefficient relatively 
+constant with M∞at subsonic speeds
+Look up
+(Infinite Wing)May be calculated from
+Inviscid theory:
+Lifting Line Theory (LLT )SUMMARY OF THE INDUCE 
+DRAG
+•Induced drag is the price you pay for the generation of lift
+•CD,iproportional to CL2
+• Airplane on take -off or landing, induced drag major component
+• Significant at cruise ( 15-25% of total drag)
+•CD,iinversely proportional to AR
+• Desire high ARto reduce induced drag
+• Compromise between structures and aerodynamics
+• ARis an important tool as a designer (more control than span efficiency, e)
+• Normal ARvalues are in the order of 6to 8for conventional subsonic aircraft (exceptions may 
+appear with gliders with AR = 14.3 to 51)
+•For an elliptic lift distribution, the chord must vary elliptically along the span
+• Wing planform is elliptical
+• Elliptical lift distribution gives a good approximation for arbitrary finite wing through the use of span 
+efficiency factor, eELLIPTICAL LIFT DISTRIBUTION 
+PROPERTY
+•Consider a wing with no aerodynamic or geometric twist; this gives aiand aL=0
+constant along the span
+•Assuming a0is the same for each section (a0=2), clconst. along the span
+•Lift per unit span is                          , then
+lccqyL=)(
+( )0L eff 0 l i eff ac const=− =  = + = a a a aa .
+lcqyLc
+=)(
+•From lasteq.clconstant along thespan ;
+however, L’(y)varies elliptically, then
+thecmust vary elliptically along the
+span, therefore wing platform is
+ellipticalGENERAL LIFT DISTRIBUTION
+•Considering the transformation                           , where the coordinates in bdirection are now 
+given by q, with 0 ≤ q≤ .
+•In terms of q, the elliptic lift distribution can be written as
+•To solve the last eq. Fourier sine series would be an appropriate expression for the general 
+circulation along an arbitrary finite wing
+•Fourier coefficients are unknown; nevertheless, they must satisfy Prandtl’ s lifting -line theory, 
+differentiating:
+() q q sin0= 
+qcos2by−=
+()  = N
+1n n A bV2 q q sin
+ ==N
+1ndydn nA bV2dyd
+dd
+dyd qqq
+qcosGENERAL LIFT DISTRIBUTION
+•Substituting the last equations into
+•It is obtained
+•Solving method
+•Then
+()()
+() 
+−=
+ −
+
+
+
++ +=2b
+2b 00L
+00
+0 dyyydyd
+V41
+ycVyyaa
+()()()−+ + ==
+qq qq
+q aqqqa
+0 0N
+1 n
+00LN
+10 n
+00 dn nA 1n Acb2
+cos coscos
+sin
+=−
+qq 
+q qqq
+000
+0n dn
+sinsin
+cos coscos
+()()()  + + ==N
+1 00
+n 00LN
+10 n
+00nnA n Acb2
+qqq aqqqasinsinsin•From last eq. only values unknown are coeff . A, where N–number of stations
+•Actual numerical values are obtained for the An’s , that ensure that the general 
+circulation distribution satisfies the fundamental eq. of finite -wing theory
+•Lift coefficient:
+•Solving method
+() 
+− =  =2b
+2bN
+1 0n2
+L d n ASb2dyySV2C
+qq qsin sin
+= 
+qq q
+0d nsin sin
+1n for 01n for2
+= GENERAL LIFT DISTRIBUTION•Solving the lift coefficient, it gets reduced to:
+•It is to be noticed that CLonly depends on A1nevertheless, all An´s coeff . should be 
+obtained
+•Induced drag coeff . it´s found substituting                                           into
+AR ASbA C12
+1 L   = =
+()dyySV2C2b
+2bi
+iD 
+−  =a
+_
+()  = N
+1n n A bV2 q q sin
+() () qq qaq a
+d n ASb2dyySV2Ci
+0N
+1n2
+i2b
+2biD sin sin_  
+
+=  =
+− GENERAL LIFT DISTRIBUTION•In the same way, the induced angle can be obtained from the substitution of                          
+and                                               into
+Which yields,
+qcos2by−=
+()  = N
+1n n A bV2 q q sin
+() 
+− −
+
+
+
+=2
+20041b
+bi dyyydyd
+Vya
+()  −=−
+
+
+
+=
+−N
+100n2b
+2b 00i dnnA1dyyydyd
+V41yqq qq
+ acos coscos
+() ()  =  =N
+1n iN
+1 00
+n 0innAnnAqqqaqqqasinsin
+sinsinGENERAL LIFT DISTRIBUTION•Substituting the last eq. into
+•Solving by,
+•Hence, for the CD,ieq., the mixed product terms involving unequal subscripts ( A1, A2, 
+A2A4) are equal to zero, then
+() q q q qq qaq 
+d n nA n ASb2d n ASb2CN
+1n
+0N
+1n2
+i
+0N
+1n2
+iD 
+
+
+
+= 
+
+=    sin sin sin sin_
+= 
+qq q
+0dk m sin sin
+km for 0km for2
+= 
+
+
++ = =
+
+=   N
+22
+n2
+1N
+12
+nN
+12
+n2
+iD nA AAR nA AR2nASb2C  
+_
+
+
+
+
+
+
+
++ = N
+22
+1n
+iDAAn 1AR C _GENERAL LIFT DISTRIBUTION•Induced drag coeff .
+•Remembering that  
+•And replacing it into the induced drag coefficient eq.,
+•Note that d ≥ 0, therefore (1+d)is either greater than 1or at least equal to 1
+
+
+
+
+
+
+
++ = N
+22
+1n
+iDAAn 1AR C _
+AR ASbA C12
+1 L   = =
+( )d + =
+
+
+
+
+
+
+
++ =  1ARC
+AAn 1ARCC2
+LN
+22
+1n2
+L
+iD_GENERAL LIFT DISTRIBUTION•From thelasteq.itcanbesaythat e=(1+d)-1
+isthespan efficiency factor,
+•Where e≤1.0
+•Comparing thelastequation with :
+•You can note that d=0and e=1.0forthe
+elliptical lift distribution ;hence, the lift
+distribution which yields aminimum induced
+drag value willbetheelliptical liftdistribution
+( )AReC1ARCC2
+L2
+L
+iDd=+ =_
+ARCC2
+L
+iD=_
+GENERAL LIFT DISTRIBUTIONNUMERICAL NONLINEAR 
+LIFTING -LINE METHOD
+•Classical theory isessentially
+closed form (results are
+analytical eq.asopposed toa
+purely numerical solution)
+•Initial values –wing, and airflow 
+characteristics need it as entries
+•b, S, l, btip, a, Cd,0, 
+•@ root –Aerofoil reference, a0_root, 
+aL=0_root
+•@ tip –Aerofoil reference, a0_tip, 
+aL=0_tip
+•V∞, r∞, ∞
+SbAR2
+=
+roottip
+cc=l
+( )l+=12
+bScroot
+( )
+( )lll
++++=11c32c2
+root
+NUMERICAL NONLINEAR 
+LIFTING -LINE METHOD•A numerical iterative solution for finite -wing properties can be obtained following these 
+steps:
+1. Divide the wing into a number of spanwise trailing vortex. Here k+1stations are shown, 
+with ndesignating any specific station
+2b−
+2b+
+NUMERICAL NONLINEAR 
+LIFTING -LINE METHOD•A numerical iterative solution for finite -wing properties can be obtained following these 
+steps:
+2. For k = 1, 2, 3 ,.., N calculate the following:
+() 
+
+ −− −=N21k212bky
+() ()
+
+ −− = kyb121 ckcrootlNUMERICAL NONLINEAR 
+LIFTING -LINE METHOD•A numerical iterative solution for finite -wing properties can be obtained following these 
+steps:
+2. For k = 1, 2, 3, .., N calculate the following:
+()()
+
+− =−
+bkyk2cos1q
+() ()kyba a2 akaroot0 tip0
+root0_ _
+_−− =
+() ()kyb2 kroot0L tip0L
+root0L 0L_ _
+_= =
+= =−− =a aa a
+()()
+()tip tip tip tip1c h hkcbky2k b b sin ; sin =
+
+
+− =−NUMERICAL NONLINEAR 
+LIFTING -LINE METHOD•A numerical iterative solution for finite -wing properties can be obtained following these 
+steps:
+2. For k = 1, 2, 3, .., N calculate the following:
+() ()()k k kD0L b aa + −==
+For each value of n =1, 2, …, N 
+calculate the matrix coefficients:
+()()() ()()( )() ( )k 1n2k1n2
+kckab4nkC qq−
+
+
+ −+= sinsin,
+NUMERICAL NONLINEAR 
+LIFTING -LINE METHOD•A numerical iterative solution for finite -wing properties can be obtained following 
+these steps:
+3. Now solve the following system of simultaneous equations:
+A simple direct method for computing A(n), the solutions of the last equation 
+is the Gaussian Elimination Method. Other methods, such as the Jacobi or 
+Gauss -Seidel iterative methods, may also be used
+()()()kDnAnkCN
+1n=  
+=,NUMERICAL NONLINEAR 
+LIFTING -LINE METHOD•A numerical iterative solution for finite -wing properties can be obtained following these 
+steps:
+4. After the Fourier coefficients, A(n), have been calculated, we can now compute the non -
+dimensional wing load distribution as follows:
+()()() ( ) ( )
+() 
+
+− =−  == 
+−
+byyn nAbVyyN
+ND
+2cos12sin2
+11
+qq
+NUMERICAL NONLINEAR 
+LIFTING -LINE METHOD•A numerical iterative solution for finite -wing properties can be obtained following these 
+steps:
+5. The wing’s CLcan be calculated as follows:
+6. The Oswald efficiency factor, e, is
+()1AAR CL =
+()
+()2N
+2n 1AnAn11e 
+=
+
+
+ =+= dd;NUMERICAL NONLINEAR 
+LIFTING -LINE METHOD•A numerical iterative solution for finite -wing properties can be obtained following these 
+steps:
+5. Induced drag coefficient CD_iis:
+kCeARCC2
+L2
+L
+iD ==_
+ARe1k=NUMERICAL NONLINEAR 
+LIFTING -LINE METHOD

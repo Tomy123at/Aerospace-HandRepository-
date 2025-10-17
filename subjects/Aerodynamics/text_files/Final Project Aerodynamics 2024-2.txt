@@ -1,0 +1,487 @@
+ AERODYNAMICS PROJECT  
+(VER. 1. 0) 
+ 
+FINAL PROJECT  2024-02: HIGH PRECISION 
+AIRPLANE (GLIDER) DE SIGN CHALLENGE  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Prepared by:  
+Juan Pablo Alvarado Perilla  
+ 
+ 
+ 
+ 
+AERONAUTICAL ENGINEERING FACULTY  
+SCHOOL OF ENGINEERING, MEDELL IN, COLOMBIA  
+UNIVERSIDAD PONTIFICIA BOLIVARIANA (UPB)  
+ 
+  
+ Summary (justification)  
+ 
+The UPB Aeronautical Engineering Faculty acting under its learning context 
+adopts the CDIO methodology used by the engineering school from  
+Massachusetts Institute of Technology  (MIT), which tries to show the students 
+through  experimental  exercises ( real-life projects) the way of developing 
+practical learning methodologies with the use of the following procedure:  
+ 
+• Conceive  – The student conceives an idea to solve a problem by discussing  
+pre-established requirements, focusing on precise objectives  they want  and 
+should accomplish. For example, they define customer needs, consider 
+technology, enterprise strategy, and regulations, and develop  concepts, 
+techniques,  and business plans . 
+• Develop  – The student should develop the previously  conceived idea using the 
+classical brainstorming method , in which they make  a classification of the 
+information and an analytical result analysis. Then, c reating the design , the 
+plans, drawings, and algorithms that describe what could  be implemented . 
+• Implement  – The student implements the developed idea by using tests to 
+identify  possible failures in regular  operation, opening the option to correct 
+the original design. The design transformation into the product includes  
+manufacturing, coding, testing , and validation . 
+• Operate  – The student operates their design once the previous steps have 
+been overcome . They use  the implemented product to deliver the intended 
+value, including maintaining, evolving,  and retiring the system.  
+ 
+For this activity , it would be  expected that the students develop a possible 
+solution to a problem using the resources of the knowledge extracted from the 
+theory , applying as many tools as they can.  
+ 
+Each team is responsible for knowing and following  all provided rules, the FAQ, 
+and all contest day briefings.  
+ 
+Questions can be addressed  to the contest director as outlined in the 
+communications section  at the end of this document.  
+   1. Judging:  
+Students must design, document, fabricate, and demonstrate that the designed 
+aircraft is a feasible solution for the problem  and can achieve  the challenge of 
+obtaining  the highest score on the specified flight mission. Flight scores are 
+established  based on some physical characteristics of the model and on  
+demonstra tive mission performance obtained during the challenge contest.  
+ 
+Each team must submit a written final “Design Report ”. A maximum grade of 
+5.0 can be an award  for the team ’s “Design R eport ” and “Flight test” , depending 
+on the ir own prototype's content quality and flight qualities . Scores for the 
+written reports are known  during  the technical inspection.  
+ 
+The overall team grade combines  the final Design Report and Flight 
+performance.  
+ 
+All submitted final Design Reports would  pass a process of plagiarism check 
+throughout Turnitin ® (moodle) . In addition, t he final design reports must 
+comply with the AIAA paper template.  
+ 
+2. Objective  
+Conceive, design, construct , and operate an aerodynamic glider airplane model 
+capable of carrying an external payload , applying the knowledge acquired during  
+the aerodynamics  course  lectures  and laboratory  sessions  to glide two high -range  
+missions through the air with and without the required payload.  
+ 
+3. Requirements and constraints  
+All the requirements are compulsory; failure  to accomplish  any of them implies 
+the probability of passing the technical inspection (first test) , and therefore, a 
+successful flight is reduced or nullified . 
+ 
+3.1  Requirements  
+a. The aircraft must be a glider  vehicle (fixed wing ) with no propulsion system 
+of any kind allowed.  The external payload weight  and the flight model 
+vehicle will be launched together from the highest possible location of the 
+UPB sports center  (indoors).  
+b. For both missions, the airplane can be initially thrust -assisted using a 
+catapult to commence the flight (IMPORTANT NOTE: the students’ team 
+that chose this type of initial thrust must provide the  catapult ). 
+c. During the technical inspection and the flight test, no structure/components 
+or external payload can fall from the airplane. Therefore, all decisions made  
+by the safety inspector (s) during the technical inspection and the fly day  are 
+final . 
+d. The payload consists of three types of water bottles (different in shape and 
+weight) full of liquid . Each  bottle is labeled  with a number  (1, 2, and 3). The  label number indicates the score that will be added  as a grade  bonus for the 
+second mission in the following way:  
+ 
+• Bottle No. 1 → 1.0 
+• Bottle No. 2 → 0.6 
+• Bottle No. 3 → 0.3 
+ 
+You can find m ore information about the  grade bonus in section 8 of this 
+document. The glider must be able  to carry  only one of  the bottles externally  
+exposed  at the bottom part of the fuselage (airplane´s belly) . These bottles 
+will be available at building 11, 3rd level floor (office 317 – secretary´s 
+premises ). As a clarification, the airplane must carry only one o f the three 
+bottles during flight; each group decides to select which  payloads they will 
+use for the flight . You cannot  modify the bottle´s shape ; nevertheless,  it is 
+allowed to  add elements to decrease the payload´s drag . Each group of 
+students is responsible for characterizing  and parametriz ing each  payload  
+(materials, weight,  and measures) . 
+e. The payload  and the glider model vehicle will be launched from the highest 
+part of the south UPB sports center  (indoors).  
+f. For the first and second mission s, the model (including the payload weight) 
+should glide through the air , allowing it to land  safely  inside the established 
+areas. 
+g. The solution model must  be a glider fixed -wing aircraft  (teams are free to 
+choose a ny configu ration ). 
+ 
+3.2  Constraints  
+a. The aerial vehicle must use aerodynamic forces  to maintain a steady glide 
+flight.  
+b. A propulsion  system  of any kind is not allowed . 
+c. c. The vehicle must be strong enough to withstand many  flights without 
+significantly damaging  the integrity of the airplane.  
+d. If the model suffers a ny damage during the activity, the group can make 
+(if possible) the respective repairs  during the activity.  
+e. When the airplane is in flight , the device (model) should maintain itself 
+as a unit ; if any part falls  from the vehicle , the flight is considered invalid.  
+f. You can have more than one model with the restriction that the other 
+vehicle (s) must have the same design and  have to pass the technical 
+inspection. I f a group uses two or more different  glider models  (different 
+designs) , the group will be disqualified from the activity , obtaining  a grade 
+of zero in the total final project.  
+g. In case of any modification of the airplane model from the moment  it 
+passes the technical inspection until the flight activity, the group will be 
+disqu alified with a grade of 0,0 in the functionality (flight) percentage .  h. If the airplane model does not comply with the minimum distance (Z1) 
+and structural integrity requirements  during the flights, the group will be 
+graded 0,0 in the functionality (flight) percentage.  
+i. The use of control systems  (e.g. transmitters, receivers, Arduino, 
+Ardupilot, Arducopter, Raspberry -pi, etc.) is forbidden . 
+ 
+4. General rules  
+ 
+4.1  Group rules  
+The groups can have a maximum of three  students . Each group must 
+represent a specific theme, which identifies  them (team and vehicle name). 
+This team  theme must  be presented in t he report and during the flight's due 
+date. 
+ 
+4.2  Written report (design report)  
+A written report must be delivered in a scientific way (paper) using the AIAA 
+template for LaTeX called " LaTeX Template for the Preparation of Papers for 
+AIAA Technical Conferences" found in Overleaf using the following link:  
+ 
+https://www.overleaf.com/latex/templates/latex -template -for-the-preparation -of-papers -for-
+aiaa-technical -conferences/rsssbwth kptn#.W05bHOhubIV  
+ 
+Inside this paper (report) , you must  explain and justify each design chosen 
+parameters, calculations, analysis  of the results,  and tests. Therefore, i t is 
+expected (but not limited to) that at least you have developed the following 
+in your report:  
+ 
+• Abstract . (5%) 
+• Planning (5%) – explain a brief text of how you r group  developed  the 
+design project . 
+o Team theme representation  
+o Mission analysis (score analysis)  
+o Environment Analysis  
+o Payload analysis  
+• Procedure . (25%) – In a logically consecutive manner, explain all the 
+theoretical calculations you developed  to obtain the final design of your 
+prototype solution (airplane) . 
+o Airfoil selection . 
+o Aerodynamic forces analysis . 
+o Wing platform design and analysis . 
+o Fuselage  aerodynamic  design . 
+o Stabilization surface  design . 
+o Payload arrangement analysis . 
+o Glide (soaring) flight path ra nge (performance) for the first  and 
+second mission s – theoretical .  • Tests . (15%) – Explain the test's objectives  and the protocols 
+established to get the required data to be analyzed . 
+o Wind tunnel tests (explaining the variables taken into 
+consideration , such as velocities and angles of attack, among 
+others), along with their result analysis and conclusions – 
+conside rations for the wind tunnel model must be explained , 
+such as scaling and simplifications . 
+o Aircraft ’s impulse  throw method analysis  that will  be used . 
+o Flight tests and result analysis (flying qualities description) – 
+at least two (2)  pictures demonstrating the airplane's flight . All 
+groups must show the flight video as evidence of the 
+functionality during the technical inspection. Furthermore, the 
+team must report the structural and flight quality a nd the 
+possible corrections develop ed during the design proc ess to 
+improve the aircraft's performance . 
+• Results analysis . (20%) – Analyze  the most important theoretical and 
+practical (tests) results obtained during the design procedure  
+• Technical conclusions . (20%)  – explain all the technical conclusions 
+from  the design accomplished  at the end. Complement this information 
+with  the following : 
+o Aircraft specification table . 
+o Aircraft flight characteristics table . 
+o Present a 3 -view drawing with the dimensions (A4 format) – the 
+blueprints must be done by preference using  CATIA® software , 
+but you can use another CAD software . 
+• References . (5%) – APA format . 
+• Paper format . – under  the AIAA paper template, orthography,  and 
+redaction (5%) . 
+ 
+The report must be delivered as a hard copy ( no electronic reports will be 
+received ). The full report must not exceed 15 pages,  including references 
+(NOTE: Appendices are not included in this number of pages, but a maximum 
+of two pages are allowed for this section).  
+ 
+5. Milestone s 
+Each group will have a 40 -minute window for the milestone presentations  to 
+show the project work done so far in the semester. You will have to present 
+the following basic requirements:  
+• General design and aircraft description , including CAD drawings with 
+three views and dimensions.  
+• Description of the technical approaches to meet the proposed 
+requirements.  
+• Calculation of the aerodynamic forces.  
+• Balance and weight.   • Wing design and Airfoil  selection process.  
+• Payload characterization.  
+• The s tructural design process , including the payload arrangement.  
+• Launching system (in case of having one).  
+• Selected materials and manufacturing initial budget estimations.  
+• Originality and unique features.  
+ 
+All the last items should be covered  during t he presentation s that must  have  
+at least  the following : 
+ 
+Score equation analysis : Define the main  factors your group aims  for in the 
+airplane's design , establishing  through sensitivity studies the “design 
+drivers”  accomplishing the requirements and constraints . 
+Payload characterization : Define the general  measures of the payload, 
+including the weight study and the location of the c.g. 
+Flight characteristics : Determine the operational velocity, heights,  and the 
+aircraft´s  initial weight estimation. Study the operating environment , 
+identifying the main measures from  the sports center  facility , defining 
+heights, lengths, possible obstacles,  and operational times.  
+Airfoil selection (methodology) : This section explains the airfoil selection 
+process and defines  the main aerodynamic characteristics of a group of 
+airfoils.  
+Wing selection (methodology) : From a total operational weight estimation, 
+determine the wing design at least for the most critical flight mission. 
+Establish  the flight conditions at every flight mission.  
+Empennage design : Define the empennage design based on statistical 
+methods.  
+Fuselage design : The fuselage should  withstand the  loads  imparted by the 
+aerodynamic sources and payload. You must show the approxim ation of this 
+component through  CAD blueprints in which the principal dimensions are 
+identified . 
+Aerodynamic forces calculation : Define the main aerodynamic forces to which 
+the airplane will be loaded employing  mathematical models.  
+Weight and balance : Establish  an approximation of the maximum weight 
+reached by the preliminary design , which is  determined by the materials you 
+think to use to build the prototype . Determine the first approach to  the c.g. 
+location from these data and justify the results.  Then,  given the general 
+airplane design and the materials used, you should calculate an approximate 
+structural proposal to counteract the loads the aircraft will be subject to 
+during operation.  
+Launching system : Indicate the process used to launch the airplane for the 
+flight missions. If the airplane uses an initial impulse  system other than 
+hand -launched (e.g. , a catapult system), indicate its operational 
+characteristics.   Costs estimate : Calculate the total project cost by considering the materials 
+selected for  the airplane design . 
+ 
+See section 8.1 of this document for more information about the milestones.  
+ 
+6. Tech Inspection (TI) 
+• The a ircraft will enter the TI fully assembled and ready  to fly (RTF) . 
+• The a ircraft will undergo the wing tip lift test with installed maximum flight 
+payload weight . 
+• The aircraft will be held and shaken upside down to ensure its structural 
+strength . 
+• The TI will check that the prototype is the same as the one reported 
+(measures and weights must coincide).  
+• The aircraft must have an indication (mark) of its c.g. in the empty and fully 
+loaded configuration.  
+ 
+7. Flight activity  
+As mentioned , this activity will be performed  inside the UPB sports  center  
+facility  (see Figure  1). Each team must check this premise before  the challenge 
+flying contest to familiarize themselves  with the flight environment (including 
+possible obstacles) and dimension  the field length and zones where  the vehicle 
+should fly and land safely . 
+ 
+7.1 About the activity (mission 1 and mission 2 explanation)  
+This activity will  undergo  as many  flight trials  (for each  mission ) as possible . 
+Teams that accomplish the first mission will obtain the pass to perform the 
+second mission. The group  or team with the highest score will win the 
+highest grade for this activity . In the following sections, you will find a 
+detailed explanation of the grades  obtained in the flight tests . 
+ 
+7.1.1  Activity general rules  
+The Flight Missions must be flown in order, meaning the second mission cannot 
+be flown until the team successfully scores for the first mission. The result is 
+considered independently, meaning that the closest to the predicted distance 
+(for both missions) by the report are the ones taken for the final grade.  
+ 
+The flight tests are not done all in one, which means that during t he activity, 
+you would have time to perform any repair or minor change (if needed ) to your 
+model for the next flight test opportunity. In addition, the flight window given 
+to accomplish missions 1 and 2 will be between 1 pm and 5 pm, meaning that 
+you could  do as many flights as possible for each mission, but with the 
+restriction that you can only perform mission 2 when mission 1 has a valid score  
+(the airplane lands in Z1) . 
+   
+Figure 1. UPB Sport’s center  – Top view  
+ 
+ 
+ 
+Figure 2. Demarked landing zones inside the facility  
+ 
+ Missions 1 and 2 will account for flight distance and precision accuracy this 
+semester . The airplane must be launched from the highest part of the upper 
+south side of the UPB’s sports center (see Figure 2 for reference). In addition, 
+there are s even  specific zones in which the aircraft can land. Airplane flight is 
+scored depending on the zone in which it lands:  
+ 
+• Zone 0 (Z0) is red color in Figure 2 . 
+• Zone 1 (Z1) is white color in Figure 2 . 
+• Zone 2 (Z2) is orange color in Figure 2 . 
+• Zone 3  (Z3) is yellow color in Figure 2 . 
+• Zone 4 (Z4) is blue color in Figure 2 . 
+• Zone 5 (Z5) is purple color in Figure 2 . 
+• Bonus Zone s (BZ) are established as the two goalkeepers' arc (goal area) 
+separated in such a way that leaves a space  between the two arcs ; and is 
+green color in Figure 2  
+ 
+The score will be multiplied by the number depending on which zone the airplane 
+lands in; this  means that if your airplane lands in Zone 0  (Z0), your flight factor  
+ZX is zero; if it lands in Zone 1 (Z1), your flight factor ZX will be 1, etc.  The BZ 
+will have a factor of 6. The zones can be seen  in Figure  2. 
+ 
+7.1.2  Mission 1: Aircraft mission staging  
+• There is no payload ( bottl es) for this flight . 
+• Teams must complete this mission  within the flight window  to be able to 
+perform mission 2 . 
+• The m ission starts when the aircraft leaves the launcher ’s hand or the 
+launching catapult . 
+• Mission finishes when any part of the aircraft touches anything  during 
+the glide  flight path . 
+• To earn a score, the airplane must complete a successful landing , meaning 
+it must be safe and sound at the end of the flight . 
+• The score for this mission is evaluated as shown in equation 1.  
+ 
+𝑀1=𝑍𝑋−|𝑥𝑟𝑒𝑝𝑜𝑟𝑡 −𝑥𝑓𝑙𝑖𝑔ℎ𝑡
+𝑥𝑟𝑒𝑝𝑜𝑟𝑡|    Eq. 1  
+ 
+Where:  
+✓ xflight – airplane’s distance traveled  during the first flight mission 
+(beginning when  the aircraft starts its  flight until it touches any 
+surface that stops the flight) – f (Wempty). 
+✓ xreport – theoretical distance established  in the written design 
+report  – f (Wempty). 
+✓ ZX – constant factor  depending on the landing zone . 
+  7.1.3  Mission 2: Short flight Max payload  
+• You can only perform mission 2 when you get a valid flight (score) from 
+mission 1  (M1 > 1.0). 
+• For this flight, the payload (bottle) must be attached externally and 
+exposed at the bottom of the airplane’s fuselage . 
+• There will be a maximum 10-minute  flight window (depending on the 
+number of teams) for each launch for this mission . 
+• The m ission starts when the aircraft leaves the launcher ’s hand or the 
+launching catapult . 
+• Mission finishes when any part of the aircraft touches anything during 
+the glide flight path . 
+• To earn a score, the airplane must complete a successful landing , meaning 
+it must be safe and sound at the end of the flight . 
+• The score for this mission will be evaluated as shown in equation 2.  
+ 
+𝑀2=(𝑍𝑋+𝑊𝑃𝑋 )−|𝑥𝑟𝑒𝑝𝑜𝑟𝑡 −𝑥𝑓𝑙𝑖𝑔ℎ𝑡
+𝑥𝑟𝑒𝑝𝑜𝑟𝑡|   Eq. 2  
+ 
+Where:  
+✓ xflight – airplane’s distance traveled  during the first flight mission 
+(from the moment the aircraft begins flight until it touches any 
+surface that stops the flight) – f (Wpayload). 
+✓ xreport – theoretical distance established  in the written design 
+report – f (Wpayload ). 
+✓ ZX – constant factor depending on the landing zone . 
+✓ WPX – is the score given depending on the payload size. The score 
+is established  in the following manner:  
+ 
+WPX  Score  
+X = 1 1.0 
+X = 2 0.6 
+X = 3 0.3 
+ 
+Note: i f the group gets a higher score than 5.0, the extra grade bonus will be 
+added to the lowest grade you have so far in the laboratory . 
+ 
+7.2  Activity scoring  
+The score is divided into two main component s: the flight and written report 
+scores . The sub -sequence sections fully explain  each component . 
+ 
+7.2.1  Written Report Score (WRS)  
+The written report has a value of 40% of the total score:  
+• Abstract (2%)  
+• Planning (2%)   • Procedure (10%)  
+• Tests (6%)  
+• Results analysis (8%)  
+• Technical conclusions (8%) 
+• References (2%)  
+• Format (2%)  
+ 
+7.2.2  Flight score  (FS) 
+The flight score  will have a value of 60% of the total score ; the general score of 
+the flight is determined using the following equation:  
+ 
+𝐹𝑙𝑖𝑔ℎ𝑡  𝑆𝑐𝑜𝑟𝑒 =𝐹𝑆60% =(𝐹𝑢𝑛𝑐𝑡𝑖𝑜𝑛𝑎𝑙𝑖𝑡𝑦 ×𝐹𝑙𝑦𝑖𝑛𝑔𝑞𝑢𝑎𝑙𝑖𝑡𝑦 )50% +𝐴𝑒𝑠𝑡ℎ𝑒𝑡𝑖𝑐 𝑠10% 
+ 
+Functionality  & Flying quality  (50%) – Functionality  will be  dependent on the 
+accuracy between the aerodynamics method(s) (mathematical model) and the 
+flights during the presentation day . The accuracy of the theory and practice and 
+the empty weight will be scored for the Functionality as shown in equation 3 . 
+The Flying  quality  factor ( 0 or 1.0) will depend on the professional judgment 
+perspective determined by the judges concerning  the aircraft's overall gliding 
+performance and flight capabilities . 
+ 
+𝐹𝑢𝑛𝑐𝑡𝑖𝑜𝑛𝑎𝑙𝑖𝑡𝑦 =1
+2(𝑀1𝑊𝑒𝑚𝑝𝑡𝑦+𝑀2𝑊𝑝𝑎𝑦𝑙𝑜𝑎𝑑)+[(𝑊𝑒𝑚𝑝𝑡𝑦 _𝑟𝑒𝑓
+𝑊𝑒𝑚𝑝𝑡𝑦)−1] Eq. 3  
+ 
+Where:  
+• M 1Wempty – mission 1 flight score . 
+• M 2Wpayload – mission 2 flight score . 
+• Wempty – airplane empty weight (Aircraft total weight without the payload 
+bottles ). 
+• Wempty _ref – minimum airplane empty weight registered by any team groups 
+(reference empty weight) . 
+• Wpayload  – airplane payload weight ( bottl es). 
+ 
+Aesthetics  (10%) – The groups must have a representative theme that identifies 
+them . For this item, the design and manufacturing will also be considered.  
+ 
+7.2.3  Total score  
+Equation 4 expresses the 100% activity scoring (grade), including the written 
+report score (WRS), as follows:  
+ 
+()()%60 %40 FS WRS Grade + =
+   Eq. 4  
+ 
+8. Schedule ( Due days/ Delivery times)    
+8.1 Written design report  
+The report must be submitted by Friday, November  8th, 2024, at 2:00 p.m . 
+ 
+8.2 Technical inspection  
+The model will be mechanically tested on Tuesday , November  12th. This 
+inspection will be held at the Aerospace Vehicles Laboratory (Building 8/Lab 
+201) from 2:00 p.m. until 5:00 p.m. It verifies that the model was manufactured 
+according to  the requirements and restrictions established  in this docum ent. 
+ 
+All aircraft will be lifted  with one lift point at each wing tip to verify adequate 
+wing strength and to check for vehicle c.g. location. Team groups must mark the 
+expected empty and loaded c .g. locations on the aircraft's exterior  (each side of 
+the fuselage). In addition , you must provide a hard point at any part of the 
+airplane to weigh  your model.  
+ 
+8.3 Flight  
+The flight day will be Thursday, November  14th, 202 4. Consider this to have time 
+for this activity (all team members must be present  on the flight test day). This 
+activity will start at 1 p.m. and finish at 5 p.m . 
+ 
+Note: All scheduled  deadlines are strictly enforced. Late entries will NOT be 
+accepted , and late report submissions will NOT be graded. Team groups that do 
+not submit the required written reports will NOT be allowed to fly. The team is  
+responsible for ensuring  that all deadlines are known, understood,  and met.  
+ 
+9. Communications  
+ 
+Questions regarding the project, schedules, or rules interpretation may be sent 
+to the professor by the request of an appointment or by email at:  
+ 
+juan.alvarado@upb.edu.co  
+ 
+A forum is  available to answer any question regarding  this project in the Office 
+team’s  platform.  

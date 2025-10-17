@@ -1,0 +1,1184 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBAPPLIED AERODYNAMICS: 
+AIRPLANE LIFT AND DRAG
+•Three dimensional objects are of primary interest to 
+aerospace engineers (i.e., the whole airplane)
+Aerodynamic forces on any body moving through the air are created due only from 
+two basic sources:
+•Pressure distribution
+•Shear stress distribution
+APPLIED AERODYNAMICS: 
+AIRPLANE LIFT AND DRAGAIRPLANE LIFT
+•All parts of the airplane produce lift force
+Wing(s)
+Cowling 
+(engine)
+Propeller 
+and spinnerFuselage
+Empennage (vertical and 
+horizontal control surfaces)WING -BODY COMBINATION
+•Mating of a wing with a fuselage (engines, empennage, etc.)
+Centre of gravity 
+(c.g.)
+T
+WTOLW
+DWDFDHDV
+LH MWLF
+E H F W total L L L L L +++
+DELEWING -BODY INTERACTION
+•There is not accurate analytical equation that can predict the lift of a wing body 
+combination
+•Solution to this task is the use of computational fluid dynamic or wind tunnel testing
+Forsubsonic speeds, data obtained using different fuselage thickness (d),mounted onwings
+with different spans (b)show that the total liftforawing -body combination isessentially
+constant ford/branging from 0(wing only) to6(normally fatfuselage, with short, stubby
+wing) .
+WING -BODY INTERACTIONThe liftonawing -body combination canbetreated assimply theliftonthecomplete wing
+itself, including theportion that willbemasked bythefuselage
+WING -BODY INTERACTIONAIRPLANE DRAG
+Drag is a costly force
+One of the jobs of an aerospace engineer is to determine the drag force produced by an aircraft at 
+different altitudes, speeds, and configurations .
+It is not an easy task because this force is a function of several parameters, including aircraft 
+configuration and components.
+D D SCq SCV D = =2
+21
+2D bodiesAIRPLANE DRAGAReCC C D D DL
+D D i totalca+=+=2
+0 /0𝑒=1.781−0.045𝐴𝑅0.68−0.64
+𝑒=4.611−0.045𝐴𝑅0.68cosΛ𝐿𝐸0.15−3.1AIRPLANE DRAGThe ratio of lift -to drag ( L/D) is a good measure of aerodynamic efficiency
+Minimizing the drag has been one of the strongest drivers in the historical development of 
+applied aerodynamics
+AReCC CL
+D D+=2
+0
+AIRPLANE DRAG
+CD0Calculation
+Examples of typical ranges values of " CD0" and " e" for several aircraft
+CD0aircraft breakthrough
+CD0CalculationCD0_f-fuselage contribution
+CD0_w-wing contribution
+CD0_ht-horizontal tail contribution
+CD0_vt-vertical tail contribution
+CD0_LG-landing gear contribution
+CD0_N-nacelle contribution
+CD0_S-strut contribution
+CD0_HLD-high lift devices contribution
+...
+0 0 0 0 0 0 0 0 0++++++++=
+HLD S N LG vt ht w fD D D D D D D D D C C C C C C C C COther non-significant components
+include antenna(s), pitot tube, stall
+horn, wires, interference, and wiper .
+Inmost conventional aircraft, wing, and fuselage each contribute 30%-40%(total 60%-80%)tothe
+aircraft CD0.Allother components contribute around 20%-40%totheCD0ofanaircraft .CD0CalculationCD0_f-fuselage contribution
+Cf–skin friction coefficient, Redependent :
+For simplicity, itisrecommended toassume that the flow iseither
+completely laminar orcompletely turbulent .The assumption ofcomplete
+turbulent flow provides abetter result since over -estimation ofdrag is
+much better than underestimation .
+•Re<200000 ,assume laminar flow
+•Re>2000000 ,assume turbulent flow
+Asarule ofthumb, inlow subsonic flight, theflow ismostly laminar, but
+inhigh subsonic and transonic speeds, itbecomes mostly turbulent .
+Supersonic and hypersonic flight experiences acomplete turbulent flow
+over every aircraft component .
+SS
+ffC Cf
+fwet
+Mdlf D=
+0𝐶𝑓_𝑡𝑢𝑟𝑏=0.455
+log10𝑅𝑒2.58
+𝐶𝑓_𝑙𝑎𝑚=1.327
+𝑅𝑒CD0Calculationfl/d–function offuselage length -to-diameter ratio :
+Ifthefuselage cross -section isnotacircle, use the
+equivalent diameter .
+𝑓ൗ𝑙𝑑=1+60
+ൗ𝑙𝑑3+0.0025𝑙
+𝑑
+lmaxdmaxCD0_f-fuselage contribution
+SS
+ffC Cf
+fwet
+Mdlf D=
+0CD0CalculationfM–function ofMach number (M):
+𝑓𝑀=1−0.08𝑀1.45
+=aVM
+CD0_f-fuselage contribution
+SS
+ffC Cf
+fwet
+Mdlf D=
+0CD0CalculationSwet–Wetted area istheactual surface area of
+thematerial making uptheairplane’s skin -itis
+the total surface area that isinactual contact
+with, i.e.,wetted by,theairinwhich thebody is
+immersed .
+The wetted surface area isthesurface onwhich
+the pressure and shear stress distributions act;
+hence, itisameaningful geometric quantity for
+theaerodynamic force .
+lmaxdmax
+lnose lbodyltail
+tail body nose f wet wet wet wet S S S S ++=CD0_f-fuselage contribution
+SS
+ffC Cf
+fwet
+Mdlf D=
+0CD0CalculationDifferent shapes surface area calculation:
+2 2
+cone hrr lr S +==
+hd hr2 Scylinder ==
+()()hl2ld2 Sprism +=
+()()hd hl Spyramid +=
+2
+hemisphere r2 S =
+()()2 2
+2 1 2 1 cone truncated h rr rr S +++=
+()()  mdnlh Spyramid truncated ++=
+hl
+r
+rr
+h
+hd
+lldh
+r2
+r1h
+mn
+d lhCD0CalculationS–Reference area for aconventional aircraft isthe
+projected area that weseewhen welook down onthewing
+from top view, including the fuselage section between two
+parts ofthewing .
+For this reason, forwings aswell asentire airplanes, the
+wing planform area isusually used asSinthedefinitions of
+CL,CD,andCm.
+However, ifweconsider theliftand drag ofacone, orsome
+other slender, missile -like body, then thereference area, S,
+isfrequently taken asthebase area ofthecone orfuselage .
+CD0_f-fuselage contribution
+SS
+ffC Cf
+fwet
+Mdlf D=
+0CD0CalculationCD0_w, CD0_ht , CD0_vt -wing, horizontal tail, and vertical tail contribution
+Wing, horizontal tail, and vertical tailarethree lifting surfaces ;they
+aretreated inasimilar manner .
+𝐶𝐷0𝑤=𝐶𝑓𝑤𝑓ൗ𝑡𝑐𝑤𝑓𝑀𝑆𝑤𝑒𝑡𝑤
+𝑆𝑐𝑑min𝑤
+0.0040.4
+𝐶𝐷0ℎ𝑡=𝐶𝑓ℎ𝑡𝑓ൗ𝑡𝑐ℎ𝑡𝑓𝑀𝑆𝑤𝑒𝑡ℎ𝑡
+𝑆𝑐𝑑minℎ𝑡
+0.0040.4
+𝐶𝐷0𝑣𝑡=𝐶𝑓𝑣𝑡𝑓ൗ𝑡𝑐𝑣𝑡𝑓𝑀𝑆𝑤𝑒𝑡𝑣𝑡
+𝑆𝑐𝑑min𝑣𝑡
+0.0040.4CD0CalculationFor the skin friction coefficient, the same
+formulas used forthefuselage :
+𝐶𝑓_𝑡𝑢𝑟𝑏=0.455
+log10𝑅𝑒2.58
+𝐶𝑓_𝑙𝑎𝑚=1.327
+𝑅𝑒
+ሜ𝐶=2
+3𝐶𝑟𝑜𝑜𝑡1+𝜆+𝜆2
+1+𝜆
+𝜆=𝐶𝑡𝑖𝑝
+𝐶𝑟𝑜𝑜𝑡
+CD0_w, CD0_ht , CD0_vt -wing, horizontal tail, and vertical tail contributionCD0CalculationThe parameter f(t/c)isafunction ofthickness
+ratio .
+𝑓ൗ𝑡𝑐=1+2.7𝑡
+𝑐𝑚𝑎𝑥+100𝑡
+𝑐𝑚𝑎𝑥4
+Generally speaking, themaximum thickness -to-chord ratio fora
+wing isabout 12%to18%,and foratailisabout 9%to12%.CD0_w, CD0_ht , CD0_vt -wing, horizontal tail, and vertical tail contributionCD0CalculationSwet–wetted area ofany ofthelifting surfaces
+of the airplane, i.e.,wings, vertical tail,
+horizontal tail, canard, etc.
+For ultimate accuracy, itisrecommended to
+employ aCAD software package .𝑆𝑤𝑒𝑡=21+0.5𝑡
+𝑐𝑚𝑎𝑥𝑆
+CD0_w, CD0_ht , CD0_vt -wing, horizontal tail, and vertical tail contributionCD0Calculationcd_min–minimum drag coefficient ofthe
+airfoil cross -section ofthewing ortail
+Itcan bereadily extracted from acdvs.cl
+curve oftheairfoil .
+Itwilldepend ontheflight conditions f(Re)
+CD0_w, CD0_ht , CD0_vt -wing, horizontal 
+tail, and vertical tail contributionCD0CalculationCD0_HLD –High Lift Devices contribution
+The application ofhigh -liftdevices has afew negative
+side effects, including anincrease inaircraft drag (aswill
+beincluded inCD0)
+CD0_flap–Trailing Edge HLD
+CD0_sl–Leading Edge HLD
+sl flap HLDD D D C C C
+0 0 0+=
+CD0CalculationCD0_flap–Trailing Edge HLD
+This equation isbased onaflap with aflap-span -to-wing -
+span ratio of70%.When the flap span isdifferent, the
+results should berevised accordingly .
+B
+ff
+D ACCC
+flap
+
+
+=
+0
+CD0Calculation
+CD0_HLD –High Lift Devices contribution
+sl flap HLDD D D C C C
+0 0 0+=CD0_sl–Leading Edge HLD
+CD0_sw–wing zero -liftdrag coefficient without
+extending ahigh liftdevice (including slat) .
+w slDsl
+D CCCC
+0 0
+
+=
+CD0Calculation
+CD0_HLD –High Lift Devices contribution
+sl flap HLDD D D C C C
+0 0 0+=CD0_LG –Landing gear contribution
+The landing gear (orundercarriage) isthestructure (usually struts
+and wheels) that supports theaircraft’s weight and facilitates its
+motion along therunway’s surface when itisnotairborne .
+Landing gear usually includes wheels and isequipped with shock
+absorbers forsolid ground, but some aircraft are equipped with
+skisforsnow, floats forwater, and/or skids .
+Todecrease drag inflight, some landing gears areretracted into
+thewings and/or fuselage with wheels orconcealed behind doors ;
+this iscalled retractable gear.
+Inthecase ofretracted landing gear, theaircraft clean CD0isnot
+affected bythelanding gear.
+
+=
+
+
+=n
+ii LG
+D DSSC C
+LG LG1_
+0
+CD0CalculationWhen the landing gear isfixed (not retracted) inplace, it
+produces anextra drag forthe aircraft (sometimes responsible
+foranincrease intheaircraft drag ashigh as50%).
+Insome aircraft, afairing isused todecrease thedrag ofanon-
+retracted gear.
+The fairing isapartial cover with astreamlined shape, such asan
+airfoil .
+SLG_i–frontal area ofeach wheel
+S–wing reference area
+CDLG–drag coefficient ofeach wheel (0.15when ithas fairing
+and 0.3when itdoes nothave anyfairing)
+gg LG wd S=CD0_LG –Landing gear contribution
+
+=
+
+
+=n
+ii LG
+D DSSC C
+LG LG1_
+0CD0CalculationCD0_s –Strut(s) contribution
+Two types ofstrut :
+•Landing gear strut
+•Wing strut
+Ss–frontal area ofeach strut (its diameter
+times itslength .
+S–wing reference area .
+
+=
+
+=n
+is
+D DSSC C
+is s10
+CD0CalculationCD0_s –Strut(s) contribution
+The parameter CDsisthedrag coefficient ofeach
+strut ;that is0.1when itisfaired (i.e.,hasanairfoil
+section) .
+When thestrut does nothave anairfoil section, its
+drag coefficient isobtained from thenext table :
+
+=
+
+=n
+is
+D DSSC C
+is s10
+CD0CalculationCD0_N –Nacelle contribution
+Toreduce theengine drag, theengine isoften located inside
+anaerodynamic cover called thenacelle .
+Forthepurpose ofdrag calculation, itcanbeconsidered that
+the nacelle issimilar tothe fuselage, except itslength -to-
+diameter ratio islower .
+CD0_Nwillbedetermined inthesame way asinafuselage .
+Ifthe nacelle length -to-diameter ratio (lN/dN)isbelow 2,
+assume 2.
+SSf fC CN
+NN N Nwet
+M
+dl f D=
+0
+CD0CalculationCD0_N –Nacelle contribution
+The geometry ofanexternally mounted nacelle and the
+components (fan cowling, gasgenerator cowling, and theplug)
+that contribute tothewetted area aredepicted inthefigure .
+Nacelle wetted area canbecalculated bythefollowing
+equations :
+𝑆𝑤𝑒𝑡𝑁=𝑆𝑤𝑒𝑡𝑓𝑎𝑛𝑐𝑜𝑤𝑙+𝑆𝑤𝑒𝑡𝑔𝑎𝑠𝑔𝑒𝑛 .+𝑆𝑤𝑒𝑡𝑝𝑙𝑢𝑔
+𝑆𝑤𝑒𝑡𝑓𝑎𝑛𝑐𝑜𝑤𝑙=𝑙𝑛𝐷𝑛2+0.35𝑙1
+𝑙𝑛+0.8𝑙1𝐷ℎ𝑙
+𝑙𝑛𝐷𝑛+1.151−𝑙1
+𝑙𝑛𝐷𝑒𝑓
+𝐷𝑛
+𝑆𝑤𝑒𝑡𝑔𝑎𝑠𝑔𝑒𝑛 .=𝜋𝑙𝑔𝐷𝑔1−1
+31−𝐷𝑒𝑔
+𝐷𝑔1−0.18𝐷𝑔
+𝑙𝑔ൗ53
+𝑆𝑤𝑒𝑡𝑝𝑙𝑢𝑔=0.7𝜋𝑙𝑝𝐷𝑝
+SSf fC CN
+NN N Nwet
+M
+dl f D=
+0CD0CalculationCD0_EA –External Appendages contribution
+An external appendage isindirect contact with airflow and is
+generating drag .
+An external appendage may be modeled asasmall fuselage
+(depending onthecase) .
+Ifthefuel tank length -to-diameter ratio (lEA/dEA)isbelow 2,assume 2.
+SSf fC CEA
+EAEA EAwet
+M
+dlf D=
+0
+CD0CalculationCD0_ec –Engine cooling contribution
+Asthe airflows through toextract heat energy from the body, itexperiences aloss intotal pressure and
+momentum .
+This loss during theheat transfer process may beinterpreted asadrag force referred toasthecooling drag .
+𝐶𝐷0𝑒𝑐=4.51×10−8𝐾𝑒𝑃𝑇2
+𝜎∞𝑉∞𝑆CD0CalculationCD0_ec –Engine cooling contribution
+The equation ofCD0_ecisonly useful foranair-cooled engine .
+The calculation ofthecooling drag ishighly installation -dependent ;it
+isunfeasible topresent ageneral technique that can beapplied to
+every engine installation .
+Intheequation :
+P–engine power [hp]
+T–hotairtemperature [K]atexit
+s∞–istherelative density oftheair
+V∞–aircraft airspeed [m/sec ]
+S–wing reference area [m2]
+Ke–coefficient that depends onthetype ofengine and itsinstallation
+(varies between 1and 3)𝐶𝐷0𝑒𝑐=4.51×10−8𝐾𝑒𝑃𝑇2
+𝜎∞𝑉∞𝑆
+CD0CalculationCD0_trim –Trim contribution
+Arises mainly result from producing ahorizontal tailload tobalance
+theairplane around itscenter ofgravity .
+Any drag increment attributed toafinite liftonthe horizontal tail
+contributes tothetrim drag forhorizontal straight flight .
+Such increments mainly represent changes intheinduced drag ofthe
+tail.
+CD0_trimisusually small, amounting toonly 1%or2%ofthetotal drag
+ofanairplane forthecruise condition .
+()2
+2 1
+0 
+− = ==
+HTL LHT
+t tHT
+Lt D DSSC CSS
+ARe SSCK C C
+W t ti trim 
+lt
+lwLW Lt
+TO W t WL LL ==+
+WL W W CSq L=
+tL HT t CSqL=
+()
+HTL L LSSC C C
+W t−=
+c.g.CD0Calculation•The horizontal stabilizer can be sized by:
+•The variation of the area
+•Variation of the distance from the c.g. to the AIRPLANE EMPENNAGE
+LW
+DWMac,wfa.c.
+Wc.g.LHT
+()()()()0, =+−−+= HT HT e t HT wfac cg W cg z D zT l L M xL M
+ltxcgT
+ze
+WL W WL W W CqS CSV L_ _2
+21= =
+HTL HT HTL HT HT C qS CSV L_ _2
+21= =
+W wfacM W W wfacM W wfac C CqS C CSV M_, _,2
+,21= =
+4HTC DHTzHT
+WD W WD W W CqS CSV D_ _2
+21= =
+HTD HT HTD HT HT C qS CSV D_ _2
+21= =
+w acm wfacMARARc C 01.0cos2cos2
+, _, ++=CD0_interf –Interference contribution
+Appears when two bodies intersect orareplaced inproximity ;their pressure distributions and boundary layers can
+interact, resulting inanetdrag ofthecombination that isoften higher than thesum oftheseparate drags .
+Atthefuselage -wing juncture, adrag increment results astheboundary layers from thetwo components interact and
+thicken locally atthejunction .
+This type ofdrag penalty willbecome more severe ifsurfaces meet atanangle other than 90°.
+CD0CalculationCD0_interf –Interference contribution
+Toreduce this type ofdrag contribution ,avoid acute angles ;ifnot, filleting should beapplied atthe juncture to
+reduce interference drag .
+Anapproximate drag increment caused bywing -fuselage interference isestimated toequal 4%oftheCD0_wfora
+typical aspect ratio and wing thickness .
+Interference 
+drag source
+CD0CalculationCD0_interf –Interference contribution
+Racing Formula 1carexample
+CD0CalculationCD0_antennas –Antennas contribution
+Communication antennas ofmany aircraft are located
+outside oftheaircraft .They areindirect contact with the
+air,hence they produce drag .
+There aremainly two types ofantennas :
+•rodorwire
+•blade orplate
+Both types ofantennas should beinanopen space (below
+orabove thefuselage) forbetter communication .
+Tocalculate CD0_antennas,rod antenna istreated asathin
+strut, and theblade antenna isconsidered asasmall wing .CD0CalculationCD0_pt –Pitot tube contribution
+CD0Calculation
+Apitot probe AKA“pitottube” (combined with astatic
+port) isapressure measurement instrument used to
+measure airspeed and sometimes altitude ofanaircraft .
+Since thepitot tube isindirect contact with theoutside
+air,itcontributes toaircraft drag (i.e.,CD0).
+The horizontal part ofthepitot tube may beassumed asa
+little fuselage, and itsvertical part asastrut .CD0_sr –Surface roughness contribution
+The outer surface ofanaircraft structure (skin) has a
+considerable role inaircraft drag .
+Forthis reason, theaircraft skin isoften finished and painted .
+The paint not only protects the skin from atmospheric
+hazards (e.g.,rusting) butalso reduces itsdrag .
+Astheskin’s surface ismore polished, the aircraft drag
+(surface friction) willbereduced .
+Noknown method can predict this;itismaterial orfinished
+procedure -dependent .
+CD0CalculationCD0_lk –Leakages contribution
+There are usually gaps between control
+surfaces (such aselevator, aileron, and
+rudder), flaps, spoilers, and lifting surfaces
+(such aswing and tails) .
+The airflows through these tiny gaps, thus
+producing extra drag .
+Leakage drag usually contributes about
+1%-2%tototal drag .
+CD0CalculationCD0_r-s –Rivets and screws contribution
+The outside oftheaircraft structure (fuselage and wing)
+iscovered with skin.
+The skin;ifitismade from metallic materials ;isattached
+totheprimary components ofanaircraft structure (such
+asspar and frame) viaparts such asrivets orscrews .
+The Composite structures have theadvantage that they
+donotrequire any rivet orscrew and areoften attached
+together through techniques such asbonding .
+CD0CalculationCD0_r-s –Rivets and screws contribution
+Inthecase ofthescrew, thetop part ofthescrew could beoften
+hidden inside skin.
+The heads ofmost types ofrivets areout ofthe skin;therefore,
+they produce extra drag .
+Rivets and screws usually contribute about 2%-3%tototal drag .
+CD0CalculationCD0_pylon –Pylon(s) contribution
+Apodded turbine engine (e.g.,turbofan engine) is
+usually mounted totheairplane wing orfuselage with a
+pylon .
+Apylon ismainly astructural component but may be
+designed tocontribute toaircraft lift.
+Although apylon isnotfundamentally alifting surface,
+forthe purpose ofzero -liftdrag calculation, itmay be
+treated asasmall wing .
+CD0CalculationCD0_miscellaneous –Miscellaneous contribution
+Miscellaneous items that produce drag, but due totheir variations, itisdifficult topredict their
+contribution tothetotal aircraft drag .
+1.footstep inasmall GAaircraft allows thepilot ortechnician toclimb up
+2.small plates ontails tobalance themanufacturing unbalances
+3.catapult hook
+4.pipe and funnel foranaerial fuel refueling
+5.wiper blades
+6.angle ofattack meter vane
+7.non-streamlined fuselage
+8.deflector cable
+9.chemical sprayers inagricultural aircraft
+10.vortex generator
+11.navigation lights
+12.fittingsCD0CalculationCD0_corrected –Corrected coefficient
+The calculation ofCD0contributions due tofactors ismostly optimistically made because these factors are
+responsible foranincrease ofuptoabout 50%;due tothis fact, acorrection factor should beincluded .
+Kcisacorrection factor and depends onseveral factors such asthetype, year offabrication, degree of
+streamline -ness ofthefuselage, configuration oftheaircraft, and number ofmiscellaneous items .𝐶𝐷0_𝑐𝑜𝑟𝑟𝑒𝑐𝑡𝑒𝑑=𝐾𝑐𝐶𝐷0=𝐾𝑐𝐶𝐷0𝑓+𝐶𝐷0𝑤+𝐶𝐷0ℎ𝑡+𝐶𝐷0𝑣𝑡+𝐶𝐷0𝐿𝐺+𝐶𝐷0𝑁+𝐶𝐷0𝑆+𝐶𝐷0𝐻𝐿𝐷+...
+CD0CalculationCD0Example
+The table illustrates the contributions of all major
+components oftheGates Learjet 25totheaircraft CD0
+Note that therow 8ofthis table shows thecontributions of
+other components ashigh as20%
+Wing ; 
+23,5%
+Fuselage ; 
+27,8%
+Wing tip tank ; 
+9,4%Nacelle ; 5,4%Engine strut ; 
+1,3%Horizontal tail ; 
+7,2%Vertical tail ; 
+4,8%Other components ; 
+20,6%CD0Example values
+CD0for various configurations
+When anaircraft retracts itslanding gear, deflects itsflap, rotates itscontrol surfaces, exposes any
+external component (such asagun), releases itsstore (e.g.,missile), oropens itscargo door, it
+changes itsconfiguration .
+Ingeneral, there arethree configuration groups that anaircraft may adopt :
+1.clean configuration
+2.take -offconfiguration
+3.landing configuration
+1.Clean configuration
+The aircraft isinacruise flight condition .
+Inthis configuration, noflap isdeflected, and the
+landing gear isretracted (ifitisretractable) .
+CD0_cleanincludes every component (such aswing,
+tail, and fuselage) and excludes flap and landing
+gear (ifretractable) .
+𝐶𝐷𝑐𝑙𝑒𝑎𝑛=𝐶𝐷0𝑐𝑙𝑒𝑎𝑛+𝑘𝐶𝐿𝐶2WaveVC
+T D
+𝐶𝐿𝐶=2𝑊𝑎𝑣𝑒
+𝜌∞𝑉𝐶2𝑆𝑘=1
+𝜋𝑒𝐴𝑅
+𝑊𝑎𝑣𝑒=𝑊𝑖+𝑊𝑓
+2LCCD0for various configurations2.Take -offconfiguration
+The aircraft has ahigh angle ofattack, the flap is
+deflected fortake -off,and the landing gear isnot
+retracted (even ifitisretractable) .
+CD0_TOdepends ontheflap type and thedeflection
+angle .
+f≈10-30deg
+KLO=1.1→1.3𝐶𝐷𝑇𝑂=𝐶𝐷0𝑇𝑂+𝑘𝐶𝐿𝑇𝑂2WTOVLO
+TD
+𝐶𝐿𝑇𝑂≅0.92𝑊𝑇𝑂
+𝜌∞𝑉𝐿𝑂2𝑆
+𝑉𝐿𝑂=𝐾𝐿𝑂𝑉𝑠LTO
+LG TO HLD clean TOD D D D C C C C
+0 _ 0 0 0+ +=CD0for various configurations3.Landing configuration
+The aircraft has ahigh angle ofattack (even more
+than the take -offcondition), the flap isdeflected
+(even more than take -offcondition), and thelanding
+gear isnotretracted (even ifitisretractable) .
+CD0_Ldepends onthe flap type and the deflection
+angle .
+f≈30-60deg
+KA=1.1→1.3𝐶𝐷𝐿=𝐶𝐷0𝐿+𝑘𝐶𝐿𝐿2WLVA
+TD
+𝐶𝐿𝐿≅2𝑊𝑇𝑂
+𝜌∞𝑉𝐴2𝑆
+𝑉𝐴=𝐾𝐴𝑉𝑠LL
+𝐶𝐷0𝐿=𝐶𝐷0𝑐𝑙𝑒𝑎𝑛+𝐶𝐷0𝐻𝐿𝐷_𝐿+𝐶𝐷0𝐿𝐺CD0for various configurationsCD0Example Fokker 50
+lfdflnose
+lbody
+ltail
+bw
+bVTbHT
+CrootCtip
+CrootCtipCtip
+Crootlnose lbody ltail
+dgdgwgwg lsdN
+lsFokker 50main characteristics –measures inmeters
+Fuselageln 5.05
+lb 7.57
+lt 10.61
+df 4.57
+WingCroot_w 3
+Ctip_w 1.828
+bw 29
+(t/c)max_w 14.96 %
+Cd_min_w 0.0045
+H.S.Croot_HS 1.6
+Ctip_HS 1
+bHS 10
+(t/c)max_HS 18%
+Cd_min_HS 0.0058
+V.S.Croot_VS 2.8
+Ctip_VS 1.7
+bVS 5
+(t/c)max_VS 18%
+Cd_min_VS 0.0058HLDType Plain flap
+Cf/ Cw 20%
+LGmainNumber of 
+wheels per 
+LG2
+Number of lg
+main2
+dg 0.6
+wg 0.25
+Struts_LG mNumber 2
+ls 2.7
+ds 0.4
+LGnoseNumber of 
+wheels per 
+LG2
+Number of 
+LGmain1
+dg 0.5
+wg 0.2
+Struts_LGnNumber 1
+ls 0.6
+ds 0.25Nacellesln 1.5
+lb 1.5
+lt 1
+dN 1.2
+AntennasType Blade
+Number 3
+Croot 0.2
+Ctip 0.17
+b 0.3
+(t/c)max 12.00 %
+Cd_min 0.0045
+PitotNumber 1
+lpitot 0.25
+dpitot 0.03
+ls 0.2
+Ds 0.03CD0Example Fokker 50bw
+CrootCtip
+
+
+
+
++++=
+11
+322
+rootC C
+roottip
+CC=
+S = Sref-Wing reference area
+( )2_ _w
+w tip w rootbC CS +=CD0Example Fokker 50lfdflnose
+lbody
+ltail
+SS
+ffC Cf
+ff f fwet
+M
+dl f D=
+0
+58,2
+10_Re log455,0=turbffC
+Re327,1
+_=lamffC
+
+
+
+
++
+
+
++=
+ff
+ffdldl
+dlf
+ff0025,06013
+45,108,01 M f
+fM−=
+=flVReCD0_f-fuselage contribution
+=aVMCD0Example Fokker 50lfdflnose
+lbody
+ltail
+body f body wet ld S =_
+tail body nose f wet wet wet wet S S S S ++=
+SS
+ffC Cf
+ff f fwet
+M
+dl f D=
+0
+( )2_ _w
+w tip w rootbC CS +=
+2
+22
+_2 2 2 2 2+
+
+
+
+
++
+
+
++
+
+
++=nose
+nosenose f nose f
+nose wetdld d d dS  
+2
+conetail2
+f f
+conetailf conetail wet l2d
+2dld S + = =  _CD0Example Fokker 50
+CD0_f-fuselage contributionbw
+CrootCtipCD0_w–wing contribution
+()4,0
+004,0min
+0 
+
+
+
+=w w
+ww wd wet
+Mct f DC
+SSf fC CCD0Example Fokker 50
+58,2
+10_Re log455,0=turbffC
+Re327,1
+_=lamffC
+=flVRebw
+CrootCtip
+()4,0
+004,0min
+0 
+
+
+
+=w w
+ww wd wet
+Mct f DC
+SSf fC C
+()4
+max max100 7,21 
+
++
+
++=ct
+ctf
+ct
+45,108,01 M f
+fM−=
+=aVM
+CD0Example Fokker 50
+CD0_w–wing contributionbw
+CrootCtip
+()4,0
+004,0min
+0 
+
+
+
+=w w
+ww wd wet
+Mct f DC
+SSf fC C
+SctSwet 
+
+
++=
+max5,012
+( )2_ _w
+w tip w rootbC CS +=CD0Example Fokker 50
+CD0_w–wing contributionbw
+CrootCtip
+()4,0
+004,0min
+0 
+
+
+
+=w w
+ww wd wet
+Mct f DC
+SSf fC C
+Cd_min =f(Re)CD0Example Fokker 50
+CD0_w–wing contributionCtip CrootbHTCD0_ht–horizontal tail contribution
+()4,0
+004,0min
+0 
+
+
+
+=ht ht
+htht htd wet
+Mct f DC
+SSf fC C
+()4
+max max100 7,21 
+
++
+
++=ct
+ctf
+ct
+45,108,01 M f
+fM−=
+=aVMCD0Example Fokker 50
+58,2
+10_Re log455,0=turbffC
+Re327,1
+_=lamffC
+=flVReCtip CrootbHT
+()4,0
+004,0min
+0 
+
+
+
+=ht ht
+htht htd wet
+Mct f DC
+SSf fC C
+ht wet SctS 
+
+
++=
+max5,012
+( )2_ _ht
+ht tip ht root htbC C S +=
+( )2_ _w
+w tip w rootbC CS +=CD0Example Fokker 50
+CD0_ht–horizontal tail contributionbVTCtip
+CrootCD0_vt–vertical tail contribution
+()4,0
+004,0min
+0 
+
+
+
+=vt vt
+vtvt vtd wet
+Mct f DC
+SSf fC C
+()4
+max max100 7,21 
+
++
+
++=ct
+ctf
+ct
+45,108,01 M f
+fM−=
+=aVMCD0Example Fokker 50
+58,2
+10_Re log455,0=turbffC
+Re327,1
+_=lamffC
+=flVRebVTCtip
+Croot
+()4,0
+004,0min
+0 
+
+
+
+=vt vt
+vtvt vtd wet
+Mct f DC
+SSf fC C
+vt wet SctS 
+
+
++=
+max5,012
+( )2_ _vt
+vttip vt root vtbC C S +=
+( )2_ _w
+w tip w rootbC CS +=CD0Example Fokker 50
+CD0_vt–vertical tail contributionCD0_HLD –High Lift Devices contribution
+CD0_flap–Trailing Edge HLD
+Only trailing edge flap
+Type offlap:plain
+Flight conditions forHLD:
+Take -off:10°
+Landing :30°
+B
+ff
+D D ACCC C
+flap HLD
+
+
+==
+0 0
+CD0Example Fokker 50wg_m lsdg_mwgCD0_LG –Landing gear contribution
+CDLG–drag coefficient of each wheel ( 0.15 , when it has fairing; and is 0.30 when it does 
+not have any fairing)dg
+CD0_s –Strut(s) contribution
+Ss–frontal area of each strut (its diameter times its length)
+CDs –From table of drag coefficients in accordance with the form
+
+=
+
+
+=n
+ii LG
+D DSSC C
+LG LG1_
+0
+gg LG wd S=
+ss s dl S=ls
+ds
+
+=
+
+=n
+is
+D DSSC C
+is s10CD0Example Fokker 50CD0_LG –Landing gear contribution
+CDs –From table of drag coefficients in accordance with the form
+
+=
+
+
+=n
+ii LG
+D DSSC C
+LG LG1_
+0
+ls
+ds
+CD0Example Fokker 50lNdNCD0_N –Nacelle contribution
+lnose lbody ltail
+SSf fC CN
+NN N Nwet
+M
+dl f D=
+0
+
+
+
++
++=
+NN
+NNdldl
+dlf
+NN0025,06013
+tail wet body wet nose wet N wet S S S S_ _ _ _ ++=
+body N body wet ld S =_
+22
+_2 2 2 2nosenose N nose N
+nose wet ld d d dS +++=
+2
+tail2
+N N
+tailN tail wet l2d
+2dld S + = =  _CD0Example Fokker 50
+58,2
+10_Re log455,0=turbffC
+Re327,1
+_=lamffC
+=flVReCD0_trim –Trim contribution
+()
+− =
+HTL LHT
+t tDSSC CSS
+AReC
+W trim1
+0
+ltlwLt
+TO w t WL LL ==+
+wL w w CSq L=
+tL HT t CSqL=
+()
+HTL L LSSC C C
+w t−= c.g.
+( ) 64,0 045,0178,168,0− −=t t AR eLwCD0Example Fokker 50CD0_interf –Interference contribution
+An approximate drag increment caused by wing -fuselage interference is estimated to 
+equal 4%of the CD0_wfor a typical aspect ratio and wing thickness
+CD0Example Fokker 50CD0_antennas –Antennas contribution
+Types ofantennas :blade orplate
+Number ofantennas :3
+CD0_antennas,blade antenna isconsidered asasmall wing
+CD0Example Fokker 50Types ofantennas :blade orplate
+Number ofantennas :3
+CD0_antennas,blade antenna isconsidered asasmall wing
+bantCtip
+Croot
+()4,0
+004,0min
+0 
+
+
+
+=ant ant
+antant antd wet
+Mct f DC
+SSf fC C
+()4
+max max100 7,21 
+
++
+
++=ct
+ctf
+antct
+ant wet SctS
+ant 
+
+
++=
+max5,012
+( )2_ _ant
+ant tip ant root antbC C S + =CD0Example Fokker 50
+CD0_antennas –Antennas contribution
+58,2
+10_Re log455,0=turbffC
+Re327,1
+_=lamffC
+=flVRel
+plnose lbodyltailCD0_pt –Pitot tube contribution
+The horizontal part of the pitot tube may be assumed 
+as a little fuselage and its vertical part as a strut
+Number of pitot tubes: 4
+lsds
+dp
+s p ptD D D C C C
+0 0 0+=CD0Example Fokker 50lplnose lbodyltailCD0_pt –Pitot tube contribution
+dp
+SS
+ffC Cp
+pp p pwet
+M
+dl f D=
+0
+58,2
+10_Re log455,0=turbfpC
+Re327,1
+_=lamfpC
+
+
+
+
++
+
+
++=
+pp
+ppdldl
+dlf
+pp0025,06013
+=plVRe
+tail wet body wet nose wet p wet S S S S_ _ _ _ ++=
+body p body wet ld S =_
+2
+nose2
+nose p nose p
+nose wet l2d
+2d
+2d
+2dS +
+
+
++
+
+
++=_
+2
+tail2
+p p
+tailp tail wet l2d
+2dld S + = =  _CD0Example Fokker 50lsds
+ss s dl S=
+
+
+=SSC Cs
+D Ds s0
+CD0Example Fokker 50
+CD0_pt –Pitot tube contributionCD0_lk –Leakages contribution
+Leakage drag is usually contributing about 
+1%-2%to total drag
+CD0_r-s –Rivets and screws contribution
+Rivets and screws are usually contributing 
+about 2% -3%to total drag
+CD0Example Fokker 50CD0_corrected –Corrected coefficient
+
+
+
+
+++++++++++++
+= =
+−sr lk pt antennas erf trimHLD N LG vt ht w f
+total corrected
+D D D D D DD D D D D D D
+c Dc DC C C C C CC C C C C C C
+K CK C
+0 0 0 0 int0 00 0 0 0 0 0 0
+_0 _0CD0Example Fokker 50Verification with the typical ranges values of " CD0" and " e" for several aircraft
+CD0Example Fokker 50CD0 –for various configurations:
+1.clean configuration (cruise)
+2. take -offconfiguration
+3.landing configuration
+CD0Example Fokker 50CD0 –for various configurations:
+1.Clean configuration (cruise) -CD0_clean
+Excludes flap and landing gear
+2
+0 C clean clean L D D KC C C +=
+WaveVC
+T D
+SVWC
+Cave
+LC 22
+=
+AReK1=
+2f i
+aveW WW+=LC
+
+
+
+
+++++++++++
+= =
+−sr lk pt antennas erftrim N vt ht w f
+clean corrected clean
+D D D D DD D D D D D
+c Dc DC C C C CC C C C C C
+K CK C
+0 0 0 0 int00 0 0 0 0 0
+_0 _ _0CD0Example Fokker 50
+
+
+
+++++++++++++
+= =
+−sr lk pt antennas erf LGHLD trim N vt ht w f
+TO corrected TO
+D D D D D DD D D D D D D
+c Dc DC C C C C CC C C C C C C
+K CK C
+0 0 0 0 int0 00 0 0 0 0 0 0
+_0 _ _02.Take -offconfiguration -CD0_TO
+Flap isdeflected fortake -offf≈10deg
+Landing gear isnotretracted
+KLO=1.2
+2
+0 TO TO TO L D D KC C C +=
+SVWC
+LOTO
+LTO 229,0
+
+s LO LO VK V=
+LG TO HLD clean TOD D D D C C C C
+0 _ 0 0 0+ +=
+WTOVLOT DLTOCD0Example Fokker 50
+CD0 –for various configurations:
+
+
+
+++++++++++++
+= =
+−sr lk pt antennas erf LGHLD trim N vt ht w f
+Lnd corrected Lnd
+D D D D D DD D D D D D D
+c Dc DC C C C C CC C C C C C C
+K CK C
+0 0 0 0 int0 00 0 0 0 0 0 0
+_0 _ _03.Landing configuration -CD0_L
+Flap isdeflectedf≈30deg
+Landing gear isnotretracted
+KA=1.2
+2
+0 L L L L D D KC C C +=
+SVWC
+ATO
+LL 22
+
+sA A VK V=
+LG L HLD clean LD D D D C C C C
+0 _ 0 0 0++=
+WLVAT
+DLLCD0Example Fokker 50
+CD0 –for various configurations:

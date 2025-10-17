@@ -1,0 +1,211 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBAIRFOILS VERSUS WINGS
+•Upper surface (upper side of the wing): low pressure
+•Recall the discussion on exactly why this is physically
+•Recall the discussion on how to show this mathematically•Upper surface (upper side of the wing): low pressure
+•Lower surface (underside of wing): high pressureAIRFOILS VERSUS WINGS
+•Upper surface (upper side of the wing): low pressure
+•Lower surface (underside of wing): high pressure
+•Flow always desires to go from high -pressure to low -pressure
+•Flow ‘wraps’ around wing tipsAIRFOILS VERSUS WINGS
+FINITE WINGS (wing vortex 
+examples)
+FINITE WINGS (wing vortex 
+examples)STUDY CASE 1 –WAKE 
+VORTEX IMPORTANCE:
+AMERICAN AIRLINES FLIGHT 587 
+•Summary –American Airlines Flight 587
+crashed into theBelle Harbor neighborhood of
+Queens, NYC, shortly after takeoff from JFK
+International Airport onNovember 12,2001 .
+This isthe second deadliest U.S.aviation
+accident todate .
+•On November 12,2001 ,atabout 0916 :15
+Eastern Standard Time, American Airlines flight
+587 (A300-605R)crashed into aresidential
+area ofBelle Harbor, New York, shortly after
+takeoff from JFK International Airport .The
+plane’s vertical stabilizer and rudder separated
+inflight ;the plane’s engines subsequently
+separated inflight .All260 people aboard the
+plane and 5people ontheground were killed,
+and theplane was destroyed byimpact forces
+and apost -crash fire.
+AMERICAN AIRLINES FLIGHT 587 
+The official National Transportation Safety Board (NTSB) report ofOctober 26,2004 ,stated that the
+cause ofthecrash was theoveruse oftherudder tocounter wake turbulence .
+The A300-600,which took offjust minutes after aJapan Airlines Boeing 747 onthesame runway,
+flew into thelarger jet's wake, anarea ofvery turbulent air.The first officer attempted tokeep the
+plane upright with therudder .The strength oftheairflowing against themoving rudder stressed the
+aircraft's vertical stabilizer and eventually snapped itoffentirely, causing theaircraft tolose control
+and crash .
+STUDY CASE 1 –WAKE 
+VORTEX IMPORTANCE:AMERICAN AIRLINES FLIGHT 587 
+Investigators were concerned regarding the
+manner inwhich thetailfinseparated .The
+tailfinisconnected tothefuselage with six
+attaching points, each sethas two sets of
+nuts, one made outofcomposite material,
+another from aluminum which isconnected
+by atitanium bolt, however damage
+analysis showed the bolts and aluminum
+lugs were intact butnotthecomposite lugs.
+There were fears that thecomposites were
+faulty because they areused inother areas
+oftheplane including theengine mounting
+and the wings, however examinations of
+construction and the materials gave the
+plane aclean billofhealth .
+STUDY CASE 1 –WAKE 
+VORTEX IMPORTANCE:AMERICAN AIRLINES FLIGHT 587 
+http://www.ntsb.gov/events/2001/AA587/default.htmSTUDY CASE 1 –WAKE 
+VORTEX IMPORTANCE:AMERICAN AIRLINES FLIGHT 587 
+http://www.ntsb.gov/events/2001/AA587/default.htmSTUDY CASE 1 –WAKE 
+VORTEX IMPORTANCE:STUDY CASE 2 –WAKE 
+VORTEX IMPORTANCE:
+Canadair Challenger 604 D -AMSC
+•Oman's Civil Aviation Authority had told Omani media on Jan 8th 2017, that a private German registered aircraft had performed an
+emergency landing in Muscat on Jan 7th 2017 declaring emergency at 14:10L (10:10Z) and landing in Muscat at 15:14L (11:14Z). 
+The crew had declared emergency due to injuries on board and problems with an engine (a number of media subsequently 
+reported the right hand engine had failed, another number of media reported the left hand engine had failed)
+Canadair Challenger 604 D -AMSC
+•According to information The Aviation Herald received on March 4th 2017 the CL -604 passed 1000 feet below an Airbus 
+A380 -800 while enroute over the Arabian Sea, when a short time later (1 -2 minutes) the aircraft encountered wake 
+turbulence sending the aircraft in uncontrolled roll turning the aircraft around at least 3 times (possibly even 5 times), bo th 
+engines flamed out, the Ram Air Turbine could not deploy possibly as result of G -forces and structural stress, the aircraft 
+lost about 10,000 feet until the crew was able to recover the aircraft exercising raw muscle force, restart the engines and 
+divert to Muscat
+STUDY CASE 2 –WAKE 
+VORTEX IMPORTANCE:Canadair Challenger 604 D -AMSC
+•On Jan 7th 2017 there were also other A380 -800s crossing the Arabian Sea from northwest to southeast: a Qantas A380 -800, registr ation VH -OQJ 
+performing flight QF -2 from Dubai to Sydney, was enroute at FL330 about 1000nm southeast of Muscat and about 400nm northwest of Male at 08:40Z. 
+An Emirates A380 -800 registration A6 -EDO performing flight EK -406 from Dubai to Melbourne,VI (Australia) was enroute at FL350 about 470nm 
+southeast of Muscat at 08:40Z. Another Emirates A380 -800 registration A6 -EUH performing flight EK -424 from Dubai to Perth,WA (Australia), was 
+enroute at FL350 about 350nm southeast of Muscat at 08:40z
+STUDY CASE 2 –WAKE 
+VORTEX IMPORTANCE:
+Canadair Challenger 604 D -AMSC
+•The business jetdeparted from Male, where the
+actual “rendezvous" with theA380 occurred .
+•Based onthe known time ofthe occurrence at
+08:40Zaswell asthe time when the CL-604
+reached Omani Airspace declaring anemergency
+and landed inMuscat, asreasonably aswhich
+A380swere in-route over theArabian Seaaround
+that time, The Aviation Herald believes themost
+likely A380 was EK-412 and the “rendezvous"
+took place 630nm southeast ofMuscat, which
+provides thebest match ofremaining flying time
+(2.5hours) and distance for the CL-604 also
+considering rather strong northwesterly winds
+(headwind fortheCL-604,tailwind fortheA380s)STUDY CASE 2 –WAKE 
+VORTEX IMPORTANCE:
+MINIMUM SEPARATION RULES
+•Anaircraft ofalower wake vortex category must notbeallowed totake offless than two minutes behind anaircraft ofa
+higher wake vortex category
+•Ifthefollowing aircraft does notstart itstake -offrollfrom thesame point asthepreceding aircraft, this isincreased tothree
+minutes
+FINITE WINGS
+Front View
+Wing Tip
+Vortices
+Top View
+FINITE WINGS
+FINITE WING DOWNWASH
+•Wing tip vortices induce a small downward component of air velocity near wing by dragging 
+surrounding air with them
+•Downward component of velocity is called downwash, w
+Local relative wind
+•Two Consequences:
+1. Increase in drag, called induced drag (drag due to lift) 
+2. Angle of attack is effectively reduced, aeffas compared with V∞Chord lineANGLE OF ATTACK DEFINITIONS
+ageometric : angle between incoming relative wind and chord line
+This is a case of no wing -tips (infinite wing)
+Relative Wind, V∞ ageometricaeffective : what the airfoil ‘sees’ locally
+Angle between local flow direction and chord line
+Small than ageometric because of downwash
+The wing -tips have caused this local relative wind to be angled downward
+aeffectiveANGLE OF ATTACK DEFINITIONSageometric : what you see, what you would see in a wind tunnel –Simply look at angle 
+between incoming relative wind and chord line
+aeffective : what the airfoil ‘sees’ locally –Angle between local flow direction and chord 
+line
+Small than ageometric because of downwash
+ainduced : difference between these two angles –Downwash has ‘induced’ this change 
+in angle of attack
+induced effective geometric aaa +=ANGLE OF ATTACK DEFINITIONSINFINITE WING DESCRIPTION
+•LIFT is always perpendicular to the RELATIVE WIND
+•All lift is balancing weightLIFT
+Relative Wind, V∞•Relative wind gets tilted downward under the airfoil
+•LIFT is still always perpendicular to the RELATIVE WINDFinite Wing Case
+induced effective geometric aaa +=INFINITE WING DESCRIPTION•Drag is measured in direction of incoming relative wind (that is the direction that the airplane is flying)
+•Lift vector is tilted back
+•Component of Lacts in direction parallel to incoming relative wind → results in a new type of dragFinite Wing Case
+Induced Drag, Di
+induced effective geometric aaa +=INFINITE WING DESCRIPTION3 PHYSICAL INTERPRETATIONS
+1.Local relative wind is canted downward, lift vector is tilted back so a component of Lacts in direction 
+normal to incoming relative wind
+2.Wing tip vortices alter surface pressure distributions in direction of increased drag
+3.Vortices contain rotational energy put into flow by propulsion system to overcome induced drag
+induced effective geometric aaa +=INDUCED DRAG: 
+IMPLICATIONS FOR WINGS
+d Dl L
+c Cc C
+
+Finite Wing Infinite Wing
+V∞
+aaeffHOW TO ESTIMATE 
+INDUCED DRAG
+i ii i
+L DL D
+aa
+==sin
+•Local flow velocity in vicinity of wing is inclined downward
+•Lift vector remains perpendicular to local relative wind and is tiled back through an angle ai
+•Drag is still parallel to freestream
+•Tilted lift vector contributes a drag componentTOTAL DRAG ON SUBSONIC 
+WING
+SqDc CD DDD D DD
+i
+profiled Dinduced profileinduced pressure friction
++=+=++=
+,
+Also called drag due to liftProfile Drag
+Profile Drag coefficient relatively 
+constant with M∞at subsonic speeds
+Look upMay be calculated from
+Inviscid theory:
+Lifting line theoryFINITE WING CHANGE IN LIFT 
+SLOPE
+•In a wind tunnel, the easiest thing to 
+measure is the geometric angle of attack
+•For infinite wings, there is no induced 
+angle of attack. The angle you see = the 
+angle the infinite wing ‘sees’
+•With finite wings, there is an induced 
+angle of attack. The angle you see ≠ the 
+angle the finite wing ‘sees’
+i eff geom aaa +=Infinite Wing
+Finite Wingageom= aeff+ ai= aeff
+ageom= aeff+ ai•The lift curve for afinite wing has asmaller slope than the
+corresponding curve foraninfinite wing with same airfoil cross -section
+•Figure (a)shows infinite wing,ai=0,soplot isCLvs.ageomoraeffand
+slope isa0
+•Figure (b)shows finite wing,ai≠0
+•Plot CLvs.what wesee,ageom,(orwhat would beeasy tomeasure in
+awind tunnel), notwhat wing sees,aeff
+1. Effect offinite wing istoreduce liftcurve slope .Finite wing lift
+slope =a=dCL/da
+2. AtCL=0,ai=0,soaL=0same forinfinite orfinite wings
+FINITE WING CHANGE IN LIFT 
+SLOPE
+ Infinite Wing
+Finite Wingageom= aeff+ ai= aeff
+ageom= aeff+ aiSUMMARY: INFINITE VS. 
+FINITE WINGS
+Properties of a finite wing differ in two major respects from infinite 
+wings:
+1.Addition of induced drag
+2.Lift curve for a finite wing has smaller slope than corresponding lift 
+curve for infinite wing with same airfoil cross section

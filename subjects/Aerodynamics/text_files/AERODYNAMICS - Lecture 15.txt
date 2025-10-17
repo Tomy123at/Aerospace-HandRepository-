@@ -1,0 +1,552 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBStatic stability deals withtheinitial tendency ofavehicle toreturn toequilibrium ortodiverge
+from itafter being disturbed .
+Itsaysnothing about whether iteverreaches itsequilibrium position orhowitgetsthere, such
+matters aretherealm ofdynamic stability .
+There arethree types ofstatic stability :
+•Statically stable
+•Statically unstable
+•Neutrally stableNOTIONS OF AIRCRAFT STABILITY
+STATIC STABILITYStatically stable :
+Iftheforces andmoments onthebody caused byadisturbance tend
+initially toreturn thebody toward itsequilibrium position, thebody is
+statically stable .Thebody haspositive static stability .
+Statically unstable :
+Iftheforces andmoments aresuch thatthebody continues tomove
+away from itsequilibrium position after being disturbed, thebody is
+statically unstable .Thebody hasnegative static stability .
+Neutrally stable :
+Ifthemoments onthebody arezeroandcontinue themovement of
+thedisturbance after losing itsinitial equilibrium condition .This
+situation israreinflight vehicles .NOTIONS OF AIRCRAFT STABILITY
+STATIC STABILITY
+Dynamic stability deals withthetime history ofthevehicle’s motion
+after initially responding toitsstatic stability .
+Dynamic stable :abody isdynamically stable if,outofitsownaccord,
+iteventually returns toandremains atitsequilibrium position over a
+period oftime.Theoscillations decrease withtime.
+Dynamically unstable :theequilibrium position isnever maintained for
+anyperiod oftime, andtheaircraft eventually diverges completely .The
+amplitude oftheoscillations increases withtime.
+Dynamically neutral :theaircraft willpitch back and forth with
+constant amplitude oscillations .Theamplitude oftheoscillations does
+notdecrease withtime.NOTIONS OF AIRCRAFT 
+STABILITY
+DYNAMIC STABILITY
+The conventional control surfaces on a typical aircraft are:
+•Elevators (Canards)
+•Ailerons
+•Rudder
+Their functions are usually:
+1.To change the aircraft from one equilibrium position to another
+2.To produce non -equilibrium accelerated motions such as maneuvers
+The study of the deflections of the ailerons, elevators, and rudder necessary to make the 
+aircraft do what the pilot wants and the amount of force that he must exert (or the hydraulic 
+boost system) to deflect these controls is part of a discipline called aircraft control.NOTIONS OF AIRCRAFT CONTROLPressure andshear stress distributions overawing produce apitching moment thatcanbetaken about
+anarbitrary point (theleading edge, thetrailing edge, thequarter chord, etc.)
+There isaparticular point about which themoments areindependent oftheangle ofattack .
+This point isdefined astheaerodynamic center (a.c.)forthewing .
+Themoment anditscoefficient about thea.c.aredenoted byMacand CM,acrespectively, where,
+Atzerolift,Mac=Mc/4=ManypointMOMENTS ON THE 
+AIRPLANE
+cSqMCac
+acM
+=,Inturn, CM,ac=(CM,c/4)L=0=(CM,anypoint)L=0
+Thissaysthatthevalue ofCM,ac(which isconstant forangles ofattack) canbeobtained from thevalue
+ofthemoment coefficient about anypoint when thewing isatthezero-liftangle ofattackaL=0,forthis
+reason, issometimes called thezero-liftmoment .
+The a.c.isauseful concept forthestudy ofstability andcontrol .Infact,theforce andmoment system
+onawing canbecompletely specified bytheliftanddrag acting through thea.c.,plusthemoment
+about thea.c.
+Lwing
+DMaca.c.
+Wc.g.Ltail TMOMENTS ON THE 
+AIRPLANEAccording tothisfigure, itcould besaid
+thatamoment about thecenter ofgravity
+(c.g.)oftheaircraft Mcgiscreated by:
+•L,D,and Macofthewing
+•Liftofthetail
+•Thrust
+•Aerodynamic forces andmoments on
+other parts oftheaircraft, such asthe
+fuselage andengine nacelles
+Themoment coefficient about thec.g.is
+defined as:
+cSqMCcg
+cgM
+=,MOMENTS ON THE 
+AIRPLANE
+Inconclusion, theaircraft isinequilibrium (in
+pitch) when themoment about thec.g.iszero:
+Mcg=CM,cg=0,andtheaircraft istrimmed .
+Lwing
+DMaca.c.
+Wc.g.Ltail TIllustration ofthezero-liftlineandabsolute angle ofattack
+0 0== L IfabaABSOLUTE ANGLE OF 
+ATTACK
+0 0 L Ifaba
+Difference between CLversus geometric AoAandabsolute AoAABSOLUTE ANGLE OF 
+ATTACK
+Considering anaircraft withfixed controls (i.e.,anelevator insome fixed position) .
+Thevariation ofMcg(CM,cg)withtheabsolute angle ofattack (aab)isillustrated inthefollowing figure :
+The value ofCM,cg atzero lift
+(whereaab=0)isdenoted byCM,0
+Thevalue ofaabwhere Mcg=0isdenoted by
+aeq(equilibrium ortrimangle ofattack) .LONGITUDINAL STATIC 
+STABILITYConsidering anaircraft insteady, equilibrium flight atitstrimangle ofattack (aeq);then, atsome
+point, itisdisturbed byhitting awind gust, andtheangle ofattack ismomentarily changed .
+There aretwopossibilities :anincrease oradecrease inaab.
+LONGITUDINAL STATIC 
+STABILITYIftheaircraft ispitched upward, thenaab>aeq,thismeans thatthemoment about thec.g.isnegative .
+Anegative moment iscounter -clockwise, tending topitch thenose downward, hence theaircraft will
+initially tendtomove backtoward itsequilibrium position after being disturbed .
+LONGITUDINAL STATIC 
+STABILITY
+Iftheaircraft ispitched downward byagust, thenaab<aeq.
+Theresulting moment about thec.g.willbepositive (clockwise) andwilltendtopitch thenose upward ;thus,
+theaircraft willinitially tendtomove backtoward itsequilibrium position after being disturbed .
+LONGITUDINAL STATIC 
+STABILITY
+Inconclusion, anaircraft that hasa
+CM,cg–versus–aabvariation, asshown
+inthefigure, itcanbesaid tobe
+statically stable .
+Itisnoted that CM,0ispositive andthat
+the slope ofthe curve CM,cg_a,is
+negative .
+This derivative symbolizes the
+instantaneous rateofchange ofCM,cg
+with respect toaab,with allother
+variables heldconstant .𝐶𝑀,𝑐𝑔𝛼𝑎=𝜕𝐶𝑀,𝑐𝑔
+𝜕𝛼𝑎LONGITUDINAL STATIC 
+STABILITYConsidering another aircraft insteady, equilibrium flight atitstrimangle ofattack (aeq),then atsome
+point itisdisturbed byhitting awind gust, andtheangle ofattack ismomentarily changed .
+Again, there aretwopossibilities :anincrease oradecrease inaab.
+LONGITUDINAL STATIC 
+STABILITYIftheaircraft isdisturbed byagust, pitching thenose upward, thenaab>aeq,thisresults inapositive
+(clockwise) moment, which tends topitch thenose even farther away from itsequilibrium position .
+LONGITUDINAL STATIC 
+STABILITYIftheaircraft isdisturbed byagust, pitching thenose downward, thenaab<aeq,thisresults inanegative
+(counter -clockwise) moment, which tends topitch thenose even farther away from itsequilibrium position .
+LONGITUDINAL STATIC 
+STABILITY
+Therefore, because the aircraft always
+tends todiverge from equilibrium when
+disturbed, itisstatically unstable .
+CM,0isnegative and ,ispositive for
+thisaircraft
+acgMC
+a,LONGITUDINAL STATIC 
+STABILITY
+Forbothaircraft, there isapositive value ofaeq
+Thevalue ofaeqmust fallwithin thisflight range of
+theangle ofattack, orelsetheaircraft cannot be
+trimmed forsteady flight.Whenaeq,does fallwithin
+thisrange, theaircraft islongitudinally balanced
+Then, itcan beconcluded that twocriteria arenecessary
+forlongitudinal balance and static stability :
+1. CM,0must bepositive
+2. ,must benegative
+acgMC
+a,LONGITUDINAL STATIC 
+STABILITY
+Considering nowanordinary wing withaconventional airfoil withanegative moment coefficient about thea.c.
+(positive camber airfoil typical characteristic) .
+Assuming thatthewing isatzerolift,then theonlymoment onthewing isapure couple ;hence, atzerolift,
+themoment about onepoint isequal tothemoment about anyother point.
+CM,ac=CM,cg(forzerolift–wing only)
+Thefigure ofstatic stability shows that CM,0is,bydefinition, themoment coefficient about thec.g.atzerolift
+(whenaab=0),hence,
+CM,0=CM,ac(wing only)
+Thisequation demonstrates thatforawing withpositive cambered (CM,acnegative) CM,0isalsonegative .Hence,
+suchawing byitself isunbalanced .Torectify thissituation, ahorizontal tailmust beadded totheaircraft .LONGITUDINAL STATIC 
+STABILITYIfthetailismounted behind thewing andinclined downward toproduce anegative taillift,thenaclockwise
+moment about thec.g.willbecreated .
+Ifthisclockwise moment isstrong enough, itwillovercome thenegative CM,ac,and CM,0forthewing-tail
+combination willbecome positive .Theaircraft willthenbebalanced .LONGITUDINAL STATIC 
+STABILITY
+Ifthehorizontal tailismounted ahead ofthewing andinclined upward toproduce apositive canard lift,then
+aclockwise moment about thec.g.willbecreated .
+Ifthisclockwise moment isstrong enough, thenitwillovercome thenegative CM,ac,and CM,0forthecanard -
+wing combination willbecome positive, andtheaircraft willthenbebalanced .
+Unfortunately, theforward -located tailofacanard interferes withasmooth aerodynamic flowoverthewing.
+Forthisandother reason, canard configurations have notbeen popular .LONGITUDINAL STATIC 
+STABILITY
+Considering theforces andmoments onthewing only, asshown inthefollowing figure :CONTRIBUTION OF THE 
+WING TO Mcg
+Considering theforces andmoments onthe
+wing only, asshown inthefollowing figure :
+Therelative wind isinclined attheangleaw
+withrespect tothezero-liftline,whereaw
+istheabsolute angle ofattack ofthewing.
+Thec.g.oftheaircraft islocated adistance
+hcbehind theL.E.,and zcabove thezero-
+liftline(hand zarecoordinates ofthec.g.
+infractions ofthechord)
+The a.c.isadistance hac,wcfrom theL.E.CONTRIBUTION OF THE 
+WING TO Mcg
+Themoments about thec.g.oftheaircraft dueto
+thewing are:
+Forthenormal -flight range ofaconventional
+aircraft,awissmall;hence, theapproximation is
+made that cosawisapproximately 1.0and sinawis
+approximately aw[rad].
+Then itcanbesaid:
+()() zc Dzc Lchhc D hhc L M Mw w w w wacww Cwac w w ac cgw wa a a a cos sin sin cos, , − +− +− +=
+()()()zcD Lc hh D L M Mw ww wac ww w ac cgw w−+− ++= a a,CONTRIBUTION OF THE 
+WING TO Mcg
+Normalizing thelastequation (coefficient form) :
+Assumption 1:Formost oftheaircraft, thec.g.is
+located close tothezero-liftline;zisusually small
+(zapprox .0)andwillbeneglected .
+( )()( )z C C hh C C C CwD wwL wac wwD wL acM cgMw w , , , , , , , −+− ++= a aCONTRIBUTION OF THE 
+WING TO Mcg
+Assumption 2:aw[rad]isusually much lessthan unity,
+and CD,wisusually lessthan CL,w;hence, theproduct CD,w
+aw<<CL,w
+Withthese assumptions, theCM,cg_w equation simplifies to:
+Onaphysical basis, thisequation states thatthewing’s
+contribution toMcgisduetotwofactors :themoment
+about the a.c.Mac,wand theliftacting through the
+moment arm(h–hac,w)c
+() ()wac ww acM wac wL acM cgM hh a C hh C C C
+w w w , , , , , , −+=−+= aCONTRIBUTION OF THE 
+WING TO Mcg
+Thelastmoment equation results canbemodified foramoment contribution ofthefuselage .
+Thisfuselage experiences amoment about itsa.c.,plussome liftanddragduetotheairflow around it.
+Considering awing-body combination, theairflow willdiffer from thatover thewing andbody separately ;
+aerodynamic interference occurs where theflowoverthewing affects thefuselage flow, andvice-versa .
+Duetothisinterference, themoment duetothewing-body combination isnotsimply thesumoftheseparate
+wing andfuselage moments .
+Similarly, theliftanddrag ofthewing-body combination areaffected byaerodynamic interference, which is
+difficult topredict theoretically .
+Consequently, thelift,drag, andmoments ofawing -body combination areusually obtained from
+wind tunnel measurements .CONTRIBUTION OF THE 
+WING/BODY TO McgThen, taken asabasis themoment coefficient equation, thecontribution ofthewing-body combination
+toMcgcanbesaidtobe:
+where :
+CLwb–liftcoefficient about thea.c.
+CM,ac wb–moment coefficient about thea.c.
+awb–theslope oftheliftcurve
+awb–absolute angle ofattack
+Ingeneral, adding afuselage toawing shifts the a.c.forward, increases theliftcurve slope, and
+contributes anegative increment tothemoment about thea.c.
+() ()wbac wb wb acM wbac wbL acM cgM hh a C hh C C C
+wb wb wb , , , , , , − +=−+= aCONTRIBUTION OF THE 
+WING/BODY TO McgExample
+Foragiven wing-body combination, theaerodynamic center lies0.05chord length ahead ofthecenter ofgravity (h-hac
+=5%).Themoment coefficient about theaerodynamic center (CM,ac_wb )is-0.016.Iftheliftcoefficient (CL,wb)is0.45,
+calculate themoment coefficient about thecenter ofgravity (CM,cg).CONTRIBUTION OF THE 
+WING/BODY TO McgExample
+Awing-body model istested inasubsonic wind tunnel .Theliftisfound tobezeroatageometric angle of
+attackaL=0=-1.5°.Ata=5°theliftcoefficient ismeasured as0.52.Also, ata=1°and 7.88°,themoment
+coefficients about thecenter ofgravity (CM,cg)aremeasured as-0.01and 0.05,respectively .Thecenter ofgravity
+islocated at0.35c(h=35%).Calculate thelocation oftheaerodynamic center (hac)andthevalue ofCM,ac_wbCONTRIBUTION OF THE 
+WING/BODY TO Mcg
+Thetailisgenerally mounted behind thewing;hence, it
+feelsthewake oftheairflow overthewing.
+Asaresult, twointerference effects influence thetail
+aerodynamics :
+1.Theairflow atthetailisdeflected downward bythe
+downwash due tothefinite wing;that is,the
+relative wind seen bythetailisnotinthesame
+direction astherelative wind seen bythewing.CONTRIBUTION OF THE 
+TAIL TO Mcg
+Thetailisgenerally mounted behind thewing;hence,
+itfeelsthewake oftheairflow overthewing.
+Asaresult, twointerference effects influence thetail
+aerodynamics :
+2.Because oftheretarding force ofskinfriction and
+pressure dragoverthewing, theairflow reaching
+thetailhasbeen slowed :V∞>V’
+CONTRIBUTION OF THE 
+TAIL TO McgInthefigure, V∞istherelative wind asseen bythewing,
+andV’istherelative wind atthetail,inclined below V∞by
+thedownwash angleeCONTRIBUTION OF THE 
+TAIL TO Mcg
+Inthefigure, V∞istherelative wind asseen bythewing, andV’isthe
+relative wind atthetail,inclined below V∞bythedownwash anglee
+Thetaillifts Ltanddrag Dtareperpendicular andparallel toV’.
+According tothefigure, thetailcontribution tothetotalaircraft liftisLt
+cose–Dtsine
+Inmany cases,eisverysmall, andthus Ltcose–Dtsine≈Lt
+Hence, forpractical purposes, itissufficient toaddthetailliftdirectly to
+thewing-body lifttoobtain theliftofthecomplete aircraft .CONTRIBUTION OF THE 
+TAIL TO Mcg
+Now, considering thetailrelation tothewing-body zero-liftline,itisseen thatthewing-body combination isatanabsolute
+angle ofattackawb
+Thetailistwisted downward toprovide apositive CM,0;thezero-liftlineofthetailisintentionally inclined tothezero-liftlineof
+thewing-body combination atthetail-setting angle it
+Theabsolute angle ofattack ofthetailatismeasured between thelocalrelative windV’andthetailzero-liftline.CONTRIBUTION OF THE TAIL TO Mcg
+Thetailhasana.c.,about which there isamoment Mac,andthrough which Ltand Dtactperpendicular andparallel, respectively, toV’
+V’isinclined below V∞bythedownwash anglee;hence Ltmakes anangle (awb–e)withthevertical .
+Thetaila.c.islocated adistance ltbehind and ztbelow thec.g.oftheaircraft .
+•Vertical components ofLtand DtareLtcos(awb–e)and Dtsin(awb–e)
+•Horizontal components ofLtand DtareLtsin(awb–e)and Dtcos(awb–e)CONTRIBUTION OF THE TAIL TO Mcg
+According tothefigure, thesumofmoments about thec.g.duetoLt,Dt,and Mac,tofthetailare:
+Mcg,tdenotes thecontribution tomoments oftheaircraft’s c.g.duetothehorizontal tail.
+()()  ()()tac wb tt wb tt wb t wb tt tcg M Dz Lz D Ll M, , cos sin sin cos +− −− +− +− −= ea ea ea eaCONTRIBUTION OF THE TAIL TO Mcg
+Inthisequation, thefirstterm ontheright-hand side, ltLtcos(awb–e),isbyfarthelargest inmagnitude .
+Forconventional aircraft, thefollowing simplifications arereasonable :
+1.zt<<lt
+2.Dt<<Lt
+3.Theangle (awb–e)issmall, hence sin(awb–e)≈0and cos(awb–e)≈1.0
+4.Mac,tissmall inmagnitude
+Withthisapproximations (based onexperience), thenthelastequation issimplified to:
+Mcg,t=-ltLtthis approximation
+()()  ()()tac wb tt wb tt wb t wb tt tcg M Dz Lz D Ll M, , cos sin sin cos +− −− +− +− −= ea ea ea eaCONTRIBUTION OF THE 
+TAIL TO McgBydefinition, thetailliftcoefficient isdefined as:
+Combining thelasttwoequations, itisobtained :
+Dividing thisequation byq∞Sc,where cisthechord and Sisthewing planform area, gives:
+From thisequation itisobtained thehorizontal tailvolume coefficient VH
+tt
+tLSqLC
+=,
+tLt t tcg CSql M, , −=
+tLtt
+tcgMtcgCScSlCcSqM
+, ,,−=
+
+ScSlVCCtt
+H
+tLtcgM=−
+,,CONTRIBUTION OF THE 
+TAIL TO Mcg•Horizontal stabilizer –it can be calculated by taking as reference the mean aerodynamic 
+chord, the wing planform area (reference), and the main wing location.
+•It will be defined by a coefficient known as the horizontal volume coefficientAIRPLANE EMPENNAGE
+htww
+HT htlScC S=
+HT HC V=Thus,
+Thissimple relation gives thetotalcontribution ofthetailtomoments about theaircraft’s c.g.
+Withthisresult, itcanbesaidthatthemoment isequal tothetailliftoperating through themoment arm lt
+Keeping inmind thestability criterion ( ),theequation should beinterms ofaa
+Itisseen from theairplane inbalance flight figure that.
+Then itcould besaid: ,where atisthetail’sliftslope.
+tL H tcgM CV C, ,−=
+acgMC
+a,
+eaa −−=t wb t i
+()eaa −−==t wb t tt tL i a a C,CONTRIBUTION OF THE 
+TAIL TO McgThe downwash angle (e)isdifficult topredict theoretically and isusually obtained from experiment,
+nevertheless, itcanbewritten as:
+Wheree0isthedownwash angle when thewing-body combination isatzerolift
+Bothe0and areusually obtained from simulations orwind tunnel data .
+Combining thelastequations yields :
+Again, combining thislastequation with ,itisobtained :
+wb 0aaeee+=
+ae
+
+()0 tt wbt tL ia 1 a C eaea −−
+
+
+−=,
+tL H tcgM CV C, ,−=
+()t 0 Ht wb Ht tcgM i Va 1 Va C ++
+
+
+− −= eaea,CONTRIBUTION OF THE 
+TAIL TO Mcg
+ൗ1𝑟𝑎𝑑𝑟𝑎𝑑Considering theaircraft, thetotal Mcgisduetothecontribution ofthewing-body combination plusthat
+ofthetail
+Here CM,cgisthetotalmoment coefficient about thec.g.forthecomplete aircraft
+Substituting thevalues ofCM,cgwb,and CMcg,tintothelastequation, ityields :
+or,inother terms :TOTAL PITCHING MOMENT 
+ABOUT THE c.g.
+tcgM cgM cgM C C C
+wb , , , +=
+()tL H wbac wbL acM cgM CV hh C C C
+wb , , , , , −−+=
+()0 ttH
+wbt
+H wbac wb wb acM cgM iaV 1aaV hh a C C
+wbeaea ++
+
+
+
+− −− +=, , ,Theangleaashould beinterpreted as
+the absolute angle of attack
+referenced tothezero-liftlineofthe
+complete aircraft, which isnot
+necessarily thesame asthezero-lift
+lineforthewing-body combination .
+Formany conventional aircraft, the
+difference issmall;therefore, itcould
+beassumed thatthetwozero-liftlines
+areidentical (awb=aa).
+TOTAL PITCHING MOMENT 
+ABOUT THE c.g.Consistent withthelastassumption, thetotalliftoftheaircraft isduetothewing-body combination, withthetail
+liftneglected .
+Hence, CL,wb=CL,andtheliftslope awb=a,where CLand aareforthecomplete aircraft .
+()0 ttHt
+H wbac a acM cgM iaV 1aaV hh a C C
+wbeaea ++
+
+
+
+−−−+=, , ,TOTAL PITCHING MOMENT 
+ABOUT THE c.g.
+Example
+Consider thewing-body model ofthelastExample .Theareaandchord ofthewing are0.1m2and 0.1m,respectively .
+Now,assume thatahorizontal tailisadded tothismodel .Thedistance from theairplane's center ofgravity tothetail's
+aerodynamic center is0.17m;thetailareais0.02m2;thetail-setting angle is2.7°;thetailliftslope is0.1[1/deg];andfrom
+experimental measurement, e0=0ande/a=0.35.
+Ifa=7.88°,calculate CM,cgfortheairplane model .
+TOTAL PITCHING MOMENT 
+ABOUT THE c.g.
+Thecriteria forlongitudinal balance andstatic
+stability are:
+1.CM,0must bepositive
+2. must benegative
+both conditions with theimplicit assumption
+thataefallswithin thepractical flight range of
+theangle ofattack ;that is,themoment
+coefficient curve must belikethegraph .EQUATION FOR LONGITUDINAL 
+STATIC STABILITY
+acgMC
+a,
+Theideanowistocombine alltheresults tocalculate CM,0and
+inamore direct way
+CM,0isthevalue ofCM,cgwhenaa=0,thatis,when theliftis
+zero
+Substituting aa=0inthemoment coefficient equation, thenit
+isobtained :
+CM,0must bepositive tobalance theaircraft
+CM,acwbisnegative forconventional aircraft
+acgMC
+a,
+() ()0 ttH acM0LcgM 0M iaV C C C
+wbe++= =, , ,
+()0 ttHt
+H wbac a acM cgM iaV 1aaV hh a C C
+wbeaea ++
+
+
+
+−−−+=, , ,EQUATION FOR LONGITUDINAL 
+STATIC STABILITYDifferentiating CM,cgwith respect toaaitis
+obtained :
+This equation shows thepowerful influence of
+thelocation ofhofthec.g.andthetailvolume
+coefficient VHindetermining longitudinal static
+stability .
+
+
+
+
+−−−=
+ae
+a1aaV hhaCt
+H wbac
+acgM
+,,EQUATION FOR LONGITUDINAL 
+STATIC STABILITY
+Example
+Consider thewing-body-tailwind tunnel model ofthelastexample .Does thismodel have longitudinal static
+stability andbalance?EQUATION FOR LONGITUDINAL 
+STATIC STABILITY
+Now, itisconsidered thesituation where thelocation ofhofthec.g.isallowed tochange, with
+everything elseremaining fixed.NEUTRAL POINT
+Theequation
+Indicates thatstatic stability isastrong function ofh
+Thevalue of canalways bemade negative by
+properly locating thec.g.
+There isonespecific location ofthec.g.suchthat:
+Thevalue ofhwhen thiscondition holds isdefined asthe
+neutral point, denoted byhn
+When h=hn,theslope ofthemoment coefficient curve is
+zero.
+
+
+
+
+−−−=
+ae
+a1aaV hhaCt
+H wbac
+acgM
+,,
+acgMC
+a,
+0C
+acgM=
+a,NEUTRAL POINT
+Thelocation oftheneutral point could beobtained from theequation of bysetting h=hnand
+thederivative equal to0
+Solving thisequation, itisobtained :
+Thelastequation shows thatforallpractical purposes, theneutral point isafixed quantity frozen
+somewhere intheaircraft because theright-hand sideofitareestablished bythedesign configuration
+oftheaircraft .
+
+
+
+
+−−−=ae1aaV hha0t
+H wbac n ,
+acgMC
+a,
+
+
+
+− +=ae1aaV h ht
+H wbac n ,NEUTRAL POINTTheeffect ofthelocation ofc.g.,relative totheneutral point, onstatic stability canbe
+seen inthefollowing figure :NEUTRAL POINT
+Remembering that hismeasured from theleading edge ofthewing, hence, h<hnmeans thatthec.g.
+location isforward oftheneutral point.
+Thus, analternative stability criterion is:
+“For longitudinal static stability, theposition ofthec.g.must always beforward oftheneutral
+point”
+The a.c.forawing isthatpoint about which moments areindependent oftheangle ofattack .
+When h=hn,CM,cgisindependent oftheangle ofattack ;therefore, theneutral point might be
+considered thea.c.ofthecomplete aircraft .
+Byproper selection ofthetailparameters, principally VH,hncanbelocated atwillbythedesigner .NEUTRAL POINTExample
+Forthewind tunnel model ofthelastexamples, calculate theneutral point location .NEUTRAL POINT
+Solving forhac,wb,yields :
+Substituting thisequation into:
+itisobtained :STATIC MARGIN
+
+
+
+− +=ae1aaV h ht
+H wbac n ,
+
+
+
+− −=ae1aaVh ht
+H n wbac,
+
+
+
+
+−−−=
+ae
+a1aaV hhaCt
+H wbac
+acgM
+,,
+()n
+acgMhhaC−=
+a,Inthelastequation, thedistance (hn–h)isdefined asthestatic margin (S.M.)andisshown inthe
+following figure :
+Thus, itcould besaidthat:
+Thisequation shows that S.M.isadirect measure oflongitudinal static stability .
+Forstatic stability, the S.M.must bepositive ;moreover, thelarger the S.M.,themore
+stable theaircraft .
+() ..,MSa hhaC
+n
+acgM−=−−=
+aSTATIC MARGINExample
+Forthewind tunnel model oftheprevious examples, calculate thestatic margin .STATIC MARGIN
+Diagram forstatic stability, withtheliftacting behind thecenter ofgravityAIRCRAFT A.C.
+Diagram forstatic stability, withtheliftacting atthecenter ofpressure
+AIRCRAFT C.P .DIRECTIONAL STATIC STABILITY
+DIRECTIONAL STATIC STABILITY
+wwvtvt
+vtSbSlV=
+•Vertical stabilizer –in the same way as the horizontal, area can be determined with a 
+base of the wingspan planform, wing area (reference) and wing location
+•It will be defined by a coefficient known as the vertical volume coefficientAIRPLANE EMPENNAGE
+vtww
+VT vtlSbC S=DIRECTIONAL STATIC STABILITY
+DIRECTIONAL STATIC STABILITYDIRECTIONAL STATIC STABILITY

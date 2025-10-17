@@ -1,0 +1,218 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBNumerical Source Panel 
+Method
+•Astandard aerodynamic tool in
+industry and most research
+laboratories .
+•Source sheet :Iftheseries ofline
+sources arelooked atasacross -
+section, the source sheet will
+appear (edge view ofthesheet) .
+Source Sheetx
+zyNumerical Source Panel 
+Method
+•s–distance measured along thesource sheet
+•l=l(s)[m/s orft/s]–source strength per unit
+length along s
+•The strength ofaninfinitesimal portion dsofthe
+sheet islds
+P
+The small section ofthesource sheet
+of strength lds induces an
+infinitesimally potential dfatpoint PabNumerical Source Panel 
+Method
+•The complete velocity potential
+atpoint P,induced bytheentire
+source sheet from atob,willbe:
+•l(s)can change from positive to
+negative along the sheet ;this
+means that the“source” sheet is
+acombination ofline sources
+and line sinks .
+P
+a
+bNumerical Source Panel 
+Method
+•Superposition ofauniform flow and source sheet onabody ofagiven shape to
+produce theflow over thebody
+•Problem :finding the
+appropriate l(s)
+•Solution :approximation
+of the source sheet
+dividing thesurface bya
+series ofstraight panelsNumerical Source Panel 
+Method
+•Source panel distribution over thesurface ofabody ofarbitrary shape
+Source strength lper unit length isconstant over the entire
+panel, butitisallowed tovary from one panel tothenext .Panel technique :solve forlj,(j=1ton),such
+that the body surface becomes astreamline
+oftheflow .
+This boundary condition is imposed
+numerically bydefining eachpanel’s midpoint
+asacontrol point and determining thelj’s
+such that thenormal component oftheflow
+velocity iszero ateach control point .Numerical Source Panel 
+Method
+Distance from anypoint
+onthejthpanel toPDfj-Velocity potential induced
+atpoint Pdue tothejthpanel
+Hereljisconstant over the jthpanel, and
+theintegral istaken over thejthpanel only.
+The potential atPdue toallpanels isthe
+previous equation summed over allthe
+panels :
+Distance rpjisgiven by:
+Numerical Source Panel 
+Method
+The potential atP(control point of
+the ithpanel) due toallpanels
+(coordinates xi,yi):
+Distance rijisgiven by: P
+Numerical Source Panel 
+Method
+The boundary condition isapplied atthecontrol points
+PNormal component of the flow velocity 
+is zero at the control points
+niUnit vector normal tothe ith
+panel, directed outofthebodyThe component ofV∞normal
+totheithpanel is:
+V∞
+biPositive when directed away from
+the body, and negative when
+directed toward thebodyNumerical Source Panel 
+Method
+P
+niThe normal component ofvelocity induced
+at(xi,yi)bythesource panels is:
+V∞
+bi
+Replacing f(xi,yi)inthe last equation, it
+gives :
+Normal velocity induced 
+at the ithcontrol pointNormal velocity induced at the ith
+control point by the other panelsNumerical Source Panel 
+Method
+P
+niThe boundary condition states that:
+V∞
+bi
+Substituting the values ofV∞,n,and
+Vninthelastequation :
+Numerical Source Panel 
+Method
+P
+niV∞
+biThe equation isthecrux ofthesource panel method :
+Depends simply on the panel geometry; 
+there are not properties of the flow.
+Ii,j–value ofthe integral when the control
+point isonthe ithpanel and the integral is
+over thejthpanel .Numerical Source Panel 
+Method
+P
+niV∞
+biThe equation isthecrux ofthesource panel method :
+•Linear algebraic equation with n
+unknowns l1,l2,…,ln.
+•Represents the flow boundary
+condition evaluated atthecontrol
+point oftheithpanel .Numerical Source Panel 
+Method
+P
+niV∞
+biThe equation isthecrux ofthesource panel method :
+•Applying the boundary condition
+tothe control points ofallthe
+panels ,meaning that inthe last
+equation, i=1,2,…,n.
+•The results will beasystem ofn
+linear algebraic equations with n
+unknowns (l1,l2,…,ln),which
+can besolved simultaneously by
+conventional numerical methods .Numerical Source Panel 
+Method
+P
+niV∞
+biThe equation isthecrux ofthesource panel method :
+•After solving thesystem ofequations
+represented bythelastequation with
+i=1,2,…,n,we now have the
+distribution source panel strengths,
+which, inan appropriate fashion,
+cause the body surface tobea
+streamline oftheflow .
+•This approximation can be made
+more accurate by increasing the
+number ofpanels .Numerical Source Panel 
+Method
+P
+niV∞
+biThe equation isthecrux ofthesource panel method :
+Formost airfoil shapes :
+•Itisrecommended tohave between 50
+to100 panels .
+•Itisdesirable tocover theleading -edge
+region with several small panels to
+accurately represent therapid change in
+the surface curvature and use larger
+panels over the relatively flat portions
+ofthebody .
+•Panels canhave different lengths .Numerical Source Panel 
+Method
+P
+niV∞
+biAfter thevalues ofli’s(i=1,2,…,n)are
+obtained, the velocity tangent tothe
+surface ateach control point can be
+calculated :
+s–distance along thebody surface,
+measured positive from front (L.E.)
+torear (T.E.).
+The component of freestream
+velocity tangent tothesurface is:
+Numerical Source Panel 
+Method
+P
+niV∞
+biAfter thevalues ofli’s(i=1,2,…,n)are
+obtained, the velocity tangent tothe
+surface ateach control point can be
+calculated :
+The tangential velocity Vsatthe
+control point of the ith panel
+induced byallthepanels isobtained
+by differentiating the following
+equation with respect tos:
+Numerical Source Panel 
+Method
+P
+niV∞
+biAfter thevalues ofli’s(i=1,2,…,n)are
+obtained, the velocity tangent tothe
+surface ateach control point can be
+calculated :
+The total surface velocity atthe ith
+control point Viisthe sum ofthe
+contribution from the freestream
+and thesource panels :
+Numerical Source Panel 
+Method
+P
+niV∞
+biAfter thevalues ofli’s(i=1,2,…,n)are
+obtained, the velocity tangent tothe
+surface ateach control point can be
+calculated :
+The pressure coefficient atthe ith
+control point isobtained from the
+following equation :
+Lifting Flows Over Arbitrary 
+Bodies: The Vortex Panel 
+Numerical Method
+Use of freeware –XFOIL
+http://web.mit.edu/drela/Public/web/xfoil/
+Lifting Flows Over Arbitrary 
+Bodies: The Vortex Panel 
+Numerical Method

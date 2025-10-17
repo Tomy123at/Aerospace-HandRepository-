@@ -1,0 +1,350 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPB•Altitude concepts
+•3 types of altitude:
+1. Absolute (ha)
+2. Geometric (hG)
+3. Geopotential (h)
+STANDARD ATMOSPHERE BASIC 
+CONCEPTS AND DEFINITIONS•Geometric altitude ( hG)
+ Geometric altitude above sea level
+•Absolute  altitude ( ha)
+hGha
+r ≈ 6.356766 x 106 m
+G a hr h+=
+2
+G02
+a0hrrghrgg
+
+
+
++=
+
+
+=
+2 0sec80665.9 m g=ALTITUDE DEFINITIONS•Geopotential altitude ( h) – take for International Standard 
+Atmosphere  (I.S.A.)
+It is a “fictitious” altitude defined by the following equation:
+This fictitious altitude can be taken as physically compatible, 
+assuming that:
+dhg dp0−=
+0g constg == .ALTITUDE DEFINITIONS•Relation between geopotential altitude ( h) and geometric altitude (hG):
+•This equation proves that the difference between h and hG will 
+vary from 65 km of altitude
+•Example: Find the h value if hG = 7.0 km
+Note: 65 km is the altitude at which the space shuttle uses to start heating it, 
+becoming of great importance during this re -entry phase to the terrestrial 
+atmosphere
+G
+Ghhrrh+=ALTITUDE DEFINITIONSEarth ´s atmosphere composition 
+(until 100 km):
+•Oxygen ( 20.95% )
+•Nitrogen ( 78.08% )
+•Argon ( 0.93% )
+•Carbon Dioxide ( 0.046% )
+•Water vapor (approximately 1.0% )
+•Neon ( 18.2 ppm )
+•Helium ( 5.24 ppm )
+•Krypton ( 1.14 ppm )
+•Hydrogen ( 0.5 ppm )
+•Ozone ( 11.6 ppm )
+EARTH ´S 
+ATMOSPHERE 
+LAYERSEARTH ´S ATMOSPHERE LAYERSTroposphere :
+•Variable  altitude  between  6 km in 
+the polar  zones  and 18 to 20 km 
+in the inter -tropical  zone
+• Its temperature  decreases  with  
+the increment  in altitude
+•All the phenomena  called  
+“meteorological  weather”  
+happen  hereEARTH ´S ATMOSPHERE LAYERS
+Stratosphere :
+• Its name  is given  because  the 
+layers  have  a horizontal  
+disposition  (or stratus)  6/20 - 
+50 km; the temperature  
+remains  constant  at the 
+beginning,  then  increases  with  
+the altitude
+•Ozone  layer  (ozonosphere)EARTH ´S ATMOSPHERE LAYERS
+Mesosphere :
+•Between  50 and 80 km 
+altitude,  it contains  just 0.1% 
+of the total  air mass . Coldest  
+zone  in the atmosphere,  
+reaching  a value  of -80°C
+•The lower  air density  
+determines  the atmospheric  
+turbulences  and waves  acting  
+at a space  scaleEARTH ´S ATMOSPHERE LAYERS
+Thermosphere  or ionosphere :
+•Between  50/80 - 600/800 
+km, the temperature  
+increases  with  the altitude .
+•At this altitude,  the air is 
+thin,  and the temperature  
+changes  according  to solar  
+activity . If the sun is active,  
+the thermosphere  
+temperature  can reach  a 
+value  of 1500 ° C or moreEARTH ´S ATMOSPHERE LAYERS
+Exosphere:
+•Between 600/800 - 10000 km
+•Composed mostly of 
+hydrogen and helium
+•In this layer,  the atoms  
+escape  toward  the space
+EARTH ´S ATMOSPHERE LAYERS•Density
+•Pressure
+•Temperature
+Vm=
+SFP=PT
+S.L.10000 ft
+K = ºC+ 273.15AIR MAIN CHARACTERISTICSITERNATIONAL STANDARD 
+ATMOSPHEREITERNATIONAL STANDARD 
+ATMOSPHERE
+•A reference  of the I.S.A. values  can be found  in the following  link: 
+https ://www .digitaldutch .com/atmoscalc/•Created  by ICAO
+•Gives  values  of pressure,  temperature,  density,  and other  air properties  at different  altitudes
+•It is only  a reference,  and it does  not predict  the actual  atmospheric  properties  that can appear  at a 
+certain   place  and time
+•It allows  to reduce  the data  and calculus  of a test to a convenient  reference
+p0 = 1.01325 x 105 Pa = 2116.2 lb/ft2 = 1 atm = 1.01325 bar
+0 = 1.2250 kg/m3 = 0.002377 slug/ft3
+T0 = 288.16  K = 15.01 °C = 518.69 °R ITERNATIONAL STANDARD 
+ATMOSPHERE100
+80
+60
+40
+20
+0
+200 240 260 280 320 160288.16 K216.66 K282.66 K165.66 K225.66 K105
+90
+79
+53
+47
+25
+11
+mK a / 105.43
+3−−=
+mK a / 100.43
+4−=
+mK a / 100.33
+2−=
+mK a / 105.63
+1−−=Altitude [km]
+Temperature [K]ITERNATIONAL STANDARD 
+ATMOSPHEREIsothermal layer
+1 1 1 p T ,,
+Base of isothermal layer
+p T,,
+h
+1h
+()10hhTRg
+1epp−
+
+
+−
+=
+()10hhTRg
+1e−
+
+
+−
+=ITERNATIONAL STANDARD 
+ATMOSPHEREGradient region
+1 1 1 p T ,,
+Base of gradient region
+p T,,
+h
+1h
+Rag
+1 10
+TT
+pp−
+
+
+
+=
+
+
++−
+
+
+
+=1Rag
+1 10
+TT
+ 1
+a
+()1 1 hhaTT −+=ITERNATIONAL STANDARD 
+ATMOSPHERE•Example
+Calculate  the standard  atmosphere  values  of T, p, and  at a geopotential  altitude  of 14 km.
+From  the figure,  when  14 km = 14000  m, the standard  value  of the temperature  is 216.66 K (Troposphere) .
+For the pressure  standard  value,  first is evaluated  for the gradient  region  (a1 = -0.0065  K/m = -6.5x10-3 K/m):
+Now,  for the isothermal  region,  the pressure  at 14 km is calculated :
+p0 = 1.01325 x 105 Pa = 2116.2 lb/ft2 = 1 atm = 1.01325 bar
+0 = 1.2250 kg/m3 = 0.002377 slug/ft3
+T0 = 288.16  K = 15.01 °C = 518.69 °R ITERNATIONAL STANDARD 
+ATMOSPHERE
+𝑝@11000 𝑚=𝑝1𝑇
+𝑇1−𝑔0
+𝑎1𝑅
+=101325216.66
+288.16−9.81
+−0.0065287
+=22615.57𝑃𝑎
+𝑝@14000 𝑚=𝑝1𝑒−𝑔0
+𝑅𝑇ℎ−ℎ1=22615.57𝑒−9.81
+287216.6614000−11000=14088.32𝑃𝑎•Example
+Calculate  the standard  atmosphere  values  of T, p, and  at a geopotential  altitude  of 14 km.
+For the density  standard  value,  first is evaluated  for the gradient  region  (a1 = -0.0065  K/m = -6.5x10-3 K/m):
+Now,  for the isothermal  region,  the density  at 14 km is calculated :
+p0 = 1.01325 x 105 Pa = 2116.2 lb/ft2 = 1 atm = 1.01325 bar
+0 = 1.2250 kg/m3 = 0.002377 slug/ft3
+T0 = 288.16  K = 15.01 °C = 518.69 °R ITERNATIONAL STANDARD 
+ATMOSPHERE
+𝜌@11000 𝑚=𝜌1𝑇
+𝑇1−𝑔0
+𝑎1𝑅+1
+=1.225216.66
+288.16−9.81
+−0.0065287+1
+=0.3637 ൗ𝑘𝑔
+𝑚3
+𝜌@14000 𝑚=𝜌1𝑒−𝑔0
+𝑅𝑇ℎ−ℎ1=0.3637𝑒−9.81
+287216.6614000−11000=0.2265 ൗ𝑘𝑔
+𝑚3•Using  I.S.A., three  types  of altitude  can be defined : pressure,  temperature,  and density
+hGExternal pressure = 6.16 x 104 Pa
+External Temperature = 265.4 K
+External density = 0.8087 kg/m3Values of P , T y  at an altitude hG: Values of h by I.S.A.:
+Pressure altitude: 4.0 km
+Temperature altitude: 3.5 km
+Density altitude: 4.12 kmPRESSURE, TEMPERATURE AND 
+DENSITY ALTITUDES•Example :
+A commercial  airplane  is flying  at an altitude  where  the actual  pressure  and temperature  are 4.72x104 [N/m2] and 
+255.7 [K], respectively ; what  are the pressure,  temperature  and density  altitudes?
+As it is a commercial  airplane  it is assumed  that it would  fly in the troposphere  region,  therefore  the equations  of 
+the first gradient  will be used  here :
+hGPRESSURE, TEMPERATURE AND 
+DENSITY ALTITUDES
+p0 = 1.01325 x 105 Pa = 2116.2 lb/ft2 = 1 atm = 1.01325 bar
+0 = 1.2250 kg/m3 = 0.002377 slug/ft3
+T0 = 288.16  K = 15.01 °C = 518.69 °R 𝑝
+𝑝1=𝑇
+𝑇1−𝑔0
+𝑎1⋅𝑅
+𝜌
+𝜌1=𝑇
+𝑇1−𝑔0
+𝑎1⋅𝑅+1𝑇=𝑇1+𝑎1ℎ−ℎ1For the temperature altitude :
+ℎ=4993.85𝑚≈5𝑘𝑚
+The temperature altitude  is approximately 5 km𝑇=𝑇1+𝑎1ℎ−ℎ1
+𝑇−𝑇1
+𝑎1=ℎ−ℎ1
+ℎ=𝑇−𝑇1
+𝑎1+ℎ1ℎ=255.7−288.16
+−0.0065+0•Example :
+A commercial  airplane  is flying  at an altitude  where  the actual  pressure  and temperature  are 4.72x104 [N/m2] and 
+255.7 [K], respectively ; what  are the pressure,  temperature  and density  altitudes?
+As it is a commercial  airplane  it is assumed  that it would  fly in the troposphere  region,  therefore  the equations  of 
+the first gradient  will be used  here :
+hGPRESSURE, TEMPERATURE AND 
+DENSITY ALTITUDES
+p0 = 1.01325 x 105 Pa = 2116.2 lb/ft2 = 1 atm = 1.01325 bar
+0 = 1.2250 kg/m3 = 0.002377 slug/ft3
+T0 = 288.16  K = 15.01 °C = 518.69 °R 𝑝
+𝑝1=𝑇
+𝑇1−𝑔0
+𝑎1⋅𝑅
+𝜌
+𝜌1=𝑇
+𝑇1−𝑔0
+𝑎1⋅𝑅+1𝑇=𝑇1+𝑎1ℎ−ℎ1For the pressure altitude :
+𝑝
+𝑝1=𝑇
+𝑇1−𝑔0
+𝑎1⋅𝑅
+𝑝
+𝑝1−𝑔0
+𝑎1⋅𝑅−1
+=𝑇
+𝑇1
+𝑇1𝑝
+𝑝1−𝑔0
+𝑎1⋅𝑅−1
+=𝑇𝑇1𝑝
+𝑝1−𝑔0
+𝑎1⋅𝑅−1
+=𝑇1+𝑎1ℎ−ℎ1
+𝑇1
+𝑎1𝑝
+𝑝1−𝑔0
+𝑎1⋅𝑅−1
+−1=ℎ−ℎ1
+ℎ=𝑇1
+𝑎1𝑝
+𝑝1−𝑔0
+𝑎1⋅𝑅−1
+−1+ℎ1ℎ=288.16
+−0.006547200
+101325−9.81
+−0.0065⋅287−1
+−1+0
+ℎ=5994.34𝑚≈6𝑘𝑚
+The pressure altitude  is approximately 6 km•Example :
+A commercial  airplane  is flying  at an altitude  where  the actual  pressure  and temperature  are 4.72x104 [N/m2] and 
+255.7 [K], respectively ; what  are the pressure,  temperature  and density  altitudes?
+As it is a commercial  airplane  it is assumed  that it would  fly in the troposphere  region,  therefore  the equations  of 
+the first gradient  will be used  here :
+hGPRESSURE, TEMPERATURE AND 
+DENSITY ALTITUDES
+p0 = 1.01325 x 105 Pa = 2116.2 lb/ft2 = 1 atm = 1.01325 bar
+0 = 1.2250 kg/m3 = 0.002377 slug/ft3
+T0 = 288.16  K = 15.01 °C = 518.69 °R 𝑝
+𝑝1=𝑇
+𝑇1−𝑔0
+𝑎1⋅𝑅
+𝜌
+𝜌1=𝑇
+𝑇1−𝑔0
+𝑎1⋅𝑅+1𝑇=𝑇1+𝑎1ℎ−ℎ1For the density altitude :
+𝜌
+𝜌1=𝑇
+𝑇1−𝑔0
+𝑎1⋅𝑅+1
+𝜌
+𝜌1−𝑔0
+𝑎1⋅𝑅+1−1
+=𝑇
+𝑇1𝑇1𝜌
+𝜌1−𝑔0
+𝑎1⋅𝑅+1−1
+=𝑇
+𝑇1𝜌
+𝜌1−𝑔0
+𝑎1⋅𝑅+1−1
+=𝑇1+𝑎1ℎ−ℎ1
+𝑇1
+𝑎1𝜌
+𝜌1−𝑔0
+𝑎1⋅𝑅+1−1
+−1=ℎ−ℎ1ℎ=𝑇1
+𝑎1𝜌
+𝜌1−𝑔0
+𝑎1⋅𝑅+1−1
+−1+ℎ1
+ℎ=288.16
+−0.00650,6431
+1.225−9.81
+−0.0065⋅287+1−1
+−1+0
+ℎ=6224.23𝑚≈6.2𝑘𝑚
+The density altitude  is approximately 6.2 km𝜌=𝑝
+𝑅∙𝑇=47200
+287∙255.7
+𝜌=0.6431 ൗ𝑘𝑔
+𝑚3

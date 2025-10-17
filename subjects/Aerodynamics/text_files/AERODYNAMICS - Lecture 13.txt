@@ -1,0 +1,294 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBVORTEX LATTICE METHOD
+•LLT is limited for straight wings with moderate to high AR.
+•For other types of wings (i.e., low AR straight, swept, and delta), a more sophisticated 
+method can be used: The Vortex Lattice Method ( VLM ).
+VORTEX LATTICE 
+METHOD
+•For LLT,the circulation Gvaries with y
+along thelifting line.
+•InVLM ,aseries ofLifting Lines (LL) areplaced on
+the plane ofthe wing atdifferent chordwise
+stations (alarge number ofLLparallel tothey
+axis, located atdifferent values ofx).
+•Inthe limit ofan infinite number oflines of
+infinitesimal strength, avortex sheet isobtained,
+where lines runparallel totheyaxis.
+•The strength ofthe sheet (per unit length inthex
+direction) isdenoted byg(varies intheydirection,
+analogous tothevariation ofGinasingle lifting line) .
+•Each LLwillhave adifferent overall strength, sogvaries
+with xalso [g=g(x,y)].VORTEX LATTICE METHOD
+Reminder –thewing istreated asaflatsurface•Each LLhas asystem oftrailing vortices ;hence, the
+series ofLLiscrossed byaseries ofsuperimposed
+trailing vortices parallel tothexaxis.
+•Inthe limit ofaninfinite number ofinfinitesimally
+weak vortices, these trailing vortices form another
+vortex sheet ofstrength d(per unit length inthey
+direction) .VORTEX LATTICE METHOD
+Reminder –thewing istreated asaflatsurfaceVORTEX LATTICE METHOD
+•Consider asingle line parallel tothexaxis;moving along it
+from the leading edge tothe trailing edge, anew
+superimposed trailing vortex ispicked each time itcrosses
+aLL(colored lines inthepicture) .
+•This iswhydmust vary with x;trailing vortices aresimply
+parts ofthe horseshoe vortex systems, the leading edges
+ofwhich make upthevarious LL.
+•SinceGabout each LLvaries inthe ydirection, the
+strengths ofdifferent trailing vortices willalso bedifferent ;
+hence,dalso varies intheydirection [d=d(x,y)].
+•The two vortex sheets –theone with vortex lines running
+parallel toywith strength g,and the other with vortex
+lines running parallel toxwith strength d–result ina
+lifting surface distributed over theentire wing planform .VORTEX LATTICE METHOD
+Lifting Line ofa
+horseshoe vortex
+Reminder –thewing istreated asaflatsurface•The strength ofthe lifting surface (atany point onit)is
+given bybothgandd,which arefunctions ofxandy.
+➢g=g(x,y)–spanwise vortex strength distribution
+➢d=d(x,y)–chordwise vortex strength distribution
+•Downstream ofthe trailing edge, there are nospanwise
+vortex lines, only trailing vortices ;hence, the wake
+consists ofonly chordwise vortices .
+•The strength ofthis wake vortex sheet isgiven bydw(per
+unit length intheydirection) .
+•Since inthe wake, the trailing vortices donot cross any
+vortex lines, the strength ofany given trailing vortex is
+constant with x;hence,dwdepends only onyand,
+throughout the wake ,dw(y)isequal toitsvalue atthe
+trailing edge .VORTEX LATTICE METHOD
+Lifting Line ofa
+horseshoe vortex
+Reminder –thewing istreated asaflatsurface•Consider apoint Plocated at(x,y)onthewing .
+Lifting surface
+Wake vortex sheet
+•The wing platform iswanted tobeastream surface ofthe
+flow (the sum ofthe induced w(x,y)and the normal
+component ofthe freestream velocity arewanted tobe
+zero atpoint P,and forallpoints onthewing, this isAKA
+theflow -tangency condition onthewing surface ).
+•Now itisneeded tofindg(x,y)andd(x,y)such that the
+flow -tangency condition issatisfied atallpoints onthe
+wing .VORTEX LATTICE METHOD
+w (x, y)Induce a normal component 
+of velocity at point P
+Reminder –thewing istreated asaflatsurfaceVORTEX LATTICE METHOD
+•This figure only shows aportion oftheplanview
+ofafinite wing .
+•Coordinates atpoint Pare(x,h),therefore :
+•Spanwise vortex strength :g(x,h)
+•Chordwise vortex strength :gdx
+•Consider point Plocated at(x,y)and removed a
+distance rfrom thepoint (x,h).
+•From Biot-Savart law, the incremental velocity
+induced atpoint Pbyasegment dhofthis vortex
+filament ofstrengthgdxis:
+VORTEX LATTICE METHOD
+•The contribution ofthelastequation totheinduced
+velocity wcanbedenoted as(dw)g=-|dV|
+•Note also that:sinq=(x–x)/r
+•With these, theinduced velocity canbewritten as:
+•Consider ananalogous argument fortheelemental
+chordwise vortex totheinduced velocity atpoint P:
+VORTEX LATTICE METHOD
+•The normal velocity atpoint Pbyboth the lifting
+surface and thewake is:
+•The central problem oflifting -surface theory isto
+solve this last equation forg(x,h)andd(x,h)
+such that the sum ofw(x,y)and the normal
+component ofthe freestream iszero, that is,such
+that theflow istangent totheplanform surface S.
+•Schematic ofasingle horseshoe vortex,
+which ispart ofavortex system onthewing
+VORTEX LATTICE METHOD
+•Vortex lattice system onafinite wing .VORTEX LATTICE METHOD
+Ref.: Aerodynamic for 
+Engineers –Bertin & CummingsVORTEX LATTICE METHOD
+VORTEX LATTICE METHOD
+Location ( x, y) of 
+each control pointLocation ( x, y) of 
+each bound -vortex
+VORTEX LATTICE METHOD
+VORTEX LATTICE METHOD
+VORTEX LATTICE METHOD
+VORTEX LATTICE METHOD
+VORTEX LATTICE METHOD
+VORTEX LATTICE METHOD
+VORTEX LATTICE METHOD
+VORTEX LATTICE METHOD
+VORTEX LATTICE METHOD
+VORTEX LATTICE METHOD
+•Useful freeware towork with VLM :
+•AVL:
+•Tornado (MATLAB) :VORTEX LATTICE METHOD
+WING TIPS
+Wing tips shape has two effects upon subsonic aerodynamic performance:
+•It affects the aircraft wetted area
+•The influence the tip shape has upon the lateral spacing of the tip vorticesTYPES OF WINGLET
+TYPES OF WINGLET• Winglets become as an 
+optimal solution for the induce 
+drag problem
+• They are bio -inspiration from 
+bird’s flight (high number of 
+feathers at the wing tipsWINGLETS, FENCES, OR NO 
+WINGLETS?
+HOW IT WORKS?
+Between 3%and 6%off a single aircraft ´s CO2emissions per yearWING TIPSWinglet Nomenclature
+Winglet evolution
+William Somerville biplane design with winglets –1910
+Whitcomb winglet (NASA –1976)Winglet evolution
+(A) The conventional winglet sporting an angular transition between the wing and the winglet
+(B) A Blended winglet with the transition being the arc of a circle whose centre is at “C1”
+(C) An Elliptical Winglet, which transition, and winglet forms part of an ellipse centred at “C2”Winglet evolutionWINGLET 
+EXAMPLES
+B737 WINGLET OPTIONS
+737-200 Mini -Winglets
+Benefits include:
+•Payload Increase of up to 5000 lb
+•Range Increase up to 3%
+•Fuel Savings up to 3%
+•Improved Take -off/Landing Climb 
+Gradients
+•Reduced Take -off/Landing Field Length
+•Improved High Altitude Take -
+off/Landing Capability
+•Improved Hot Climate Performance
+•Reduced Stall Speeds by 4-5 kts737 Classic/NG Blended Winglets
+Benefits include:
+Depending onthe airplane, itscargo, the airline's routes, and
+other factors, these winglets have thepotential togive:
+•IMPROVED TAKEOFF PERFORMANCE
+•REDUCED ENGINE MAINTENANCE COSTS
+•FUEL SAVINGS
+•INCREASED PAYLOAD RANGE
+•ENVIRONMENTALLY FRIENDLY
+•IMPROVED OPERATIONAL FLEXIBILITY
+•MODERN DRAMATIC APPEARANCE
+B737 WINGLET OPTIONS737 NG Split Scimitar Winglets
+Benefits:
+AsetofSSWs weigh 133 kg(294 lb)
+per aircraft but gives fuel savings of
+1.6%onsectors of1000 nm, rising to
+2.2%onsectors of3000 nm.This
+equates toanextra 65nmrange .
+B737 WINGLET OPTIONS737 MAX Advanced Technology (AT) Winglets
+Benefits:
+Boeing claims they will give 1.5%fuel burn
+improvement over current technology winglets .
+They explain this asfollows :“The ATwinglet further
+redistributes the span -wise loading, increasing the
+effective span ofthewing .
+The ATwinglet balances theeffective span increase
+uniquely between the upper and lower parts and,
+therefore, generates more liftand reduces drag .
+This makes the system more efficient without
+adding more weight .“,
+B737 WINGLET OPTIONSRaked Wing Tip
+Sharklet Wing Tip
+•Reduce wingtip vortices
+•Cut back on drag up to 20%
+•Higher cruise speed
+•Increased fuel economy
+•Possibly double wings lift -to-
+drag ratio
+•Good when wing extension is 
+not possible
+WINGLETS, FENCES, OR NO 
+WINGLETS?•Some numbers to add the winglets:
+•Mission block fuel is improved by approximately 4%
+•Range increased by as much as 200nm and up to 130nm 
+(737-800)
+•6.5% noise level reduction around airports on take -off
+•4%reduction in nitrogen dioxide emissions on a 2000 nmi
+flight.
+WINGLETS, FENCES, OR NO 
+WINGLETS?•Pros and cons:
+•Allow for steeper climb
+•Good for obstacle -limited, high, hot, weight -limited, and/or noise -
+restricted airports
+•Lower wing spar bending moment than wingspan extension
+•Eye catching
+•For the same amount of structural material, nonplanar wingtip devices 
+can achieve a similar induced drag benefit as a planar span increase•Tend to cause wing flutter
+•Winglet design is very detailed and complicated
+•Difficult to determine boundary layer effects at wingtip/winglet 
+junction (separation, pressure gradient)
+•Usually not in initial design
+WINGLETS, FENCES, OR NO 
+WINGLETS?WHY A LIFT DISTRIBUTION?
+CHORD MAY VARY IN LENGTH
+Thinner wing near tip
+delay onset of high -speed
+compressibility effects
+Retain aileron controlEXAMPLE: 737 WINGLETS
+ACTIVE WINGLETS
+Tamarack
+Winglet geometry depends on the following factors: Airfoil shape, aspect ratio, taper ratio, 
+swept angle, twist, dihedral, and toe angle.
+•Main goal: To generate enough lift while maintaining the lowest possible drag
+•Should not stall before wing during low -speed flight
+•Geometry driven by aerodynamic characteristics of the airfoil
+•Limitations:
+•Narrow chords yield low Re
+•Rerange from 1x105to 1x106WINGLETS DESIGN ASPECTSWinglet geometry depends on the following factors: Airfoil shape, aspect ratio, 
+taper ratio, swept angle, twist, dihedral, and toe angle.
+•Sizing
+•Too small:
+•Airfoil will require a large lift coefficient
+•Too big :
+•High winglet loading
+•Causes the outboard section of the wing to stall prematurely
+•Span -wise elliptical chord distribution
+•Elliptical planform will help with load distribution over a large range of 
+flight regimesWINGLETS DESIGN ASPECTSAirfoil shape, aspect ratio, taper 
+ratio, swept angle, twist, 
+dihedral, and toe angle.
+•Determined by the optimal 
+induced drag and profile drag 
+relationship
+•Have similar effects on the 
+winglet
+•Tailor the load distribution 
+WINGLETS DESIGN ASPECTSAirfoil shape, aspect ratio, taper ratio, swept angle, twist, 
+dihedral, and toe angle.
+•Mounting angle
+•Controls overall loading on winglet
+•Effects the load distribution on main wing
+•Only optimum for one flight conditionWINGLETS DESIGN ASPECTS
+Example using numerical methods to calculate the 
+wing/winglet combination (Tornado –freeware)WINGLETS DESIGN BY 
+NUMERICAL METHODS
+b/20, b/10
+l= 0.3LLE= 57°Winglet GeometryExample using numerical methods to calculate the wing/winglet combination 
+(Tornado –freeware)Wing Configuration
+WINGLETS DESIGN BY 
+NUMERICAL METHODSExample using numerical methods to calculate the 
+wing/winglet combination (Tornado –freeware)
+Original Configuration
+a= 8°L/D = 51
+WINGLETS DESIGN BY 
+NUMERICAL METHODSExample using numerical methods to calculate the 
+wing/winglet combination (Tornado –freeware)
+Small Version
+11% drag reduction
+(7%when compared to an extended wing)
+8%drag reduction
+(4%when compared to an extended wing)WINGLETS DESIGN BY 
+NUMERICAL METHODSExample using numerical methods to calculate the 
+wing/winglet combination (Tornado –freeware)
+Large Version
+22% drag reduction
+(14% when compared to an extended wing)
+12% drag reduction
+(4%when compared to an extended wing)
+WINGLETS DESIGN BY 
+NUMERICAL METHODSExample using numerical methods to calculate the 
+wing/winglet combination (Tornado –freeware)
+Conclusions
+•Drag reductions up to 20%
+•Winglets are only needed on designs with higher -than -normal induced drag
+•Beneficial in canard configuration
+WINGLETS DESIGN BY 
+NUMERICAL METHODS

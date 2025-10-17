@@ -1,0 +1,2523 @@
+Aircraft Performance Analysis   1 
+ CHAPTER  3 
+Drag Force and Drag Coefficient  
+ 
+From: Sadraey M., Aircraft Performance Analysis, VDM Verlag Dr. Müller, 2009  
+ 
+ 
+ 
+ 
+ 
+3.1. Introduction  
+Drag is the enemy of flight and its cost. In chapter 2, major forces that are influencing 
+aircraft motions were b riefly introduced. One group of those forces is aerodynamic forces 
+that split into two forces: Lift force or lift, and Drag force or drag. A pre -requisite to 
+aircraft performance analysis is the ability to calculate the aircraft drag at various flight 
+cond itions. One of the jobs of a performance engineer is to determine drag force 
+produced by an aircraft at different altitudes, speeds and configurations. This is not an 
+easy task, since; this force is a function of several parameters including aircraft 
+confi guration and components. As it was discussed in chapter 2, the drag is a function of 
+aircraft speed, wing area, air density, and its configuration. Each aircraft is designed with 
+a unique configuration, thus, aircraft performance analysis must take into ac count this 
+configuration. The configuration effect of aircraft drag is represented through the drag 
+coefficient (C D), plus a reference area that relates to the aircraft.  
+ 
+An aircraft is a complicated three -dimensional vehicle, but for simplicity in 
+calcul ation, we assume that the drag is a function a two -dimensional area and we call it 
+the reference area. This area could be any area including tail area, wing area and fuselage 
+cross sectional area (i.e., fuselage cross section), fuselage surface area, and e ven aircraft 
+top-view area. No matter what area is selected, the drag force must be the same. This 
+unique drag comes from the fact that the drag coefficient is a function of the reference 
+area. Therefore, if we select a small reference area, the drag coeff icient shall be large, but 
+if we choose a large reference area, the drag coefficient shall be small. In an air vehicle 
+with a small wing area (e.g., high -speed missile), the fuselage cross -sectional area 
+(normal to the flow) is often considered as the refe rence area. However, in an aircraft 
+with a large wing, the top -view of wing; planform area (in fact gross wing area) is often 
+assumed to be the reference area.  
+ 
+The measurement of this area is easy; and it usually includes the most important 
+aerodynamic p art of the aircraft. This simplified reference area is compensated with the 
+complicated drag coefficient, as we discussed in chapter 2.  Aircraft Performance Analysis   2 
+  
+DSCV D2
+21
+               (3.1)  
+ 
+The drag coefficient (C D) is a non -dimensional parameter, but it takes into  
+account every aerodynamic configuration aspect of the aircraft including large 
+components as wing, tail, fuselage engine, and landing gear; and small elements such as 
+rivets and antenna . This coefficient has two main parts (as will be explained in the nex t 
+section). The first part is referred to as lift -related drag coefficient or induced drag 
+coefficient (C Di) and the second part is called zero -lift drag coefficient (C Do). The 
+calculation of the first one is not very hard, but it takes a long time and ene rgy to 
+determine the second part. In large transport aircraft, this task is done by a group of 
+engineers up to twenty engineers for a time period of up to six months. For this reason, a 
+large portion of this chapter is devoted to the calculation of C Do. This calculation is not 
+only time consuming, but also is very sensitive, since it influences every aspect of aircraft 
+performance.  
+One of the occasions  in which the drag is considered a beneficial factor and is 
+effectively used is in parachute.  A parachute  is a device employed to considerably slow 
+the motion of an object/vehicle through an atmosphere  (e.g., Earth or Mars) by increasing 
+drag. Parachutes are used with a variety of loads, including people, food, equipment, and 
+space capsules. Drogue chutes are  used to sometimes provide horizontal deceleration of a 
+vehicle (e.g., space shuttle after a touchdown). The parachute  is utilized by paratroopers  
+to extremely  reduce the terminal speed for a safe landing.  
+One of the primary functions of aerodynamicists an d aircraft designers is to 
+reduce this coefficient. Aircraft designers are very sensitive about this coefficient, 
+because any change in the external configuration of aircraft will change this coefficient 
+and finally aircraft direct operating cost. As a per formance engineer, you must be able to 
+estimate the C Do of any aircraft just by looking at its three -view with an accuracy of about 
+30%. As you spend more time for calculation, this estimation will be more accurate, but 
+will never be exact, unless you use an aircraft model in a wind tunnel or flight test 
+measurements with real aircraft model. The method presented in this chapter is about 
+90% accurate for subsonic aircraft and 85% for supersonic aircraft.    
+3.2. Drag Classification  
+Drag force is the summati on of all forces that resist against aircraft motion. The 
+calcul ation of the drag of a complete air craft is a difficult and challenging task, even for 
+the simplest configurations. We will consider the separate sources of drag that contribute 
+to the total d rag of an aircraft. The variation of drag force as a function of airspeed looks 
+like a graph of parabola. This indicates that the drag initially reduces with airspeed, and 
+then increases as the airspeed increases. It demonstrates  that there are some parame ters 
+that will decrease drag as the velocity increases ; and there are some other parameters that 
+will increase drag as the velocity increases. This observation shows us a nice direction for 
+drag classification. Although the drag and the drag coefficient ca n be expressed in a 
+number of ways, for reasons of simplicity and clarity, the parabolic drag polar will be Aircraft Performance Analysis   3 
+ used in all main analyses. Different references and textbooks use different terminology, 
+so it may confuse students and engineers. In this section, a list of definitions of various 
+types of drag is presented, and then a classification of all of these drag forces is 
+described.  
+ 
+Induced Drag:  The drag that results from the generation of a trailing vortex system 
+downstream of a lifting surface with a  finite aspect ratio.  In another word, th is type of  
+drag is induced by the lift force.  
+Parasite Drag:  The total drag of an airplane minus the induced drag. Thus, it is the drag 
+not directly associated with the production of lift. The parasite drag is composed of drag 
+of various aerodynamic  components ; the definitions of which follow.  
+Skin Friction Drag:  The drag on a body resulting from viscous shearing stresses (i.e., 
+friction) over its contact  surface  (i.e., skin) . The drag of a very streamlined shape such as  
+a thin, flat plate is frequently expressed in terms of a skin friction drag. This drag is a 
+function of Reynolds number. There are mainly two cases where the flow in the boundary 
+layer is entirely laminar or entirely turbulent over the plate. The Reynolds  number is 
+based on the total length of the object  in the direction of the velocity. In a usual 
+application, the boundary layer is normally laminar near the leading edge of the object  
+undergoing transition to a turbulent layer at some distance back along t he surface.  
+ 
+A laminar boundary layer begins to develop at the leading edge and its thickness 
+grows in downstream. At some distance from the leading edge the laminar boundary 
+becomes unstable and is unable to suppress disturbances imposed on it by surface  
+roughness or fluctuations in the free stream. In a distance the boundary layer usually 
+undergoes a transition to a turbulent boundary layer. The layer suddenly increases in 
+thickness and is characterized by a mean velocity profile on which a random fluctu ating 
+velocity component is superimposed. The distance, from the leading edge of the object  to 
+the transition point can be calculated from the transition Reynolds number.  Skin friction 
+factor is independent of surface roughne ss in laminar flow, but is a st rong function of 
+surface roughness in turbulent flow due to boundary layer.  
+ 
+Form Drag (sometimes called  Pressure Drag ): The drag on a body resulting from the 
+integrated effect of the static pressure acting normal to its surface resolved in the drag 
+direct ion. Unlike the skin friction drag that results from viscous shearing forces tangential 
+to a body’s surface, form drag results from the distribution of pressure normal to the 
+body’s surface. In an extreme case of a flat plate normal to the flow, the drag i s totally the 
+result of an imbalance in the pressure distribution. As with skin friction drag, form drag is 
+generally dependent on Reynolds number. Form drag is based on the projected frontal 
+area. As a body begins to move through the air , the vorticity in  the boundary layer is shed 
+from the upper and lower surfaces to form two vortices of opposite rotation. A number of 
+symmetrical shapes having drag values [13] at low speed  are illustrated in Table  3.1. The 
+drag coefficient values in this table  are based o n the frontal area. In this table , the flow is 
+coming from left to the right.  
+ 
+ 
+ Aircraft Performance Analysis   4 
+ No Body  Status  Shape  CD 
+1 Square rod  Sharp corner   
+ 2.2 
+Round corner   
+ 1.2 
+2 Circular rod  Laminar flow   1.2 
+Turbulent flow  0.3 
+3 Equilateral 
+triangula r rod  Sharp edge face   
+ 1.5 
+Flat face   
+ 2 
+4 Rectangular rod  Sharp corner  L/D = 0.1  1.9 
+L/D = 0.5  2.5 
+L/D = 3  1.3 
+Round front        
+edge  L/D = 0.5  1.2 
+L/D = 1  0.9 
+L/D = 4  0.7 
+5 Elliptical rod  Laminar flow  L/D = 2  0.6 
+L/D = 8  0.25 
+Turbulent flow  L/D = 2  0.2 
+L/D = 8  0.1 
+6 Symmetrical shell  Concave face  
+  2.3 
+Convex face  
+  1.2 
+7 Semicircular rod  Concave face  
+  1.2 
+Flat face 
+  1.7 
+a. Two dimensional bodies  (L: length along flow, D; length perpendicula r to the flow)  
+No Body  Laminar/turbulent  Status  CD 
+1 Cube  Re > 10,000   1.05 
+2 Thin circular disk  Re > 10,000   1.1 
+3 Cone ( = 30o) Re > 10,000   0.5 
+4 Sphere  Laminar Re < 2×105  0.5 
+Turbulent Re > 2×106 0.2 
+5 Ellipsoid  Laminar Re < 2×105  0.3-0.5 
+Turbulent Re > 2×106 0.1-0.2 
+6 Hemisphere  Re > 10,000  Concave face  0.4 
+Re > 10,000  Flat face  1.2 
+7 Rectangular plate  Re > 10,000  Normal to the flow  1.1 - 1.3 
+8 Vertical cylinder  Re < 2×105 L/D = 1  0.6 
+L/D = ∞  1.2 
+9 Horizontal cylinder  Re >  10,000  L/D = 0.5  1.1 
+L/D = 8  1 
+10 Parachute  Laminar flow   1.3 
+b. Three dimensional bodies  (L: length, D; diameter)  Aircraft Performance Analysis   5 
+ Table 3. 1. Drag coefficient values for various geometries and s hapes  
+ 
+Interference Drag:  The increment in dra g resulting from bringing two bodies in 
+proximity to each other. For example, the total drag of a wing -fuselage combination will 
+usually be greater than the sum of the wing drag and fuselage drag independent of each 
+other.  
+Trim Drag:  The increment in drag resulting from the (tail) aerodynamic forces required 
+to trim the aircraft about its center of gravity. Trim drag usually is a  form of induced and 
+form drag on the horizontal tail.  
+Profile Drag:  Usually taken to mean the total of the skin friction drag and  form drag for 
+a two -dimensional airfoil section.  
+Cooling Drag:  The drag resulting from the momentum lost by the air that passes through 
+the power plant installation for the purpose of cooling the engine.  
+Wave Drag:  This drag ; limited to supersonic flow; is a form of induced  drag resulting 
+from non -canceling static pressure components to either side of a shock wave acting on 
+the surface of the body from which the wave is emanating.  
+ 
+Figure 3. 1. Drag classification  
+ 
+The material to follow will consider these various types of drag in detail and will present 
+methods of reasonably estimating their magnitudes. Figure 3. 1 illustrates the drag 
+classification  into two major groups . 
+ 
+For a conventional aircraft, the drag is divide d into t wo main parts; lift related 
+drag, and non -lift related drag. The first part is called induced drag (D i), because this drag 
+is induced by lift  (pressure) . The second part is referred to as zero -lift drag (D o), since it 
+does not have any influence from lift , and is mainly originates from shear stress .  
+ Drag  
+Zero -lift Drag  Induced Drag  
+Skin friction 
+Drag  Form 
+Drag  Miscellaneous 
+Drag  Wave 
+Drag  Vortex 
+Drag  Wave Drag  
+Landing 
+gear Fuselage  Tail Wing  Strut  Nacelle  
+Interference 
+Drag  Trim  
+Drag  Cooling  
+Drag  CL 
+dependent  Volume 
+dependent  Compressibility 
+Drag  Aircraft Performance Analysis   6 
+  
+i oD DD
+                    (3.2)  
+ 
+a. Induced drag:  The induced drag is the drag directly associated with the 
+production of lift. This results from the dependency of the induced drag on the 
+angle o f attack. As the angle of attack of the aircraft (i.e. , lift coefficient) varies, 
+this type of drag is changed. The induced drag in itself consists of two parts. The 
+first part originates from vortices around wing, tail, fuselage, and other 
+components. The  second part is because of air compressibility effect. In low 
+subsonic flight, it is negligible, but is high subsonic and transonic flight, must be 
+taken into account. In supersonic flight, wave drag (D w) is added to the induced 
+drag. The reason is to acco unt for the contribution  of shock wave. The wing is the 
+major aircraft component contributor  for the lift production. Thus, about 80% of 
+the induced drag comes from wing; about 10% comes from tail; and the rest 
+originate from other components.  The induced drag is a function of airspeed, air 
+density, reference area, and the lift coefficient:  
+iD i SCV D2
+21
+               (3.3)  
+ 
+In this equation, the coefficient C Di is called induced drag coefficient. The method 
+to calculate this coefficient will be in troduced in the next section. Figure 3. 2 
+shows the behavior of induced drag as a function of airspeed . As the airspeed  
+increases, the induced drag decreases; so the induced drag is inversely a function 
+of airspeed.  
+ 
+ 
+Figure 3. 2. Variations of D o and D i versus velocity  
+ 
+b. Zero -lift drag:  The zero -lift drag includes all types of drag that do not depend on 
+production of the lift. Every aerodynamic component of aircraft (i.e. the Aircraft Performance Analysis   7 
+ components that are in direc t contact with flow) generates zero -lift drag. Typical 
+components are wing, horizontal tail, vertical tail, fuselage, landing gear, antenna, 
+engine nacelle, and strut. The zero -lift drag is a function of airspeed, air density, 
+reference area, and the exter nal shape of the components : 
+ 
+oD o SCV D2
+21
+               (3.4)  
+ 
+In this equation, the coefficient C Do is called zero-lift drag coefficient . The 
+method to calculate this coefficient will be introduced in Section 3.4.  Figure 3. 2 
+shows the variation  of zero -lift drag as a function of airspeed . As the airspeed  
+increases, the induced increases too; so the zero -lift drag is directly a function of 
+airspeed.  
+ 
+From the equations 3.1, 3.2, 3.3 and 3.4 ; one can conclude that drag coefficient has two 
+componen ts: 
+ 
+iD oD D C C C
+               (3.5)  
+ 
+The calculation of C Di is not a big deal and will be explained in the next section; 
+but the calculation of C Do is very challenging, tedious, and difficult. Major portion of this 
+chapter is devoted to calcula tion of C Do. In fact, the main idea behind this chapter is about 
+calcul ation of C Do. 
+  
+3.3. Drag Polar  
+The aircraft drag may be mathematically modeled by variety of methods. It seems natural 
+to seek the similarity of variation of drag due to a flight param eter to a standard figure or 
+geometry. We are looking for an accurate, but simple mathematical model , and a math 
+expression for such curves as in figure 3.3.  
+ 
+As figure 3.3 and equation 3.5 show, the drag is composed of two terms, one 
+proportional to the square of airspeed (i.e., V2) and the other one inversely proportional to 
+V2. The first term, called zero -lift drag represents the aerodynamic cleanness with respect 
+to frictional characteristics, and shape and protuberances such as cockpit, antennae, or 
+external fuel tanks. It increases with the aircraft velocity and is the main factor in 
+determining the aircraft maximum speed. The second term represents induced drag (drag 
+due to  the lift). Its contribution is highest at low velocities, and it decreases wit h 
+increasing flight velocities. If we combine (indeed add) these two curves (D i and D o) in 
+Figure 3.2 , we will have a parabolic c urve such as what shown in figure 3.3 . The 
+parabolic drag model is not exact; but accurate enough for the purpose of performanc e 
+calculation.  A similar behavior is observed for the variation of drag coefficient versus lift 
+coefficient. Drag polar is a math model for the variation of drag coefficient as a function 
+of lift coefficient.  
+ 
+ Aircraft Performance Analysis   8 
+  
+Figure 3. 3. Variations of drag versus airspeed  
+ 
+Although the drag and the drag coefficient can be expressed in a number of ways, for 
+reasons of simplicity and clarity, the parabolic drag polar will has been selected in the 
+analysis. This is tru e only for subsonic flight. For the existing supersonic aircraft, the 
+drag cannot be adequately described by such a simplified expression. Exact calculations 
+must be carried out using extended equations or tabular data. However, the inclusion of 
+more preci se expressions for drag at this stage will not greatly enhance basic 
+understanding of performance, and thus, will be included only in some calculated 
+examples and exercises. Note that the curve begins from stall speed, since an aircraft is 
+not able to main tain a sustained level flight at any speed below the  stall speed.  The same 
+conclusion is true for the variation of drag coefficient (C D) versus lift coefficient (C L) as 
+shown in figure 3.4.  
+ 
+A non -dimensionalized form of figure 3.3; the variation of drag  coefficient versus 
+lift coefficient ; is demonstrated in figure 3. 4. It can be proved that a second order 
+parabolic curve can mathematically describe such a curve with an acceptable accuracy:  
+ 
+2bxay
+                  (3.6)  
+ 
+where y may be r eplaced with C D and x may be replaced with C L. Therefore, drag 
+coefficient versus lift coefficient is modeled with the following parabolic model:  
+ 
+2
+L D bCa C
+                 (3.7)  
+ 
+Now, we need to determine the values or expressions for “a” and  “b” in this 
+equation. In a symmetrical parabolic curve, the parameter “a” is the minimum value for 
+parameter “y”. hence, in a parabolic curve of C D versus C L, the parameter “a” must be the 
+minimum amount of drag coefficient (C Dmin). We refer this minimum value of drag Aircraft Performance Analysis   9 
+ coefficient as C Do as it means the value of C D when the lift is zero. The corresponding 
+value for “b” in equation 3.7 must be found through experiment. Aerodynamicists have 
+represented this parameter with the symbol of “K”, and refer to it as  induced drag 
+correction factor. The induced drag correction factor is inversely proportional to the wing 
+aspect ratio (AR) and wing Oswald efficiency factor (e). The mathematical relationship is 
+as follows:  
+ 
+ 
+Figure 3. 4. A typical variations of C D versus C L 
+ 
+AReK1
+                    (3.8)  
+ 
+The wing aspect ratio is the ratio between the wing span (b) and the mean aerodynamic 
+chord (MAC or C). The ratio  can be reformatted to be a functi on of the wing area (S) and 
+wing span as follows:  
+ 
+Sb
+Cbbb
+CbAR2
+
+                   (3.9)  
+ 
+The wing Oswald efficiency factor represents the efficiency of a wing in 
+producing lift , and is a function of wing aspect ratio and the leading edge sweep an gle, 
+LE. If the lift distribution is parabolic, the Oswald efficiency factor is assumed to be the 
+highest (i.e. , 100% or 1). The Oswald efficiency factor is usually between 0.7 and 0.9. 
+Ref. 9 introduces the following two expressions for estimation of Oswald e fficiency 
+factor:  
+ 
+  1.3 cos 045.0161.415.0 68.0 LE AR e
+                        (3.10a)  
+ 64.0 045.0178.168.0  AR e
+                     (3.10b)  CD 
+CL CDo Aircraft Performance Analysis   10 
+ Equation 3.10a is for swept wings with leading edge sweep angles of more than 
+30 degrees and equation 3.10b is for rectangular wings  (without sweep). These two 
+formulas are only valid for wing with high aspect ratio (e.g., AR more than 6).  
+ 
+ 
+ 
+ 
+ 
+Figure 3. 5. Wing leading edge sweep angle  
+ 
+The wing leading edge sweep angle (see figure 3. 5) is the angle be tween wing 
+leading edge and the aircraft y -axis. Table 3. 2 shows wing Oswald efficiency factor for 
+several aircraft. The value of "e" is decreased at high angle of attacks (i.e. , low speed) up 
+to about 30%.  
+ 
+ 
+Figure 3. 6. The gl ider Schleicher ASW22 with wing span of 25 meter and C Do of 0.016  
+x 
+y 
+Top view  Aircraft Performance Analysis   11 
+ Employing the induced drag correction factor  (K), we have a mathematical expression for 
+the variation of drag coefficient versus lift coefficient.  
+ 
+2
+L D D KC C C
+o
+                            (3.11)  
+ 
+This equation is sometimes referred to as aircraft “ drag polar ”. The main 
+challenge in this equation is the calculation of zero -lift drag coefficient. Table 3. 2 shows 
+typical values of C Do for several aircraft. The values in this table are the lowest values; 
+which means at the lowest airspeed (usually low subsonic speeds). Gliders or sailplanes 
+are aerodynamically the most efficient aircraft (with C Do as low as 0.01) and agricultural 
+aircraft are aerodynamically the least efficient aircraft (with C Do as high as 0.08) .The lift 
+coefficient is readily found from equation 2.3. Compare the glider Schleicher ASW22 
+that has a C Do of 0.016 (Figure 3. 6) with the a gricultural aircraft Dromader, PZL M -18 
+that has a C Do of 0.058 (figure 3. 7). 
+ 
+ 
+Figure 3.7. Agricultural aircraft Dromader, PZL M -18 with C Do of 0.058  
+ 
+Comparison between equations 3.5 and 3.11 yields the following relationship.  
+ 
+2
+L DKC C
+i
+                            (3.12)  
+ 
+So, induced drag is proport ional to the square of lift coefficient. Figure 3.4 shows the 
+effect of lift coefficient (induced drag) on drag coefficient.  
+3.4. Calculation of C Do 
+The equation 3.11 implies that the calculation of aerodynamic force of drag is dependent 
+on zero -lift drag  coefficient (C Do). Since the performance analysis is based on aircraft 
+drag, the accuracy of aircraft performance analysis relies heavily on the calculation 
+accuracy of C Do. This section is devoted to the calculation of zero -lift drag coefficient and 
+is the most important section of this chapter. The method by which the zero -lift drag 
+coefficient is determined is called “ build -up” technique.  
+ 
+ 
+Aircraft Performance Analysis   12 
+ No Aircraft type  CDo e 
+1 Twin -engine piton prop  0.022 -0.028  0.75-0.8 
+2 Large turboprop  0.018 -0.024  0.8-0.85 
+3 Small GA with retractable landing gear  0.02-0.03 0.75-0.8 
+4 Small GA with fixed landing gear1 0.025 -0.04 0.65-0.8 
+5 Agricultural aircraft with crop duster  0.07-0.08 0.65-0.7 
+6 Agricultural aircraft without crop duster  0.06-0.065  0.65-0.75 
+7 Subsonic jet  0.014 -0.02 0.75-0.85 
+8 Supersonic jet  0.02-0.04 0.6-0.8 
+9 Glider  0.012 -0.015  0.8-0.9 
+10 Remote controlled model aircraft  0.025-0.045 0.75-0.85 
+Table 3. 2. Typical values of "C Do" and "e" for several aircraft  
+ 
+As figure 3. 8 illustrates, external aerodynamic components of an aircraft are all 
+contributing to aircraft drag. Although only wing; and to some extents, tail; have 
+aerodynamic function (i.e. , to produce lift), but every component (either large size such 
+as the wing or s mall size such as a rivet) that has direct contact with air flow, is doing 
+some types of aerodynamic functions (i.e. , producing drag). Thus, in order to calculate 
+zero-lift drag coefficient of an aircraft, we must include every contributing item. The C Do 
+of an aircraft is simply the summation of C Do of all contributing components.  
+ 
+ 
+Figure 3. 8. Major components of Boeing 737 contributing to C Do 
+                                                 
+1 This also refers to a small GA with retractable  landing gear during take -off 
+ 
+Wing Horizontal 
+tail 
+Landing Gear  
+Nacelle  
+Fuselage  Wing Horizontal 
+tail Vertical tail  Vertical tail  Aircraft Performance Analysis   13 
+ 
+...
+HLDo So No LGo vto hto wo fo o D D D D D D D D D C C C C C C C C C                   (3.13)  
+ 
+where C Dof, C Dow, C Doht, C Dovt, C DoLG, C DoN, C DoS, C DoHLD , are respectively representing 
+fuselage, wing, horizontal tail, vertical tail, landing gear, nacelle, strut, high lift device 
+(such as flap) contributions in aircraft C Do. The three dots at the end of equation 3.13 
+illustrates that t here are other components that are not shown here. They include non -
+significant components such as antenna, pitot tube, stall horn, wires, interference, and 
+wiper.  
+ 
+Every component has a positive contribution, and no component has negative 
+component. In ma jority of conventional aircraft, wing and fuselage are each contributing 
+about 30% -40% (totally 60% -80%) to aircraft C Do. All other components are contributing 
+about 20% -40% to C Do of an aircraft. In some aircraft (e.g. , hang gliders), there is no 
+fuselage , so it does not have any contribution in C Do; instead the human pilot plays a 
+similar role to fuselage.  
+ 
+In each subsection of this section, a technique is introduced to calculate the 
+contribution of each component to C Do of an aircraft. The primary refe rence for these 
+techniques and equations is Reference 1. Majority of the equations are based on flight test 
+data and wind tunnel test experiments, so the build -up technique is relying mainly on 
+empirical formulas.  
+ 
+3.4.1. Fuselage  
+The zero -lift drag coeff icient of a fuselage is given by the following equation:  
+ 
+SS
+ffC Cf
+fowet
+M LDf D
+                          (3.14)  
+ 
+where, C f is skin friction coefficient , and is a non -dimensional number. It is determined 
+based on the Prandtl relationship as follows:  
+ 
+58.2
+10Re log455.0fC
+                             (Turbulent flow) (3.15a)  
+ 
+Re327.1fC
+                                        (Laminar flow) (3.15b)  
+ 
+The parameter Re is called Reynolds number  and has a non -dimensional value. It is 
+defined as:  
+ 
+VLRe
+                                  (3.16)  
+ Aircraft Performance Analysis   14 
+ where is the air density, V is aircraft true airspeed,  is air viscosity, and L is the length 
+of the component in the direction of flight. For a fuselage, L is the fuselage length. For 
+lifting surfaces such as wing and tail, L is the mean  aerodynamic chord.  
+ 
+Equation 3.15a is for a purely turbulent flow and equation 3.15b is for a purely 
+laminar flow. Most aircraft are frequently experiencing a combination of laminar and 
+turbulent flow over fuselage and other component. There are aerodynamic references 
+(e.g., [8] and [10]) that recommend technique to evaluate the  ratio between laminar and 
+turbulent flow over any aerodynamic component. The transition point from laminar to 
+turbulent flow may be evaluated by these references. For simplicity, they are not 
+reproduce d here. Instead, you are recommended to assume that the flow is either 
+completely laminar or completely turbulent. Th e assumption of complete turbulent flow 
+provides a better result; since over -estimation of drag is much better than its under -
+estimation.  
+ 
+In theory, the flow is laminar when Reynolds number is below 4,000. However, in 
+practice, turbulence is not effective when Reynolds number is below 200,000; so when 
+the Reynolds number is less than 200,000, you may assume laminar flow. In addition, 
+when t he Reynolds number is higher than 2,000,000, you may assume turbulent flow. As 
+a rule of thumb, in low subsonic flight, the flow is mostly laminar, but in high subsonic 
+and transonic speed, it becomes mostly turbulent. Supersonic and hypersonic flight 
+expe riences a complete turbulent flow over every component of aircraft. A typical current 
+aircraft may have laminar flow over 10% -20% of the wing, fuselage and tail. A modern 
+aircraft such as the Piaggio 180 can have laminar flow over as much as 50% of the win g 
+and tails, and about 40% -50% of the fuselage.  
+ 
+The second parameter in equation 3.14 (f LD) is a function of fuselage length -to-
+diameter ratio. It is defined as:  
+ 
+
+
+DL
+DLfLD 0025.06013
+                    (3.17)  
+ 
+where L is the fuselage length and D is i ts maximum diameter. If the cross section of the 
+fuselage is not a circle, you need to  find its equivalent diameter. The third parameter in 
+equation 3.14 (f M) is a function of Mach number (M). It is defined as  
+ 
+45.108.01 M fM
+                (3.18) 
+ 
+The last two parameters in equation 3.14 are S wetf and S, they are the wetted area of the 
+fuselage and the wing reference area  respectively .  
+ 
+Wetted area is the actual surface area of the material making up the skin of the 
+airplane - it is the total surf ace area that is in actual contact with, i.e., wetted by, the air in 
+which the body is immersed. Indeed, the wetted surface area is the surface on which the 
+pressure and shear stress distributions are acting; hence it is a meaningful geometric Aircraft Performance Analysis   15 
+ quantity whe n one is discussing aerodynamic force. However, the wetted surface area is 
+not easily calculated, especially for complex body shapes.  
+ 
+ 
+Figure 3. 9. Wing gross area and wing net (exposed) area  
+ 
+A comment seems necessary regardi ng the reference area, S in equation 3.14. The 
+parameter S is nothing other than just a reference area, suitably chosen for the definition 
+of the force and moment coefficients.  
+ 
+The reference area (S) is simply an area as a basis or reference that can be 
+arbitrarily specified. This selection is primarily done for the convenience.  The reference 
+area (S) for a conventional aircraft  is the projected area that we see when we look down 
+on the wing  from top view , including the fuselage section between two parts of the wing. 
+For this reason, for wings as well as entire airplanes, the wing planform area is usually 
+used as S in the definitions of C L, CD, and C m. However, if we are considering the lift and 
+drag of a cone, or some other slender, missile like body, the n the reference area , S is 
+frequently taken as the base area of the cone or fuselage. Figure 3. 9 highlights the 
+difference between wing net area and wing gross area. Thus, when we say wing planform 
+area, we mean wing gross area. The reference area selectio n assumption will not incur 
+any error in the calculation of wing drag and aircraft drag. The reason is that the drag 
+coefficient will be automatically adjusted by this selection.  
+ 
+Whether we take the planform area, base area, or any other areas to a given  body 
+shape for S, it is still a measure of the relative size of different bodies which are 
+geometrically similar.  As long as you are consistent, you may take any significant area as 
+the reference area.  What is important in the calcula tion of C L, CD, and Cm is to divide the 
+Wing gross area  Wing net area  Aircraft Performance Analysis   16 
+ aerodynamic force/moment to a noticeable area . It is urged to an aircraft performance 
+engineer that w henever you take a data for C L, C D, or C m from the technical literature, 
+make certain that you know what geometric reference area was u sed for S in the 
+calculation . Then use that same area when making calculations involving lift, drag and 
+pitching moment . Otherwise, the results will involve significant inaccuracies . In contrast 
+with S wet, it is much easier to calculate the planform area o f a wing.  
+3.4.2. Wing, Horizontal Tail, and Vertical Tail  
+Since wing, horizontal tail and vertical tail are three lifting surfaces, they are  treated  in a 
+similar manner. The zero -lift drag coefficient of the wing (
+woDC ), horizontal tail (
+htoDC ), 
+and vertical tail (
+vtoDC ), are respectively given by the following equations:  
+4.0
+004.0min
+
+
+
+
+
+
+
+w w
+w w wod wet
+M tc f DC
+SSffC C
+                           (3.19) 
+4.0
+004.0min
+
+
+
+
+
+
+
+ht ht
+ht ht htod wet
+M tc f DC
+SSffC C
+                           (3.20) 
+4.0
+004.0min
+
+
+
+
+
+
+
+vt vt
+vt vt vtod wet
+M tc f DC
+SSffC C
+                           (3.21 ) 
+ 
+In these equations, C fw, C fht, Cfvt are similar to what we defined for fuselage in formula 
+3.15.  The only difference is that the equivalent value of L in Reynolds number (equation 
+3.22) for wing, horizontal tail, and verti cal tail are their mean aerodynamic chord s (MAC 
+or 
+C). In another word, the definition of Reynolds number for a lifting surface  (e.g., 
+wing)  is: 
+ 
+CVRe
+                                  (3.22) 
+where the mean aerodynamic  chord is calculated by  
+
+
+1132
+rC C
+                         (3.23) 
+where C r denote s root chord (See figure 3.1 0), and  is the taper ratio ; the ratio between 
+tip chord (Ct) and root chord  (Cr):  
+rt
+CC
+                         (3.24)  
+The parameter f tc is a function of thickness ratio and is given by  
+ 
+4
+max max100 7.21 
+
+
+
+ct
+ctftc
+                    (3.25)  Aircraft Performance Analysis   17 
+ where 
+max
+
+
+ct is the maximum thickness -to-chord ratio of the wing, or the tail. Generally  
+speaking , the maximum thickness to chord ratio for a wing is about 12% to18%, and for a 
+tail is about 9% to 12%. The parameter S wet in equation 3.12 is the wing  or tail wetted 
+area.   
+ 
+The parameters Swet w, Swet ht, and Swet vt denote wetted area of the wing, 
+horizontal tail, and vertical tail respectively. Unlike reference area, the wetted area is 
+based on the exposed area, and not the gross area. Due to of the sp ecial curvature of the 
+wing and tail airfoil sections, it may seem  time consuming  to calculate  the accurate 
+wetted area of a wing or a tail. There is a simplified method to determine the wetted area 
+of a lifting surface with an acceptable accuracy.  Since the wing and tail are not too thick  
+(average about 15%) , it may be initially assumed that, the wetted area is about twice that 
+of the net or exposed area (see figure 3. 9). To be more accurate, you may assume the 
+lifting as a thing box  with average thicknes s equal to half of the airfoil thickness. 
+According to this assumption, the wetted area is given as:  
+ 
+ 
+Figure 3. 10. Wing Mean Aerodynamic Chord (MAC)  
+Root Chord  Tip Chord  
+Mean Aerodynamic Chord  Centerline Chord  Aircraft Performance Analysis   18 
+ 
+bCctSwet
+
+
+
+
+
+
+max5.012                    (3.26)  
+ 
+For ultimate accuracy, you  need to employ a CAD software package (e.g., 
+AutoCad or SolidWorks) to calculate it with a high accuracy.  
+ 
+The parameter C dmin in equations 3.19, 3.20, and 3.21 is the minimum drag 
+coefficient of the airfoil cross section of the wing or tail. It can be r eadily extracted from 
+a C d-Cl curve of the airfoil. One example is illustrated in figure 3.11 for a six series 
+NACA airfoil 63 1-412. Reference [3] is a rich collection of information for a variety of 
+NACA 4 digits, 5 digits, and 6 -serieis airfoils. For ins tance, the NACA airfoil 63 1-412 
+has a minimum drag coefficient of 0.0048 9 for the clean or flap -up configuration.  
+ 
+Example 3.1  
+Consider a cargo aircraft with the following features:  
+ 
+m = 380,000 kg   S = 567 m2,   MAC = 9.3 m,   (t/c) max = 18%,  C dmin = 0.0052  
+ 
+This aircraft is cruisi ng at sea level with a n airs peed of 400 knot. Assume the aircraft C Do 
+is three  times the wing C Do (i.e., CDow), determine the aircraft C Do. 
+ 
+Solution:  
+ 
+ 8
+51031.1 640,334,13110 785.13.9 5144.0 400 225.1Re  CV
+              (3.16)  
+ 
+605.03405144.0 400aVM
+                   (1.20)  
+ 
+Due to the high Reynolds number, the air flow over the wing is turbulent, so  
+    00205.0
+640,334,131 log455.0
+Re log455.0
+58.2
+1058.2
+10  fC
+                 (3.15a)  
+ 
+ 9614.0 606.0 08.01 08.0145.1 45.1   M fM
+           (3.18) 
+ 
+ 591.1 18.0100 18.07.21 100 7.2144
+max max  
+
+
+
+ct
+ctftc
+               (3.25)  
+ 2
+max236,1 567 18.05.012 5.012 m bCctSwet 
+
+
+
+
+
+
+
+                (3.26) 
+4.0
+004.0min
+
+
+
+
+
+
+
+w w
+w w wod wet
+M tc f DC
+SS
+ffC C
+       (3.19) Aircraft Performance Analysis   19 
+ 
+0759.0004.00052.0
+57612369614.0 591.1 00205.04.0
+
+
+
+woDC 
+ 
+Therefore the aircraft zero -lift drag coefficient is:  
+ 
+0228.0 0759.03 3.2 
+wo o D D C C
+    
+ 
+Figure 3. 11. The variations of lift coefficient versus drag coef ficient for airfoil NACA 63 1-
+412 (Ref. 3)  
+Cdmin Aircraft Performance Analysis   20 
+ 3.4.3. High Lift Devices (HLD)  
+High lift devices are parts of the wing to increases lift when employed (i.e., deflected). 
+They are usually employed during take -off and landing. Two main groups of high lift 
+devices are leading edge high lift devices (often called flap) and trailing edge high lift 
+devices (e.g., slat). There are many types of wing trailing edge flaps such as split flap, 
+plain flap, single -slotted flap, fowler flap, double -slotted flap, and triple -slotted flap. 
+They are deflected down to increase the camber of the wing, in order to increase lift, so 
+the maximum lift coefficient, C Lmax will be increased. The most effective method used on 
+large transport aircraft is the leading edge slat. A variant on the  leading edge slat is a 
+variable camber slotted Kruger flap used on the Boeing 747. The main effect of the wing 
+trailing edge flap is to increase the effective angle of attack of the wing without actually 
+pitching the airplane. The application of high lift  devices has a few negative side -effects 
+including an increase in aircraft drag (as will be included in C Do).  
+3.4.3.1. Trailing Edge High Lift Device  
+The increase in C Do due to application of trailing edge high lift device (flap) is given by 
+the following  empirical formula : 
+B
+ff
+D ACCC
+flapo
+
+
+
+                      (3.27) 
+where C f/C is the ratio between average flap chord to ave rage wing chord (see figure 
+3.12) at the flap location and is usually about 0.2.  In case where the flap is extended, as in 
+the c ase for a slotted flap, the C f represents the extended chord.  Furthermore, when a flap 
+is extended, the wing chord (C) is also locally increased.  The equation 3.2 7 is based on a 
+flap with a flap -span-to-wing -span ratio of 70%. In the case where the flap sp an is 
+different, the results should be revised accordingly.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+a. Flap; only deflected (Plain flap)  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+b. Flap; extended while deflected (Slotted flap)  
+Figure 3. 12. Wing section at the fla p location  f 
+C Cf 
+f 
+C Cf Aircraft Performance Analysis   21 
+ Do not confuse this C f with skin friction coefficient which shares the same 
+symbol. The parameters “A” and “B” are given in the Table 3.3 based on the type of flap. 
+The f is the flap deflection in degrees (usually less than 50 degrees).  
+ 
+No  Flap type  A B 
+1 Split flap  0.0014  1.5 
+2 Plain flap  0.0016  1.5 
+3 Single -slotted flap  0.00018  2 
+4 Double -slotted flap  0.0011  1 
+5 Fowler  0.00015  1.5 
+ 
+Table 3. 3. The values of A and B for different types of flaps  
+3.4.3.1. Leading Edge High Lift Device  
+The increase in C Do due to application of a leading edge high lift device  (e.g., slot, and 
+slat) is given by the following empirical formula:  
+ 
+wo slo Dsl
+D CCCC 
+
+
+                         (3.28) 
+ 
+where C sl/C is the ratio between average extended slat chord to average extended wing 
+chord. The C Dow is the wing zero -lift drag coefficient without extending a high lift device 
+(including slat).  
+3.4.4. Landing Gear  
+The landing gear (or undercarriage) is the structure (usually struts and wheels) that 
+supports the aircraft weight and facilitates its mo tion along the surface of the runway  
+when the aircraft is not airborne . Landing gear usually includes wheels and is eq uipped 
+with shock absorbers for solid ground, but some aircraft are equipped with skis for snow 
+or floats for water, and/or skids. To decrease drag in flight, some landing gears are 
+retracted into the wings and/or fuselage with wheels or concealed behind d oors; this is 
+called retractable gear. In the case of retracted landing gear, the aircraft clean CDo is not 
+affected by the landing gear.  
+ 
+When landing gear is fixed (not retrac ted) in place , it produces an extra drag for 
+the aircraft. It is sometimes resp onsible for an increase in the aircraft drag as high as 
+50%.  In some aircraft, a fairing is used to decrease the drag of a non -retracted gear (see 
+figure 3.14b). The fairing is a partial cover that has a streamlined shape such as airfoil. 
+The increase in CDo due to wheel of the landing gear is given by the following empirical 
+equation:  
+ 
+
+
+
+
+n
+iD DSS
+C Ci
+o
+1lg
+lg lg
+                        (3.29) 
+ Aircraft Performance Analysis   22 
+ where S lg is the frontal area of each wheel, and S is the wing reference area. The 
+parameter C Dlg  is the drag coeffic ient of each wheel; that is 0.15, when it has fairing; and 
+is 0.30 when it does not have any fairing (see figure 3.1 3). The frontal area of each wheel 
+is simply the diameter (d g) times the width (w g).  
+ 
+ggwd Slg
+                            (3.30) 
+ 
+ 
+ 
+Figure 3. 13. Landing gear and its fairing  
+ 
+As it is observed in equation 3.2 9, every wheel that is experiencing air flow must be 
+accounted for drag. For this reason, subscript  “i” is used. The parameter “n” is the 
+number  of wheels in an aircraft. The drag calculation for the strut of landing gear is 
+presented in the next Section. Some aircraft are equipped with skid, especially when they 
+have tail gear configuration. Skid is not a lifting surface, but for the purpose of z ero-lift 
+drag calculation, it may be treated as a small wing.  
+3.4.5. Strut  
+In this section, we deal with two types of strut: 1. Landing gear strut, and 2. wing strut. 
+Landing gear is often attached to the aircraft structure via strut.  In some GA/homebuil t 
+aircraft, wings are attached through a few struts to support wing structure; i.e., strut -
+braced (see figure 3.1 4). Modern aircraft use advanced material for structure that are 
+stronger and there are no need for any strut to support their wings; i.e. cant ilever. In some 
+aircraft (such as hang gliders), the cross section of the wing strut is a symmetrical airfoil 
+in order to reduce the strut drag. In both cases, the strut is producing an extra drag for 
+aircraft.  
+ 
+The increase in C Do due to application of s trut is given by the following empirical 
+equation:  
+ 
+dg 
+wg  
+a. Without fairing  b. With fairing  Aircraft Performance Analysis   23 
+ 
+
+
+
+n
+is
+D DSSC C
+ios so
+1                        (3.31) 
+ 
+where S s is the frontal area of each strut (its diameter times its length), and S is the wing 
+reference area. The parameter C Dos is the drag coefficie nt of each strut; that is 0.1, when it 
+is faired (i.e., has an airfoil section ). When strut does not have an airfoil section, its drag 
+coefficient is obtained from Table  3.1. The parameter “n” is the number of struts in an 
+aircraft. It is observed that usi ng an airfoil section for a strut decreases its drag by an 
+order of 10. However, its manufacturing cost is increased  too. 
+ 
+ 
+ 
+Figure 3. 14. Wing strut and landing gear strut in a Cessna 172  
+3.4.6. Nacelle  
+If the engine is not bur ied inside fuselage, it must be in a direct contact with air  flow. In 
+order to reduce the engine drag, engine is often located inside an aerodynamic cover 
+called nacelle. For the purpose of drag calculation, it can be considered that the nacelle is 
+similar  to the fuselage, except its length -to-diameter ratio is lower . Thus, the nacelle zero -
+lift drag coefficient (C Don) will be determined in the same way as in a fuselage. In the 
+case where  the nacelle length -to-diameter ratio is below 2, assume 2. This param eter is 
+used in the equation 3.17. Some aero -engine manufacturers publish the engine nacelle 
+drag in the engine catalog, when the installed drag is demonstrated. In such case, use that 
+manufacturer data. Determine nacelle drag, only when the engine uninsta ll thrust is 
+available.  
+3.4.7. External Fuel Tank  
+An external fuel tank (such as a wingtip tank)  is in a direct contact with air flow and is 
+generating drag.  An external fuel tank may be  modeled as a small fuselage. In the case 
+where  the fuel tank length -to-diameter ratio is below 2, assume 2.  
+strut Aircraft Performance Analysis   24 
+ 3.4.8. Cooling Drag  
+An aeroengine is a source of heat where it is generated when fuel is burned in the 
+combustion chamber. This heat is initially conducted to the engine external surface such 
+including cylinder heads  via oil/water. In order to keep the engine efficient and maintain 
+its performance, the heat should be transferred to outside airflow through a convenient 
+technique; usually conduction.  Various types of heat exchangers are arranged in an 
+aeroengine which r equire a flow of air through them for the purposes of cooling. T he 
+source of this cooling air is usually the free air stream possibly augmented to some extent 
+by a propeller slipstream (in a prop -driven engine) or bleed from the compressor section 
+(in a turbine engine ).   
+ 
+As the air flows through , to extract heat energy from the body , it experiences a loss in the 
+total pressure  and momentum . This loss during heat transfer process may be interpreted 
+as a drag force referred to as the cooling drag.  
+ 
+Turbine engine manufacturers calculate  the net power /thrust  lost in the flow and 
+subtract this from the engine uninstalled power/ thrust. In such case,  no cooling drag 
+increment is added to the aircraft. Piston engine manufacturer often does not provide 
+installed p ower, so the cooling drag needs to be determined in order to calculate the 
+installed power. F or a piston engine, the engine power is typically reduced by as much as 
+approximately 5% to account for the cooling losses.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 3. 15. The use of cowl flaps to control engine cooling air  
+ 
+An engine needs to be installed to the aircraft structure (e.g., fuselage and wing) 
+through a special mounting/pylon. An air cooled engine has a special mounting (See 
+figure 3.15) to provide the airflow around the engine. The calculation of the cooling drag 
+is highly installation -dependent. It is unfeasible to present a general technique which can 
+be applied to every engine inst allation. Turbine/Piston engines manufacturers use Cowl flap opened  Cooling air  flow 
+Exit air 
+flow Air flow Aircraft Performance Analysis   25 
+ computer software packages for the calculation of installation losses for their engines. 
+Because of the complexity of the engine configuration and the internal flow through a 
+typical engine installation, c urrent methods for estimating cooling losses are empirical in 
+nature.  
+ 
+For an oil -cooled turbine engine, it is sufficient to consider cooling drag by 
+consulting with the engine manufacturer catalog  and using installed power/thrust . For an 
+air-cooled engine , engine cooling drag coefficient (C Doen) is given [14] by the following 
+empirical relationship:  
+ 
+VSPTKCe
+Deno2
+81051.4
+                        (3.32) 
+ 
+where P is the engine power (in hp), T is the hot air temperature (in K)  at exit ,  is the 
+relative dens ity of the air, V is the aircraft airspeed  (in m/sec), and S is the wing reference 
+area (in m2). The parameter K e is a coefficient that depends on the type of engine  and its 
+installation . It varies between 1 and 3.  
+3.4.9. Trim Drag  
+Basically, trim drag is not basically different from the types of drag already discussed. It 
+arises mainly as the result of having to produce a horizontal tail load in order to balance 
+the airplane around its center of gravity. Any drag increment that can be attributed to a 
+finite lift on the horizontal tail contributes to the trim drag. Such increments mainly 
+represent changes in the induced drag of the tail.  
+ 
+To examine this further, we begin with the sum of the lifts developed by the wing 
+and tail that must be equal with the a ircraft weight  in a trimmed cruising flight .  
+WL LLw t 
+                                    (3.33) 
+where  
+wL w w CSV L2
+21
+                                    (3.34) 
+tLt t CSV L2
+21
+                                    (3.35) 
+Equation 3.33 is one of the requirements of the  aircraft longitudinal trim  requirements  in 
+cruising flight . Substituting tail and wing lift into equation 3.3 3, one can derive the 
+horizontal tail lift coefficient (C Lt) as: 
+
+tL L LSSC C C
+w t
+                         (3.36) 
+ 
+where C L is aircraft lift coefficient, C Lw is wing lift coefficient, and S t is  horizontal tail 
+area. Then , the trim drag will be:  
+2
+2 1
+
+ 
+tL Lt
+t tt
+Lt D DSSC CSS
+ARe SSCK C C
+w t ti trimo
+          (3.37) Aircraft Performance Analysis   26 
+ where e t is horizontal tail span Oswald efficiency factor, and AR t is the horizontal tail 
+aspect ratio. The trim drag is usually small, amounting to only 1% or 2% of the total drag 
+of an airplane for the cruise condition. Reference 5, for example, lists the trim drag for 
+the Learjet Model 25 as being only 1.5% of the total drag for the cruise condition.  
+3.4.10. C Do of Other Parts  and Components  
+So far, we introduced techniques to calculate C Do of aircraft major components. There are 
+other components, parts, factors , and items that are producing drag and contribute to total 
+the C Do of an aircraft. These items are introduced in this subsection.  
+ 
+1. Interference  
+When two bodie s intersect or are placed in proximity, their pressure distributions and 
+boundary layers can interact with each other, resulting in a net drag of the combinatio n 
+that is often higher than the sum of the separate drags. This increment in the drag is 
+known as interference drag. Except for specific cases where data are available, 
+interference drag is difficult to calcul ate accurately. Four  examples are: 1. placing a n 
+engine nacelle in proximity to a rear pylon ( e.g., Gulfstream V ), and 2. the interference 
+drag between the wing and fuselage in a mid -wing configuration . 3. horizontal tail aft of 
+jet engine exhaust nozzle, and 4. wing leading edge aft of a propeller wak e. 
+ 
+ 
+ 
+                               
+a. High wing                                                          b. Mid wing  
+ 
+ 
+ 
+ 
+                             
+c. Low wing                                                          d. Parasol wing  
+ 
+Figure 3. 16. Wing -fuselage interference drag  
+ 
+Figure 3.1 6 shows a wing attached to the side of a fuselage. At the fuselage -wing 
+juncture a drag increment results as the boundary layers from the two components 
+interact and thicken l ocally at the junction. This type of drag penalty will become more 
+severe if surfaces meet at an angle other than 90o. Reference [4]  shows that the 
+interference drag of a strut attached to a  body  doubles as the angle decreases from 90o to 
+approximately 60° . Avoid acute angles , if not , filleting should be applied  at the juncture 
+to reduce interference drag.  
+ 
+In the case of a high -wing configuration, interference drag results principally from 
+the interaction of the fuselage boundary layer with that from the w ing’s lower surface. 
+This latter layer is relatively thin at positive angles of attack. In addition , it is the 
+boundary layer on the upper surface of a low wing that interferes with the fuselage 
+boundary layer. Th e upper surface boundary layer is relativel y thicker than the lower Interference  Aircraft Performance Analysis   27 
+ surface boundary layer. Thus, the wing -fuselage interference drag for a low -wing aircraft  
+is usually greater than for a high -wing aircraft . 
+ 
+The available data on interference drag are limited; Reference s [2] and [ 4] 
+presents a lim ited amount . Based on this reference, an approximate drag increment 
+caused by wing -fuselage interference is estimated to equal 4% of the wing’s zero-lift drag 
+for a typical aspect ratio and wing thickness.  
+ 
+Theoretical accurate calculation  of interference drag is impossible , unless you 
+utilize a high fidelity computational fluid dynamics (CFD) software package . For 
+example, a wing protruding from a fuselage just forward of the station where the fuselage 
+begins to taper may trigger a flow separation over the  rear portion of the fuselage. 
+Sometimes interference drag can be favorable as, for example, when one body operates in 
+the wake of another.  The most accurate technique to determine interference drag is to 
+employ wind tunnel or flight test.  
+ 
+2. Antenna  
+The communication antennas of many aircraft are located outside of the aircraft. They are 
+in direct contact with the air, hence they produce drag. There are mainly two types of 
+antennas: a. rod or wire, and b. blade or plate. Both type of antennas should be in  an open 
+space (below on above the fuselage)  for a  better communicat ion. During a flight, 
+airstream flows around an antenna, so it will generate drag.  
+ 
+ 
+Figure 3. 17. The UHF radio antenna of a reconnaissance aircraft  U-2S Dra gon Lady  
+ 
+ 
+Figure 3. 18. Antenna of Boeing Vertol CH -113 Labrador  
+ 
+Aircraft Performance Analysis   28 
+ Figure 3.1 7 shows a rod antenna of reconnaissance aircraft U -2S Dragon Lady . 
+The large plate antenna of a reconnaissance aircraft U-2S is the UHF radio antenna. The 
+thin whip acts as an ADF antenna. The whip was originally straight. The bend in the 
+upper portion of the whip antenna was introduced to provide clearance for the senior 
+span/spur dorsal pod. Most reconnaissance aircraft U-2 seem to now use the bent whi p, 
+even if they are not capable of carrying the senior span/spur dorsal pod.  
+ 
+Figure 3.1 8 illustrates lower fuselage section of a Boeing Vertol CH -113 
+Labrador with various antennas and plates . Note the two blade antenna s, and two whip 
+antenna s. Also seen,  is the towel -rack 'loran' antenna. The item hanging down, in the 
+distance, is the sectioned flat plate that covers the ramp hinge, when the ramp is closed.  
+ 
+ 
+a. pitot tube mounted under the wing of a Cessna 172  
+ 
+b. Boeing 767  fuselage nose with three  pitot t ubes [16] 
+Figure 3. 19. pitot tube  
+ 
+Aircraft Performance Analysis   29 
+ To calculate C Do of antenna, rod antenna is treated as a strut, and blade antenna is 
+considered as a small wing. The very equations that are introduced for strut (Section 
+3.4.5) and wing (Secti on 3.4.2) may be employed to determine the C Do of an antenna.  
+ 
+3. Pitot Tube  
+A pitot tube (combined with a static port) is a pressure measurement instrument used to 
+measure airspeed and sometimes altitude of an aircraft (see figure 3.19). The basic pitot 
+tube simply consists of a tube pointing directly into the air flow. As this tube contains air, 
+a pressure can be measured as the moving air is brought to rest. This pressure is 
+stagnation pressure of the air, also known as the total pressure, or sometimes t he pitot 
+pressure.  
+ 
+Since the pitot tube is in direct contact with the outside air, it has a contribution to 
+aircraft drag (i.e., C Do). If the aircraft is in subsonic regime, the horizontal part of the pitot 
+tube may be assumed as a little fuselage and its  vertical part as a strut. In a supersonic 
+flight, shock wave is formed around a pitot tube, and creates additional wave drag. For 
+supersonic flow, section 3.5 introduces a technique to account for pitot tube zero -lift drag 
+coefficient (C Do). 
+ 
+4. Surface R oughness  
+The outer surface of an aircraft structure (skin) has  a considerable role in aircraft drag. 
+For this reason, the aircraft skin is often finished and painted. The paint not only protects 
+the skin from atmospheric hazards (e.g. , rusting), but also r educes its drag. As the surface 
+of the skin is more polished, the aircraft drag (surface friction) will be reduced. The 
+interested reader is referred to specific aerodynamic references and published journal 
+papers to obtain  more information about the effec t of surface roughness on the aircraft 
+drag.  
+ 
+5. Leakage  
+There are usually gaps between control surfaces (such as elevator, aileron and rudder), 
+flaps, and spoilers and the lifting surfaces (such as wing and tails). The air is flowing 
+through these tiny ga ps and thus producing extra drag. This is called leakage drag. 
+Leakage drag is usually contributing about 1% - 2% to total drag. The reader is referred 
+to specific aerodynamic references and published journal papers to gain more information 
+about the influ ence of these gaps on the aircraft drag.  
+ 
+6. Rivet and Screw  
+The outside of the aircraft structure (fuselage and wing) is covered with a skin. The skin ; 
+if it is from metallic materials ; is attached to the primary components of an aircraft 
+structure (such as spar and frame) via parts such as rivet s or screw s. The Composite 
+structures have the advantage that they do not require any rivet or screw, and are often 
+attached together through techniques such as bonding.  
+ 
+In the case of the screw, the top part of t he screw could be often hidden inside 
+skin. But the heads of most types of rivets are out of skin, therefore they produce extra 
+drag. Figure 3.1 9a illustrates both rivet and screw on wing of Cessna -172. Rivets and Aircraft Performance Analysis   30 
+ screws are usually contributing about 2% -3% to total drag.  The author did not find any 
+reference which demonstrates the calculation of rivet contribution to aircraft drag. you 
+may use flight test to measure this type of drag.  
+ 
+7. Pylon  
+ 
+A podded turbine  engine (e.g., turbofan engine) is usually mounted to the airplane wing 
+or fuselage with a pylon. Pylon is mainly a structural component , but may be designed 
+such that it contribute s to aircraft lift.  Although pylon is not fundamentally a lifting 
+surface, but for the purpose of zero -lift drag calcu lation, it may be treated as a small 
+wing.  
+ 
+8. Compressibility  
+Compressibility effects on air craft drag have been important since the advent of 
+high-speed aircraft in the 1940s. Compressibility is a property of the fluid , when a fluid is 
+compressed, its d ensity will be increased . Liquids have very low values of 
+compressibility whereas gases have high compressibility. In real life , every flow of every 
+fluid is compressible to some greater or lesser extent. A truly constant density 
+(incompressible) fl uid is a myth. However, for almost all liquids  (e.g., water) , the density 
+changes are so small that the assumption of constant density can be made with reasonable 
+accuracy.  
+  
+ 
+Figure 3. 20. Drag rise due to compressibility for swep t wing -body combinations (Ref. 1)  
+ 
+As a fluid is compressible, a flow of fluid may be  compressible too. 
+Incompressible flow is a flow where the density is assumed to be constant throughout. 
+Compressible flow is a flow in which the density is varying . A few  important examples 
+are the internal flows through rocket and gas turbine engines, high -speed subsonic, 
+transonic, supersonic, and hypersonic wind tunnels, the external flow over modern 
+airplanes designed to cruise faster than Mach 0.3, and the flow inside  the common 
+0.9 0.95 1 1.05 1.10.0080.010.0120.0140.0160.0180.02
+MCDoMach number  CDo  
+  O              *              x 
+ 
+Aircraft Performance Analysis   31 
+ internal combustion reciprocating engine. For most practical problems, if the density 
+changes by more than 5 percent, the flow is considered to be compressible. Figure 3.2 0 
+shows the effect of compressibility on drag for three configurations.  
+ 
+Flow velocities higher than Mach 0.3 are associated with a considerable  pressure 
+changes, accompanied by correspondingly noticeable  changes in density. The aircraft 
+drag at high subsonic speed (e.g., M = 0.9) is about twice as of that at low subsonic speed  
+(e.g., Mach 0. 2). Consider a wing with a free stream. The lift is created by the occurrence 
+of pressure higher than free stream on the lower surface of the wing and lower than free 
+stream on the upper surface.  The is usually coincides  by the occurrence of  velocities 
+higher than free stream on the upper surface of the wing  and lower than free stream on 
+much of the lower surface.  
+ 
+As the airspeed approaches the speed of sound (i.e., M > 0.85), due to a positive 
+camber, the higher local velocities on the upp er surface of the wing may reach and even 
+substantially exceed  local sonic speed , M = 1  (See Figure 3. 21). The free stream Mach 
+number at which the maximum local Mach number reaches 1 i s referred to as the critical 
+Mach number.   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure  3.21. Local supersonic speed with a high subsonic flow 
+ 
+The existence of sonic and supersonic local velocities on a wing is associated with 
+an increase in drag. The extra drag is  due to a reduction in total pressure through oblique 
+shock wave  which causes local adverse pressure gradients. In addition, when an oblique 
+shock interacts with boundary layer, the boundary layer gets thicker and may even 
+separates.  This is referred to as compressibility drag.  
+ 
+A cambered airfoil has ty pically a crest and a lifting surface with such airfoil has 
+a crestline. The crest  is the point on the airfoil upper surface to which the free stream is 
+tangent. The crestline is the locus of airfoil crests along the wing span. The drag increase 
+due to com pressibility is generally not large, until the local speed of sound occurs at or 
+behind the crest of the airfoil. Empirically, it is found for all airfoils except the 
+supercritical airfoil, that at 2% to 4% higher Mach number than that at which M = 1 at th e 
+crest the drag rises abruptly. The Mach number at which this abrupt drag rise begins is 
+called the Drag Divergence Mach number . 
+ Shock wave  M > 1  M = 0.85  M = 1 (sonic line)  
+M < 1  Aircraft Performance Analysis   32 
+  
+ 
+Figure 3. 22. Incremental drag coefficient due to compressibility (Ref. 1)  
+ 
+However, t he occu rrence of substantial supersonic local velocities well ahead of 
+the crest does not lead to a significant drag increase provided that the velocities decrease 
+again below sonic speed forward of the crest. The incremental drag coefficient due to 
+compressibili ty is designated CDc. Figure 3.22 is an empirical average of existing 
+transport aircraft data.  Table 3. 4 demonstrates the incremental drag coefficient due to 
+compressibility for several aircraft.  
+ 
+No Aircraft  CDo at low 
+subsonic 
+speed  CDo at high 
+subsoni c 
+speed  Incremental drag 
+coefficient due to 
+compressibility ( CDc)  
+1 Boeing 727  0.017  0.03 76.5%  
+2 North American F-86 Sabre  0.014  0.04 207.7%  
+3 Grumman F-14 Tomcat  0.021  0.029  38.1%  
+4 McDonnell Douglas F-4 
+Phantom  0.022  0.031  40.9%  
+5 Convair F -106 D elta Dart  0.013  0.02 54% 
+Table 3. 4. Drag increase due to compressibility effects for several aircraft  
+ 
+A complete set of drag curves for a typical large transport jet is given in Figure 3.23.  
+ 
+9. Miscellaneous items  
+ 
+There are other items which produce drag, but due to their variations, were not listed in 
+this section. These include such items as 1. footstep in small GA aircraft which allow the 
+pilot or technician to climb up; 2. small plate on tails to balance the manufacturing  
+unbalances, 3. catapult hook, 4. pipe and funnel for aerial fuel refueling, 5. wiper blades, 
+6. angle of attack meter vane, 7. non -streamlined fuselage, 8. deflector cable, 9. chemical 
+0.8 0.85 0.9 0.95 1 1.051234567x 10-3
+MCDcRatio of free stream Mach number to crest critical Mach  number  CDc Aircraft Performance Analysis   33 
+ sprayer in agricultural aircraft, 10. vortex generator, 11. navigation  lights, and 12. fitting. 
+The calculation of drag of such minor items is out of scope of this text.  
+  
+ 
+Figure 3. 23. Drag coefficient versus Mach number  
+3.4.10. Overall C Do 
+Based on the build -up technique, t he overall C Do is determined readily as the sum of C Do 
+of all aircraft components and factors. The calculation of C Do contribution due to factors 
+as introduced in section 3.4.9 is complicated. These factors sometimes are responsible for 
+an increase in C Do up to about 50%. T hus we will resort to a correction factor in our 
+calculation  technique. The n, the  overall C Do of an aircraft is given by:  
+ 
+ ...
+lg
+fto no o so vto hto fo wo o D D D D D D D D c D C C C C C C C CK C
+                  (3.38 ) 
+ 
+No Aircraft type  Kc 
+1 Jet transport  1.1 
+2 Agriculture  1.5 
+3 Prop Driven Cargo  1.2 
+4 Single engine piston  1.3 
+5 General Aviation  1.2 
+6 Fighter  1.1 
+7 Glider  1.05 
+8 Remote Controlled  1.2 
+ 
+Table 3. 5. Correction factor (K c) for equation 3.3 8 
+ 
+where K c is a correction factor and depends on several factors suc h as the type, year of 
+fabrication , degree of streamline -ness of fuselage, configuration of the aircraft , and 
+number of miscellaneous items . Table 3. 5 yields the K c for several types of aircraft.  
+0.5 0.55 0.6 0.65 0.7 0.75 0.8 0.85 0.90.0150.020.0250.030.0350.04
+MCD
+  
+M=0.1
+M=0.2
+M=0.3
+M=0.4
+M=0.5
+M=0.6Mach number  CD Aircraft Performance Analysis   34 
+  
+Each component has a contribution to overall C Do of an airc raft. Their 
+contributions vary from aircraft to aircraft and from configuration to configuration (e.g. , 
+cruise to take -off). Table 3. 6 illustrates [2] contributions of all major components of 
+Gates Learjet 25  to aircraft C Do. Note that the row 8 of this ta ble shows the contributions 
+of other components as high as  20%.  
+ 
+No Component  CDo of component  Percent from total C Do (%) 
+1 Wing  0.0053  23.4 
+2 Fuselage  0.0063  27.8 
+3 Wing tip tank  0.0021  9.3 
+4 Nacelle  0.0012  5.3 
+5 Engine strut  0.0003  1.3 
+6 Horizon tal tail  0.0016  7.1 
+7 Vertical tail  0.0011  4.8 
+8 Other components  0.0046  20.4 
+9 Total C Do 0.0226  100 
+ 
+Table 3. 6. CDo of major components of Gates Learjet 25  
+ 
+No Aircraft  Type  Landing 
+gear  mTO 
+(kg) S 
+(m2) Engine  CDo 
+1 Cess na 172  Single 
+engine GA  Fixed  1,111  16.2 Piston  0.028  
+2 Cessna 182  Single 
+engine GA  Fixed  1,406  16.2 Piston  0.029  
+3 Cessna 185  Single 
+engine GA  Fixed  1,520  16.2 Piston  0.021  
+4 Cessna 310  Twin 
+engine GA  Retractable  2,087   Piston  0.026  
+5 Learjet 25  Business jet  Retractable  6,804  21.53  2 Turbojet  0.0226  
+6 Gulfstream II  Business jet  Retractable  29,711  75.21  2 Turbofan  0.023  
+7 Saab 340  Transport  Retractable  29,000  41.81  2 Turboprop  0.028  
+8 McDonnell 
+Douglas D -C-9-30 Airliner  Retractable  49,090  92.97  2 Turbofan  0.021  
+9 Boeing 707 -320 Airliner  Retractable  151,320   4 Turbofan  0.013  
+10 Boeing 767 -200 Airliner  Retractable  142,880  283.3  2 Turbofan  0.0135  
+11 Airbus 340 -200 Airliner  Retractable  275,000  361.6  4 Turbofan  0.0165  
+12 Boeing C -17 
+Globemaster III  Transport  Retractable  265,350  353 4 Turbofan  0.0175  
+Table 3. 7. CDo of several aircraft at low speed  
+ 
+Table 3. 7 illustrates C Do of several aircraft at low speed s [15]. The retired airliner Boeing 
+707 was a very aerodynamic airc raft with a C Do of 0.013. You may have noticed that 
+Cessna 185 has a lower C Do compared with Cessna 172 and Cessna 182. The reason is Aircraft Performance Analysis   35 
+ that Cessna 172 and Cessna 182 are equipped with fixed tricycle landing gear while 
+Cessna 185 has a fixed tail dragger.  
+3.5. Wave Drag  
+In supersonic airspeed s, a new type of drag is produced and it is referred to as “shock 
+wave drag” or simply “wave drag”. When a supersonic flow experiences an obstacle  
+(e.g., wing leading edge or fuselage nose);  it is turned  into itself  and a shock wave is 
+formed. A shock wave is a thin sheet of air across which abrupt changes occur in  flow 
+parameters such as pressure, temperature, density, speed, and Mach number . In general, 
+air flowing through a shock wave experiences a jump toward higher de nsity, higher 
+pressure, higher temperature, and lower Mach number. The effective Mach number 
+approaching the shock wave is the Mach number of the component of velocity normal to 
+the shock wave. This component Mach number must be greater than 1.0 for a shoc k to 
+exist. The wave drag; the new source of drag; is inherently related to the loss of the 
+stagnation pressure and increase of entropy across the oblique and normal shock waves.  
+ 
+In general, a shock wave is always required to bring supersonic flow back t o 
+subsonic regime. In a subsonic free stream, w henever the local Mach number becomes 
+greater than 1 over the surface of a wing or body, the flow must be decelerated to a 
+subsonic speed before reaching the trailing edge. If the surface could be shaped such that 
+the surface Mach number is reduced to 1 and then decelerated subsonically to reach the 
+trailing edge at the surrounding free stream pressure, there would be no shock wave and 
+no shock drag. A major goal of transonic airfoil design is to reduce the loc al supersonic 
+Mach number to as close to 1 a s possible before the shock wave . One of the main 
+functions of sweep angle in a swept wing is to reduce wave drag at transonic and 
+supersonic airspeeds.  
+ 
+In supersonic airspeeds, t hree main types of waves are cr eated: 1. oblique shock 
+wave, 2. normal shock wave, and 3. Expansion waves. In general, an oblique shock wave 
+brings a supersonic flow to another supersonic flow with a lower Mach number. A 
+normal shock wave brings a supersonic flow to a subsonic flow (i.e ., Mach number less 
+than 1). However, an expansion wave brings a supersonic flow to another supersonic 
+flow with a higher Mach number. In supersonic airspeeds, a  shock wave may happen at 
+any place in the aircraft , including wing leading edge, horizontal ta il leading edge, 
+vertical tail leading edge, and engine inlet. All these aircraft components locations will 
+create an extra drag when a shock wave is formed. Thus , in supersonic speed, the drag 
+coefficient is expressed by:  
+ 
+w i o D D D D C C C C 
+                (3.39) 
+ 
+where C Dw is referred to as "wave drag coefficient". The precise calculation of C Dw is 
+time consuming, but to give the reader the guidance , we present two techniques, one for a 
+lifting surface leading edge ; and one for the whole aircraft . For  a complicated geometry 
+aircraft  configuration , the drag may be computed with aerodynamics techniques such as 
+vortex panel method and “Computational Fluid Dynamics ” techniques. Figure 3.24 
+illustrates Lockheed Martin F-35 Lightning Joint Strike Fighter, a new generation of Aircraft Performance Analysis   36 
+ fighters.  It is claimed that F -35 will be the last manned fighters, and in the near future, the 
+fighters will be unmanned.  
+ 
+ 
+Figure 3. 24. Lockheed Martin F-35 Lightning Joint Strike Fighter, a new generation 
+of fighters  
+3.5.1. Wave Drag  for Wing and Tail  
+In this section, the wave drag of a wing is presented. In an aircraft with a supersonic 
+maximum speed, the locations where have the first impact with airflow (such as wing 
+leading edge, horizontal tail leading edge, vertical tail leading edge, fuselage nose, and 
+engine inlet edge) are usually made sharp. One main reason for this initiative is to reduce 
+the number of shack waves created over the aircraft components during a supersonic 
+flight. Two airfoil cross se ctions which are frequently employed for wing, horizontal tail, 
+and vertical tail are double wedge and biconvex (See figure 3.2 5).  
+ 
+ 
+ 
+ 
+a. double wedge                                   b. biconvex  
+Figure 3. 25. Supersonic air foil sections  
+ 
+In this section, a wave drag calculation technique is introduced which is applicable to any 
+component where has a corner angle (e.g., double wedge and biconvex) and experiences 
+a shock wave. Then wave drag coefficient ( CDw) for such componen t is calculated 
+separately and then all C Dw are summed  together.  
+ 
+Consider a the front top half of a wedge with a sharp corner that experiences an oblique 
+shock in a supersonic flow ( as illustrated in Figure 3.26 ). The wedge has a wedge angle 
+of , and the free stream pressure, and Mach number are P 1 and M 1 respectively. When 
+Aircraft Performance Analysis   37 
+ the supersonic flow hits the corner, an oblique shock with angle of  to the free stream is 
+generated.  
+  
+For each component with such configuration , the wave drag coefficient  is given by:  
+PSMD
+SVDCw w
+Dw2 2
+21
+21 
+ 
+              (3.40) 
+ 
+where subscript infinity (
+ ) means that the parameter are considered in the infinity 
+distance from the surface. Please note that, t his does not really mean infinity, but it 
+simply means at a distance out of the effect of shock and the surface (i.e. , free stream). 
+The parameter S is the surface of a body at which the pressure is acting  (i.e., planform 
+area).  
+ 
+Dw is the wave drag and is equal to the axial component of the pressure  force. In 
+supersonic speeds, the induced drag may be ignored, since it has negligible contribution, 
+compared to the wave drag. In supersonic speeds, the lift coefficient has a very low  value . 
+Since, the wedge has an angle, ; the drag force due to flow pr essure actin on a wedge 
+surface with an area of “A” is given by:  
+ 
+sin2AP Dw
+                   (3.41) 
+ 
+where P 2 represents the pressure behind a n oblique  shock wave, and  is the corner angle 
+(see figure 3.2 6). Please note that; in this particu lar case, the pressure at the lower surface 
+is not change d. The relationship between upstream and downstream flow parameters may 
+be derived using energy law, mass conservation law, and momentum equation. The 
+relationship between upstream pressure (P 1) and d ownstream pressure (P 2) is given [7] 
+by:  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 3. 26. Geometry for drag wave  over a wedge  
+ 
+
+ 11212
+1 1 2 nM P P
+                 (3.42)  
+where  is the is the ratio of specific heats at constant pressure and constant volume (  = 
+cp/cv). For air at standard condition,  is 1.4. The variable Mn1 is the normal component of 
+the upstream Mach number, and is given by:  oblique  
+shock  
+M2 
+P2 
+P1 
+M1 DW Aircraft Performance Analysis   38 
+    
+sin1 1M Mn
+                    (3.43)  
+ 
+The parameter  oblique shock angle  is a nonlinear function of up stream Mach 
+number and  wedge c orner angle ( ): 
+ 
+
+
+
+
+2 2cos1 sincot2 tan2
+12 2
+1
+MM                (3.44)  
+Equation 3.44 is called -M relation. For any given , there are two value s of  
+predicted for any given Mach number. Take the lowe r value which is the representation 
+of the weal  shock wave  which is favored by the nature . 
+ 
+The pressure may also be non -dimensionalized as follows:  
+ 
+p p CPM CV PP    2 2
+221
+21 
+        (3.45)  
+ 
+where C p is the pressure coefficient.  
+ 
+Now, consider another more general case, where a supersonic airfoil has an angle of 
+attack, or when the second half of a wedge is considered. In such a case, where a 
+supersonic flow is turned away from itself, an expansion wave is formed (See figure 
+3.27). Expansion waves are the antithesis of shock waves. In an expansion corner, t he 
+flow Mach number is increased, but the static pressure, air density , and temperature 
+decrease through an expansion wave.  The expansion wave is also referred to as the 
+Prandtl -Meyer  expansion wave.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 3. 27. Oblique shock and Prandtl -Meyer expansion  waves  
+ 
+For a wing with a  wedge airfoil section shown in figure 3.2 7, the drag force is  the 
+horizontal components of the pressure force, so:  
+  sin sin3 2 AP APD  
+          (3.46) 
+where A is the surface area , and is equal to : Oblique  shock wave  
+M3, P3 M2, P2 Mach lines  
+M1, P1 
+C Aircraft Performance Analysis   39 
+ 
+cos2CbA            (3.47) 
+ 
+ 
+where b is the wing span (not shown in the figure). Plugging the equation 3.46 into 
+equation 3.47 , the following result is obtained:   
+  tan21sincos2
+3 2 3 2 bCPPCbPP D  
+         (3.48) 
+If the wing has a different geometry, use this basic technique to determine the wing wave 
+drag. The pressure behind the expansion wave is given [7] by the fol lowing equation:  
+1
+2
+32
+2
+2 3
+211211
+
+
+
+
+
+
+
+MM
+P P
+            (3.49) 
+where the flow Mach number behind expansion wave (M3) and the flow Mach number 
+behind expansion wave (M 2) are related through the turn angle,  : 
+2 3 M M 
+               (3.50)  
+The (M) is referred to as the Prandtl -Meyer function and is given by:  
+1 tan 111tan11)(2 1 2 1 
+
+
+
+ M M M
+
+       (3.51)  
+The equation 3.51 should be employed twice in the calculation; once to calculate  M2, and 
+once to dete rmine  M3. Example 3. 3 indicate s the application  of the technique . 
+ 
+ 
+Example 3.2 : 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 3. 28.  Geometry for Example 3.2  (side -view)  
+ 
+Consider a rectangular wing with a span; b (not shown in the figure) of 5 m and a chord ; 
+C of 2 m in a Mach 2  air flow (the side -view is sketched in figure 3.2 8). The airfoil 10o 
+P2 P2 
+x y  M1 = 2 
+P1 
+C D 
+P1 Aircraft Performance Analysis   40 
+ section is a 10° half -angle wedge at zero angle of attack. Calculate the wave drag 
+coefficient. Assume that the expansion over the corners  of the base is such that, the base 
+pressure is equal to the free -stream pressure. The experiment is performed at sea level 
+ISA condition.  
+ 
+Solution:   
+At sea level ISA condition, the free -stream pressure is 1 atm  (i.e., 101,325 Pa) , and air 
+density is 1.22 5 kg/m3. The ratio of specific heats at constant pressure and constant 
+volume for air,  is 1.4. Since the supersonic flow turns to itself, an oblique shock wave is 
+produced both at top and bottom surfaces. Pressure is increased behind the shock wave 
+(P2). In order to determine the pressure P 2, we need to first calculate the shock wave 
+angle  (): 
+ 
+  
+
+
+
+ 
+
+
+
+2 2cos4.121 sin2cot2)10tan(2 2cos1 sincot2 tan22 2
+2
+12 2
+1
+MM
+   (3.44)  
+The solution of this nonlinear equation yields an angle of 39.3 degrees (  = 39.3 deg). 
+The normal component to the shock M n1 is: 
+27.13.39sin2 sin1 1    M Mn
+              (3.43)  
+The static pressure behind the shock wave is : 
+ 
+ 
+Pa PM P Pn
+364,1721 27.114.1)4.1(21325,101 1121
+22 2
+1 1 2
+
+ 
+
+            (3.42)  
+ 
+The wave drag is the net force in the x direction; P 2 is exerted perpendicular to the top 
+and bottom surfaces . The force due to P 1 exerted over the base is in the direction opposite 
+to the x axis . S is the planf orm area (the projected area seen by viewing the wedge from 
+the top, thus S = c × b. The drag , D w, is the summation of t wo top and bottom  pressure 
+force (see Figure 3. 29) components in x direction , minus the force from base pressure : 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 3. 29. Wave drag , the component of pressure force in x direction  
+ 
+11 22sin 2 AP AP Dw   
+                (3.41)  
+
+
+
+
+cos2SP 
+sincos2
+SP
+ S 
+cosSA Aircraft Performance Analysis   41 
+ where A 2 is the base area, and A 1 is the top and bottom surfaces:  
+)10tan(21bC A
+    
+)10cos(2Cb A
+                 
+Thus:  
+ 
+  N DCbPCbP D
+ww
+670,251 10tan25 325,1102 10tan25 364,172210tan2 10sin10cos21 2
+
+
+ 
+By definition, the wave drag coefficient is:  
+252 325,1014.15.0670,251
+2122 
+
+ SPMDCw
+Dw
+
+          (3.40)  
+ 
+089.0
+wDC
+ 
+ 
+Note that this drag coefficient is based on the shock wave , and it include s the contributi on 
+of the base.  
+ 
+Example 3.3 : 
+Consider a very thin flat plate wing with a c hord of 2 m and a span of 5 m. The wing is 
+placed at a 5o angle of attack in a Mach 2.5 air flow  (Figure 3. 30). Determine the wave 
+drag coefficient.  Assume sea level ISA condition.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figure 3. 30. Geometry for Example 3.3 (side -view)  
+ 
+Solution:   
+a. In the lower  surface, an oblique shock is formed. The pressure P3 is determined as 
+follows:  P3 5o 
+P2 M1 = 2.5  
+P1 
+x y Aircraft Performance Analysis   42 
+ 
+  
+
+
+
+
+
+
+
+2 2cos4.121 sin5.2cot2)5tan(2 2cos1 sincot2 tan22 2
+2
+12 2
+1
+MM   (3.44)  
+The soluti on of this nonlinear equation yields an angle of 27.4 degrees ( = 27.4 deg). 
+The normal component to the shock M n1 is: 
+15.14.27sin2 sin1 1    M Mn
+              (3.43)  
+The static pressure behind the oblique shock wave is:  
+ 
+ 
+Pa PM P Pn
+823,1391 15.114.1)4.1(21325,101 1121
+32 2
+1 1 3
+
+ 
+
+            (3.42) 
+ 
+b. In the upper  surface, an oblique shock is formed. The pressure P 2 is determined as 
+follows:  
+ 
+For forward Mach line:  
+
+ 
+
+
+
+ 1 tan 111tan11)(2
+11 2
+11
+1 M M M
+
+      (3.51)  
+ 
+ deg1.39 15.2 tan 15.214.114.1tan14.114.1)(2 1 2 1
+1  
+
+
+
+ M
+    (3.51)  
+ 
+ deg12.4451.391 2 1 2   M M M M
+        (3.50)  
+ 
+For rearward Mach line:  
+
+ 
+
+
+
+ 1 tan 111tan11)(2
+21 2
+21
+2 M M M
+
+      (3.51)  
+ 
+
+ 
+
+
+
+ 1 tan 114.114.1tan14.114.112.442
+21 2
+21M M
+      (3.51)  
+ 
+Solution of this nonlinear equation yields:  
+ 
+723.22M
+             (3.51)  
+The static pressure behind the expansion wave is:  
+
+Pa
+MM
+P P 742,71
+723.2214.115.2214.11
+101325
+21121114.14.1
+221
+2
+22
+1
+1 2 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+     (3.49)  
+ Aircraft Performance Analysis   43 
+ c. Drag  
+ 
+The wave drag force is the x -component of the pressure force:  
+ 
+   N bCPP Dw 336,595sin25 512,71 823,139 sin2 3    
+     (3.41)     
+ 
+The wave drag coefficient is:  
+ 
+ 
+25 325,1015.24.15.0336,59
+212
+12
+1
+
+SPMDCw
+Dw
+           (3.40)  
+ 
+0134.0
+wDC
+ 
+ 
+3.5.2. Aircraft Wave Drag  
+An aircraft has usually a complex geometry and various components. In previous section, 
+mathematical technique was introduced to calculate the wave drag where the object has a 
+very simple (e.g., flat plate, wedge) configuration. Every aircraft component contributes 
+to wave drag. In this section, a technique is presented to determine the wave drag of a 
+complete aircraft.  
+ 
+In this approach , we consider an aircraft as a whole and we will not divide it into several 
+components. This is an approximate and empirical technique [8]. The aircraft w ave drag 
+coefficient consists of two parts ; volume -dependent wave drag (C Dwv), and lift -dependent 
+wave drag (C Dwl). The volume -dependent wave drag is a function of aircraft volume and 
+much greater than lift -dependent wave drag. The reason is that , at supersonic speed s, the 
+lift coefficient (C L) is very minimal .  
+vw lw w D D D C C C 
+            (3.52) 
+The lift-dependent wave drag is given by : 
+
+22 2
+21
+LM SCKCL wl
+Dlw
+           (3.53 ) 
+where L represents the aircraft fuselage length, S is wing reference area, and K wl is a 
+parameter given by  
+2
+2
+
+bLSKwl
+            (3.54) 
+and b is the wing span.  
+ Aircraft Performance Analysis   44 
+  
+ 
+Figure 3. 31. Wave drag for several aircraft (Ref. 9)  
+ 
+The volume -dependent wave drag is given by:  
+ 
+42128
+SLVKCwv
+Dwv
+              (3.55) 
+where V is the total aircraft volume and K wv is a factor given by : 
+
+
+
+
+
+
+LbLb
+Kwv
+
+2175.01
+17.1
+           (3.56) 
+and  is a function of Mach number as  
+ 
+12M
+               (3.57) 
+ 
+In general, wave drag is significant,  such that it will incr ease the aircraft drag up 
+to about two to three times  compared with subsonic drag . For instance, C Do of fighter 
+aircraft F -4 at Mach number 1.5 (supersonic) is about 0.045, while its C Do at Mach 
+number 0.6 (s ubsonic) is about 0.016. Figure  3.31 shows zero-lift drag coefficients of 
+several aircraft for a range of Mach numbers from subsonic to supersonic speeds. The 
+drag rise of most of the  aircraft  due to high Mach number is considerably high . Table 3. 8 
+illustrates C Do of several aircraft at their cruise spe ed. 
+3.6. C Do for Various Configurations  
+Any individual aircraft will often  take various configurations  in flight phases . When an 
+aircraft retracts its landing gear, deflects its flap, rotates its control surfaces, exposes any 
+external component (such as gu n), releases its store (e.g. , missile), or opens its cargo 
+door; it has changed its configuration. In general , there are three configuration  group s 
+Mach number  Aircraft Performance Analysis   45 
+ that an aircraft may adopt, they are: 1. clean configuration, 2. take -off configuration, and 
+3. landing conf iguration.   
+ 
+The clean configuration is the aircraft configuration employed at flight phases 
+such as cruise, climb and turn. As the names impl y, the take -off configuration, and 
+landing configuration are the aircraft configurations which are adopted during take-off 
+and landing respectively. In an aircraft with a retractable landing gear, the landing gear 
+are employed during take -off and landing and retracted during cruising flight. 
+Furthermore, the flaps are extended in take -off and landing operations. The f lap 
+deflection angle is a function of aircraft payload weight and atmospheric conditions.  
+ 
+No Aircraft  Engine  No. of  
+Engines  Landing 
+gear  CDo 
+1 Pilatus PC-9 Turboprop  1 Retractable  0.022  
+2 Lockheed F-104 Starfighter  Turbojet  1 Retractable  0.016  
+3 Embr aer EMB 312  Tucano  Turboprop  1 Retractable  0.021  
+4 Boeing 747  Turbofan  4 Retractable  0.018  
+5 Lockheed  Jetstar  Turbojet  4 Retractable  0.0185  
+6 Lockheed C-5 Galaxy  Turbofan  4 Retractable  0.019  
+7 Boeing 727  Turbofan  3 Retractable  0.07 
+8 Grumman F-14 Tomc at Turbofan  2 Retractable  0.02 
+9 Learjet 25  Turbofan  2 Retractable  0.022  
+10 Douglas C-54 Skymaster  Piston prop  4 Retractable  0.023  
+11 Curtiss C -46 Commando  Turboprop  2 Retractable  0.025  
+12 Beech V35  Bonanza  Turboprop  1 Retractable  0.025  
+13 Cessna 310  Piston prop  2 Retractable  0.025  
+14 McDonnell Douglas F-4 Phantom  Turbojet  2 Retractable  0.03 
+15 Piper PA -28 Piston prop  1 Fixed  0.047  
+16 Cessna 172  Piston prop  1 Fixed  0.028  
+17 North American  F-86 Sabre  Turbojet  1 Retractable  0.014  
+18 North American  XB-70 Valkyrie  Turbojet  6 Retractable  0.006  
+19 F-106 Convair  Delta Dart  Turbojet  1 Retractable  0.013  
+20 McDonnell Douglas (now Boeing)  
+F/A-18 Hornet  Turbofan  2 Retractable  0.017  
+ 
+Table 3. 8. CDo of several aircraft   
+3.6.1. Cle an Configuration  
+The clean configuration is the configuration of an aircraft when it is at a cruise flight 
+condition . At this configuration, no flap is deflected, and landing gear is retracted (if it is 
+retractable). Therefore the drag polar is  
+ 
+2
+C cleano clean L D D CK C C 
+           (3.58) 
+ 
+Thus , clean C Do of the aircraft (
+cleanoDC ) includes every component (such as wing, tail, and 
+fuselage) , and excludes  flap and landing gear (if retractable). If the landing gear is not Aircraft Performance Analysis   46 
+ retractable  (e.g., as in Ce ssna 172) , the C Do includes landing gear too. The parameter C LC 
+is the cruise lift coefficient.  
+3.6.2. Take -Off Configuration  
+The take -off configuration is the configuration of an aircraft when it is at take-off 
+condition. In this configuration , the aircra ft has high angle of attack, flap is deflected for 
+take-off, and landing gear is not retracted (even if it is retractable). In a take -off 
+condition, the flaps are usually deflected down about 10 -30 degrees. The take -off C Do 
+depends on type and the deflecti on angle of the flaps. As the flap deflection increases, the 
+take-off C Do increases too. The drag polar at take -off configuration is  
+2
+TO TOo TO L D D CK C C 
+           (3.59)  
+where, t he take -off zero -lift drag coefficient is given by  
+ 
+LGo TO oflap cleano TOo D D D D C C C C 
+
+          (3.60) 
+where 
+TO oflapDC
+  represent s the zero-lift drag coefficient of flap at take -off condition. In 
+addition, the parameter 
+LGoDC represents the zero -lift drag coefficient of the landing gear. 
+Moreover, CLTO represents the lift coefficient at take -off. This coefficient does not have a 
+constant value during take -off, due to the accelerated nature of the motion. The C LTO at 
+the lift -off condition (where the front wheel is just detached from the ground), is given by  
+ 
+229.0
+LOLVSmgC
+TO
+            (3.61) 
+where V LO represents the aircraft lift -off speed. The factor of 0.9 is added due to the 
+contribution of the  engine thrust during take -off in vertical direction . The aircraft lift -off 
+speed is often about 10% -30% higher than  the ai rcraft stall speed.  
+S LO LO VK V
+               (3.62)  
+ 
+where K LO = 0.1  - 0.3. In Chapter 8, the take -off performance will be discussed in great 
+details.  
+3.6.3. Landing Configuration  
+The landing configuration is the configuration of an aircraft w hen it is at landing 
+condition. In this configuration, the aircraft has high angle of attack (even more than 
+take-off condition), flap is deflected (even more than take -off condition), and landing 
+gear is not retracted (even if it is retractable). In landi ng condition, the flaps are usually 
+deflected down about 30 -60 degrees. The landing C Do depends of the deflection angle of 
+the flaps. As this angle increases, the landing C Do increases too. The landing zero -lift drag 
+coefficient (C DoL) is often greater tha n the take -off zero -lift drag coefficient (C DoTO). If 
+there is another means of high lift device for the aircraft, such as slat, you need to add it 
+to this equation. The drag polar at landing configuration is given by:  
+2
+L Lo L L D D CK C C 
+             (3.63) 
+ Aircraft Performance Analysis   47 
+ where 
+LLC  is the lift coefficient at landing and is given by : 
+22
+LLVSmgC
+L
+              (3.64) 
+ 
+where V L is the aircraft landing speed. The landing speed (V L) and is often about 
+10%-30% greater than the stall speed.  
+ 
+SL L VK V
+               (3.65)  
+where K L = 0.1 - 0.3. The landing zero -lift drag coefficient is given by  
+ 
+LGo L oflap cleano Lo D D D D C C C C 
+
+          (3.66) 
+where 
+L oflapDC
+  represents the zero -lift drag coefficient of the flap at landing condition . 
+Both 
+TO oflapDC
+  and 
+L oflapDC
+  are functions of flap deflection. In Chapter 8, the landing 
+performance will be present ed.  
+ 
+ 
+ 
+Figure 3. 32. Drag coefficient versus lift coefficient for various Mach nu mber  
+3.6.4. The Effect of Speed and Altitude on C Do 
+The aircraft zero -lift drag coefficient is a function of a number of flight parameters. 
+Reynolds number is one of the influential parameters on the zero -lift drag coefficient. As 
+the Reynolds number incre ases, the boundary layer thickness decreases and thus C Do 
+decreases as well. As equation 3.16 indicates, the Reynolds number is a function of true 
+airspeed. Since the true airspeed is a function of altitude (indeed, air density), it can be 
+concluded that t he Reynolds number is also a function of altitude. Another factor 
+0 0.1 0.2 0.3 0.4 0.5 0.6 0.70.0150.020.0250.030.0350.040.0450.05
+CLCD
+  
+M=0.3
+M=0.7
+M=0.8
+M=0.9CL CD Aircraft Performance Analysis   48 
+ affecting C Do is the compressibility which is significant at speeds higher than Mach 0.7. 
+The third important factor is the wave drag as discussed in section 3.5. Considering these 
+factors, it is concluded that the C Do is a function of Mach number and altitude:  
+ 
+hMf C
+oD ,
+                     (3.67)  
+ 
+At low subsonic Mach numbers, C Do is increased, due to an increase in Reynolds 
+number. As compressibility factor shows up in higher subsonic speeds, the C Do increases 
+with a higher rates. In transonic speeds, shock wave is formed and a jump ( sudden 
+increase) in C Do will be experienced. Therefore , the C Do is directly proportional with 
+speed, and as speed (Mach number) is increased, the CDo increase s. Figure 3. 32 illustrates 
+typical variations of drag coefficient versus lift coefficient at various subsonic Mach 
+number s. 
+ 
+The second factor that affects the C Do is altitude. For a specific Mach number, as 
+the altitude increases, the true air speed decrease s. For instance, consider an aircraft is 
+flying with a speed of Mach 0.5 at sea level. The true airspeed at this altitude is 170 
+m/sec (0.5 × 340 = 170). If this aircraft is flying with the same Mach number at 11,000 ft 
+altitude, the true air speed will be 147 m/sec (0.5 × 249 = 147). In addition, the air density 
+decreases with altitude  with a higher rate . Thus, the higher altitude means the lower 
+Reynolds number (Equation 3.22) , and therefore the higher C Do. Figure 3. 33 illustrates 
+the variati ons of drag force for a light transport aircraft with turbofan engines at various 
+altitudes.  This transport aircraft has a stall speed of 90 knot s and a maximum speed of 
+590 knot s. 
+ 
+ 
+Figure 3. 33. Variations of drag force witho ut considering the compressibility effects  
+ 
+0 100 200 300 400 500 6000.20.40.60.811.21.41.61.82x 105
+V (knot)D (N)
+  
+h=0
+h=2000 m
+h=4000 m
+h=6000 m
+h=8000 m
+h=10000 m
+h=12000 mAircraft Performance Analysis   49 
+ In conclusion, it can be assumed that at the Mach numbers less than 0.7, the 
+variation of C Do is not significant such that it can be considered constant. At higher Mach 
+numbers, the compressibility effect and wav e drag must be taken into account. The 
+second conclusion is that, at higher altitude, total drag force is reduced. The reason is 
+that, although at higher altitude, the C Do is increased, but the air density decrease s. The 
+rate of change (decrease) in air de nsity is faster than the rate of change (increase) of C Do. 
+This is one of the reasons why airlines choose to fly at higher altitudes despite the need 
+and cost of climb.  
+ 
+ 
+Example 3.4  
+Consider the aircraft in example 3.1 is equipped with  a single -slotted fl ap with an average 
+flap chord of 2.3 m. Th e aircraft takes off with a flap angle of 20 degrees and lands with a 
+flap angle of 35 degrees. Assume the C Do of landing gear is 0.01, induced drag correction 
+factor ; K is 0.052 ; and both take -off and landing spee ds are 130 knot. Determine the 
+aircraft C Do at take -off and landing  configurations . 
+ 
+Solution:  
+ 
+The C Do of the flap is given by  
+B
+ff
+D ACCC
+flapo
+
+
+
+                        (3.26)  
+From Table 3. 3, A = 0.00018 and B = 2, so  
+ 
+The C Do of flap at take -off is  
+ 0178.0 20 00018.03.93.2 2
+
+
+flapoDC
+                     (3.26)  
+ 
+The C Do of the flap at landing is  
+ 
+ 0545.0 35 00018.03.93.2 2
+
+
+flapoDC
+                     (3.26)  
+The take -off C Do:    
+ 
+051.0 01.0 0178.0 023.0 
+ LGo TO oflap cleano TOo D D D D C C C C
+      (3.47)  
+ 
+To find aircraft drag coefficient , we need to determine the ind uced drag coefficient. The 
+lift coefficient at take -off is:  
+ 
+  16.2
+5144.0 130 567 225.181.9 38000029.0 29.02 2
+ 
+LOLVSmgC
+TO
+       (3.49)  
+ 
+242.0 16.2 052.02 2L DKC C
+i
+                       (3.12)  Aircraft Performance Analysis   50 
+  
+So, C DTO is 
+ 
+ 293.0 243.0 051.02 
+TO TOo TO L D D CK C C
+        (3.48)  
+ 
+For the landing:  
+  4.2
+5144.0 130 567 225.181.9 3800002 2
+2 2
+ 
+LOLVSmgC
+L
+           (3.52) 
+3.0 4.2 052.02 2L D CK C
+i
+                          (3.12)  
+ 
+088.001.0 0545.0 023.0 
+ LGo L oflap cleano Lo D D D D C C C C
+      (3.47)  
+ 
+ 
+ 387.03.0 088.02 
+L Lo L L D D CK C C
+        (3.48)  
+ 
+  Aircraft Performance Analysis   51 
+ Problems  
+Note:  In all problems, assume ISA condition, unless otherwise stated.  
+  
+1. A GA aircraft is flying at 5,000 ft alt itude. The length of the fuselage is 7 m, wing 
+mean aerodynamic chord is 1.5 m, horizontal tail mean aerodynamic chord is 1.5 
+m, and vertical tail mean aerodynamic chord is 0.6 m. Determine Reynolds 
+number of fuselage, wing, horizontal tail and vertical ta il. 
+ 
+2. The following (figure 3.3 4) is a top -view of Boeing 757 transport aircraft that has 
+a wing span of 38.05 m. Using a proper scale and using a series of measurements, 
+determine the wing reference (gross) area, and wing net area of this aircraft.  
+ 
+ 
+ 
+Figure 3. 34. Top -view of Boeing 757 transport aircraft  
+ 
+3. Estimate the wing wetted area of Boeing 757 (problem 2). Assume the wing has a 
+maximum thickness of 12%.  
+ 
+4. The mean aerodynamic chord of a trainer aircraft is 3.1 m. This trai ner is cruising 
+at sea level with a speed of Mach 0.3. Determine skin friction coefficient of the 
+wing when boundary layer over the wing is: a. laminar, b. turbulent.  
+ 
+5. A business jet aircraft with a 31 m2 wing area and a mass of 6,500 kg is flying at 
+10,00 0 ft altitude with a speed of 274 knot. If C Do = 0.026, K = 0.052, C Lmax = 
+1.8, calculate and plot the following  items : 
+Aircraft Performance Analysis   52 
+ a. drag polar  
+b. variation of drag force with speed.  
+ 
+6. The tip chord of a wing is 6 m and its root chord is 9 m. What is the mean 
+aerodynamic chord?  
+ 
+7. The Attack aircraft Thunderbolt II (Fairchild A -10) has the following features:  
+mTO = 22,221 kg, S = 47 m2, K = 0.06, C Do = 0.032, V max = 377 knot, V TO = 120 
+knot. Assume that the C Do is constant throughout all speeds.  
+ 
+a. Plot the Variation of zero-lift drag ( Do) versus speed (from take -off speed 
+to maximum speed)  
+b. Plot the Variation of induced drag ( Di) versus speed (from take -off speed 
+to maximum speed)  
+c. Plot the Variation of total drag ( D) versus speed (from take -off speed to 
+maximum speed)  
+d. At what speed, the drag force is minimum?  
+ 
+8. The wing of the twin-turbofan airliner Boeing 777 has a 31.6 degrees of leading 
+edge sweepback, a span of 60.93 m and a planform area of 427.8 m2. Determine 
+Oswald efficiency factor (e) and induced drag correction factor  (K) for this wing.  
+ 
+9. Determine the Oswald efficiency factor of a rectangular wing with an aspect ratio 
+of 14.   
+ 
+10. A single engine trainer aircraft with a wing area of 26 m2 has a fixed landing gear 
+with three similar tires. Each tire has a diameter of 25 cm  and a thickness of 7 cm. 
+Each tire is connected to the fuselage with a strut with a diameter of 4 cm and a 
+length of 15 cm. The landing gear does not have fairing , determine zero -lift drag 
+coefficient of  the landing gear.  
+ 
+11. A cargo airplane is cruising wit h a speed of Mach 0.47, is taking off with a speed 
+of 95 knot and is landing with a speed of 88 knot. The plain flap with a 20% 
+chord ratio is deflected down 22 degrees during take -off and 35 degrees during 
+landing. The aircraft has a mass of 13,150 kg, a wing area of 41.2 m2, and induced 
+drag correction factor, K is 0.048. The zero lift drag coefficients of all 
+components are  
+CDow = 0.008, C Dof = 0.006, C Doht = 0.0016, C Dovt = 0.0012, C Don = 0.002, 
+CDoLG = 0.015, C Dos = 0.004,  
+Determine drag force at  
+a. cruise 
+b. take-off 
+c. landing  
+ 
+12. A Swedish aircraft designer is designing a fuselage for a 36 -passenger aircraft to 
+cruise at a Mach number of 0.55. He is thinking of two seating arrangement Aircraft Performance Analysis   53 
+ options: a. 12 rows of three passengers, and b. 18 rows of two passengers. If  he 
+selects option a, the fuselage length would be 19.7 m with a diameter of 2.3 m. In 
+option b the fuselage length would be 27.2 m with a diameter of 1.55 m. What 
+option yields the lowest fuselage zero -lift drag coefficient?  
+ 
+13. The amphibian airplane Lake L A-250 (figure 3.3 5) has a wing with the following 
+features:  
+S = 15.24 m2, b = 11.68 m, MAC =1.35 m, (t/c) max = 15%, airfoil: NACA 4415, 
+Cdminw = 0.0042  
+The aircraft has a mass of 1,678 kg and is cruising with a speed of 155 knot. 
+Determine the wing zero -lift drag coefficient. For other information, use the 
+aircraft three -view that is provided.  
+ 
+ 
+Figure 3. 35. Three -view of amphibian airplane Lake LA -250 
+ 
+14. Assume that the aircraft in problem 13 has a plain flap with a chord ratio o f 0.2. 
+Determine the flap CDo, when it is deflected 30 degrees during a take-off 
+operation.  
+ 
+15. A twelve -seat commuter airplane has a vertical tail with the following features:   
+Svt = 4.3 m2, bvt = 5.4 m, (t/c) max_vt  = 10%, C dmin_vt  = 0.005. The aircraft has  a 
+wing area of 29.4 m2 and is cruising with a true airspeed of 160 knot at an altitude 
+of 18,000 ft ISA condition. Determine the vertical tail zero -lift drag coefficient.  
+ 
+16. The four -seat light airplane Piper PA -34 has a horizontal tail with the following 
+features:  
+Sht = 3.6 m2, bht = 4.14 m, (t/c) max_ht  = 12%, C dmin -ht = 0.0047  
+ The aircraft has a mass of 2,154 kg, a wing area of 19.39 m2 and is cruising at 
+171 knot at an altitude of 18,500 ft. Determine the horizontal tail zero -lift drag 
+coefficient.  
+ 
+17. A jet trainer with a retractable landing gear has the following features:  
+ 
+Aircraft Performance Analysis   54 
+ mTO = 5,630 kg, S = 25.1 m2, b = 17.4 m, e  = 0.85, V c = 270 knot, C Lmax = 2.2, V TO = 
+1.2 V s, V Land = 1.3 V s, CDoclean  = 0.032, C DoflapTO  = 0.02, C DoflapLand  = 0.035, C DoLG = 
+0.01.  
+ 
+Determine the aircraft drag at three flight conditions: a. clean  (cruise speed) , take -off, 
+and c. landing.  
+ 
+18. The wings of the Y -5B agricultural biplane are connected together thru two struts. 
+Each strut has a circular cross section with the length of 1.2 m an d a diameter of 4 
+cm. The total planform area of both wings is 38 m2; determine the zero -lift drag 
+coefficient of struts.  
+ 
+19. A single -engine small aircraft has a wing area of 26 m2 and a turboprop engine 
+that has a power of 600 hp. The aircraft is cruising at 25,000 ft altitude with a 
+speed of 182 knot. Determine  the engine  cooling drag coefficient . Assume K e = 2.   
+ 
+20. A business jet aircraft with a wing area of 45 m2 is equipped with two turbofan 
+engines. Each engine is podded in a nacelle with a diameter of 62 cm and a length 
+of 110 cm. Determine nacelle zero -lift drag coefficient, provided the aircraft is 
+cruising with a speed of 320 knot at an altitude of 28,000 ft.  
+ 
+21. A maneuverable aircraft has two fuel tanks at the wingtips. Each fuel tank has a 
+shape of an ellipsoid with a diameter of 20 cm and a length of 130 cm. Determine 
+fuel tank zero -lift drag coefficient, provided the aircraft is cruising with a speed of 
+190 knot at an altitude of 18,000 ft.  
+ 
+22. The F -16 supersonic jet fighter (figure 3.3 6) with a mass 12,331 kg and a wing 
+area of 27.8 m2 is cruising at an altitude of 40,000 ft at Mach number 2.1. The 
+wing span is 9.45 m and length of the fuselage is 15.3 m. Determine wave drag of 
+the aircraft , assuming the aircraft volume is 21.3 m2. 
+ 
+23. Assu me that F -16 (problem 22) is flying at a Mach number of 1.2 at the same 
+altitude. What is wave drag of this fighter at this flight condition? Compare the 
+result with the result of problem 22 and comment about your finding.  
+ 
+  Aircraft Performance Analysis   55 
+  
+ Figure 3. 36. The three -view of Fighter jet F -16A 
+ 
+24. The fuselage of a large transport  aircraft has a diameter of 3.8 m and a length of 
+43 m. Determine the fuselage zero -lift drag, assuming the wing area to be 180 m2 
+and cruising speed to be 350 knot  at 35,0 00 ft. 
+ 
+25. Determine the terminal velocity of a water droplet; assuming it has a shape of a 
+sphere with a radius of 2 mm. The density of water is 998 kg/m3. 
+ 
+26. You are required to design a parachute  for the safe landing of a paratrooper with a 
+mass of 85 kg. De termine the diameter of the parachute , if the terminal velocity is 
+required to be 1 m/s at 5000 ft altitude. Ignore the drag of the paratrooper and 
+strings. The mass of the parachute is 6 kg.  
+ 
+27. Felix Baumgartner, an Austrian daredevil fell to Earth from mor e than 24 miles 
+high, becoming the first human to break the sound barrier under his own power, 
+on October 14, 2012. He made the highest and fastest jump in history after 
+ascending by a helium balloon to an altitude of 128,100 feet, reaching a maximum 
+speed  of Mach 1.24. Assume the terminal velocity was at 70,000 ft, and his 
+frontal area while descending is 0.12 m2; determine drag coefficient of his body.  
+ 
+28. Consider a very thin flat plate wing with a chord of 0.4 m and a span of 3.6 m. 
+The wing is placed at a  6o angle of attack in a Mach 1.3 air flow. Determine the 
+wave drag coefficient.  
+ 
+29. Consider a 2% thickness  flat plate wing with a chord of 1.2 m and a span of 4.5 
+m. The wing is placed at a 3o angle of attack in a Mach 1.7 air flow. Determine  
+Aircraft Performance Analysis   56 
+  
+a. wing zero -lift drag coefficient  
+b. induced drag coefficient  
+c. wing wave drag coefficient.  
+ 
+Assuming the aircraft has a ma ss of 1000 kg and is cruising at an alti tude of 
+12,000 ft. The wing Cd min may be assumed to be 0.003 , and Oswald efficiency 
+factor to be 0.8 .  
+ 
+30. Consider a rectangular wing with a span of 15 m and a chord of 3 m in a Mach 2.6  
+air flow (the side -view as sketched in figure 3.2 8). The airfoil section is a 7° half -
+angle wedge at zero angle of attack. Calculate the wave drag coefficient. Assume 
+that the expansio n over the corners of the base is such that, the base pressure is 
+equal to the free -stream pressure.  
+ 
+31. Consider a tapered wing with a span of 12 m and a chord of 2.5 m in a Mach 1.5  
+air flow (the side -view as sketched in figure 3.2 8). The airfoil section is  a 4° half -
+angle wedge at zero angle of attack. Calculate the wave drag coefficient. Assume 
+that the expansion over the corners of the base is such that, the base pressure is 
+equal to the free -stream pressure. The wing taper ratio is 0.4.  
+ 
+ 
+ 
+ 
+ Aircraft Performance Analysis   57 
+ References  
+1. Hoak D. E., USAF Stability and Control Datcom, Air Force Flight Dynamics 
+Laboratory, Wright -Patterson Air Force Base, Ohio, 1978  
+2. McCormick B. W., Aerodynamics; Aeronautics; and Flight Dynamics, John Wiley, 
+1995  
+3. Abbott I. H., and von Doenhoff A. E., Theory of Wing Sections , Dover, 1959  
+4. Horner S. R., Fluid -Dynamic Drag, Midland Park, NJ, 1965  
+5. Ross  R., Neal R.D., Learjet Model 25 Drag Analysis, Proceeding of the NASA -
+Industry -University GA drag reduction workshop, Lawrence, KS, July 14 -16, 1975  
+6. Shevell R., Fundamentals of Flight, Second Edition, Prentice Hall, 1989  
+7. Anderson J., Modern Compressible F low, Third edition, McGraw -Hill, 2005  
+8. Kuchemann D., Aerodynamic Design of Aircraft,  Pergamon Press, 1978  
+9. Raymer D. P, Aircraft Design: A Conceptual Approach, AIAA, 2006  
+10. Anderson J., Fundamentals of Aerodynamics, third edition, McGraw -Hill, 2005  
+11. Roskam J., Airplane Design, Volume VI, DAR Corp., 2004  
+12. Paul Jackson, et al., Jane’s all the World’s Aircraft, Jane’s Information Group, several 
+years  
+13. Cengel Y. A., and Cimbala J. M.,  Fluid Mechanics: Fundamentals and Applications , 
+3rd edition, McGraw -Hill, 2013.  
+14. Stinton D., The Anatomy of the Airplane, Second Edition, AIAA, 1998  
+15. Lan E. C. and Roskam J., Airplane Aerodynamics and Performance, DAR Corp., 
+2003  
+16. www.airliners.net  
+ 
+ 
+ 
+ 

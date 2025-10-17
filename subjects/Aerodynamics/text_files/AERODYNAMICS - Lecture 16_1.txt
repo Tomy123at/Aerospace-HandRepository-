@@ -1,0 +1,73 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBCOMPRESSIBILITY CONCEPTS
+Application ofthermodynamics (1stand 2ndlaws) and compressible
+aerodynamics →isentropic flow .
+Definitions toremember :
+•Adiabatic process–one onwhich noheat isadded ortaken away :dq=0.
+•Reversible process–one inwhich nofrictional orother dissipative effects occur .
+•Isentropic process–one that isboth adiabatic and reversible .
+Anisentropic process isone inwhich there isneither heat exchange nor
+any effect due tofriction .Isentropic flow isrelevant totheanalysis of
+compressible flows only.COMPRESSIBILITY CONCEPTS
+Relevant equations inaerodynamics :
+COMPRESSIBILITY CONCEPTS
+Relevant equations inaerodynamics :
+SPEED OF SOUND
+SPEED OF SOUND
+SPEED OF SOUND
+SPEED OF SOUND
+SPEED OF SOUND
+K
+K
+KSUBSONIC COMPRESSIBLE FLOW
+From thedefinition ofenthalpy :h=e+pv
+Having that pv=RT,h=cpTande=cvT,then :cpT=cvT+RT
+Dividing thelastequation bycp:
+Holds foraperfect gaswith constant specific
+heat .Itisanecessary thermodynamic relation
+foruseintheenergy equation (next slide)SUBSONIC COMPRESSIBLE FLOW
+Considering aPitot tube (probe) inaflow .
+Stagnation pointp0
+T0V1p1
+T1
+Remembering theenergy equation :
+Applying the energy equation
+forpoints 1and0:
+Substituting cpinthelastequation :
+Forthespeed ofsound a1:
+Thelastequation becomes :
+SUBSONIC COMPRESSIBLE FLOW
+Considering aPitot tube (probe) inaflow .
+Stagnation pointp0
+T0V1p1
+T1
+Applying the energy equation
+forpoints 1and0:
+Because thegasisisentropically compressed atthe
+nose ofthePitot probe, thelastequation :
+holds between thefree stream and thestagnation
+point, that isp0/p1=(r0/r1)g=(T0/T1)g/(g-1);therefore,
+itcanbeobtained :
+SUBSONIC COMPRESSIBLE FLOW
+These equations arefundamental and important relations forcompressible,
+isentropic flow
+Holds foradiabatic flow
+Contain the additional assumption
+offrictionless (isentropic) flow
+These equations also demonstrate the powerful influence ofthe Mach
+number inaerodynamic flow calculations .Itisvery important tonote that
+thetemperature, pressure, and density ratios arefunctions ofM1only.
+From thepressure ratio :SUBSONIC COMPRESSIBLE FLOW
+h= 10 [ km]
+Sea level
+p@10000 [ km]= 2.65 x104[Pa]
+COMPRESSIBILITY
+1
+FLOW COMPARISSON -EXAMPLE
+INCOMPRESSIBLE FLOW COMPRESSIBLE FLOWCOMPRESSIBLE FLOW ALTERNATIVE CALCULATIONCOMPRESSIBILITY
+COMPRESSIBILITY 
+CORRECTION FOR cl
+COMPRESSIBILITY 
+CORRECTION FOR cl

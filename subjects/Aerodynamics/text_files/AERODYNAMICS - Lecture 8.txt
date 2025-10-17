@@ -1,0 +1,215 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBViscous Flow: Airfoil Drag
+•Airfoil liftforce (L)isprimarily due topressure distribution exerted onitssurface
+•Airfoil shear stress (tw)distribution, when integrated intheliftdirection, isgenerally
+very small (negligible)
+•Because ofthese, airfoil Lcan beaccurately calculated assuming inviscid flow in
+conjunction with theKutta condition attheT.E.
+•Ifwewant tocalculate thedrag force (D)with thesame approach, itwillgive avalue
+ofzero (d’Alembert ´sParadox )
+•This paradox canbeneglected when viscosity (friction) isincluded intheflowREAL EFFECTS: VISCOSITY ( m)
+•Tounderstand drag and actual airfoil/wing behavior, weneed anunderstanding of
+viscous flows (allreal flows have friction) .
+•Inviscid (frictionless) flow around abody willresult inzero drag!
+•Calledd’Alembert’s paradox (Must include friction intheory) .
+Viscosity intheflow isresponsible fortheairfoil D,which acts through two sources :
+•Skin -friction drag (shear stress onthesurface) .
+•Pressure drag due toflow separation (form drag) .
+Viscous Flow: Airfoil Drag•Estimating Skin -Friction Drag :
+–Laminar flow.
+–Transition.
+–Turbulent flow.
+Viscous Flow: Airfoil DragEstimating Skin -Friction Drag: Laminar Flow
+•For this, it is assumed that the skin -friction drag on the airfoil is essentially 
+the same as the one acting on a flat plate at zero a.
+•This assumption becomes more accurate for a thinner airfoil and small a.
+Viscous Flow: Airfoil DragEstimating Skin-Friction Drag :Laminar Flow
+•Boundary layer thickness (d)for
+incompressible laminar flow over aflat
+plate atzeroaisgiven by:
+•Iftwisintegrated over both ofthe flat
+plate surfaces, itgives the net friction
+drag (Df).
+•Skin friction drag coefficient forthe flow
+over one surface is:
+𝛿𝑙𝑎𝑚=5.0𝑥
+Re𝑥Re𝑥=𝜌∞𝑉∞𝑥
+𝜇∞
+𝐷𝑓=2𝐷𝑓,𝑡𝑜𝑝=2𝐷𝑓,𝑏𝑜𝑡𝑡𝑜𝑚
+𝐶𝑓𝑙𝑎𝑚≡𝐷𝑓_𝑡𝑜𝑝
+𝑞∞𝑆=𝐷𝑓_𝑏𝑜𝑡𝑡𝑜𝑚
+𝑞∞𝑆=1.328
+Re𝐶;Re𝑐=𝜌∞𝑉∞𝑐
+𝜇∞Viscous Flow: Airfoil DragExample: Skin -Friction Drag: Laminar Flow
+•NACA 2412
+•Estimate for the case of Rec= 3.1x106.
+1.dlam@ T.E .for c= 1.5 [m].
+2. Net Cf_lam for the airfoil.
+V∞Viscous Flow: Airfoil Drag
+@ the T.E. x = c
+𝛿𝑙𝑎𝑚=5.0𝑥
+Re𝑥=5.01.5
+3.1×106=0.00426𝑚=4.26𝑚𝑚
+𝐶𝑓𝑙𝑎𝑚=1.328
+Re𝐶=1.328
+3.1×106=7.54×10−4
+The net laminar skin friction drag coefficient:
+𝐶𝑓𝑙𝑎𝑚,𝑁𝐸𝑇=2𝐶𝑓𝑙𝑎𝑚=27.54×10−4
+𝐶𝑓𝑙𝑎𝑚,𝑁𝐸𝑇=0.0015Estimating Skin-Friction Drag :Turbulent Flow .
+•Not exact analytical solutions forthis type of
+flow .
+•The analysis ofany turbulent flow requires
+some amount ofempirical data, which makes
+them pure approximations .
+•Equations fortheturbulent flow are:
+𝛿𝑡𝑢𝑟𝑏=0.37𝑥
+Re𝑥ൗ15𝐶𝑓𝑡𝑢𝑟𝑏=0.074
+Re𝑐ൗ15
+Viscous Flow: Airfoil DragExample: Skin -Friction Drag: Turbulent Flow
+•NACA 2412
+•Estimate for the case of Rec= Rex= 3.1x106.
+1.dturb@ T.E .for c= 1.5[m].
+2. Net Cf_turb for the airfoil.Viscous Flow: Airfoil Drag
+V∞@ the T.E. x = c
+𝛿𝑡𝑢𝑟𝑏=0.37𝑥
+Re𝑥ൗ15=0.371.5
+3.1×106ൗ15=0.0279𝑚=27.9𝑚𝑚
+𝐶𝑓𝑡𝑢𝑟𝑏=0.074
+Re𝑥ൗ15=0.074
+3.1×106ൗ15=0.00372
+The net turbulent skin friction drag coefficient:
+𝐶𝑓𝑡𝑢𝑟𝑏_𝑁𝐸𝑇=2𝐶𝑓𝑡𝑢𝑟𝑏=20.00372
+𝐶𝑓𝑡𝑢𝑟𝑏_𝑁𝐸𝑇=0.00744Transition
+•Flow always starts from theL.E.aslaminar,
+then atsome point downstream (transition) of
+theL.E.,the laminar boundary layer becomes
+unstable, and small“bursts” ofturbulence
+begin togrow inthe flow, followed bythe
+transition region .After this, theboundary layer
+becomes completely turbulent .
+•Knowledge ofwhere onthe surface transition
+occurs isvital toanaccurate prediction ofskin
+friction drag .
+Re𝑥𝑐𝑟=𝜌∞𝑉∞𝑥𝑐𝑟
+𝜇∞Viscous Flow: Airfoil DragExample: Skin -Friction Drag: Transition
+•NACA 2412 with a given surface roughness.
+•V∞= 50 [ m/s].
+•Predict how far from the L.E. xcritwill be for the known 
+experimental value of Rex_crit = 5.0x105 (c= 1.5[m]).
+•Assume the following values: an air density ( r∞) of 1.23 [kg/m3] 
+and a dynamic viscosity ( m∞) of 1.788 x10-5[kg/(ms)].Viscous Flow: Airfoil Drag
+V∞Re𝑥𝑐𝑟𝑖𝑡=𝜌∞𝑉∞𝑥𝑐𝑟𝑖𝑡
+𝜇∞⇒𝑥𝑐𝑟𝑖𝑡=Re𝑥𝑐𝑟𝑖𝑡𝜇∞
+𝑉∞𝜌∞
+𝑥𝑐𝑟𝑖𝑡=Re𝑥𝑐𝑟𝑖𝑡𝜇∞
+𝑉∞𝜌∞=5.0×1051.7881×10−5
+501.23
+𝑥𝑐𝑟𝑖𝑡=0.145𝑚=14.5𝑐𝑚
+Ifnow thevelocity hasavalue ofV∞=100[m/s]:
+𝑥𝑐𝑟𝑖𝑡=Re𝑥𝑐𝑟𝑖𝑡𝜇∞
+𝑉∞𝜌∞=5.0×1051.7881×10−5
+1001.23
+𝑥𝑐𝑟𝑖𝑡=0.0727𝑚=7.27𝑐𝑚
+Conclusion :The transition point moves forward asthe
+freestream velocity increases .Example :Skin-Friction Drag :laminar, transition and turbulent
+•NACA 2412
+• Calculate theNetCf_totfortheairfoil assuming Rex_cr=5.0x105.
+Viscous Flow: Airfoil Drag
+𝑥𝑐𝑟𝑖𝑡=𝑥1⟶𝑅𝑒𝑥1=𝜌∞𝑉∞𝑥1
+𝜇∞=5.0×105
+𝑥=𝑐⟶𝑅𝑒𝑐=𝜌∞𝑉∞𝑐
+𝜇∞=3.1×106𝑅𝑒𝑥1
+𝑅𝑒𝑐=𝜌∞𝑉∞𝑥1
+𝜇∞
+𝜌∞𝑉∞𝑐
+𝜇∞=𝑥1
+𝑐
+𝑅𝑒𝑥𝑐𝑟𝑖𝑡
+𝑅𝑒𝑐=𝑅𝑒𝑥1
+𝑅𝑒𝑐=𝑥1
+𝑐=0.1613Transition point relative 
+to the chord length
+For the laminar region:
+𝐷𝑓,1𝑙𝑎𝑚=𝑞∞𝑆𝐶𝑓,1𝑙𝑎𝑚=𝑞∞𝑆𝐶𝑓,1𝑙𝑎𝑚= 𝑞∞𝑥1𝐶𝑓,1𝑙𝑎𝑚
+For the turbulent region:
+𝐷𝑓,2𝑡𝑢𝑟𝑏=𝐷𝑓,𝑐𝑡𝑢𝑟𝑏−𝐷𝑓,1𝑡𝑢𝑟𝑏
+𝐷𝑓,2𝑡𝑢𝑟𝑏=𝑞∞𝑐𝐶𝑓,𝑐𝑡𝑢𝑟𝑏−𝑞∞𝑥1𝐶𝑓,1𝑡𝑢𝑟𝑏
+Total skin -friction drag on the plate ( Df) is:
+𝐷𝑓=𝐷𝑓,1𝑙𝑎𝑚+𝐷𝑓,2𝑡𝑢𝑟𝑏
+𝐷𝑓=𝑞∞𝑥1𝐶𝑓,1𝑙𝑎𝑚+𝑞∞𝑐𝐶𝑓,𝑐𝑡𝑢𝑟𝑏−𝑞∞𝑥1𝐶𝑓,1𝑡𝑢𝑟𝑏Example :Skin-Friction Drag :laminar, transition and turbulent
+•NACA 2412
+• Calculate theNetCf_totfortheairfoil assuming Rex_cr=5.0x105.
+Viscous Flow: Airfoil Drag
+Total skin -friction drag on the plate ( Df) is:
+𝐷𝑓=𝐷𝑓,1𝑙𝑎𝑚+𝐷𝑓,2𝑡𝑢𝑟𝑏
+𝐷𝑓=𝑞∞𝑐𝐶𝑓,1𝑙𝑎𝑚+𝑞∞𝑐𝐶𝑓,𝑐𝑡𝑢𝑟𝑏−𝑞∞𝑥1𝐶𝑓,1𝑡𝑢𝑟𝑏
+Normalizing: 𝐶𝑓=𝐷𝑓
+𝑞∞𝑆=𝐷𝑓
+𝑞∞𝑐
+𝐶𝑓=𝐷𝑓
+𝑞∞𝑐=𝑞∞𝑥1𝐶𝑓,1𝑙𝑎𝑚
+𝑞∞𝑐+𝑞∞𝑐𝐶𝑓,𝑐𝑡𝑢𝑟𝑏
+𝑞∞𝑐−𝑞∞𝑥1𝐶𝑓,1𝑡𝑢𝑟𝑏
+𝑞∞𝑐
+𝐶𝑓=𝑥1
+𝑐𝐶𝑓,1
+𝑙𝑎𝑚+𝐶𝑓,𝑐𝑡𝑢𝑟𝑏−𝑥1
+𝑐𝐶𝑓,1
+𝑡𝑢𝑟𝑏
+𝐶𝑓,1𝑙𝑎𝑚=1.328
+𝑅𝑒𝑥1=1.328
+5×105=0.00188 𝐶𝑓,𝑐𝑡𝑢𝑟𝑏=0.074
+𝑅𝑒𝑐ൗ15=0.074
+3.1×106ൗ15=0.00372
+𝐶𝑓,1𝑡𝑢𝑟𝑏=0.074
+𝑅𝑒𝑥1ൗ15=0.074
+5×105ൗ15=0.00536
+𝐶𝑓=0.16130.00188 +0.00372 -0.16130.00536
+𝐶𝑓=0.003158 Net value (both surfaces) 𝐶𝑓𝑁𝑒𝑡=0.0063
+Exercise: same airfoil and condition excepting: Rex_crit= 1 x106The total drag which iscaused byviscous effects isthen :
+•Total drag Discalled profile drag because both skin friction and pressure drag due toseparation are
+ramifications oftheshape and size ofthebody, i.e.,the"profile "ofthebody .The profile drag Dtisthetotal
+drag onanaerodynamic shape due toviscous effects .However, itisnot, ingeneral, thetotal aerodynamic drag
+onthebody, only ofatwo-dimensional (infinite wing) airfoil .𝐷𝑡𝑜𝑡𝑎𝑙=𝐷𝑝𝑟𝑒𝑠𝑠𝑢𝑟𝑒+𝐷𝑓𝑟𝑖𝑐𝑡𝑖𝑜𝑛
+Total drag due 
+to viscous 
+effectsDrag due to 
+separation 
+(pressure drag)Drag due to 
+skin friction
+𝐷𝑡=𝐷𝑝+𝐷𝑓
+More for laminar
+Less for turbulentLess for laminar
+More for turbulentViscous Flow: Airfoil Drag –
+SummaryItcannot besaid ingeneral that either laminar orturbulent flow ispreferable over the other ;itall
+depends onthespecific application :
+•Forexample, forablunt body such asthesphere ,thedrag ismainly pressure drag due toseparation ;
+hence, turbulent boundary layers reduce thedrag onspheres and are, therefore, preferable .
+Viscous Flow: Airfoil Drag –
+Summary
+More for laminar
+Less for turbulentLess for laminar
+More for turbulent𝐷𝑡=𝐷𝑝+𝐷𝑓Itcannot besaid ingeneral that either laminar orturbulent flow ispreferable over the other ;itall
+depends onthespecific application :
+•Ontheother hand, foraslender body such asasharp, slender cone orathin airfoil atsmall angles of
+attack totheflow, thedrag ismainly skin friction drag ;hence, laminar boundary layers arepreferable .
+Forin-between cases, theingenuity ofthedesigner, along with practical experience, helps todetermine
+what compromises arebest .
+More for laminar
+Less for turbulentLess for laminar
+More for turbulentViscous Flow: Airfoil Drag –
+Summary
+𝐷𝑡=𝐷𝑝+𝐷𝑓COMPARISON OF DRAG FORCES
+Drag Polar
+•Both cland cdare
+functions oftheAoA.
+•Variations onclandcdare
+called the“Drag Polar”.
+•The Drag Polar isofmajor
+importance in the
+performance analysis of
+aircraft .Drag Polar
+L/D variation in 
+dependence of a

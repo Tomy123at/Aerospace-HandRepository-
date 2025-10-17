@@ -1,0 +1,311 @@
+1 Proyecto Final de Aerodinámica   
+Informe del Planeador 
+Tomás Atencia Tatis 
+Miguel Ángel Rendón 
+ 
+Universidad Pontificia Bolivariana 
+  
+1 Introducción 
+Con el propósito de demostrar los conocimientos adquiridos a lo largo del curso y laboratorio de 
+aerodinámica, se presenta el desarrollo de un planeador cuyo obje Ɵvo es sobrevolar la distancia 
+desde las gradas del polidepor Ɵvo de la UPB hasta el ﬁnal de  la cancha, aprovechando la 
+sustentación generada por sus alas y manteniendo un bajo peso que permita maximizar su eﬁciencia 
+en vuelo. Abarcaremos diversas fases de diseño y análisis que llevaron a la creación de un modelo 
+funcional y op Ɵmizado para cumplir con los desa İos planteados . En primer lugar, se abordará la 
+selección del perﬁl aerodinámico adecuado para las alas, estudiando la relación entre sustentación 
+y drag en función de los ángulos de ataque y la velocidad deseada, con el ﬁn de alcanzar un 
+rendimiento óp Ɵmo.  
+Por supuesto, se determinarán las dimensiones y proporciones de las alas, considerando tanto su 
+envergadura como su cuerda, de manera que el diseño ﬁnal equilibre eﬁcacia y estabilidad. 
+Seguidamente, se analizarán las dimensiones de otros elementos estructurales como el fuselaje y 
+los estabilizadores, cuya forma, ángulo y tamaño inﬂuye directamente al control y estabilidad del 
+planeador en vuelo. Además, se describirá el diseño de la base que permi Ɵrá la colocación de carga 
+úƟl, manteniendo una estructura  lo más ligera posible. 
+Finalmente, se detallarán las pruebas y evaluaciones realizadas en el túnel de viento y con el modelo 
+protoƟpo, que permi Ɵeron veriﬁcar y ajustar el desempeño aerodinámico, corrigiendo errores y 
+opƟmizando las conﬁguraciones para alcanzar el obje Ɵvo de vuelo.  
+ 
+2 Requisitos de diseño 
+Para iniciar este proyecto, primero se necesitan comprender las caracterís Ɵcas de la aeronave a 
+desarrollar y las restricciones asociadas. Este semestre se trabajará con un planeador de 
+conﬁguración libre, lo que signiﬁca que cada equipo puede elegir entre una conﬁguración tradicional 
+o explorar alt ernaƟvas, como modelos Ɵpo tándem. No obstante, existen ciertas limitaciones 
+importantes: el planeador no debe incluir superﬁcies de control, de modo que estará sujeto a la 
+inﬂuencia del viento una vez lanzado. Tampoco se permite ningún sistema de propulsión; el 
+desplazamiento de la aeronave debe ser generado exclusivamente por el impulso inicial del 
+lanzamiento. El uso de catapultas es opcional para este propósito. 2 Además, el planeador debe contar con una estructura que resista las fuerzas aerodinámicas a las 
+que estará expuesto en vuelo, así como al impacto durante el aterrizaje, sin comprometer su 
+integridad estructural. Otro requisito es la incorporación de una base para transportar una carga en 
+forma de botella, que se situará en la parte inferior del fuselaje. La selección de materiales es a 
+discreción de cada equipo, permi Ɵendo explorar dis Ɵntas opciones que mejoren tanto la resistencia 
+como el bajo peso del planeador , esto úlƟmo se premia, pero se abordará el tema más adelante . 
+Con estas directrices, se inicia un proyecto que busca lograr el equilibrio entre bajo peso y 
+funcionalidad, desaﬁando los conocimientos adquiridos para diseñar una aeronave ligera, resistente 
+y capaz de cumplir con las misiones planteadas. 
+ 
+3 Misiones de la Aeronave  
+Esta aeronave está diseñada para cumplir de forma efec Ɵva una serie de misiones, dos para ser 
+precisos: vuelo sin carga y vuelo con carga, vamos a explicar en qué consiste cada una. 
+ 
+3.1 Primera misión: Vuelo sin carga 
+La primera misión Ɵene como obje Ɵvo realizar un vuelo sin carga prediciendo su aterrizaje y 
+logrando que este se produzca a la mayor distancia posible. El vuelo se iniciará desde la parte más 
+alta del lado sur del polidepor Ɵvo de la UPB, y el planeador será lanzado a mano o mediante 
+catapulta, dependiendo de la estrategia cada equipo. La misión inicia cuando la aeronave deja la 
+mano del lanzador o la catapulta, y ﬁnaliza cuando cualquier parte de la aeronave toca el suelo o 
+alguna superﬁcie que detenga su vuelo. 
+Para lograr una puntuación en esta misión, el aterrizaje debe ser seguro, de modo que el planeador 
+se mantenga intacto tras el impacto. La distancia recorrida durante el vuelo se comparará con la 
+distancia teórica indicada en el informe de diseño (xreport). El puntaje de la misión se calcula 
+mediante la ecuación: 
+ 
+𝑀1=𝑍𝑋−ቤ𝑋௥௘௣௢௥௧− 𝑋௙௟௜௚௛௧
+𝑋௥௘௣௢௥௧ቤ 
+ 
+ 
+Donde: 
+𝑋௥௘௣௢௥௧ es la distancia teórica esperada, establecida en el informe de diseño. 
+𝑋௙௟௜௚௛ es la distancia que realmente recorrió la aeronave. 
+𝑍𝑋 es un factor constante que depende de la zona en la que aterriza la aeronave, asignando mayor 
+puntaje a zonas de aterrizaje más lejanas o de mayor precisión. 
+ 3 Para pasar a la segunda misión, el equipo debe obtener un puntaje válido en esta primera, lo cual 
+se alcanza si la aeronave aterriza en la Zona 1 (Z1) o más adelante en su primer vuelo. 
+ 
+3.2 Segunda misión: Vuelo con carga máxima 
+La segunda misión consiste en realizar un vuelo con una carga externa en forma de botella, la cual 
+debe estar ﬁjada en la parte inferior del fuselaje. Como ya se mencionó, solo los equipos que logren 
+un vuelo exitoso en la primera misión podrán par Ɵcipar en esta segunda fase. Al igual que en la 
+primera misión, el lanzamiento se realiza desde el mismo punto y la misión inicia una vez la aeronave 
+despega. El puntaje en esta misión también depende de la zona de aterrizaje (factores ZX) y el 
+tamaño de la carga transportada (factores WPX), de acuerdo con la siguiente tabla: 
+ 
+Tamaño de carga  WPX 
+X = 1 1.0 
+X = 2 0.6 
+X = 3 0.3 
+ 
+El puntaje ﬁnal para esta misión se calcula con la ecuación: 
+ 
+𝑀2= (𝑍𝑋+𝑊𝑃𝑋)−ቤ𝑋௥௘௣௢௥௧− 𝑋௙௟௜௚௛௧
+𝑋௥௘௣௢௥௧ቤ 
+ 
+Ambas misiones permiten múl Ɵples intentos dentro de la ventana de vuelo, que será de 1 pm a 5 
+pm, pero es necesario completar la primera misión de forma sa Ɵsfactoria para avanzar a la segunda.  
+ 
+3.3 Estrategia para afrontar las misiones 
+Para poder obtener un excelente desempeño como grupo en las dos misiones se va a buscar cumplir 
+con lo siguiente. 
+1. GaranƟzar que el vuelo de la aeronave termine en la zona 5 
+2. Dependiendo del desempeño ya testeado en el proto Ɵpo al aterrizar en la zona 5, se  va a 
+reportar esa distancia aproximada antes de lanzarlo, así el porcentaje de error será bajo. 
+3. El peso de la aeronave será considerablemente bajo al u Ɵlizar madera de balso, esto 
+aumentará la distancia de planeo y aunque posiblemente no sea el más bajo de todos, no 
+habrá mucha penalización si estamos entre los mas livianos.  4 4. Para la misión 2, se empezará con la botella mas liviana, puesto que con esta aún es posible 
+alcanzar la nota máxima, sin embargo, en caso de que el desempeño sea óp Ɵmo, 
+empezaremos a intentar con las cargas más pesadas. 
+5. Si se ve que es altamente posible llegar al muro del otro lado del coliseo, todas las 
+esƟmaciones de aterrizajes siguientes serán a la distancia máxima.  
+6. No será un obje Ɵvo primordial acertar a la zona bonus, esto por lo poco probable que es de 
+que la aeronave ingrese en ese pequeño espacio, sin embargo, esto no signiﬁca que no 
+pueda pasar y obtener el bonus.  
+7. La aeronave será diseñada de tal forma que sea fácil de reparar y se tendrán herramientas 
+a disposición para poder reparar rápido en caso de necesitarlo, y así, cubrir todos los 
+intentos posibles. 
+8. Se va a buscar que la aeronave tenga una pérdida aerodinámica lenta y progresiva, para 
+tener chances de una recuperación después de la perdida y no comprometer la aeronave a 
+un mal aterrizaje y desempeño. 
+ 
+ 
+4 Selección del Perﬁl Aerodinámico 
+Para obtener un buen rendimiento en nuestra aeronave, debemos considerar los diferentes perﬁles 
+aerodinámicos que podemos usar en el diseño de esta, puesto que como es bien sabido, la 
+sustentación man Ɵene la aeronave planeando. Consideramos que es de sum a importancia que 
+nuestro planeador a diseñar tenga una excelente sustentación a bajos AoA pero que, a su vez, no 
+tenga una pérdida tan repen Ɵna que pueda comprometer el desempeño de la aeronave en pleno 
+vuelo y producir aterrizajes bruscos y estrepitosos. Äl momento de decir el perﬁl por el que se iba a 
+decantar, surgieron varias opciones, tales como el Dae 31, Clarym 15, Goe 648 y el NACA 4415. Para 
+poder hacer una selección que se adaptara mejor a nuestros estándares, se obtuvieron datos de 
+sustentación, drag y momento de cada perﬁl, todos provenientes de Airfol Tools, y se graﬁcaron con 
+la ayuda de un código de Python para poder visualizar de forma sencilla el comportamiento de cada 
+perﬁl.  
+ 5  
+Imagen 1 – Comparación de perﬁles aerodinámicos  
+ 
+Basándonos en la gráﬁca de Cl vs Alpha, todos los perﬁles Ɵenen un comportamiento muy similar, 
+sin embargo, para nosotros destaca el perﬁl NACA 4415 por su comportamiento de Cl con AoA altos, 
+dado que Ɵene una pérdida más suave. Todo esto, sin dejar por supuesto, de tener un buen 
+coeﬁciente de sustentación que necesitaremos para compensar el peso del planeador y la carga 
+paga. Es por esto por lo que el perﬁl elegido es el NACA 4415.  
+ 
+5 Pruebas del perﬁl aerodinámico  
+A conƟnuación, se presentan los resultados obtenidos a lo largo del semestre con el perﬁl 
+seleccionado.  
+5.1 Primera prueba  
+Como preparación para la prueba, se planiﬁcó medir los coeﬁcientes de sustentación y arrastre del 
+modelo de ala y compararlos con datos teóricos generados por XFOIL. Considerando las condiciones 
+de un vuelo “promedio” e “ideal” para un planeador, en el que se busca alta sustentación, 
+estabilidad y bajo arrastre a muy bajas velocidades (con ángulos de ataque rela Ɵvamente 
+pequeños), se determinó que los ángulos de ataque más representa Ɵvos estarían entre -6° y 10°. 
+Para cubrir este rango, se seleccionaron 14 ángulos de ataque, que van de -6° a 13.5°, con 
+incrementos de 1.5°.  
+Dadas las condiciones de vuelo de un planeador, principalmente caracterizadas por su baja 
+velocidad, se ob Ɵenen en la vida real, valores de Reynolds rela Ɵvamente bajos. Además, comparar 
+los datos experimentales con los teóricos en este régimen no es ideal, ya que los modelos 
+6 matemáƟcos empleados para generar datos teóricos suelen ser menos precisos a bajos Reynolds. 
+Por esta razón, se ﬁjó un Reynolds ≈ 100,000 para representar el vuelo del planeador. Para la prueba 
+del modelo de ala, se buscó alcanzar este mismo valor de Reynolds, y considerando las dimensiones 
+de referencia del ala (cuerda y envergadura), se calculó que la velocidad requerida sería de 
+aproximadamente 16.67 m/s.  
+En el túnel de viento, se obtuvieron los siguientes resultados:  
+ 
+Imagen 2 – Resultados del primer test del ala (Cl vs Alpha)  
+Donde ‘Re1’ representa los valores obtenidos en la celda FUTEK instalada en el túnel.  
+ 
+7  
+Imagen 3 – Resultados del primer test del ala (Cd vs Alpha)  
+ 
+ 
+Imagen 4 – Resultados del primer test del ala (Cl/Cd vs Alpha)  
+8 A parƟr de estos resultados, podemos concluir que el perﬁl muestra un buen comportamiento en 
+términos de sustentación a bajas velocidades, lo cual es deseable para el diseño de un planeador. 
+No obstante, se debe revisar con detenimiento los datos de resistencia al avance y eﬁciencia. 
+Aunque estos siguen una tendencia similar a las gráﬁcas de XFOIL, presentan ruido signiﬁca Ɵvo que 
+diﬁculta una buena interpretación de cómo se comportará el perﬁl en condiciones reales. Por ello, 
+es recomendable basar el análisis de la resistencia al avance y la eﬁciencia principalmente en la 
+teoría y los datos obtenidos de XFOIL.  
+ 
+5.2 Segunda prueba  
+Para conﬁrmar y veriﬁcar el método de Li Ōing Line Theory aplicado al ala del planeador, se realizaron 
+pruebas en el túnel de viento enfocadas en obtener principalmente el coeﬁciente de sustentación 
+del ala. En estas pruebas, se buscó replicar condiciones similares a las esperadas en el vuelo ﬁnal del 
+planeador, alcanzando un número de Reynolds de aproximadamente 150,000 a la máxima velocidad 
+que el túnel permite, de 39 m/s. El modelo u Ɵlizado fue una versión a escala 1:6.75 del diseño 
+original, permi Ɵendo así observar su comportamiento como ala ﬁnita en el túnel.  
+Estos fueron los resultados obtenidos:  
+ 
+Imagen 5 – Resultados del segundo test del ala (Cl vs Alpha)  
+ 
+Los resultados obtenidos para el coeﬁciente de sustentación (Cl) fueron sa Ɵsfactorios, ya que la 
+curva experimental de sustentación man Ɵene prácƟcamente la misma pendiente que la curva 
+teórica, indicando un comportamiento muy similar. Para conﬁrmar, se realizó una regresión lineal 
+9 de la curva experimental con el ﬁn de ajustar la pendiente, dado que había una ligera dispersión 
+en los datos. Esta regresión arrojó una pendiente con solo un 1.22% de error respecto a la curva 
+teórica obtenida mediante LLT. Este error es bajo, especialmente considerando que el LLT es un 
+modelo teórico que no contempla todos los efectos aerodinámicos sobre el ala. Esto sugiere que 
+los resultados son conﬁables, y que la ligera discrepancia podría atribuirse a factores 
+experimentales o a efectos de escala en el modelo.  
+Si se desplazan los datos de li Ō medidos en el túnel, obtenemos lo siguiente:  
+ 
+Imagen 6 – Resultados del segunda test del ala (Cd vs Alpha) Corregidos  
+ 
+Los resultados obtenidos de la prueba del modelo de ala ﬁnita en el túnel de viento mostraron que 
+la curva experimental del coeﬁciente de sustentación (CL) sigue de cerca la pendiente teórica 
+predicha por la Li Ōing Line Theory (LLT), con un error mínimo del 1.22%. Esto demuestra la precisión 
+del modelo, aunque hubo un desplazamiento en los valores experimentales respecto a los teóricos, 
+lo que generó discrepancias en el ángulo de sustentación nula ( αL=0). En cuanto al coeﬁciente de 
+arrastre (CD), se observó un desfase mayor respecto a la predicción teórica. Esto sugiere que los 
+datos experimentales de arrastre son menos conﬁables, posiblemente debido a la diﬁcultad en su 
+medición y limitaciones en los instrumentos. Errores adicionales en la medición del ángulo de 
+ataque (AoA), causados por vibraciones del túnel de viento, también afectaron la precisión.  
+ 
+10 5.3 Tercera prueba  
+Para esta tercera prueba, realizamos un modelo a escala completo de la aeronave, con el ﬁn de 
+medir los coeﬁcientes de las fuerzas aerodinámicas y la estabilidad de esta.  
+Para lograr que la aeronave fuera está Ɵcamente estable, se usaron las ecuaciones de momento ya 
+trabajadas en clase.  
+ 
+ 
+ 
+ 
+ 
+ 
+Y se obtuvieron los siguientes resultados que sirvieron para determinar las diferentes dimensiones 
+del modelo y lograr la estabilidad:  
+Wing geometric 
+λ 1   
+AR 7.5   
+11 b 2.2 m 
+c 0.3 m 
+S 0.65 m^2 
+ 
+Wing parameters 
+a0 0.099 1/deg 
+a 0.08007473 1/deg 
+αL=0 -3.339 deg 
+αa 6.0 deg 
+CM,ac,wb -0.1023  
+CM,0 0.14771014  
+αeq 10.1733403 deg 
+CM,cg 0.06059413  
+αgeo 5.0 deg 
+CL @ αgeo 0.6677  
+L 1.301 Kg 
+ 
+Vertical Stabilizer geometric 
+λ 0.7   
+AR 1.5   
+b 0.38242646 m 
+croot 0.17 m 
+ctip 0.119 m 
+MAC 0.146 m 
+Sv 0.0975 m^2 
+ 
+Tail geometric 
+λ 1   
+AR 3.75   
+b 0.670820393 m 
+c 0.178885438 m 12 St 0.12 m^2 
+ 
+Tail parameters 
+lt 1.2 m 
+at 0.064404797 1/deg 
+αL=0 0 deg 
+CL 0.19321439   
+it 5.2 deg 
+αt -4.8 deg 
+CL @ αgeo -0.3081   
+L -0.111 Kg 
+e 0.967857906  
+ 
+General parameters 
+VH 0.738461538   
+Ԑ0 0.056679801 rad 
+dԐ/dα 0.389436791 1/rad  
+hn 0.61264462   
+hac,wb 0.25   
+h 0.43132231   
+S.M. 0.18132231   
+ 
+  
+ -0.014519335 
+   
+Ԑ 0.097461527 rad  
+Con estas dimensiones, se creó un modelo a escala para poderlo probar en el túnel de viento. 
+Para probar el modelo, primero nivelamos la aeronave y acercamos su centro de masa al soporte 
+delantero para veriﬁcar visualmente su estabilidad está Ɵca. Para ello, colocamos monedas en la 
+parte delantera del fuselaje para equilibrar el peso. Luego, preparamos el túnel de viento, ajustamos 
+el ángulo geométrico del ala a 0° y comenzamos a tomar datos variando cada 1.5°. Sin embargo, 
+surgieron problemas de medición al aumentar la velocidad del túnel: el ángulo de ataque ﬂuctuaba 𝑑𝐶ெ,௖௚
+𝑑𝛼௔൘13 a altas velocidades. Tras varias veriﬁcaciones, propusimos que esto pudiera ser un error del modelo. 
+Aun así, procedimos a medir las fuerzas aerodinámicas con los datos disponibles.  
+ 
+ 
+Imagen 7 – Resultados del tercer test (aeronave) (Cl vs Alpha)  
+14  
+Imagen 7 – Resultados del tercer test (aeronave) (Cd vs Alpha)  
+ 
+Los resultados experimentales mostraron una gran desviación respecto a los valores teóricos del 
+CLC_LCL, superando el rango esperado para el planeador. Al intentar veriﬁcar el ángulo de cero 
+sustentación, se observó que el ángulo experimental a máxima velocidad fue de -6°, en contraste 
+con el teórico de -3.2°. Este cambio se atribuye a que el fuselaje no soporta adecuadamente las 
+fuerzas, lo que genera ﬂexión y aumenta el ángulo de ataque.  
+Además, las pruebas de estabilidad está Ɵca revelaron que el modelo no es estable debido a un 
+desplazamiento del centro de gravedad (CG), que no pudo ser corregido con la adición de peso. La 
+construcción del modelo mostró deﬁciencias estructurales que afectaron la precisión de las 
+mediciones, resaltando la necesidad de usar materiales más rígidos o ajustar la escala para evitar 
+deformaciones.  
+ 
+ 
+  
+ 
+ 

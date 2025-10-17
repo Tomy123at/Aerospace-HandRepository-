@@ -1,0 +1,20 @@
+ Paga seguro con:
+Fecha:  2024-10-28  14:20:56
+ Tu transacción ha sido aprobada
+Número de orden: 3469589964
+Con esta referencia puedes hacer seguimiento a tu transacción en la página de Consulta de
+Transacciones de PayU o con nuestro equipo de servicio al cliente
+Medio de pago
+BANCO:NEQUI
+CUS: 1009979057
+Dirección IP: 200.3.144.139
+Estado : APROBADA
+Datos de contacto de la tienda
+UPB
+NIT: 8909029226
+Dirección: UPB CR 1 70 01 Medellín Colombia
+Teléfono: 57(604)3544571/10942Resumen de la compra
+Referencia: 0491269900181560-24
+Descripción: Servicios UPB
+Total pagado.................... $19,800.00
+Toda la información se encuentra encriptada para tu privacidad y seguridad  © PayU.

@@ -1,0 +1,858 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBIndividual vortex 
+filament.Vortex sheet.
+PHILOSOPHY OF THE THEORETICAL 
+SOLUTIONS FOR LOW -SPEED FLOW OVER 
+AIRFOILS: THE VORTEX SHEET
+z
+y
+x
+G→rotates clockwise positive
+Circulation ≈ Vortex filament strength.Vortex sheet.PHILOSOPHY OF THE THEORETICAL 
+SOLUTIONS FOR LOW -SPEED FLOW OVER 
+AIRFOILS: THE VORTEX SHEET
+xz
+y
+g= g(s) strength of the vortex sheet per unit of length along s.
+P-point in the flow located at a distance rfrom ds.The velocity 
+at point P:𝑑𝑉=−𝛾𝑑𝑠
+2𝜋𝑟Velocity potential (f)–because Vchanges inthe
+direction from atob;hence, the vortex sheet's
+incremental velocities induced atpoint Pby
+different sections must beadded vectorially .
+The velocity potential atPdue totheentire vortex
+sheet from atobis:
+Garound apoint vortex isequal tothestrength of
+the vortexthe circulation around the vortex
+sheet isthesum ofthestrengths oftheelemental
+vortices :𝑑𝜙=−𝛾𝑑𝑠
+2𝜋𝜃
+𝜙𝑥,𝑧=−1
+2𝜋න
+𝑎𝑏
+𝜃𝛾𝑑𝑠
+Γ=න
+𝑎𝑏
+𝛾𝑑𝑠Tangential velocity jumps 
+across a vortex sheet.PHILOSOPHY OF THE THEORETICAL 
+SOLUTIONS FOR LOW -SPEED FLOW OVER 
+AIRFOILS: THE VORTEX SHEET
+•Length–ds
+•Height–dn
+•u1andu2–velocity components tangential tothe
+topand bottom .
+•v1andv2–velocity components tangential tothe
+leftand right sides .
+The circulation around thedashed path :
+The strength of the vortex sheet
+contained inside thedashed path is:Γ=−𝑣2𝑑𝑛−𝑢1𝑑𝑠−𝑣1𝑑𝑛+𝑢2𝑑𝑠
+Γ=𝑢1−𝑢2𝑑𝑠+𝑣1−𝑣2𝑑𝑛
+Γ=𝛾𝑑𝑠𝛾𝑑𝑠=𝑢1−𝑢2𝑑𝑠+𝑣1−𝑣2𝑑𝑛
+Ifdn→0u1and u2become the velocity
+components tangential to the vortex sheet
+immediately above and below thesheet :
+𝛾𝑑𝑠=𝑢1−𝑢2𝑑𝑠⇒𝛾=𝑢1−𝑢2
+This last equation means that thelocal jump in
+tangential velocity across thevortex sheet equals the
+local sheet strength .Simulation of an arbitrary 
+airfoil by distributing a vortex 
+sheet over the airfoil surface.
+PHILOSOPHY OF THE THEORETICAL 
+SOLUTIONS FOR LOW -SPEED FLOW OVER 
+AIRFOILS: THE VORTEX SHEET
+Applying thelastresults toanairfoil :
+Vortex sheet→airfoil surface (streamline oftheflow)
+Theresultant liftforce perunit ofspan can befound bythe
+useoftheKutta -Joukowski theorem :
+Nogeneral analytical solution exists forg=g(s)applied toan
+arbitrary shape and thickness airfoil (need ofacomputer) .Γ=න𝛾𝑑𝑠
+𝐿′=𝜌∞𝑉∞ΓReplacing theairfoil’s surface
+with avortex sheet .Mathematical 
+device (tool)
+Inreal life, there isaboundary layer–athin layer of
+highly viscous region inwhich the larger velocity
+gradients produce substantial vorticity →Vis
+finite within theBL.Thin airfoil approximation.
+“Zoom -out”PHILOSOPHY OF THE THEORETICAL 
+SOLUTIONS FOR LOW -SPEED FLOW OVER 
+AIRFOILS: THE VORTEX SHEETEffect of different values of circulation on the potential flow over a given 
+airfoil at a given AoA (Points 1and 2are stagnation points).THE Kutta CONDITIONTHE Kutta CONDITIONDifferent possible shapes of the T.E. and their relationship with the Kutta condition.THE Kutta CONDITIONDifferent possible shapes of the T.E. and their relationship with the Kutta condition.
+Statement ofKutta condition :
+•Foragiven airfoil atagiven AoA,thevalue ofGaround theairfoil issuch that
+theflow leaves theT.E.smoothly .
+•IftheT.E.angle isfinite, then theT.E.isastagnation point .
+•IftheT.E.iscusped, then thevelocities leaving thetopand bottom surfaces
+attheT.E.arefinite and equal inmagnitude and direction .THE Kutta CONDITION
+An additional condition 
+that fixes Gfor a given 
+airfoil at a given a.
+𝛾𝑇𝐸=𝛾𝑎=𝑉1−𝑉2
+𝛾𝑇𝐸=0 𝛾𝑇𝐸=0Kelvin ´s theorem.KELVIN ’S CIRCULATION THEOREM 
+AND THE STARTING VORTEXThe creation ofthe starting
+vortex and the resulting
+generation ofcirculation around
+theairfoil .KELVIN ’S CIRCULATION THEOREM 
+AND THE STARTING VORTEXPlacement of the vortex 
+sheet on the chord line.CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Thin airfoils: can be 
+simulated by a vortex 
+sheet placed along the 
+camber line.The purpose istocalculate thevariation
+ofg(s)such that:
+1. The camber line becomes a
+streamline oftheflow .
+2. The Kutta condition issatisfied at
+theT.E.[g(TE)=0].
+Once the particular g(s)that satisfies the 
+two conditions is found, then the total 
+circulation (G)around the airfoil is found by 
+integrating g(s)from the L.E. to the T.E.CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Liftforce per unit ofspan can becalculated fromGviathe
+Kutta -Joukowski theorem :L’=r∞V∞G
+Having→g=g(s),then bytheKutta condition g(c)=0
+The strength (g)ofthe vortex sheet onthe chord line is
+determined bythecamber line being astreamline .
+•V∞,n–component ofthefreestream velocity normal tothe
+camber line.
+•w’(s)–component ofthevelocity normal tothechord line
+induced bythevortex sheet .Iftheairfoil isthin, then the
+camber line isclose tothechord line:w’(s)≈w’(x)Determination of the component of freestream 
+velocity normal to the camber line.
+CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Forthecamber line tobeastreamline :V∞,n+w’(s)=0
+atevery point along thecamber line.
+Atany point Pwhere the slope ofthe camber line is
+dz/dx,thegeometry gives :
+Forathin airfoil atsmall AoA,bothaandtan-1(dz/dx)are
+small values, then :forsmallq→sinq=0;tanq=q[rad]𝑉∞,𝑛=𝑉∞𝑠𝑖𝑛𝛼+𝑡𝑎𝑛−1𝑑𝑧
+𝑑𝑥
+𝑉∞,𝑛=𝑉∞𝛼−𝑑𝑧
+𝑑𝑥Calculation of the induced 
+velocity at the chord line.CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Itisdesired now tocalculate w(x)atthelocation x:
+Considering anelemental vortex ofstrengthg(x)located
+atadistance xfrom the origin along the chord line,g
+varies with thedistance along thechord :g=g(x)
+Velocity dwatpoint x:
+𝑑𝑤=−𝛾𝜉𝑑𝜉
+2𝜋𝑥−𝜉
+𝑤𝑥=−න
+0𝑐𝛾𝜉𝑑𝜉
+2𝜋𝑥−𝜉Calculation of the induced 
+velocity at the chord line.CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Remembering that:V∞,n+w’(s)=0
+𝑤𝑥=−න
+0𝑐𝛾𝜉𝑑𝜉
+2𝜋𝑥−𝜉𝑉∞,𝑛=𝑉∞𝛼−𝑑𝑧
+𝑑𝑥
+𝑉∞𝛼−𝑑𝑧
+𝑑𝑥−׬0𝑐𝛾𝜉𝑑𝜉
+2𝜋𝑥−𝜉=0
+𝑉∞𝛼−𝑑𝑧
+𝑑𝑥=1
+2𝜋න
+0𝑐𝛾𝜉𝑑𝜉
+𝑥−𝜉This equation is a representation of the camber line 
+acting as a streamline of the flow.Calculation of the induced 
+velocity at the chord line.CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Forthesymmetrical airfoils :dz/dx=0
+𝑉∞𝛼−𝑑𝑧
+𝑑𝑥=1
+2𝜋න
+0𝑐𝛾𝜉𝑑𝜉
+𝑥−𝜉
+This is the exact expression for the inviscid, incompressible 
+flow over a flat plate at a small AoA (for practical purposes 
+can be used for symmetrical airfoils).0
+𝑉∞𝛼=1
+2𝜋න
+0𝑐𝛾𝜉𝑑𝜉
+𝑥−𝜉Calculation of the induced 
+velocity at the chord line.CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Fortheintegral solution oftheprevious equation,
+atransformation isused asamathematical tool:
+𝜉=𝑐
+21−cos𝜃
+𝑥=𝑐
+21−cos𝜃0
+𝑑𝜉=𝑐
+2sin𝜃𝑑𝜃𝑉∞𝛼=1
+2𝜋න
+0𝑐𝛾𝜉𝑑𝜉
+𝑥−𝜉
+𝑉∞𝛼=1
+2𝜋න
+0𝜋𝛾𝜃sin𝜃𝑑𝜃
+cos𝜃−cos𝜃0for:θ=0−𝐿𝐸:𝜉=0
+θ=𝜋−𝑇𝐸:𝜉=𝑐Calculation of the induced 
+velocity at the chord line.CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+The solution forthelastequation is:
+𝑉∞𝛼=1
+2𝜋න
+0𝜋𝛾𝜃sin𝜃𝑑𝜃
+cos𝜃−cos𝜃0
+𝛾𝜃=2𝛼𝑉∞1+cos𝜃
+sin𝜃
+UsingL’Hospital’s rule inthelast equation
+(tosatisfy theKutta condition) :
+𝛾𝜋=2𝛼𝑉∞−sin𝜋
+cos𝜋=0Calculation of the induced 
+velocity at the chord line.CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Now,let’s calculate the clfor athin, symmetric
+airfoil ;thetotal circulation (G)around theairfoil is:
+Γ=න
+0𝑐
+𝛾𝜉𝑑𝜉
+𝜉=𝑐
+21−cos𝜃
+𝑑𝜉=𝑐
+2sin𝜃𝑑𝜃Γ=𝑐
+2න
+0𝜋
+𝛾𝜃sin𝜃𝑑𝜃Transforming thelastequation :
+𝛾𝜃=2𝛼𝑉∞1+cos𝜃
+sin𝜃Γ=𝛼𝑐𝑉∞න
+0𝜋
+1+cos𝜃𝑑𝜃=𝜋𝛼𝑐𝑉∞Calculation of the induced 
+velocity at the chord line.CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Recalling theKutta -Joukowski theorem, the liftper
+unit ofspan is:
+Γ=𝜋𝛼𝑐𝑉∞
+𝐿′=𝜌∞𝑉∞Γ=𝜋𝛼𝑐𝜌∞𝑉∞2
+Knowing that:𝑐𝑙=𝐿′
+𝑞∞𝑆
+𝑆=𝑐1
+𝑐𝑙=𝜋𝛼𝑐𝜌∞𝑉∞2
+1
+2𝜌∞𝑉∞2𝑐1
+𝑐𝑙=2𝜋𝛼 Liftslope :𝑎0=𝑑𝑐𝑙
+𝑑𝛼=𝑐𝑙𝛼=2𝜋ൗ1𝑟𝑎𝑑Comparison between theory and experimentation for 
+the lift and moment coefficient for a NACA 0012 airfoil.
+CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+𝑐𝑙=2𝜋𝛼Calculation of moments 
+about the L.E.CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Considering anelemental vortex ofstrengthg(x)dxlocated
+atadistance xfrom the LE,and remembering the
+circulation :𝑑Γ=𝛾𝜉𝑑𝜉
+dLcontributed bytheelemental vortex :𝑑𝐿=𝜌∞𝑉∞𝑑Γ
+dLcreates amoment about LE:𝑑𝑀=−𝜉𝑑𝐿
+𝑀′𝐿𝐸=−න
+0𝑐
+𝜉𝑑𝐿=−𝜌∞𝑉∞න
+0𝑐
+𝜉𝛾𝜉𝑑𝜉
+𝜉=𝑐
+21−cos𝜃
+𝑑𝜉=𝑐
+2sin𝜃𝑑𝜃𝑀′𝐿𝐸=−𝑞∞𝑐2𝜋𝛼
+2Transforming thelastequation :Calculation of moments 
+about the L.E.CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Knowing that themoment coefficient is:
+𝑐𝑚,𝐿𝐸=𝑀′𝐿𝐸
+𝑞∞𝑆𝑐where S=c(1);then :
+𝑐𝑚,𝐿𝐸=𝑀′𝐿𝐸
+𝑞∞𝑐2=−𝜋𝛼
+2
+𝑐𝑙=2𝜋𝛼 From previous results weknow that: 𝜋𝛼=𝑐𝑙
+2
+𝑐𝑚,𝐿𝐸=−𝜋𝛼
+2=−𝑐𝑙
+4
+𝑐𝑚,ൗ𝑐4=𝑐𝑚,𝐿𝐸+𝑐𝑙
+4=0Comparison between theory and experimentation for 
+the lift and moment coefficient for a NACA 0012 airfoil .
+CLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+𝑐𝑙=2𝜋𝛼
+𝑐𝑚,ൗ𝑐4=𝑐𝑚,𝐿𝐸+𝑐𝑙
+4=0Summary :
+TAT’s essence isfinding adistribution vortex sheet
+strength along thechord line that will make thecamber
+line streamline the flow while satisfying the Kutta
+condition [g(TE)=0].
+𝑐𝑙=2𝜋𝛼
+𝑎0=𝑑𝑐𝑙
+𝑑𝛼=𝑐𝑙𝛼=2𝜋ൗ1𝑟𝑎𝑑
+𝑐𝑚,ൗ𝑐4=𝑐𝑚,𝐿𝐸+𝑐𝑙
+4=0
+xcpandxacareboth located atc/4Example–Consider athin flatplate atanAoA of5°.Applying Thin airfoil theory
+forsymmetrical airfoils calculate :
+1.cl
+2.cm,LE
+3.cm,c/4
+4.cm,TECLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+Example–Consider athin flatplate atanAoA of5°.Applying Thin airfoil theory
+forsymmetrical airfoils calculate :
+1.cl
+2.cm,LE
+3.cm,c/4
+4.cm,TECLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+𝑐𝑙=2𝜋𝛼 From TAT:
+𝛼=5𝜋
+180=0.0873𝑟𝑎𝑑
+𝑐𝑙=2𝜋0.0873=0.5485
+𝑐𝑚,𝐿𝐸=−𝑐𝑙
+4=−0.5485
+4
+𝑐𝑚,𝐿𝐸=−0.137
+𝑐𝑚,𝑐/4=0Example–Consider athin flatplate atanAoA of5°.Applying Thin airfoil theory
+forsymmetrical airfoils calculate :
+1.cl
+2.cm,LE
+3.cm,c/4
+4.cm,TECLASSICAL THIN AIRFOIL THEORY (TAT): 
+THE SYMMETRICAL AIRFOIL
+𝑎=3
+4𝑐cos𝛼𝑀𝑇𝐸′=3
+4𝑐𝐿′+𝑀ൗ𝑐4′The moment about the trailing edge is:
+𝑐𝑚,𝑇𝐸=𝑀𝑇𝐸′
+𝑞∞𝑐2=3
+4𝑐𝐿′
+𝑞∞𝑐2+𝑀ൗ𝑐4′
+𝑞∞𝑐2=3
+4𝑐𝑙+𝑐𝑚,𝑐/40
+𝑐𝑚,𝑇𝐸=3
+4𝑐𝑙=3
+40.5485
+𝑐𝑚,𝑇𝐸=0.4113Placement of the vortex sheet on the chord lineTHE CAMBERED AIRFOIL
+Remembering that:
+𝑉∞𝛼−𝑑𝑧
+𝑑𝑥=1
+2𝜋න
+0𝑐𝛾𝜉𝑑𝜉
+𝑥−𝜉
+𝜉=𝑐
+21−cos𝜃
+𝑥=𝑐
+21−cos𝜃0
+𝑑𝜉=𝑐
+2sin𝜃𝑑𝜃Transforming thelastequation :
+𝑉∞𝛼−𝑑𝑧
+𝑑𝑥=1
+2𝜋න
+0𝜋𝛾𝜃sin𝜃𝑑𝜃
+cos𝜃−cos𝜃0
+The idea istoobtain asolution fortheequation :
+THE CAMBERED AIRFOIL
+Fourier sine series coefficients:
+•An: dependent only on the shape 
+of the camber line dz/dx
+•A0: depends on both dz/dx anda𝑉∞𝛼−𝑑𝑧
+𝑑𝑥=1
+2𝜋න
+0𝜋𝛾𝜃sin𝜃𝑑𝜃
+cos𝜃−cos𝜃0Kutta condition: g(p) = 0
+The solution forg(q)willmake thecamber line astreamline oftheflow ;forthis, theFourier sine series solution isapplied :
+𝛾𝜃=2𝑉∞𝐴01+cos𝜃
+sin𝜃+෍
+𝑛=1∞
+𝐴𝑛sin𝑛𝜃
+Coefficients A0,and (1,2,3,…,n)must bespecific values inorder forthecamber line
+torepresent astreamline oftheflow :Placement of the vortex sheet on the chord line.THE CAMBERED AIRFOIL
+Tofind theFourier sine series coefficients substitutes :
+into:
+Toobtain :
+𝛾𝜃=2𝑉∞𝐴01+cos𝜃
+sin𝜃+෍
+𝑛=1∞
+𝐴𝑛sin𝑛𝜃
+𝑉∞𝛼−𝑑𝑧
+𝑑𝑥=1
+2𝜋න
+0𝜋𝛾𝜃sin𝜃𝑑𝜃
+cos𝜃−cos𝜃0
+1
+𝜋න
+0𝜋𝐴01+cos𝜃𝑑𝜃
+cos𝜃−cos𝜃0+1
+𝜋෍
+𝑛=1∞
+න
+0𝜋𝐴𝑛sin𝑛𝜃sin𝜃𝑑𝜃
+cos𝜃−cos𝜃0=𝛼−𝑑𝑧
+𝑑𝑥
+න
+0𝜋sin𝑛𝜃sin𝜃𝑑𝜃
+cos𝜃−cos𝜃0=−𝜋cos𝑛𝜃0 න
+0𝜋cos𝑛𝜃𝑑𝜃
+cos𝜃−cos𝜃0=𝜋sin𝑛𝜃
+sin𝜃0Solution SolutionPlacement of the vortex sheet on the chord line.THE CAMBERED AIRFOIL
+Solving thelastequation, itisobtained that:
+orrearranging :
+𝐴0−෍
+𝑛=1∞
+𝐴𝑛cos𝑛𝜃0=𝛼−𝑑𝑧
+𝑑𝑥
+𝑑𝑧
+𝑑𝑥=𝛼−𝐴0+෍
+𝑛=1∞
+𝐴𝑛cos𝑛𝜃01
+𝜋න
+0𝜋𝐴01+cos𝜃𝑑𝜃
+cos𝜃−cos𝜃0+1
+𝜋෍
+𝑛=1∞
+න
+0𝜋𝐴𝑛sin𝑛𝜃sin𝜃𝑑𝜃
+cos𝜃−cos𝜃0=𝛼−𝑑𝑧
+𝑑𝑥
+න
+0𝜋sin𝑛𝜃sin𝜃𝑑𝜃
+cos𝜃−cos𝜃0=−𝜋cos𝑛𝜃0 න
+0𝜋cos𝑛𝜃𝑑𝜃
+cos𝜃−cos𝜃0=𝜋sin𝑛𝜃
+sin𝜃0Solution SolutionPlacement of the vortex sheet on the chord line.THE CAMBERED AIRFOIL
+This equation isevaluated atagiven point x;along theairfoil’s
+chord .Here dz/dxandq0correspond tothesame point onthe
+chord line.
+Applying theexpansion form fortheFourier cosine series :
+𝛼−𝐴0=1
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑑𝜃0→𝐴0=𝛼−1
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑑𝜃0𝑑𝑧
+𝑑𝑥=𝛼−𝐴0+෍
+𝑛=1∞
+𝐴𝑛cos𝑛𝜃0
+𝐴𝑛=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥cos𝑛𝜃0𝑑𝜃0Placement of the vortex sheet on the chord line.THE CAMBERED AIRFOIL
+𝐴0=𝛼−1
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑑𝜃0
+𝐴𝑛=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥cos𝑛𝜃0𝑑𝜃0𝛾𝜃=2𝑉∞𝐴01+cos𝜃
+sin𝜃+෍
+𝑛=1∞
+𝐴𝑛sin𝑛𝜃
+𝑑𝑧
+𝑑𝑥=𝛼−𝐴0+෍
+𝑛=1∞
+𝐴𝑛cos𝑛𝜃0
+A0: depends on both
+dz/dx anda
+An: dependent only 
+on the shape of the 
+camber line dz/dxPlacement of the vortex sheet on the chord line.THE CAMBERED AIRFOIL
+Γ=න
+0𝑐
+𝛾𝜉𝑑𝜉=𝑐
+2න
+0𝜋
+𝛾𝜃sin𝜃𝑑𝜃Obtaining expressions fortheaerodynamic coefficients :
+The totalGdue totheentire vortex sheet from theL.E.totheT.E.is:
+Now, if:
+Then :𝛾𝜃=2𝑉∞𝐴01+cos𝜃
+sin𝜃+෍
+𝑛=1∞
+𝐴𝑛sin𝑛𝜃
+Γ=𝑐𝑉∞𝐴0න
+0𝜋
+1+cos𝜃𝑑𝜃+෍
+𝑛=1∞
+𝐴𝑛න
+0𝜋
+sin𝑛𝜃sin𝜃𝑑𝜃Placement of the vortex sheet on the chord line.THE CAMBERED AIRFOIL
+Obtaining expressions fortheaerodynamic coefficients :
+Solving theintegrals inside theequation :
+Γ=𝑐𝑉∞𝐴0න
+0𝜋
+1+cos𝜃𝑑𝜃+෍
+𝑛=1∞
+𝐴𝑛න
+0𝜋
+sin𝑛𝜃sin𝜃𝑑𝜃
+න
+0𝜋
+1+cos𝜃𝑑𝜃=𝜋
+න
+0𝜋
+sin𝑛𝜃sin𝜃𝑑𝜃=𝜋
+2𝑓𝑜𝑟𝑛=1
+0𝑓𝑜𝑟𝑛≠1
+Γ=𝑐𝑉∞𝜋𝐴0+𝜋
+2𝐴1Placement of the vortex sheet on the chord line.THE CAMBERED AIRFOIL
+Obtaining expressions fortheaerodynamic coefficients :
+Recalling theKutta -Joukowski theorem, theliftperunit ofspan is:
+Replacing G:
+Liftforce perunit ofspan :
+Inthecoefficient form :Γ=𝑐𝑉∞𝜋𝐴0+𝜋
+2𝐴1𝐿′=𝜌∞𝑉∞Γ
+𝐿′=𝜌∞𝑉∞Γ=𝜌∞𝑉∞2𝑐𝜋𝐴0+𝜋
+2𝐴1
+𝑐𝑙=𝐿′
+𝑞∞𝑆=𝜌∞𝑉∞2𝑐𝜋𝐴0+𝜋
+2𝐴1
+1
+2𝜌∞𝑉∞2𝑐1=𝜋2𝐴0+𝐴1Placement of the vortex sheet on the chord line.THE CAMBERED AIRFOIL
+Obtaining expressions fortheaerodynamic coefficients :
+Liftcoefficient (airfoil) :
+Replacing theFourier series coefficients :
+Then :
+𝑐𝑙=𝜋2𝐴0+𝐴1=𝜋2𝛼−1
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑑𝜃0+2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥cos𝑛𝜃0𝑑𝜃0𝐴0=𝛼−1
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑑𝜃0
+𝐴𝑛=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥cos𝑛𝜃0𝑑𝜃0A0: depends on both dz/dx anda
+An: dependent only on the 
+shape of the camber line dz/dxPlacement of the vortex sheet on the chord line.THE CAMBERED AIRFOIL
+Obtaining expressions fortheaerodynamic coefficients :
+The liftcoefficient (airfoil) :
+Operating this lastequation, itgives :𝑐𝑙=𝜋2𝐴0+𝐴1=𝜋2𝛼−1
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑑𝜃0+2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥cos𝑛𝜃0𝑑𝜃0
+𝑐𝑙=2𝜋𝛼+1
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥cos𝜃0−1𝑑𝜃0
+𝑎0=𝑑𝑐𝑙
+𝑑𝛼=𝑐𝑙𝛼=2𝜋ൗ1𝑟𝑎𝑑
+𝛼0=𝛼𝐿=0=−1
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥cos𝜃0−1𝑑𝜃The more highly cambered the airfoil, the
+larger will betheabsolute magnitude ofa0.𝑐𝑙=𝑎0𝛼−𝛼0Calculation of moments about the L.E.
+THE CAMBERED AIRFOIL
+𝛾𝜃=2𝑉∞𝐴01+cos𝜃
+sin𝜃+෍
+𝑛=1∞
+𝐴𝑛sin𝑛𝜃 Substituting :
+Into:
+Replacing, integrating, and normalizing the last equation, the
+result is:
+Recalling that:
+Then :
+For: symmetrical airfoil solution .𝑀′𝐿𝐸=−න
+0𝑐
+𝜉𝑑𝐿=−𝜌∞𝑉∞න
+0𝑐
+𝜉𝛾𝜉𝑑𝜉
+𝑐𝑚,𝐿𝐸=−𝜋
+2𝐴0+𝐴1−𝐴2
+2
+𝑐𝑙=𝜋2𝐴0+𝐴1
+𝑐𝑚,𝐿𝐸=−𝑐𝑙
+4+𝜋
+4𝐴1−𝐴2
+𝑑𝑧
+𝑑𝑥=0→𝐴1=𝐴2=0THE CAMBERED AIRFOIL
+If cm,c/4is finite for a cambered airfoil; then it can be said that the 
+c/4location is not the center of pressure for a cambered airfoil.𝑐𝑚,ൗ𝑐4=𝑐𝑚,𝐿𝐸+𝑐𝑙
+4𝑐𝑚,ൗ𝑐4=𝜋
+4𝐴2−𝐴1Finite for 
+cambered airfoils.
+A1,andA2:dependent
+only onthe shape of
+thecamber linedz/dxcm,c/4isdependent only ofa
+c/4isthetheoretical location ofthea.c.foracambered airfoil .Calculation of moments about the L.E.THE CAMBERED AIRFOIL
+The theoretical location ofthec.p.foranasymmetrical airfoil willbe:
+𝑥𝑐𝑝=−𝑀′𝐿𝐸
+𝐿′=−𝑐𝑚,𝐿𝐸∙𝑐
+𝑐𝑙=𝑐
+41+𝜋
+𝑐𝑙𝐴1−𝐴2
+The last equation demonstrates that xcpforacambered
+airfoil varies with cl;hence, asachanges, xcpalso changes .
+AsL’approaches tozero, xcpmoves forward infinity .
+xcpis not a reference at which to draw the force system 
+on an airfoil; instead, the force and moment system is 
+more conventionally considered at the xac.Calculation of moments about the L.E.Example–NACA 23012 airfoil mean camber line isgiven by:
+Calculate :
+1.aL=0
+2.cl@a=4°
+3.cm,c/4
+4.xcp/c@a=4°
+Compare and validate theresults with experimental data .𝑧
+𝑐=2.6595𝑥
+𝑐3
+−0.6075𝑥
+𝑐2
++0.1147𝑥
+𝑐;𝑓𝑜𝑟0≤𝑥
+𝑐≤0.2025
+𝑧
+𝑐=0.022081−𝑥
+𝑐;𝑓𝑜𝑟0.2025≤𝑥
+𝑐≤1.0
+00,050,1
+0 0,05 0,1 0,15 0,2 0,25 0,3 0,35 0,4 0,45 0,5 0,55 0,6 0,65 0,7 0,75 0,8 0,85 0,9 0,95 1THE CAMBERED AIRFOIL
+Mean Camber Line 
+(MCL)
+Τ𝑧𝑐
+Τ𝑥𝑐Example–NACA 23012 .
+Solution point 1.:aL=0
+𝑧
+𝑐=2.6595𝑥
+𝑐3
+−0.6075𝑥
+𝑐2
++0.1147𝑥
+𝑐;𝑓𝑜𝑟0≤𝑥
+𝑐≤0.2025
+𝑧
+𝑐=0.022081−𝑥
+𝑐;𝑓𝑜𝑟0.2025≤𝑥
+𝑐≤1.0
+00,1
+0 0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1THE CAMBERED AIRFOIL
+We will need dz/dx ;from the given shape of the MCL, this is:
+𝑑𝑧
+𝑑𝑥=2.65953𝑥
+𝑐2
+−1.215𝑥
+𝑐+0.1147;𝑓𝑜𝑟0≤𝑥
+𝑐≤0.2025
+𝑑𝑧
+𝑑𝑥=−0.02208;𝑓𝑜𝑟0.2025≤𝑥
+𝑐≤1.0Fore part of MCL
+Aft part of MCLExample–NACA 23012 .
+Solution point 1.:aL=0
+00,1
+0 0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1THE CAMBERED AIRFOIL
+Transforming from xto q, where:
+𝑑𝑧
+𝑑𝑥=2.65953𝑥
+𝑐2
+−1.215𝑥
+𝑐+0.1147;𝑓𝑜𝑟0≤𝑥
+𝑐≤0.2025
+𝑑𝑧
+𝑑𝑥=−0.02208;𝑓𝑜𝑟0.2025≤𝑥
+𝑐≤1.0Fore part of MCL
+Aft part of MCL𝑥=𝑐
+21−cos𝜃⇒𝑥
+𝑐=1
+21−cos𝜃
+𝑑𝑧
+𝑑𝑥=2.65953
+41−2𝑐𝑜𝑠𝜃+𝑐𝑜𝑠2𝜃−0.60751−𝑐𝑜𝑠𝜃+0.1147;𝑓𝑜𝑟0≤𝜃≤0.9335𝑟𝑎𝑑
+𝑑𝑧
+𝑑𝑥=0.684−2.3736𝑐𝑜𝑠𝜃+1.995𝑐𝑜𝑠2𝜃;𝑓𝑜𝑟0≤𝜃≤0.9335𝑟𝑎𝑑
+𝑑𝑧
+𝑑𝑥=−0.02208;𝑓𝑜𝑟0.9335𝑟𝑎𝑑≤𝜃≤𝜋𝑟𝑎𝑑0.2025=1
+21−cos𝜃
+𝜃=cos−11−20.2025
+𝜃≈0.9335𝑟𝑎𝑑Example–NACA 23012 .
+Solution point 1.:aL=0
+00,1
+0 0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1THE CAMBERED AIRFOIL
+Solving: Fore part of MCL Aft part of MCL
+𝑑𝑧
+𝑑𝑥=0.684−2.3736𝑐𝑜𝑠𝜃+1.995𝑐𝑜𝑠2𝜃;𝑓𝑜𝑟0≤𝜃≤0.9335𝑟𝑎𝑑𝑑𝑧
+𝑑𝑥=−0.02208;𝑓𝑜𝑟0.9335𝑟𝑎𝑑≤𝜃≤𝜋𝑟𝑎𝑑
+𝛼𝐿=0=−1
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑐𝑜𝑠𝜃−1𝑑𝜃
+𝛼𝐿=0=−1
+𝜋න
+00.9335
+−0.684+3.0576𝑐𝑜𝑠𝜃−4.368𝑐𝑜𝑠2𝜃+1.995𝑐𝑜𝑠3𝜃𝑑𝜃−1
+𝜋න
+0.9335𝜋
+0.02208−0.02208𝑐𝑜𝑠𝜃𝑑𝜃𝛼𝐿=0=−1
+𝜋න
+00.9335
+0.684−2.3736𝑐𝑜𝑠𝜃+1.995𝑐𝑜𝑠2𝜃𝑐𝑜𝑠𝜃−1𝑑𝜃−1
+𝜋න
+0.9335𝜋
+−0.02208𝑐𝑜𝑠𝜃−1𝑑𝜃Substituting the equation for dz/dxinto the last equation:Example–NACA 23012 .
+Solution point 1.:aL=0
+00,1
+0 0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1THE CAMBERED AIRFOIL
+Solution for the integrals:𝛼𝐿=0=−1
+𝜋න
+00.9335
+−0.684+3.0576𝑐𝑜𝑠𝜃−4.368𝑐𝑜𝑠2𝜃+1.995𝑐𝑜𝑠3𝜃𝑑𝜃−1
+𝜋න
+0.9335𝜋
+0.02208−0.02208𝑐𝑜𝑠𝜃𝑑𝜃
+න𝑐𝑜𝑠𝜃𝑑𝜃=𝑠𝑖𝑛𝜃
+න𝑐𝑜𝑠2𝜃𝑑𝜃=1
+2𝑠𝑖𝑛𝜃𝑐𝑜𝑠𝜃+𝜃
+2
+න𝑐𝑜𝑠3𝜃𝑑𝜃=1
+3𝑠𝑖𝑛𝜃𝑐𝑜𝑠2𝜃+2
+𝛼𝐿=0=−1
+𝜋−2.8683𝜃+3.0576𝑠𝑖𝑛𝜃−2.1843𝑠𝑖𝑛𝜃𝑐𝑜𝑠𝜃+0.665𝑠𝑖𝑛𝜃𝑐𝑜𝑠2𝜃+200.9335−1
+𝜋0.02208𝜃−0.02208𝑠𝑖𝑛𝜃0.9335𝜋
+𝛼𝐿=0=−1
+𝜋−0.0065+0.0665=−0.0191𝑟𝑎𝑑
+𝛼𝐿=0=−0.0191𝑟𝑎𝑑=−1.09°Example–NACA 23012 .
+Solution point 2.:cl@a=4°
+00,1
+0 0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1THE CAMBERED AIRFOIL
+For a= 4 [ deg] = 0.0698 [ rad], the value of the lift coefficient can be calculated as follows:
+𝑑𝑐𝑙
+𝑑𝛼=𝑐𝑙𝛼=𝑎0=2𝜋ൗ1𝑟𝑎𝑑
+𝑐𝑙=𝑎0𝛼−𝛼0=2𝜋0.0698−−0.0191𝛼𝐿=0=−0.0191𝑟𝑎𝑑=−1.09°
+𝑐𝑙=0.559Example–NACA 23012 .
+Solution point 3.:cm,c/4
+00,1
+0 0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1THE CAMBERED AIRFOIL
+The value of cm,c/4is obtained using the following equation: 𝑐𝑚,Τ𝑐4=𝜋
+4𝐴2−𝐴1𝐴1=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑐𝑜𝑠𝜃𝑑𝜃
+𝐴2=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑐𝑜𝑠2𝜃𝑑𝜃=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥2𝑐𝑜𝑠2𝜃−1𝑑𝜃
+Solving for A1:
+𝐴1=2
+𝜋න
+00.9335
+0.684𝑐𝑜𝑠𝜃−2.3736𝑐𝑜𝑠2𝜃+1.995𝑐𝑜𝑠3𝜃𝑑𝜃+2
+𝜋න
+0.9335𝜋
+−0.02208𝑐𝑜𝑠𝜃𝑑𝜃
+𝐴1=2
+𝜋0.684𝑠𝑖𝑛𝜃−1.1868𝑠𝑖𝑛𝜃𝑐𝑜𝑠𝜃−1.1868𝜃+0.665𝑠𝑖𝑛𝜃𝑐𝑜𝑠2𝜃+200.9335+2
+𝜋−0.02208𝑠𝑖𝑛𝜃0.9335𝜋
+𝐴1=2
+𝜋0.1322+0.0177=0.0954Example–NACA 23012 .
+Solution point 3.:cm,c/4
+00,1
+0 0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1THE CAMBERED AIRFOIL
+The value of cm,c/4is obtained using the following equation: 𝑐𝑚,Τ𝑐4=𝜋
+4𝐴2−𝐴1𝐴1=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑐𝑜𝑠𝜃𝑑𝜃
+𝐴2=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑐𝑜𝑠2𝜃𝑑𝜃=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥2𝑐𝑜𝑠2𝜃−1𝑑𝜃
+Solving for A2:
+𝐴2=2
+𝜋න
+00.9335
+−0.684+2.3736𝑐𝑜𝑠𝜃−0.627𝑐𝑜𝑠2𝜃−4.747𝑐𝑜𝑠3𝜃+3.99𝑐𝑜𝑠4𝜃𝑑𝜃+2
+𝜋න
+0.9335𝜋
+0.02208−0.0446𝑐𝑜𝑠2𝜃𝑑𝜃
+න𝑐𝑜𝑠4𝜃𝑑𝜃=1
+4𝑐𝑜𝑠3𝜃𝑠𝑖𝑛𝜃+3
+8𝑠𝑖𝑛𝜃𝑐𝑜𝑠𝜃+𝜃 Integral solution for:
+𝐴2=2
+𝜋ቐ−0.684𝜃−0.04461
+2𝑠𝑖𝑛𝜃𝑐𝑜𝑠𝜃+𝜃−4.7471
+3𝑠𝑖𝑛𝜃𝑐𝑜𝑠2𝜃+2 ቋ +3.991
+4𝑐𝑜𝑠3𝜃𝑠𝑖𝑛𝜃+3
+8𝑠𝑖𝑛𝜃𝑐𝑜𝑠𝜃+𝜃
+00.9335
++2
+𝜋0.02208𝜃−0.04461
+2𝑠𝑖𝑛𝜃𝑐𝑜𝑠𝜃+𝜃
+0.9335𝜋
+𝐴2=2
+𝜋0.11384+0.01056=0.0792Example–NACA 23012 .
+Solution point 3.:cm,c/4
+00,1
+0 0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1THE CAMBERED AIRFOIL
+The value of cm,c/4is obtained using the following equation: 𝑐𝑚,Τ𝑐4=𝜋
+4𝐴2−𝐴1𝐴1=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑐𝑜𝑠𝜃𝑑𝜃
+𝐴2=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥𝑐𝑜𝑠2𝜃𝑑𝜃=2
+𝜋න
+0𝜋𝑑𝑧
+𝑑𝑥2𝑐𝑜𝑠2𝜃−1𝑑𝜃
+With thevalues ofthese twoFourier sineseries coefficients, thevalue
+ofcm,c/4canbeobtained :𝐴2=0.0792𝐴1=0.0954
+𝑐𝑚,Τ𝑐4=𝜋
+4𝐴2−𝐴1=𝜋
+40.0792−0.0954=−0.0127This figure shows anexample ofthemoment atthe
+c/4exerted inanairfoil :Example–NACA 23012 .
+Solution point 4.:xcp/c@a=4°
+00,1
+0 0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1THE CAMBERED AIRFOIL
+Using the equation: 𝑥𝑐𝑝=𝑐
+41+𝜋
+𝑐𝑙𝐴1−𝐴2⟹𝑥𝑐𝑝
+𝑐=1
+41+𝜋
+𝑐𝑙𝐴1−𝐴2
+𝑐𝑙=0.559
+𝐴2=0.0792𝐴1=0.0954𝑥𝑐𝑝
+𝑐=1
+41+𝜋
+𝑐𝑙𝐴1−𝐴2=1
+41+𝜋
+0.5590.0954−0.0792
+𝑥𝑐𝑝
+𝑐=0.237=23.7%𝑥𝑐𝑝
+𝑐Lift and moment coefficients data for a NACA 23012
+airfoil (from NACA report 824).
+𝐹𝑜𝑟𝛼=4°⇒ቊ𝑐𝑙=0.55
+𝑐𝑚,𝑐/4=−0.0122
+𝛼𝐿=0=−1.1°THE CAMBERED 
+AIRFOIL
+Parameter Calculated TAT Experiment Error %
+aL=0 -1.09° -1.1° 0.91
+cl, @a= 4° 0.559 0.55 1.64
+cm,c/4 -0.0127 -0.0122 4.10Comparison between calculated results 
+with the experimental data:
+Analysis :The results from TAT foracambered airfoil agree very well with
+theexperimental data ;this illustrates that thedevelopment ofTAT inthe
+early 1900 swas acrowning achievement intheoretical aerodynamics and
+validates the mathematical approach ofreplacing the chord line ofthe
+airfoil with avortex sheet ,with the flow tangency condition evaluated
+along themean camber line.Exercise–NACA 2412 airfoil -establish theequations forthemean camber line (z/c).
+Then, calculate :
+1.aL=0
+2.cl@a=2°
+3.Construct thegraph ofclvs.aforarange ofAoA from -16°to+16°.
+4.cm,c/4
+5.xcp/c@forarange ofAoA from -16°to+16°.
+Compare and validate theresults ofTATwith experimental data (NACA report) .
+THE CAMBERED AIRFOIL
+Τ𝑧𝑐
+Τ𝑥𝑐

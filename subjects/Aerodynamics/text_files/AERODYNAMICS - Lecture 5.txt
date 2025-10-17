@@ -1,0 +1,274 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBFLOW SEPARATIONWHY DOES AN AIRFOIL STALL?
+•Key to understanding: Friction causes flow separation within the boundary layer (B.L.).
+1.B.L. either laminar or turbulent.
+2.All laminar B.L. → turbulent B.L.
+3.Turbulent B.L. is “fuller” than laminar B.L., more resistant to separation.
+•Separation creates another form of drag called pressure drag due to separation.
+•Dramatic loss of lift and increase in drag.
+OVERVIEW: AIRFOIL STALL•Two significant consequences
+ofseparated flow over the
+airfoil .
+•Dramatic loss oflift(stalling) .
+•Separated flow causes higher
+pressure ontheupper surface of
+theairfoil .
+•Major increase indrag .
+•Separation causes lower pressure
+onthetrailing edge .
+•Unbalance of pressure force
+causes pressure drag due to
+separation .
+WHY DOES AN AIRFOIL STALL?What is really going on here?
+What is stall?
+Can we predict it?
+Can we design for it?SAMPLE DATA: STALL BEHAVIORLift or Lift Coefficient
+Angle of Attack, a
+SAMPLE DATA: CAMBERED AIRFOIL STALLhttp://www.soton.ac.uk/Racing/Greenpower/BoundaryLayers/Low a
+Moderate a
+High a
+a
+a
+aWHY 
+DOES LIFT 
+CURVE 
+BEND 
+OVER?
+•Adverse pressure gradient interacting with 
+velocity profile through B.L.
+•High -speed flow near the upper edge of B.L. 
+has enough speed to keep moving through 
+an adverse pressure gradient.
+•Lower speed fluid (which has been retarded 
+by friction) is exposed to the same adverse 
+pressure gradient and is stopped, and the 
+direction of flow can be reversed.
+•This reversal of flow direction causes the 
+flow to separate.
+•Turbulent B.L. has more resistance to flow 
+separation than laminar B.L. because of a 
+fuller velocity profile.
+•To help prevent flow separation, we desire a 
+turbulent B.L.
+WHY DOES BOUNDARY LAYER 
+SEPARATE•Key tounderstanding
+•Friction causes flow separation within theboundary layer .
+•Separation then creates another form ofdrag called pressure drag due
+toseparation .
+WHY DOES AN AIRFOIL STALL?10
+•Both NACA 4412 and NACA 4421 have the
+same shape ofthemean camber line.
+•Thin Airfoil Theory predicts that linear liftslope
+andaL=0should bethesame forboth .
+•Leading edge stall shows arapid drop oflift
+curve near maximum lift.
+•Trailing edge stall shows gradual bending -over
+ofliftcurve atmaximum lift,“soft stall” .
+•High cl,max forairfoils with leading -edge stall.
+•Flat plate stall exhibits the poorest behavior ;
+early stalling .
+•Thickness hassignificant effect oncl,max.NACA 4412 VERSUS NACA 442111•NACA 4421 (21% thickness)
+•Progressive and gradual 
+movement of separation 
+from the trailing edge 
+toward the leading edge 
+as ais increased.
+•Called Trailing Edge Stall.
+EXAMPLE OF TRAILING 
+EDGE STALL12
+•Example :Flat Plate with 2%thickness
+(like aNACA 0002 ).
+•Flow separates offthe leading edge
+even atlowa(a~3deg).
+•Initially, small regions ofseparated
+flow called separation bubble .
+•Asanincreased reattachment point
+moves further downstream until total
+separation .THIN AIRFOIL STALL13•NACA 4412 Airfoil (12%thickness)
+•Linear increase incluntil thestall.
+•Atajust below 15ºstreamlines arehighly curved
+(large lift)and stillattached totheairfoil’s upper
+surface .
+•Atajust above 15ºmassive flow -field separation
+occurs over top surface ofairfoil →significant
+loss oflift.
+•Called Leading Edge Stall .
+•Characteristic ofrelatively thin airfoils with
+thickness between about 10and 16percent
+chord .
+EXAMPLE OF LEADING -
+EDGE STALL•Some thickness vital toachieving ahigh maximum liftcoefficient .
+• The amount ofthickness willinfluence thetype ofstalling behavior .
+•Expect anoptimum .
+•Example :NACA 63-2XX,NACA 63-212 looks asanoptimum .
+cl,maxNACA 63 -212OPTIMUM AIRFOIL THICKNESS•Airfoil design methods
+Itproceeds from aknowledge ofthe boundary layer properties and the
+relation between geometry and pressure distribution .
+The goal ofanairfoil design varies depending onthemission that issetfor,as
+anexample :
+•Some airfoils aredesigned toproduce lowDand may notberequired togenerate L
+atall.
+•Some sections may need toproduce lowDwhile producing agiven amount ofL.
+•Insome cases, theDdoesn't matter -itisthemaximum Lthat isimportant .AIRFOIL USAGE 
+CHARACTERISTICS•Airfoil design methods
+The design problem starts when one hassomehow defined anobjective for
+theairfoil design .This stage ofthedesign involves changing theairfoil shape
+toimprove theperformance .This may bedone inseveral ways :
+•Byhand ,using knowledge ofthe effects ofgeometry changes onCpand Cpchanges onperformance .
+•Bynumerical optimization ,using shape functions torepresent the airfoil
+geometry and letting the computer decide onthe sequence ofmodifications
+needed toimprove thedesign .AIRFOIL USAGE 
+CHARACTERISTICS1. Airfoil design methods –Design byauthority (historical)
+Use anairfoil already designed bysomeone who knew what heorshe was doing .This "design byauthority"
+works well when the goals ofaparticular design problem happen tocoincide with the goals ofthe original
+airfoil design .The advantage ofthis method isthat there istest data available, therefore nounlikely surprises,
+forexample, unexpected early stall.
+Airfoils may bechosen from catalogs :
+•Abbott andDoenhoff's Theory ofWing Sections
+•Althaus' andWortmann's Stuttgarter Profilkatalog
+•Althaus' Low Reynolds Number Airfoil catalog
+•Selig's "Airfoils atLowSpeeds“AIRFOIL USAGE 
+CHARACTERISTICS
+Software –airfoil catalogs:
+Profili 2.0
+XFLR5
+X-foilSome useful web pages –airfoil catalogs:
+http://airfoiltools.com/
+http://m -selig.ae.illinois.edu/ads/coord_database.html
+http://m -selig.ae.illinois.edu/ads/aircraft.html
+http://www.pdas.com/naca456.html2.Airfoil design methods –Direct
+This involves specifying asection geometry and calculating pressures and
+performance .With this evaluation, anairfoil isselected, agiven shape is
+determined, and then itismodified toimprove itsperformance .
+The two main sub-problems inthis type ofmethod are:
+1. The identification ofthemeasure ofperformance .
+2. The approach tochanging theshape sothat theperformance isimproved .AIRFOIL USAGE 
+CHARACTERISTICS2.Airfoil design methods –Direct
+•Start with anassumed airfoil shape, then you must determine the characteristic of
+this section that affects the mission performance tofixthis problem subsequently .
+This process offixing themost obvious problems with agiven airfoil isrepeated until
+there isnomajor problem with theaerodynamic section .
+•The design ofsuch airfoils does notrequire aspecific definition ofascalar objective
+function .Still, itdoes require some expertise toidentify thepotential problems and
+often considerable expertise tofixthem .
+AIRFOIL USAGE 
+CHARACTERISTICS2.Airfoil design methods –Direct
+•Study case :Rigid wing hang glider
+•Low-speed requirements .
+•The company decided touse a
+version ofone ofBob Liebeck's very
+high -liftairfoils .
+AIRFOIL USAGE 
+CHARACTERISTICS2. Airfoil design methods –Direct
+•Study case: Rigid wing hang glider
+Pressure distribution atclof1.4.Note that only a
+small amount oftrailing edge separation ispredicted .
+The airfoil works well, achieving acl_max ofalmost 1.9
+ataReof1000000 .Pressure distribution atclof0.6.
+Problem :The pressure peak on the
+lower surface causes separation and
+severely limits theVmax.
+AIRFOIL USAGE 
+CHARACTERISTICS2. Airfoil design methods –Direct
+•Study case: Rigid wing hang glider
+Change :thelower surface "bump" near theL.E.and the
+increase ofthelower surface thickness aftofthebump .
+Result :thepressure peak atlowcliseasily removed .The
+lower surface flow isnow attached and remains attached
+down toaclofabout 0.2.Modifying the lower surface has not done
+much totheupper surface pressure peak, and
+thecl_max turns outtobechanged very little .
+This section isamuch better match forthe
+application and demonstrates how effective
+slight modifications toexisting sections canbe.
+AIRFOIL USAGE 
+CHARACTERISTICS3.Airfoil design methods –Inverse design
+•The objective istotarget theCpdistribution .
+•Itissometimes possible tospecify adesired Cpdistribution and usetheleast
+squares difference between theactual and target Cp'sastheobjective .
+•This isthe basic idea behind various methods for inverse design .For
+example, thin airfoil theory (TAT)can beused tosolve fortheshape ofthe
+camber line that produces aspecified pressure difference onanairfoil in
+potential flow .AIRFOIL USAGE 
+CHARACTERISTICS•Airfoil design –problems :Thick airfoils
+•The difficulty with thick airfoils isthat theminimum pressure is
+decreased due tothickness .This results inamore severe
+adverse pressure gradient and theneed tostart recovery sooner .
+•Ifthemaximum thickness point isspecified, thesection with the
+maximum thickness must recover from agiven point with the
+steepest possible gradient .Liebeck addressed this problem in
+connection with Lmax.
+•The thickest possible section has aboundary layer just onthe
+verge ofseparation throughout therecovery .
+•The thickest section atRe=10million is57%thick, but of
+course, itwillseparate suddenly with anyAoA.
+AIRFOIL USAGE 
+CHARACTERISTICS•Airfoil design –problems :High -liftairfoils
+•ForLmax,the best recovery location ischosen, and the airfoil is
+made very thin sothat the lower surface produces Lmax.(Since
+the upper surface Cpisspecified, increasing thickness only
+reduces thelower surface pressures) .
+•Ifthe upper surface Cpismore negative than -3.0,the
+perturbation velocity isgreater than thefreestream, meaning the
+lower surface flow isupstream forathin section .This would
+cause separation, and themaximum liftisachieved with anupper
+surface velocity ofjust over 2Uand abitofthickness tokeep the
+lower surface near stagnation pressure .
+AIRFOIL USAGE 
+CHARACTERISTICS•Airfoil design –problems :Low Reairfoils
+•Make theairfoil design problem difficult because theboundary
+layer ismuch less capable ofhandling anadverse pressure
+gradient without separation .Thus, very lowRedesigns donot
+have severe pressure gradients, and the maximum lift
+capability isrestricted .
+•These airfoils are “cursed” with too much laminar flow .Itis
+sometimes challenging toensure the boundary layer is
+turbulent over thesteepest pressure recovery regions .Laminar
+separation bubbles are common and, unless adequately
+stabilized, canlead toexcessive Dand lowLmax.
+•Most oftheboundary layer islaminar .Under such conditions,
+theboundary layer can handle only gradual pressure recovery .
+Based ontheexpressions forlaminar separation, anall-laminar
+section cangenerate aclofabout 0.4orachieve athickness of
+about 7.5%.
+AIRFOIL USAGE 
+CHARACTERISTICS•Airfoil design –problems :Low -moment airfoils
+•When theairfoil pitching moment isconstrained, carrying liftasfar
+back ontheairfoil asdesired isnot always possible .Such situations
+arise inthe design ofsections fortailless aircraft, helicopter rotor
+blades, and even sails, kites, etc.
+•The example airfoil isaLiebeck section designed toperform well at
+low Rewith apositive cm,0.Itsperformance isnot bad, but itis
+inferior incl_max compared toother sections without acmconstraint .
+(cl_max=1.35vs.1.60forconventional sections atRe=500000 ).
+•The thickest section atRe=10million is57%thick, butofcourse, it
+willseparate suddenly with anyangle ofattack .
+AIRFOIL USAGE 
+CHARACTERISTICS•Airfoil design –Laminar airfoils
+•Good forreducing skin friction drag and increasing Lmax.
+•This may beachieved without toomuch work atlowRebymaintaining asmooth surface and using
+anairfoil with afavorable pressure gradient .
+•The pressure recovery helps achieve the maximum run offavorable gradient oneither upper or
+lower surfaces .
+AIRFOIL USAGE 
+CHARACTERISTICS•Airfoil design –Supercritical airfoils
+•Usually refers toaparticular type ofairfoil designed tooperate efficiently
+with substantial regions ofsupersonic flow .
+AIRFOIL USAGE 
+CHARACTERISTICS•Airfoil design –Supercritical airfoils
+•This sections often take advantage ofmany ofthefollowing design ideas tomaximize Lort/cat
+agiven M∞:
+• Carry asmuch liftasispractical ontheaftportion ofthesection where theflow issubsonic .The aftlower surface isanobvious candidate forincreased
+loading (more positive Cp).
+• Ensure that sufficient Liscarried ontheforward portion oftheupper surface .AstheM∞increases, thepressure peak near thenose diminishes, and
+without additional blunting ofthenose, anextra liftmay belost inthis region .
+• The lower surface near thenose canalso beloaded byreducing thelower surface thickness near theleading edge .This provides both Land apositive
+pitching moment .
+• Shocks ontheupper surface near theL.E.produce much less wave drag than shocks aftoftheairfoil crest, and itisfeasible, although notalways best,
+todesign sections with forward shocks .Such sections areknown as"peaky" airfoils and were used onmany transport aircraft .
+• The idea ofcarefully tailoring thesection toobtain locally supersonic flow without shockwaves (shock -free sections) hasbeen pursued formany years,
+and such sections have been designed and tested .Formost practical cases with arange ofdesign CLand Mach numbers, sections with weak shocks are
+favored .AIRFOIL USAGE 
+CHARACTERISTICS

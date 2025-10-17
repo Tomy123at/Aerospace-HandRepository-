@@ -1,0 +1,198 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPBDESIGNING FOR SUPERSONIC RANGE
+DESIGNING FOR SUPERSONIC RANGE
+
+
+The initial  location  of the 
+airplane  at time t = 0; it gives  
+off a sound  wave  at t = 0.Vt0102030405060708090
+0102030405060708090
+0 1 2 3 4 5 6 7 8[deg]
+M∞AV-8B Harrier
+F-100D
+MiG-21
+F-16 Fighting Falcon
+SR-71A Blackbird
+F-22 Raptor
+F-15C Eagle
+North American X-15
+F-35 Lightning IIDESIGNING FOR 
+SUPERSONIC 
+RANGE
+LE 
+
+[deg]
+=°−
+DESIGNING FOR SUPERSONIC RANGE
+
+OMG, 
+my ears!
+DESIGNING FOR SUPERSONIC RANGE
+DESIGNING FOR SUPERSONIC RANGE
+SHOCK WAVES
+Shock  waves  are formed  when  
+the aircraft  (or parts  of it) are 
+at a speed  range  of  M∞ ≥ 1.0.
+Sound  waves  are slower  than 
+aircraft  speed .
+Air “piles  up” in compression  
+waves,  which  creates  large  
+changes  in the pressure,  
+velocity,  and density  of the 
+airflow .
+SHOCK WAVES
+3 types  of shock  waves :
+1.Normal  - This type of shock  wave  forms  in front  (ahead)  or on a blunt  object  with a large  included  angle .
+Blunt -nosed  objectOblique  shockSubsonic  region
+Normal  
+shockIn front  of the shock  
+wave  – molecules  of 
+gas pile up.
+In front  of the object  – 
+the pile-up molecules  
+create  a detached  wave  
+(bow  wave) .
+Bow  shock  in front  of a blunt  object .SHOCK WAVES
+3 types  of shock  waves :
+1.Normal  - This type of shock  wave  forms  in front  (ahead)  or on a blunt  object  with a large  included  angle .
+Schlieren  photograph  of transonic  flow over 
+an airfoil . The nearly  vertical  shock  wave  is 
+followed  by boundary  layer  separation  that 
+adversely  affects  lift, drag,  and other  flight  
+parameters .
+Subsonic flowSupersonic flow
+Normal shock 
+waveOn surface :
+•Attached  to the curved  portion(s)  where  the 
+airflow  speed  is just above  Mach  1.0.
+•In transonic  range  – formed  on the upper  
+airfoil  surface  first (at about  Mach  0.8), then 
+on the lower  surface  (at about  0.85 Mach) .
+Note : The indicated  Mach  numbers  vary  
+depending  on the airfoil .Flow  
+separation
+SHOCK WAVES
+3 types  of shock  waves :
+1.Normal  - This type of shock  wave  forms  in front  (ahead)  or on a blunt  object  with a large  included  angle .
+Schlieren  photograph  of transonic  flow over 
+an airfoil . The nearly  vertical  shock  wave  is 
+followed  by boundary  layer  separation  that 
+adversely  affects  lift, drag,  and other  flight  
+parameters .On the surface  (at the wave) :
+•Flow  direction  doesn’t  change .
+•Velocity  decreases  (M < 1.0 – subsonic  
+flow) .
+•Subsonic  speed  inversely  proportional  
+to Mach  number  entering  the wave  
+(higher  a∞ going  into the wave  / lower  
+subsonic  speed  coming  out of the 
+wave) .
+•Large  pressure,  density,  and 
+temperature .
+•Large  total energy  decrease  (from  
+temperature  radiation  into the air).
+•The pressure  waves  pile up at the 
+dividing  line between  supersonic  and 
+subsonic  flow,  creating  the normal  
+shock  wave .
+Subsonic flowSupersonic flow
+Normal shock 
+wave
+Flow  
+separationSHOCK WAVES
+3 types  of shock  waves :
+2.Oblique  - This type of shock  wave  forms  on sharp  edges  with surface  changing  into the direction  of the 
+airflow  (commonly  on the leading  and the trailing  edges  of the airfoil) .
+Schlieren  photograph  of Oblique  Shock
+•Shock  waveforms  at an oblique  
+angle  with the surface  and points  
+downstream  in airflow .
+•Angle  gets less as speed  goes up 
+(flattens  out).
+•At the wave :
+•Flow  direction  is deflected  along  
+the surface .
+•Velocity  decreases  but stays  above  
+Mach  1.0.
+•p, T, and  increases .
+•Total  energy  goes down  – energy  
+loss comes  from  the loss of 
+temperature  (heat  of compression)  
+to the atmosphere .
+SHOCK WAVES
+3 types  of shock  waves :
+3.Expansion  – this shock  wave  forms  where  the surface  turns  away  from  the airflow  direction  (i.e., middle  of 
+an airfoil  – c/2).
+•Velocity  increases .
+•p and  both decrease .
+•T remains  relatively  constant  – little 
+or no total energy  change  (is not a 
+compression  wave) .
+Schlieren  photograph  of Expansion  ShockSHOCK WAVES
+SHOCK WAVES
+Applications  of Shock  Waves :
+Supersonic  flow over aerodynamic  bodies
+•Supersonic  airfoils
+•Wings
+•Fuselage
+•and other  parts  of airplanes
+Supersonic  flow through  engine  components
+•Engine  intake
+•Compressors
+•combustion  chambers
+•Nozzle
+Propellers  running  at high speeds
+SHOCK WAVES
+Applications  of Shock  Waves :
+Supersonic  flow over aerodynamic  bodies
+•Supersonic  airfoils
+•Wings
+•Fuselage
+•and other  parts  of airplanes
+Supersonic  flow through  engine  components
+•Engine  intake
+•Compressors
+•combustion  chambers
+•Nozzle
+Propellers  running  at high speeds
+SHOCK WAVES
+Applications  of Shock  Waves :
+Supersonic  flow over aerodynamic  bodies
+•Supersonic  airfoils
+•Wings
+•Fuselage
+•and other  parts  of airplanes
+Supersonic  flow through  engine  components
+•Engine  intake
+•Compressors
+•combustion  chambers
+•Nozzle
+Propellers  running  at high speeds
+SHOCK WAVES
+Applications  of Shock  Waves :
+Supersonic  flow over aerodynamic  bodies
+•Supersonic  airfoils
+•Wings
+•Fuselage
+•and other  parts  of airplanes
+Supersonic  flow through  engine  components
+•Engine  intake
+•Compressors
+•combustion  chambers
+•Nozzle
+Propellers  running  at high speeds
+SHOCK WAVES
+Applications  of Shock  Waves :
+Supersonic  flow over aerodynamic  bodies
+•Supersonic  airfoils
+•Wings
+•Fuselage
+•and other  parts  of airplanes
+Supersonic  flow through  engine  components
+•Engine  intake
+•Compressors
+•combustion  chambers
+•Nozzle
+Propellers  running  at high speeds

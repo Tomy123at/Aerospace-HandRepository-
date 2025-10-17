@@ -1,0 +1,282 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPB•Calculation of angle aiis not trivial 
+•Value of aidepends on distribution 
+of downwash along span of wing
+•Downwash is governed by 
+distribution of lift over span of wing
+HOW TO ESTIMATE 
+INDUCED DRAGSpecial Case: Elliptical Lift 
+Distribution (produced by 
+elliptical wing)
+•Lift/unit span varies 
+elliptically along span
+•This special case produces a 
+uniform downwash
+ARCCARC
+SqDARCSqARCL L DARC
+L
+iDL iL L
+i iL
+i
+ aa
+2
+,22
+=== = ==
+
+Key Results incompressible flow theory:
+Elliptical Lift DistributionHOW TO ESTIMATE 
+INDUCED DRAGELLIPTICAL LIFT 
+DISTRIBUTION
+•For a wing with same airfoil shape across span and no twist, an elliptical lift distribution is 
+characteristic of an elliptical wing plan form
+•Classical example: Supermarine Spitfire
+ARCCARC
+L
+iDL
+i
+a
+2
+,==
+Key Results:
+Elliptical Lift Distribution
+For all wings in general:
+•Define a span efficiency factor, e(also called span efficiency factor)
+•Elliptical planforms, e = 1.0
+•The word planform means shape as view by looking down on the wing
+•For all other planforms, e < 1(0.85 < e < 0.99)
+AReCCL
+iD2
+,=
+Oswald Span Efficiency FactorDrag due to lift:
+•Goes with the square of CL
+•Inversely related to ARHOW TO ESTIMATE 
+INDUCED DRAGDRAG POLAR
+eARCc CL
+d D2
++=
+Total Drag = Profile Drag + Induced Drag
+cdINDUCED DRAG EXAMPLE
+Northrop F -5Fighter
+Wing area of 170ft2
+Wingspan of 25.25 ft
+The wing generates 18000 lbof lift force
+•For a flight velocity of 250mph at standard sea level conditions, calculate the required wing lift coefficient
+•Calculate induced drag coefficient and the induced drag force (Assume e = 0.8)
+Northrop YB -49Flying wing
+The wing area is 206m2
+Aspect ratio of 10
+Airplane weight 750000 N
+Wing airfoil NACA 2412 –from the graphs cd≈ 0.006
+•For a flight velocity of 100m/s at a density altitude of 3.0km( r∞= 0.909 kg/m3), calculate the total drag force to be 
+overcome by the thrust (engines) force on the aircraft (required thrust)
+Note: Assume e = 0.95INDUCED DRAG EXAMPLENorth American P -51Mustang
+Wing area of 233ft2
+Wing span 37ft
+Airplane gross weight 10100 lb(Assume e = 0.99 )
+Wing airfoil NACA 65-210(laminar flow airfoil) –from the graphs cd≈ 0.0037 and 0.008 , f(Re)
+•At an altitude of 25000 ft has a maximum velocity of 437mph at a density altitude r∞= 1.0663 x10-3
+slug/ft3, calculate and compare (a)the induce and profile drag of the wing; (b)considering that its landing 
+approach at s.l., calculate and compare induce and profile drag of the wing at a flight speed of 140mph
+INDUCED DRAG EXAMPLEVought F 4U-1D Corsair
+Wing platform area of 29.17 m2
+Wing span 12.49 m
+Airplane gross weight 5461 kg (Assume e = 0.9)
+•At an altitude of 6.0km, it has a maximum velocity of 190m/s at a density altitude of 
+r∞= 0.66011 kg/m3. At these conditions, the total wing drag coefficient is 0.00757 , 
+calculate the profile drag coefficient for the wing
+INDUCED DRAG EXAMPLEGeometric Definitions of a 
+Finite Wing
+•Wing geometric definitions
+•Wing span -b
+•Wing chords -ctipand croot
+•Reference area -S
+•Wetted area -Swet
+•Aspect Ratio -AR
+•Taper ratio -l
+•Mean Aerodynamic chord -
+avcSb=
+SbAR2
+=
+roottip
+cc=l
+( ) ( )lll + =+ = 12c12cctip root
+av
+( )l+=12
+bScroot
+( )
+( )lll
++++=11c32c2
+root
+( )
+( )
+
+++=ll
+121
+6bY
+Yc;
+•Wing geometric definitions
+•Wing sweep -LLE, Lc/4
+•Wing twist angle -btip
+•Wing incidence -iw
+•Wing dihedral angle -G
+( )
+( )
+
++-+ =llL L1AR1
+4c LEtan tan
+Geometric Definitions of a 
+Finite Wing•Wing geometric definitions
+•Wing sweep -LLE, Lc/4
+•Wing twist angle -btip
+•Wing incidence -iw
+•Wing dihedral angle -GGeometric Definitions of a 
+Finite Wing
+btipWHY A LIFT DISTRIBUTION?
+SHAPE OF AIRFOIL MAY VARY 
+ALONG WING
+NACA 64A210NACA 64A209F-111WHY A LIFT DISTRIBUTION?
+WING MAY BE TWISTED
+•Wing geometric definitions
+•Wing sweep -LLE, Lc/4
+•Wing twist angle -btip
+•Wing incidence -iw
+•Wing dihedral angle -GGeometric Definitions of a 
+Finite Wing
+FINITE WING CHANGE IN LIFT 
+SLOPE
+ Infinite Wing
+Finite Wingageom= aeff+ ai= aeff
+ageom= aeff+ ai
+FINITE WING CHANGE IN LIFT 
+SLOPE
+ Infinite Wing
+Finite Wingageom= aeff+ ai= aeff
+ageom= aeff+ ai
+CHANGE IN THE LIFT SLOPEFinite wing with AR of10and a
+NACA 23012 airfoil section .
+Assuming Re=5x106and span
+efficiency factor of0.95,calculate CL
+andCDatanangle -of-attack of4°
+b
+cLIFT-SLOPE 
+EXAMPLENACA 23012 airfoil at
+Re= 5x 106and
+angle -of-attack of 4°
+LIFT-SLOPE 
+EXAMPLEThe liftcoefficient fortheVought F4U-1D
+Corsair airplane when flying atmaximum
+speed and analtitude of6[km]isestimated
+tobearound 0.154.
+Calculate the angle ofattack forthis flight
+condition (e=0.9).The aspect ratio forthe
+airplane wing is5.35,and the wing airfoil
+section isaNACA 23012 (a0=0.106[1/deg],
+aL=0=-1.5[deg])
+LIFT SLOPE EXAMPLEHow aChanges with AR?
+SbAR2
+
+High AR
+Low AR
+EXAMPLE: U2VS. F-15
+•Cruise at 70000 ft
+•Air density is highly reduced
+•Flies at slow speeds, low q∞→ high angle of 
+attack, high CL
+•U2AR ~ 14.3 (WHY?)
+eARCc CL
+d D2
++=
+LSCV WL2
+21
+ == r
+•Flies at high speed (and lower altitudes), so 
+high q∞→ low angle of attack, low CL
+•F-15AR ~ 3.0(WHY?)U2 F-15EXAMPLE: U2SPY-PLANE
+•Cruise at 70000 ft
+•Out of USSR missile range
+•Air density, r∞, highly reduced
+•In steady -level flight, L = W
+•As r∞reduced, CLmust increase (angle 
+of attack must increase) 
+•AR↑ CD↓
+•U2AR ~ 14.3
+eARCc CL
+d D2
++=
+LSCV WL2
+21
+ == r
+U2stall speed at altitude is only 10 kts(18 km/h ) less than its maximum speed EXAMPLE: F-15EAGLE
+•Flies at high speed at low angle of 
+attack → low CL
+•Induced drag < Profile Drag
+•Low AR, Low S
+eARCc CL
+d D2
++=
+LSCV WL2
+21
+ == r
+U2CRASH DETAILS
+•NASA issued a very detailed press release noting that an aircraft had “gone missing” 
+north of Turkey
+•I must tell you a secret. When I made my first report, I deliberately did not say that the 
+pilot was alive and well… and now just look how many silly things [the Americans] have 
+said.”
+NASA U2
+MYASISHCHEV M-55
+"MYSTIC " HIGH ALTITUDE 
+RECONNAISSANCE AIRCRAFT
+WHY HIGH ARON 
+PREDATOR UAV?
+AIRBUS A 380 / BOEING 747
+COMPARISON
+•Wingspan: 79.8 m
+•AR: 7.53
+•GTOW : 560Ton
+•Wing Loading: GTOW/S: 87.94•Wingspan: 68.5 m
+•AR:7.98
+•GTOW : 440Ton
+•Wing Loading: GTOW/S: 93.77AIRPORT ACCOMODATIONS
+•Airplanes must fit 
+into 80x 80mbox
+Proposed changes to JFK
+REALLY HIGH ASPECT RATIO
+•L/D ratios can be over 50!
+•Aspect ratio can be over 40
+•All-out attempt to reduce induced drag
+EXAMPLE: NASA HELIOS
+•Helios: Proof -of-concept solar -electric flying wing, designed to operate at extremely high altitudes for long 
+duration, remotely piloted aircraft, AR = 30.9
+•Helios Prototype designed to fly at altitudes of upto 100000 feet on single -day atmospheric science and imaging 
+missions, as well as perform multi -day telecommunications relay missions at altitudes from 50000 to65000 ft.
+•Helios Prototype set world altitude record for winged aircraft, 96863 ft, during a flight in August 2001 
+•Flight at 100000 ft.is quite similar to that expected in the Martian atmosphere, so data obtained from the record 
+altitude flight will also help to build NASA's technical and operational data base for future Mars aircraft designs 
+and missions 
+NOMINAL FLIGHT
+•Wingspan: 247ft, Chord: 8ft, Wing Thickness: 12%of Chord , Wing Area: 1976 ft2
+•Airspeed: 19to 27mph cruise at low altitudes, up to 170mph at extreme altitude
+•Altitude: Up to 100000 ft., typical endurance mission at 50000 to 70000 ft. 
+•Aspect Ratio: 30.9This view ofthe Helios Prototype from achase helicopter shows anabnormally high wing
+dihedral ofmore than 30ftfrom the wingtip tothe center ofthe aircraft that resulted after
+theHelios entered moderate airturbulence onitslast test flight .The extreme dihedral caused
+aerodynamic instability that ledtoanuncontrollable series ofpitch oscillations and over -speed
+conditions, resulting instructural failures and partial breakup oftheaircraft .EXAMPLE: NASA HELIOSEXAMPLE: NASA HELIOS , 
+JUNE 26, 2003
+Consider two finite wing platforms with ARof4and
+10,respectively, and aNACA 23012 airfoil section .
+Assuming Re=5x106and span efficiency factor of
+0.95,calculate and compare the change oflift
+coefficient DCLifboth ofthem areperturbed byan
+increment ofDa=0.5°when they areflying atan
+angle -of-attack of2°
+b
+cAR  AND LIFT -
+SLOPE EXAMPLENACA 23012 airfoil at
+Re= 5x 106and
+angle -of-attack of 4°
+LIFT-SLOPE 
+EXAMPLE

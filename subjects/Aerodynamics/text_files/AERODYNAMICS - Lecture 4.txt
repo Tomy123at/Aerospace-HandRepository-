@@ -1,0 +1,579 @@
+AERODYNAMICS
+Aeronautical Engineering
+School of Engineering
+UPB•Requirements for a valid theory:
+–Should be a rational  explanation  of an observed  phenomenon.
+–Can be used to predict future observations.
+–Produces numerical results.DIFFERENT LIFT FORCE 
+GENERATION THEORIES•“Longer Path” (Equal Transit) Theory:
+–Top of the airfoil is shaped to provide a longer path than the bottom.
+–Air molecules have further to go over the top.
+–Air molecules must move faster over the top to meet the molecules at 
+the trailing edge that have gone underneath.
+–Higher velocity produces lower pressure on the top.
+–Difference in pressure creates lift.Lift 
+forceTHEORY No. 1 –
+BERNOULLI’S EQUATION•Real airflow around an airfoil .
+THEORY No. 1 –
+BERNOULLI’S EQUATIONLow pressure
+(p < p, V  > V)Unperturbed airflow (p = p, V = V)
+Stagnation point
+(p = PT, V = 0)High pressure
+(p > p, V < V)𝑃𝑇=𝑝+𝑞=𝑝+1
+2𝜌𝑉2 Lift 
+forceTHEORY No. 1 –
+BERNOULLI’S EQUATION•Restrictions:
+–Inviscid flow.
+–Steady flow.
+–Incompressible (low velocity).
+–No heat addition.
+–Negligible change in height.
+Lift 
+force𝑃𝑇=𝑝+𝑞=𝑝+1
+2𝜌𝑉2THEORY No. 1 –
+BERNOULLI’S EQUATION•Liftisthe result ofasimple application ofNewton´sthird law (action –reaction), asair
+molecules strike thebottom oftheairfoil ,imparting momentum tothebody .
+Lift 
+force
+OutflowInflowTHEORY No. 2 –“SKIPPING 
+STONE” THEORY•Upper airfoil surface behaves likeaVenturi nozzle, constricting theflow .
+•Through theconstriction, theflow separates up(velocity times area equals const .).
+•From Bernoulli´sequation, high velocity gives lowpressure .
+•Decreased pressure ontheupper surface produces lift.
+Free stream
+High velocity –Low pressureInflow OutflowTHEORY No. 3 –
+“VENTURI” THEORY•Lift due to an imbalance of pressure distribution over the top and bottom surfaces of the 
+airfoil (or wing):
+•If the pressure on top is lower than the pressure on the bottom surface, the lift is generated.
+•Why is pressure lower on the top surface?
+•We can understand the answer from essential physics:
+•Continuity (Mass Conservation).
+•Newton’s 2ndlaw ( Euler or Bernoulli Equation).
+Lift = P *AHOW DOES AN AIRFOIL 
+GENERATE LIFT?•Newton’s second law applied to fluids →Force = mass x accelerationMOMENTUM EQUATION
+p
+dxdzdy
+𝑝+𝑑𝑝
+𝑑𝑥𝑑𝑥
+x
+zy
+V
+PAninfinitely small fluid element
+moving along thestreamline with
+velocity Vislocated atpoint P.Physically, the force inthis
+element isacombination of
+three phenomena :
+1.Pressure acting inanormal
+direction onallsixfaces of
+theelement .
+2.Frictional shear acting
+tangentially onallsixfaces
+oftheelement .
+3.Gravity acting onthe mass
+inside theelement .•Newton’s 2ndlaw applied to fluids →Force = mass x accelerationMOMENTUM EQUATION
+p
+dxdzdy
+𝑝+𝑑𝑝
+𝑑𝑥𝑑𝑥
+x
+zy
+V
+PForce =Pressure xArea →𝐹=𝑝𝑑𝑦𝑑𝑧−𝑝+𝑑𝑝
+𝑑𝑥𝑑𝑥𝑑𝑦𝑑𝑧
+𝐹=−𝑑𝑝
+𝑑𝑥𝑑𝑥𝑑𝑦𝑑𝑧
+Mass =Density xVolume
+𝑚=𝜌𝑑𝑥𝑑𝑦𝑑𝑧
+Acceleration =Velocity/time
+𝑎=𝑑𝑉
+𝑑𝑡=𝑑𝑉
+𝑑𝑥𝑑𝑥
+𝑑𝑡=𝑑𝑉
+𝑑𝑥𝑉𝐹=𝑚∙𝑎
+−𝑑𝑝
+𝑑𝑥𝑑𝑥𝑑𝑦𝑑𝑧=𝜌𝑑𝑥𝑑𝑦𝑑𝑧∙𝑑𝑉
+𝑑𝑥𝑉
+𝑑𝑝=−𝜌𝑉𝑑𝑉
+This isEuler’s equation ;itrelates the rate of
+change ofmomentum toforce .Hence, itcanalso
+bedesignated asthemomentum equation .•Euler’s Equation (Differential
+Equation) .
+•Relates changes inmomentum to
+changes inforce (momentum
+equation ).
+•Relates achange inpressure (dp)
+toachange invelocity (dV).𝑑𝑝=−𝜌𝑉𝑑𝑉WHAT DOES EULER´S
+EQUATION TELL US?
+•Assumptions wemade :
+•Steady flow .
+•Neglected friction (inviscid flow), body forces, and
+external forces .
+•dpanddVareofopposite sign.
+•ifdpincreases, dVgoes down →Flow slows down .
+•ifdpdecreases, dVgoes up→Flow speeds up.
+•Valid for Incompressible and Compressible
+flows .
+•Valid forIrrotational and Rotational flows .𝑑𝑝+𝜌𝑉𝑑𝑉=0
+න
+𝑝1𝑝2
+𝑑𝑝+𝜌න
+𝑉1𝑉2
+𝑉𝑑𝑉=0
+𝑝2−𝑝1+𝜌𝑉22
+2−𝑉12
+2=0
+Relate p1and V1at point 1to p2and V2at point 2.
+Integrate Euler’s equation from point 1to point 2,taking r = const.INVISCID FLOW ALONG 
+STREAMLINES
+𝑝2+𝜌𝑉22
+2=𝑝1+𝜌𝑉12
+2
+𝑝+𝜌𝑉2
+2=𝑐𝑜𝑛𝑠𝑡𝑎𝑛𝑡 𝑎𝑙𝑜𝑛𝑔𝑡ℎ𝑒𝑠𝑡𝑟𝑒𝑎𝑚𝑙𝑖𝑛𝑒
+Bernoulli’s equation1.Holds only forinviscid (frictionless)
+incompressible flow .
+2.Relate properties between different
+points along astreamline .
+3.Euler’s equation must beused fora
+compressible flow, with rtreated as
+avariable .
+4.They areessentiallyNewton’s second
+lawapplied tofluid dynamics .Friction forces
+The boundary layer thickness isshown as
+more extensive than itis.
+Inaerodynamics, airfoils areusually thinner .Boundary 
+layerBOUNDARY LAYER•One of most important dimensionless numbers in fluid mechanics/ aerodynamics.
+•Reynolds number is ratio of two forces.
+•Inertial Forces.
+•Viscous Forces.
+•cis length scale (chord).
+•Reynolds number tells you when viscous forces are important and when viscosity 
+can be neglected.Re=𝜌𝑉∞𝑐
+𝜇
+Within B.L. flow
+highly viscous
+(low Re)Outside B.L. flow
+Inviscid (high Re)
+REYNOLDS NUMBER•Two types of viscous flows.
+•Laminar: streamlines are smooth and regular, and a fluid element moves smoothly along a streamline.
+•Turbulent: streamlines break up, and fluid elements move in a random, irregular, and chaotic fashion.
+LAMINAR VERSUS 
+TURBULENT FLOWLaminar flow
+Laminar boundary layer :thin, lowfriction
+Turbulent boundary layer :thick, high frictionTransition
+Turbulent flowFLOW TRANSITION FROM 
+LAMINAR TO TURBULENTAll B.L.’s transition from laminar to turbulent
+cf,turb> cf,lam
+Turbulent velocity
+profiles are ‘fuller’LAMINAR VERSUS 
+TURBULENT FLOWBOUNDARY LAYER
+Stagnation pointMaximum velocityBOUNDARY LAYER
+High pressure
+Low pressure
+Low 
+pressure
+High 
+pressureBOUNDARY LAYER
+High pressureLow pressure
+High pressure
+Separation 
+point
+(“Stagnation”)Favorable pressure gradient
+Noreverse flowAdverse pressure gradient
+Reverse flowCOMMENTS ON VICOUS FLOW•Flow adheres tothesurface because offriction between gasand solid boundary .
+•Atsurface flow velocity iszero, called “No-SlipCondition ”.
+•Thin region ofretarded flow inthevicinity ofsurface, called a“Boundary Layer ”.
+•Attheouter edge ofB.L.,V∞
+•Atthesolid boundary, V=0
+“The presence offriction inthe flow causes ashear stress atthe surface ofabody, which, inturn,
+contributes totheaerodynamic drag ofthebody :skin frictiondrag” .
+SAMPLE DATA: SYMMETRIC 
+AIRFOILFlow very close tothe surface ofthe airfoil is
+Influenced byfriction and isviscous (boundary layer
+flow) ;Stall (separation) isaviscous phenomenon .
+Flow away from airfoil isnot influenced byfriction
+and iswholly inviscid .
+TYPES OF FLOW: FRICTION VS. 
+NO-FRICTIONRe = 300000
+Gliders : Re≈1x106
+Jettransport aircraft :Re≈50x106Cdhigh
+Re = 650000
+Re = 1200000Cdlow
+Cd≈ Cd (b)REYNOLDS NUMBER 
+INFLUENCE1.Flow velocity over the top of the airfoil is faster than over the bottom surface.
+• Streamtube Asenses the upper portion of the airfoil as an obstruction.
+• Streamtube Ais squashed to the smaller cross -sectional area.
+• Mass continuity rAV= constant: IF A↓ THEN V↑.
+Streamtube Ais squashed.
+most in the nose region.
+(ahead of maximum thickness). 
+A
+BHOW DOES AN AIRFOIL 
+GENERATE LIFT?2.As V↑ p↓
+•Incompressible: Bernoulli’s Equation.
+•Compressible: Euler’s Equation.
+•Called Bernoulli Effect.
+3.With lower pressure over the upper surface and higher 
+pressure over the bottom surface, the airfoil feels a net 
+force in an upward direction → Lift.𝑝+1
+2𝜌𝑉2=constant
+𝑑𝑝=−𝜌𝑉𝑑𝑉
+Most oftheliftisproduced inthefirst
+20-30%ofthewing (just downstream
+oftheleading edge) .
+HOW DOES AN AIRFOIL 
+GENERATE LIFT?•Curved surface of an airfoil is not necessary to produce lift.
+A BHOW DOES AN AIRFOIL 
+GENERATE LIFT?•Airflow around anairfoil -Eppler E64airfoil at2[deg]angle of
+attack (AoA).
+INCOMPRESSIBLE FLOW 
+OVER AIRFOILS•Velocity distribution –NACA 2412.
+PRESSURE DISTRIBUTION•Pressure distribution around an airfoil .
+Stagnation point –occurs near the
+L.E.;itistheplace atwhich V=0;
+forincompressible flow, Cp=1.0(for
+compressible flow, itmay be
+somewhat larger) .INCOMPRESSIBLE FLOW 
+OVER AIRFOILS
+Pressure recovery (recovery region) –thepressure increases
+from theminimum value tothevalue attheT.E.This area is
+also known astheregion oftheadverse pressure gradient
+(APG) that isassociated with theboundary layer transition
+andthepossibility offlow separation iftheAPG istoosevere .
+L.E.
+Lower surface –sometimes carries apositive pressure, butinsome parts ofthelower surface,
+conditions reach anegative value, which isgoing topulltheairfoil (wing) downwards ;forthis
+zone, and some suction (-Cpdownward force onthelower surface) ispresent near the
+middle -chord .T.E.–isrelated totheairfoil thickness andtheshape near the
+T.E.Forthick airfoils, thepressure here isslightly positive
+(thevelocity isslightly lessthan thefreestream velocity) .For
+infinitely thin sections, Cp0attheT.E.Large positive
+values ofCpattheT.E.imply more severe APG .Upper surface –islower than the
+lower surface Cpforthis particular
+example, butitdoesn’t have tobelike
+thatforallthecases .
+Cprises rapidly (pressure decreases)
+onboth upper and lower surfaces .•Airfoil pressure distribution.
+Favourable pressure gradients
+lead tolaminar flows, therefore
+lower D.Ifthe gradient istoo
+small then, Lislost.The minimum Cpvalue determines the
+maximum speed and can be auseful
+indication ofshock formation and also
+determines theextent ofpressure recovery .
+APG leads totransition and separation .Itis
+especially important toavoid strong APG asit
+approaches theT.E.
+T.E.pressure determines
+theseverity oftheAPG .PRESSURE DISTRIBUTION
+V∞
+p∞r∞𝐶𝑝≡𝑝−𝑝∞
+𝑞∞≡𝑝−𝑝∞
+1
+2𝜌∞𝑉∞2
+Cpisthe difference between the
+local static pressure (p)and the
+freestream static pressure (p∞),non-
+dimensionalized bythe freestream
+dynamic pressure (q∞).•Relating airfoil geometry and pressures :
+•Pressure must increase asthe particle moves
+further from thesurface .
+•This means the surface pressure islower than
+thepressures farther away .
+•This iswhy theCpismore negative inregions
+with curvature inthis direction .
+•The curvature ofthestreamlines determines the
+pressures and, hence, thenetlift.
+PRESSURE DISTRIBUTION•Airfoil pressures vary with a.Asthe AoA increases, a"nose peak" becomes
+more extreme .
+PRESSURE DISTRIBUTION•Example 1:
+The pressure atapoint onanairplane’s wing is7.58x104
+[N/m2].The airplane isflying with a70[m/s]velocity at
+conditions associated with a2000 [m]standard altitude .
+Calculate thepressure coefficient atthis point onthewing .
+Solution :
+Forastandard altitude of2000 [m]:PRESSURE COEFFICIENT
+p = 7.58 x 104[Pa]
+𝑝∞=𝑝11+𝑎1ℎ−ℎ1
+𝑇1−𝑔0
+𝑎1𝑅
+=101325 1+−0.00652000
+288.16−9.81
+−0.0065287
+=79485.74𝑃𝑎
+𝜌∞=𝜌11+𝑎1ℎ−ℎ1
+𝑇1−𝑔0
+𝑎1𝑅+1
+=1.2251+−0.00652000
+288.16−9.81
+−0.0065287+1
+=1.0064 ൗ𝑘𝑔
+𝑚3𝑞∞=1
+2𝜌∞𝑉∞2=1
+21.0064702
+𝑞∞=2465.6𝑃𝑎
+𝐶𝑝=𝑝−𝑝∞
+𝑞∞=75800−79485.74
+2465.6
+𝐶𝑝=−1.49•Example 2:
+Consider anairfoil mounted inalow-speed subsonic wind tunnel .The flow velocity inthetest
+section is100[ft/s],and theconditions arestandard sealevel .Ifthepressure atapoint onthe
+airfoil is2102 .58[lb/ft2],what isthepressure coefficient?
+Solution :V∞= 100 [ ft/s]
+𝑞∞=1
+2𝜌∞𝑉∞2=1
+20.0023771002
+𝑞∞=11.89ൗ𝑙𝑏
+𝑓𝑡2𝐶𝑝=𝑝−𝑝∞
+𝑞∞=2102−2116.2
+11.89
+𝐶𝑝=−1.19PRESSURE COEFFICIENT
+p = 2102 [lb/ft2]•Example 3:
+Anairplane isflying ata70[m/s]velocity atastandard altitude
+of3[km].The pressure coefficient onthefuselage is-2.2.What
+isthepressure atthis point?
+Solution :
+Forastandard altitude of3000 [m]:PRESSURE COEFFICIENT
+Cp= -2.2
+𝑝∞=𝑝11+𝑎1ℎ−ℎ1
+𝑇1−𝑔0
+𝑎1𝑅
+=101325 1+−0.00653000
+288.16−9.81
+−0.0065287
+=70095.88𝑃𝑎
+𝜌∞=𝜌11+𝑎1ℎ−ℎ1
+𝑇1−𝑔0
+𝑎1𝑅+1
+=1.2251+−0.00653000
+288.16−9.81
+−0.0065287+1
+=0.909ൗ𝑘𝑔
+𝑚3𝑞∞=1
+2𝜌∞𝑉∞2=1
+21.0064702
+𝑞∞=2226.94𝑃𝑎
+𝐶𝑝=𝑝−𝑝∞
+𝑞∞⇒𝑝=𝑝∞+𝐶𝑝𝑞∞
+𝑝=70095.88+−2.22226.94
+𝑝=65196.61𝑃𝑎•Example 4:
+Consider two different points onthesurface ofanairplane
+wing flying at80[m/s].The pressure coefficient and flow
+velocity atpoint 1are-1.5and110 [m/s],respectively .The
+pressure coefficient at point 2is-0.8.Assuming
+incompressible flow, calculate theflow velocity atpoint 2.
+Solution :
+FromBernoulli’s equation :PRESSURE COEFFICIENT
+V∞= 80 [ m/s]Cp1= -1.5
+Cp2= -0.8
+𝐶𝑝1=𝑝1−𝑝∞
+𝑞∞⇒𝑝1−𝑝∞=𝑞∞𝐶𝑝1
+𝐶𝑝2=𝑝2−𝑝∞
+𝑞∞⇒𝑝2−𝑝∞=𝑞∞𝐶𝑝2V1= 110 [ m/s]
+1
+2
+𝑝1−𝑝2=𝑞∞𝐶𝑝1−𝐶𝑝2
+𝑝1+1
+2𝜌𝑉12=𝑝2+1
+2𝜌𝑉22
+𝑝1−𝑝2=1
+2𝜌𝑉22−𝑉12Normalizing by the dynamic pressure:
+𝑝1−𝑝2
+𝑞∞=𝑉2
+𝑉∞2
+−𝑉1
+𝑉∞2
+𝐶𝑝1−𝐶𝑝2=𝑉2
+𝑉∞2
+−𝑉1
+𝑉∞2
+𝑉2=𝑉∞2𝐶𝑝1−𝐶𝑝2+𝑉12=802−1.5+0.8+1102
+𝑉2=87.29Τ𝑚𝑠V2= ?•Exercise 1:
+Consider an airfoil in a free stream with a 50 [m/s]velocity at standard sea -level conditions. 
+The pressure is 9.5 x 104[N/m2] at a point on the airfoil.
+What is the pressure coefficient at this point?
+V∞= 50 [ m/s]p∞Vp = 9.5 x 104[N/m2]PRESSURE COEFFICIENT•Exercise 2:
+Consider a low -speed airplane flying at a velocity of 55 [m/s]. If the velocity at a point on the 
+fuselage is 62 [m/s], what is the pressure coefficient at this point?
+V∞= 55 [ m/s]p∞V = 62 [ m/s]PRESSURE COEFFICIENT•Examples -Thick airfoil
+Forthis example, theaerofoil isshown atanAoA of0.Only one line isshown on
+theplot because, atzero lift,theupper and lower surface pressures coincide .
+PRESSURE DISTRIBUTION•Examples -Symmetrical airfoil
+Inthis type ofairfoil ,thepressure peak near thenose isnoticeable .Athicker section
+would have aless prominent peak .
+PRESSURE DISTRIBUTION•Examples –Conventional cambered airfoil (Clark Y)
+Typical Cpdistribution behavior at low AoA.
+PRESSURE DISTRIBUTION•Examples -Laminar airfoil
+This type ofairfoil has athickness distribution that leads toafavorable pressure gradient
+over aportion oftheairfoil .Inthis case, therather sharp nose leads tofavorable gradients
+over 50%ofthesection .
+PRESSURE DISTRIBUTION•Examples -Reflex airfoil
+This type ofairfoil has reduced camber over the aftsection ,producing less liftover this
+region and, therefore, less nose -down pitching moment .Inthis case, the aftsection is
+actually pushing downward, andcmatzero liftispositive .
+PRESSURE DISTRIBUTION•Examples -Supercritical airfoil
+Analysing theCpdistribution, anaft-loaded section canbenoticed, theopposite ofareflexed
+airfoil, meaning that itwould carry more liftover theaftpart oftheairfoil .
+PRESSURE DISTRIBUTION•Lift Coefficient ( cl) from Cp
+V∞b
+cq
+a
+ads
+1csLE
+TExINCOMPRESSIBLE FLOW 
+OVER AIRFOILS
+dxqArea =ds(1) Force =pds(1); [a, c]
+p cosqds(1); [a, b]
+Local force (upper surface) = -pucosqds
+Total force (upper surface) =−׬𝐿𝐸𝑇𝐸𝑝𝑢cos𝜃𝑑𝑠
+Total normal force 𝑁=׬𝐿𝐸𝑇𝐸𝑝𝑙cos𝜃𝑑𝑠−׬𝐿𝐸𝑇𝐸𝑝𝑢cos𝜃𝑑𝑠
+dscosq= dx𝑁=න
+0𝑐
+𝑝𝑙𝑑𝑥−න
+0𝑐
+𝑝𝑢𝑑𝑥
+𝑁=න
+0𝑐
+𝑝𝑙−𝑝∞𝑑𝑥−න
+0𝑐
+𝑝𝑢−𝑝∞𝑑𝑥
+𝑁
+𝑞∞∙𝑐=1
+𝑐න
+0𝑐𝑝𝑙−𝑝∞
+𝑞∞𝑑𝑥−න
+0𝑐𝑝𝑢−𝑝∞
+𝑞∞𝑑𝑥=𝑐𝑛=1
+𝑐න
+0𝑐
+𝐶𝑝,𝑙−𝐶𝑝,𝑢𝑑𝑥𝐶𝑝=𝑝−𝑝∞
+𝑞∞•Lift Coefficient ( cl) from Cp
+V∞b
+cq
+a
+ads
+1csLE
+TExINCOMPRESSIBLE FLOW 
+OVER AIRFOILS
+𝑐𝑛=1
+𝑐න
+0𝑐
+𝐶𝑝,𝑙−𝐶𝑝,𝑢𝑑𝑥≈𝑐𝑙
+Works well for 
+small AoAAnairfoil with chord length cand therunning distance xmeasured along thechord .The leading
+edge isallocated at(x/c)=0,and thetrailing edge at(x/c)=1.0.The behavior ofthepressure
+coefficient variations over theupper and lower surfaces canbeseen bythefollowing functions :
+Calculate theliftforce coefficient
+V∞
+a
+1 cLE
+TEx𝐶𝑝,𝑢=1−300𝑥
+𝑐2
+𝑓𝑜𝑟0≤𝑥
+𝑐≤0.1
+𝐶𝑝,𝑢=−2.2277+2.2777𝑥
+𝑐𝑓𝑜𝑟0.1≤𝑥
+𝑐≤1.0𝐶𝑝,𝑙=1−0.95𝑥
+𝑐𝑓𝑜𝑟0≤𝑥
+𝑐≤1.0EXAMPLE: LIFT 
+COEFFICIENT FROM Cp
+Upper surface: Lower surface: 𝐶𝑝,𝑢=1−300𝑥
+𝑐2
+𝑓𝑜𝑟0≤𝑥
+𝑐≤0.1
+𝐶𝑝,𝑢=−2.2277+2.2777𝑥
+𝑐𝑓𝑜𝑟0.1≤𝑥
+𝑐≤1.0
+𝐶𝑝,𝑙=1−0.95𝑥
+𝑐𝑓𝑜𝑟0≤𝑥
+𝑐≤1.0EXAMPLE: LIFT 
+COEFFICIENT FROM Cp
+-2,5
+-2
+-1,5
+-1
+-0,5
+0
+0,5
+1
+1,5
+0 0,1 0,2 0,3 0,4 0,5 0,6 0,7 0,8 0,9 1Cp
+x/ccnEXAMPLE: LIFT 
+COEFFICIENT FROM Cp
+𝑐𝑛≈𝑐𝑙=1
+𝑐න
+0𝑐
+𝐶𝑝,𝑙−𝐶𝑝,𝑢𝑑𝑥=න
+01.0
+𝐶𝑝,𝑙−𝐶𝑝,𝑢𝑑𝑥
+𝑐
+𝑐𝑛≈𝑐𝑙=න
+01.0
+1−0.95𝑥
+𝑐𝑑𝑥
+𝑐−න
+00.1
+1−300𝑥
+𝑐2
+𝑑𝑥
+𝑐−න
+0.11.0
+−2.2277+2.2777𝑥
+𝑐𝑑𝑥
+𝑐
+𝑐𝑛≈𝑐𝑙=ฬ𝑥
+𝑐01.0
+− ቤ 0.475𝑥
+𝑐2
+01.0
+−ฬ𝑥
+𝑐00.1
++ ቤ 100𝑥
+𝑐3
+00.1
++ ฬ2.2277𝑥
+𝑐0.11.0
+− ቤ 1.1388𝑥
+𝑐2
+0.11.0
+𝑐𝑛≈𝑐𝑙=1−0.475−0.1+0.1+2.2277−0.2227−1.1388+0.011388=1.40
+𝑐𝑛≈𝑐𝑙=1.40Anairfoil with chord length c=0.18[m]
+istested inawind tunnel .The table
+gives the pressure difference at
+different points ontheupper and lower
+surfaces oftheairfoil .
+Determine the model’s liftcoefficient
+and liftforce per span unit forthe test
+conditions .
+V∞=45[m/s]
+r∞=0.95[kg/m3]
+a=3.4[deg]
+V∞
+a
+1 cLE
+TExx[mm](p-p∞)u [Pa](p-p∞)l [Pa]
+0 961.88 961.88
+9 -2019.94 586.74
+18 -2116.13 269.33
+27 -2019.94 48.09
+36 -1875.66 -96.19
+45 -1702.52 -182.76
+54 -1519.76 -201.99
+63 -1317.77 -192.38
+72 -1115.78 -182.76
+81 -961.88 -161.59
+90 -817.59 -139.47
+99 -673.31 -115.43
+108 -577.13 -96.19
+117 -480.94 -67.33
+126 -384.75 -48.09
+135 -288.56 -20.19
+144 -192.38 19.24
+153 -96.19 43.28
+162 0 96.19
+171 96.19 134.66
+180 211.61 211.61EXERCISE 1: LIFT 
+COEFFICIENT FROM Cp
+cxUpper surface
+Lower surface54 [mm]-1519.76 [ Pa]
+-201.99 [ Pa]
