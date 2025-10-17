@@ -2,7 +2,7 @@
 
 Private repository made by: Tomy
 
-The followings subjects are included in this repository, **pdf** and **copyrighted** files are excluded (as books, non open software)
+The followings subjects are included in this repository, **pdf** and **copyrighted** files are excluded (as books, non open software, etc)
 
 ## Aerodynamics
 
