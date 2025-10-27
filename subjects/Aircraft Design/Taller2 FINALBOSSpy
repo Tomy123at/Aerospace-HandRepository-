@@ -1,0 +1,270 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug 28 08:50:50 2025
+
+@author: jlope
+"""
+
+import math
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Esta vaina es pa ver una tabla, no le mueva si no sabe (yo tampoco se)
+def show_table(title: str, df: pd.DataFrame) -> None:
+    print(f"\n{title}\n" + "-" * len(title))
+    try:
+        print(df.to_string(index=False))
+    except Exception:
+        print(df)
+
+# ======================
+# Datos y supuestos, me corrigen si algo ---------------------------------------------
+# ======================
+CONFIG = {
+    # Curvas T/W vs W/S (Taller 2 - Sea level std)
+    "CLmax_TO_list": [1.6, 2.0, 2.4],   # [-]
+
+    # Aterrizaje (para columnas verticales de (W/S)_L a 5000 ft hot day)
+    "CLmax_L_list": [1.8, 2.2, 2.6, 3.0],  # [-]
+
+    # Velocidad de pérdida en aterrizaje VsL
+    "Vs_kts": 99.3,               # [kt]
+    "kts_to_ftps": 1.68781,       # [ft/s por kn]
+
+    # Atmósfera a nivel del mar y 5000 ft hot day
+    "rho_SL": 0.0023769,          # [slug/ft^3]
+    "DELTA_5000": 0.8320,         # razón de presión δ
+    "THETA_5000": 1.0694,         # razón de temperatura θ
+
+    # Modelo T/W (al nivel del mar, std) usado para las curvas base (Taller 2)
+    "K": 0.009640,                # [-]
+    "factor_sea_level": 1.17,     # [-]
+
+    # Barrido de W/S para la gráfica
+    "WS_max": 130.0,              # [psf]
+    "WS_points": 400,             # [-]
+
+    # Ajuste de (W/S) de aterrizaje (p.ej. W_L = 0.95 W_TO)
+    "landing_weight_fraction": 0.95,  # [-]
+
+    # ----------------------
+    # NUESTROSDATOSEJERCICIO (Cruise @ 48,000 ft)
+    # ----------------------
+    # Para Swet y f (Business Jets): log10(Swet) = c + d*log10(WTO); log10(f) = a_log + b_log*log10(Swet)
+    "WTO_lb": 35300.0,            # [lb]
+    "S_ref_ft2": 511.0,           # [ft^2]
+    "c_swet": 0.2263,
+    "d_swet": 0.6977,
+    "a_log_f": -2.5229,
+    "b_log_f": 1.0,
+    # Aerodinámica inducida
+    "AR": 10.0,
+    "e": 0.85,
+    # Condición de vuelo crucero
+    "M_cruise": 0.87,
+    "rho_cruise": 0.000398389,    # [slug/ft^3] (48,000 ft)
+    "a_sound": 968.076,           # [ft/s]
+    # Incremento de CD0 en counts
+    "delta_CD0_counts": 18,       # 18 counts = 0.0018
+    # Factor de ajuste motor (opcional). Pon 1.0 si no deseas esta variante
+    "engine_adjust": 0.23,
+    # Peso y performance de DirectClimb
+    "W_lb": 35300.0,              # [lb] peso en condición de crucero/ascenso
+    "RC_ft_s": 500.0,             # [ft/s] razón de ascenso deseada
+}
+
+# Imprimir todos los datos y supuestos
+print("=== DATOS Y SUPUESTOS (editables) ===")
+print(f"CLmax_TO_list [-]:          {CONFIG['CLmax_TO_list']}")
+print(f"CLmax_L_list [-]:           {CONFIG['CLmax_L_list']}")
+print(f"Vs [kt]:                    {CONFIG['Vs_kts']}")
+print(f"kts->ft/s [-]:               {CONFIG['kts_to_ftps']}")
+print(f"rho_SL [slug/ft^3]:         {CONFIG['rho_SL']}")
+print(f"DELTA_5000 [-]:              {CONFIG['DELTA_5000']}")
+print(f"THETA_5000 [-]:              {CONFIG['THETA_5000']}")
+print(f"K (T/O) [-]:                 {CONFIG['K']}")
+print(f"factor_sea_level [-]:       {CONFIG['factor_sea_level']}")
+print(f"WS_max [psf]:               {CONFIG['WS_max']}")
+print(f"WS_points [-]:               {CONFIG['WS_points']}")
+print(f"landing_weight_fraction [-]: {CONFIG['landing_weight_fraction']}")
+# NUESTROSDATOSEJERCICIO + DirectClimb
+print(f"WTO [lb]:                   {CONFIG['WTO_lb']}")
+print(f"W [lb]:                     {CONFIG['W_lb']}")
+print(f"S_ref [ft^2]:               {CONFIG['S_ref_ft2']}")
+print(f"AR [-]:                      {CONFIG['AR']}")
+print(f"e [-]:                       {CONFIG['e']}")
+print(f"M_cruise [-]:                {CONFIG['M_cruise']}")
+print(f"rho_cruise [slug/ft^3]:     {CONFIG['rho_cruise']}")
+print(f"a_sound [ft/s]:             {CONFIG['a_sound']}")
+print(f"delta_CD0_counts [-]:       {CONFIG['delta_CD0_counts']}")
+print(f"engine_adjust [-]:          {CONFIG['engine_adjust']}")
+print(f"RC [ft/s]:                  {CONFIG['RC_ft_s']}\n")
+
+# -----------------------------
+# Derivados desde CONFIG
+# -----------------------------
+CLmax_TO_list = CONFIG["CLmax_TO_list"]
+CLmax_L_list = CONFIG["CLmax_L_list"]
+Vs = CONFIG["Vs_kts"] * CONFIG["kts_to_ftps"]  # [ft/s]
+rho_SL = CONFIG["rho_SL"]
+SIGMA_5000_HOT = CONFIG["DELTA_5000"] / CONFIG["THETA_5000"]
+rho_5000_hot = SIGMA_5000_HOT * rho_SL
+K_to = CONFIG["K"]               # K del modelo de T/W de despegue (NO confundir con K_ind)
+factor_sea_level = CONFIG["factor_sea_level"]
+WS_max = CONFIG["WS_max"]
+WS = np.linspace(0.0, WS_max, CONFIG["WS_points"])  # [psf]
+landing_weight_fraction = CONFIG["landing_weight_fraction"]
+
+# ---- Derivados NUESTROSDATOSEJERCICIO (Cruise + DirectClimb)
+WTO = CONFIG["WTO_lb"]
+W = CONFIG["W_lb"]
+S_ref = CONFIG["S_ref_ft2"]
+AR = CONFIG["AR"]
+e = CONFIG["e"]
+M = CONFIG["M_cruise"]
+rho = CONFIG["rho_cruise"]
+a_sound = CONFIG["a_sound"]
+RC = CONFIG["RC_ft_s"]
+delta_CD0 = CONFIG["delta_CD0_counts"] * 1e-4
+
+# Swet y f
+log10_Swet = CONFIG["c_swet"] + CONFIG["d_swet"] * math.log10(WTO)
+Swet = 10 ** log10_Swet
+log10_f = CONFIG["a_log_f"] + CONFIG["b_log_f"] * math.log10(Swet)
+f = 10 ** log10_f
+
+# CD0 y aerodinámica (crucero)
+CD0_base = f / S_ref
+CD0_new = CD0_base + delta_CD0
+V = M * a_sound
+q = 0.5 * rho * V**2
+K_ind = 1.0 / (math.pi * AR * e)   # Factor inducido (NO confundir con K_to)
+A_cr = CD0_new * q
+B_cr = K_ind / q
+
+# Curva de crucero (parábola A/x + Bx)
+def TW_cruise(ws):
+    ws = np.asarray(ws, dtype=float)
+    return (A_cr / ws) + (B_cr * ws)
+
+TW_cr = TW_cruise(WS)
+engine_adjust = CONFIG["engine_adjust"]
+TW_cr_adj = TW_cr / engine_adjust if engine_adjust and engine_adjust != 0 else None
+
+# DirectClimb (línea horizontal): T/W = (RC/V) + 1/(L/D) con L/D = CL/CD en la condición dada
+CL_dc = W / (q * S_ref)
+CD_dc = CD0_new + K_ind * CL_dc**2
+L_over_D_dc = CL_dc / CD_dc
+TW_direct = (RC / V) + 1.0 / L_over_D_dc
+
+print("=== Intermedios (Cruise 48kft + DirectClimb) ===")
+print(f"Swet [ft^2]:               {Swet:.4f}")
+print(f"f [-]:                     {f:.6f}")
+print(f"CD0_base [-]:              {CD0_base:.6f}")
+print(f"CD0_new [-]:               {CD0_new:.6f}")
+print(f"V [ft/s]:                  {V:.3f}")
+print(f"q [psf]:                   {q:.5f}")
+print(f"K_ind [-]:                 {K_ind:.6f}")
+print(f"CL (direct climb):         {CL_dc:.5f}")
+print(f"CD (direct climb):         {CD_dc:.5f}")
+print(f"L/D (direct climb):        {L_over_D_dc:.3f}")
+print(f"T/W (direct climb):        {TW_direct:.5f}\n")
+
+# -------------------------------------------------
+# 2. Función para calcular T/W al nivel del mar (Taller 2)
+# -------------------------------------------------
+def TW_sea_level(ws, cl):
+    """Calcula T/W al nivel del mar (ws en [lb/ft^2], cl adimensional) usando K_to."""
+    return (K_to * ws / cl) * factor_sea_level
+
+# -------------------------------------------------
+# 3. Cálculo de W/S a partir de VsL (5000 ft hot day)
+#     Fórmula: (W/S)_L = 0.5 * rho * Vs^2 * CLmax  -> resultado en [lb/ft^2]
+#     Con rho = σ * rho0, usando σ=δ/θ a 5000 ft y 95°F (según lámina).
+# -------------------------------------------------
+Vs2 = Vs ** 2                # [ft^2/s^2]
+const_WS = 0.5 * rho_5000_hot * Vs2
+WS_from_Vs = const_WS * np.array(CLmax_L_list)                # [lb/ft^2]
+
+# Ajuste configurable del usuario (p. ej., W_L = frac * W_TO)
+WS_adjusted = WS_from_Vs / landing_weight_fraction           # [lb/ft^2]
+
+# Crear tabla de resultados
+df = pd.DataFrame({
+    "CLmax_L [-]": CLmax_L_list,
+    "(W/S)_L a 5000 ft hot day [psf]": np.round(WS_from_Vs, 1),
+    f"(W/S) ajustado /( {landing_weight_fraction}) [psf]": np.round(WS_adjusted, 1),
+})
+
+# Mostrar la tabla
+show_table("W/S (5000 ft hot day) y ajuste", df)
+
+# -------------------------------------------------
+# 4. Gráfica final
+# -------------------------------------------------
+fig, ax = plt.subplots(figsize=(7.5, 5.2), dpi=140)
+
+# ---- Curvas de T/W vs W/S para distintos CLmax_TO (Taller 2, sea level)
+for cl in CLmax_TO_list:
+    TW = TW_sea_level(WS, cl)
+    ax.plot(WS, TW, label=fr"$C_{{L_{{\max TO}}}}={cl}$")
+    
+    # Rayitas inclinadas sobre el 20% final de cada curva
+    x_start = WS_max * 0.80
+    x_ticks = np.arange(x_start, WS_max + 1e-9, 6.0)
+    tick_len_x = 3.5
+    tick_len_y = 0.06
+    vertical_offset = 0.03
+    for x0 in x_ticks:
+        y0 = TW_sea_level(x0, cl) - vertical_offset
+        ax.plot([x0 - tick_len_x / 2, x0 + tick_len_x / 2],
+                [y0 - tick_len_y / 2, y0 + tick_len_y / 2])
+
+# ---- Añadir la curva de NUESTROSDATOSEJERCICIO (Cruise 48kft)
+ax.plot(WS, TW_cr, color="C3", linewidth=2, label=r"Cruise 48kft: $T/W=A/(W/S)+B\,(W/S)$")
+if TW_cr_adj is not None:
+    ax.plot(WS, TW_cr_adj, "--", color="C3", linewidth=1.8, label=rf"Cruise adjusted ÷ {engine_adjust}")
+
+# ---- Añadir DirectClimb: línea horizontal T/W = const 
+ax.axhline(
+    TW_direct,
+    color="C4",
+    linestyle="-",
+    linewidth=2,
+    alpha=0.95,
+    zorder=5,
+    label=fr"Direct Climb: $T/W={TW_direct:.3f}$ (RC={RC:.0f} ft/s)"
+)
+
+# ---- Líneas verticales para W/S calculados (5000 ft hot day)
+for ws_val, CL in zip(WS_adjusted, CLmax_L_list):
+    # Línea vertical principal
+    ax.plot([ws_val, ws_val],
+            [0, ax.get_ylim()[1] if ax.get_ylim()[1] > 0 else 0.85],
+            linewidth=1.6)
+    
+    # Etiquetas encima de las rayitas
+    ax.text(ws_val, 0.78, f"{CL}", rotation=0, ha="center", va="bottom")
+    
+    # Rayitas pequeñas a la derecha de cada línea vertical
+    y_start = 0.70
+    y_end = 0.84
+    y_ticks = np.arange(y_start, y_end + 1e-9, 0.04)
+    tick_dx = 4.0
+    tick_dy = 0.06
+    for y0 in y_ticks:
+        ax.plot([ws_val + 0.0, ws_val + tick_dx],
+                [y0 - tick_dy / 2, y0 + tick_dy / 2])
+
+# -------------------------------------------------
+# 5. Estética de la gráfica
+# -------------------------------------------------
+ax.set_xlabel(r"TAKE-OFF WING LOADING $(W/S)_{\mathrm{TO}}\ \mathrm{[psf]}$")
+ax.set_ylabel(r"TAKE-OFF THRUST-TO-WEIGHT RATIO $(T/W)_{\mathrm{TO}}$")
+ax.set_xlim(0, WS_max)
+ax.set_ylim(0, 0.95)
+ax.grid(True, which="both", linewidth=0.6, alpha=0.5)
+ax.legend(loc="upper left", title="Sea level (T/O) + Cruise (48kft) + Direct Climb")
+
+plt.show()
