@@ -1,0 +1,229 @@
+================================================================================
+DIAGRAMA VISUAL DE ERRORES Y SEVERIDAD
+================================================================================
+
+1. MATRIZ DE ERRORES POR SCRIPT
+═════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────┬──────────────┬──────────────┬──────────────┐
+│ Script                  │ Total Errors │ Críticos     │ Severity     │
+├─────────────────────────┼──────────────┼──────────────┼──────────────┤
+│ weight_and_balance.py   │      2       │      0       │   LOW ✓      │
+│ w_and_b_sidebyside.py   │      2       │      0       │   LOW ✓      │
+│ mom_inertia_tandem.py   │      5       │      3       │ CRITICAL ❌  │
+│ mom_inertia_sbs.py      │      5       │      3       │ CRITICAL ❌  │
+└─────────────────────────┴──────────────┴──────────────┴──────────────┘
+
+
+2. DISTRIBUCIÓN DE ERRORES POR TIPO
+════════════════════════════════════════════════════════════════════════════
+
+ERRORES DE FÓRMULA:
+┌────────────────────────────────────────────────────────────────────────┐
+│                                                                        │
+│  Script:     moments_of_inertia_*.py                                  │
+│  Cantidad:   3 errores                                                 │
+│  Severidad:  CRÍTICA                                                  │
+│                                                                        │
+│  ❌ Ixx (Wing):    Fórmula para rectángulo (incorrecto para ala)      │
+│  ❌❌ Iyy (Wing):   Fórmula dimensional INCORRECTA (error -99%)       │
+│  ❌ Izz (Wing):    Uso impropio de teorema de ejes paralelos          │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
+
+ERRORES DE FACTORES:
+┌────────────────────────────────────────────────────────────────────────┐
+│                                                                        │
+│  Script:     moments_of_inertia_tandem.py                             │
+│  Cantidad:   1 error                                                  │
+│  Severidad:  MODERADA                                                 │
+│                                                                        │
+│  ❌ concentration_factor = 0.85 (no justificado, eje incorrecto)      │
+│                                                                        │
+│  Script:     moments_of_inertia_sidebyside.py                         │
+│  Cantidad:   1 error                                                  │
+│  Severidad:  MODERADA                                                 │
+│                                                                        │
+│  ❌ lateral_distribution_factor = 1.15 (aplicado a eje incorrecto)    │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
+
+ERRORES TÉCNICOS:
+┌────────────────────────────────────────────────────────────────────────┐
+│                                                                        │
+│  Script:     moments_of_inertia_*.py                                  │
+│  Cantidad:   1 error                                                  │
+│  Severidad:  CRÍTICA (bloquea ejecución)                              │
+│                                                                        │
+│  ❌ Caracteres Unicode en docstrings (encoding)                       │
+│     → Script NO EJECUTABLE en Windows PowerShell                      │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
+
+ERRORES DE PRESENTACIÓN:
+┌────────────────────────────────────────────────────────────────────────┐
+│                                                                        │
+│  Script:     weight_and_balance.py                                    │
+│  Cantidad:   2 errores menores                                        │
+│  Severidad:  BAJA                                                     │
+│                                                                        │
+│  ⚠ Nomenclatura confusa (Crew_f vs Crew_a)                           │
+│  ⚠ Falta tabla comparativa en salida                                  │
+│                                                                        │
+│  Script:     weight_and_balance_sidebyside.py                         │
+│  Cantidad:   2 errores menores                                        │
+│  Severidad:  BAJA                                                     │
+│                                                                        │
+│  ⚠ Escenarios 3 y 4 idénticos (redundantes)                          │
+│  ⚠ Falta nota aclaratoria de por qué son iguales                      │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
+
+
+3. IMPACTO EN MAGNITUD
+═════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ ERROR: Iyy (Wing) con fórmula incorrecta                               │
+├─────────────────────────────────────────────────────────────────────────┤
+│                                                                         │
+│  VALOR CALCULADO (Incorrecto):    3.01 kg⋅m²                          │
+│  VALOR CORRECTO:                  202.02 kg⋅m²                        │
+│                                                                         │
+│  ERROR RELATIVO: 6610.6% !!!                                          │
+│                                                                         │
+│  GRÁFICO:                                                              │
+│  ┌──────────────────────────────────────────────────────────────────┐  │
+│  │ Valor calculado:  [3.01] ◀──┬────────────────────────────────────┤  │
+│  │ Valor correcto:   [████████████████████████ 202.02]              │  │
+│  │                              │                                    │  │
+│  │                              └─── Error: 67× menor               │  │
+│  └──────────────────────────────────────────────────────────────────┘  │
+│                                                                         │
+│  CONSECUENCIA:                                                         │
+│  • Inercia de cabeceo 67 veces más pequeña que debería                │
+│  • Respuesta dinámicamente inestable en análisis computacional        │
+│  • INUTILIZA completamente cualquier análisis dinámico               │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+4. COMPARACIÓN: SCRIPTS VÁLIDOS vs INVÁLIDOS
+═════════════════════════════════════════════════════════════════════════
+
+VÁLIDOS (Weight & Balance):
+┌────────────────────────────────────────────────────────────────────────┐
+│  ✓ Fórmulas estándar de momentos                                       │
+│  ✓ Resultados consistentes entre tandem y side-by-side                │
+│  ✓ CG sigue lógica física (adelante del fuselaje)                     │
+│  ✓ Margen estático positivo (aeronave estable)                        │
+│  ✓ Rango de envolvente razonable (14.57% MAC)                         │
+│  ✓ Escenarios operacionales bien definidos                            │
+│                                                                        │
+│  CONFIANZA: 95% ✓ USAR PARA ANÁLISIS                                  │
+└────────────────────────────────────────────────────────────────────────┘
+
+INVÁLIDOS (Moments of Inertia):
+┌────────────────────────────────────────────────────────────────────────┐
+│  ❌ Fórmulas no estándar                                               │
+│  ❌ Iyy completamente incorrecta (error 6610%)                         │
+│  ❌ Factores ad-hoc sin justificación                                  │
+│  ❌ Encoding issues (no ejecutable)                                    │
+│  ❌ Resultados divergen de referencias                                 │
+│  ❌ No validados contra datos reales                                   │
+│                                                                        │
+│  CONFIANZA: 15% ❌ NO USAR PARA ANÁLISIS                              │
+└────────────────────────────────────────────────────────────────────────┘
+
+
+5. ÁRBOL DE DEPENDENCIAS DE ERRORES
+═════════════════════════════════════════════════════════════════════════
+
+                          moments_of_inertia_tandem.py
+                                    │
+                    ┌───────────────┼───────────────┐
+                    │               │               │
+            Unicode Error    Formula Errors    Factor Errors
+            (CRÍTICA)       (CRÍTICA)         (MODERADA)
+                    │               │               │
+                    └───────────────┼───────────────┘
+                                    │
+                          RESULTADO: NO EJECUTABLE
+                                 +
+                          RESULTADOS INCORRECTOS
+
+
+6. TABLA DE SEVERIDAD Y ACCIÓN
+════════════════════════════════════════════════════════════════════════
+
+┌─────────────┬──────────┬────────────────────────┬──────────────────────┐
+│ Severidad   │ Cantidad │ Acción                 │ Timeline             │
+├─────────────┼──────────┼────────────────────────┼──────────────────────┤
+│ CRÍTICA     │    4     │ DETENER USO INMEDIATO  │ Hoy (15 min)         │
+│             │          │ Hacer tareas 1-2       │                      │
+├─────────────┼──────────┼────────────────────────┼──────────────────────┤
+│ MODERADA    │    2     │ Corregir antes de usar │ Esta semana (1 hora) │
+│             │          │ Hacer tarea 3          │                      │
+├─────────────┼──────────┼────────────────────────┼──────────────────────┤
+│ BAJA        │    4     │ Mejorar documentación  │ Próxima semana       │
+│             │          │ Hacer tarea 4          │ (2 horas)            │
+└─────────────┴──────────┴────────────────────────┴──────────────────────┘
+
+
+7. CHECKLIST DE CORRECCIÓN
+═══════════════════════════════════════════════════════════════════════
+
+PASO 1: ENCODING (15 min)
+├─ [ ] Agregar # -*- coding: utf-8 -*- a moments_of_inertia_tandem.py
+├─ [ ] Agregar # -*- coding: utf-8 -*- a moments_of_inertia_sidebyside.py
+└─ [ ] Reemplazar caracteres griegos por ASCII
+
+PASO 2: FÓRMULAS (1 hora)
+├─ [ ] Corregir Ixx (Wing) - agregar K_taper
+├─ [ ] Corregir Iyy (Wing) - cambiar a b² en lugar de c_MAC²
+├─ [ ] Corregir Izz (Wing) - formula rectangular
+└─ [ ] Actualizar ambos scripts (tandem y side-by-side)
+
+PASO 3: FACTORES (30 min)
+├─ [ ] Eliminar concentration_factor del script tandem
+├─ [ ] Eliminar lateral_distribution_factor del script SBS
+├─ [ ] Aplicar factor lateral a Izz en SBS si corresponde
+└─ [ ] Agregar comentarios explicativos
+
+PASO 4: VALIDACIÓN (2 horas)
+├─ [ ] Comparar contra Roskam Part 3
+├─ [ ] Comparar contra Cessna 172 data
+├─ [ ] Verificar dimensionalidad de fórmulas
+└─ [ ] Crear tabla de resultados finales
+
+PASO 5: DOCUMENTACIÓN (1 hora)
+├─ [ ] Agregar referencias bibliográficas
+├─ [ ] Documentar fuentes de cada fórmula
+├─ [ ] Agregar margen de error estimado
+└─ [ ] Actualizar docstrings
+
+
+8. REFERENCIAS PARA CORRECCIÓN
+═════════════════════════════════════════════════════════════════════════
+
+Fuente de Fórmulas Correctas:
+
+1. Raymer, Daniel P. (1992). "Aircraft Design: A Conceptual Approach"
+   → Capítulo 2: Airplane Synthesis
+   → Sección 2.3: Mass Properties
+
+2. Roskam, Jan (1995). "Airplane Design - Part III: Aerodynamics"
+   → Tabla 3.1-3.5: Moment of Inertia
+   → Datos experimentales de referencia
+
+3. Etkin, Bernard (1996). "Dynamics of Flight"
+   → Capítulo 1: Kinematics and Dynamics
+   → Ecuaciones de movimiento con MOI
+
+4. NASA Technical Reports
+   → Reference 1235: Mass and Inertia Properties
+
+
+════════════════════════════════════════════════════════════════════════════════
+CONCLUSIÓN: Ver RESUMEN_ANALISIS.txt para recomendaciones ejecutivas
+════════════════════════════════════════════════════════════════════════════════

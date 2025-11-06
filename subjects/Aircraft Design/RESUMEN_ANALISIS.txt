@@ -1,0 +1,233 @@
+================================================================================
+RESUMEN EJECUTIVO: ANÁLISIS DE ERRORES EN SCRIPTS DE CÁLCULO
+================================================================================
+
+FECHA: Noviembre 6, 2025
+PROYECTO: Tayrona I - Aircraft Design
+SCRIPTS ANALIZADOS: 3 (2 de Weight & Balance + 1 de Moments of Inertia)
+
+================================================================================
+CONCLUSIÓN GENERAL
+================================================================================
+
+✓ SCRIPTS DE WEIGHT & BALANCE: VÁLIDOS (confidence: 95%)
+  - Fórmulas correctas
+  - Resultados lógicos y consistentes
+  - Pueden usarse para análisis de peso y balance
+
+❌ SCRIPTS DE MOMENTS OF INERTIA: REQUIEREN CORRECCIÓN (confidence: 15%)
+  - 5 errores significativos encontrados
+  - Fórmulas no estándar
+  - Resultados NO confiables para diseño
+
+
+================================================================================
+HALLAZGOS PRINCIPALES
+================================================================================
+
+1. ERRORES CRÍTICOS (Impiden uso):
+
+   ERROR 1: Unicode en scripts de MOI
+   ├─ Problema: Caracteres griegos en docstrings (λ, ≈, ×)
+   ├─ Impacto: Scripts NO EJECUTABLES en Windows PowerShell
+   └─ Severidad: CRÍTICA - Bloquea ejecución
+
+   ERROR 2: Fórmula Ixx incorrecta
+   ├─ Formula usada: Ixx = (1/12) × m × (b² + 3×t²)
+   ├─ Formula correcta: Ixx = (1/12) × m × b² × K_taper
+   ├─ Error: 21.7% para el ala (202.15 vs 166.13 kg⋅m²)
+   └─ Severidad: CRÍTICA - Afecta dinámicas de roll
+
+   ERROR 3: Fórmula Iyy completamente incorrecta
+   ├─ Formula usada: Iyy = (1/12) × m × c_MAC²
+   ├─ Formula correcta: Iyy = (1/12) × m × b²
+   ├─ Error: 6610.6% para el ala (3.01 vs 202.02 kg⋅m²)
+   ├─ Impacto: DESASTROSO - Inercia de cabeceo 67× más pequeña
+   └─ Severidad: CATASTRÓFICA - inutiliza análisis dinámico
+
+
+2. ERRORES MODERADOS (Causan inexactitud):
+
+   ERROR 4: Factor de concentración (Tandem)
+   ├─ Problema: concentration_factor = 0.85 no justificado
+   ├─ Causa: Confusión entre ejes de rotación
+   ├─ Error: -15% en Ixx del fuselaje
+   └─ Severidad: MODERADA
+
+   ERROR 5: Factor lateral aplicado al eje incorrecto (Side-by-Side)
+   ├─ Problema: Factor 1.15 en Ixx en lugar de Izz
+   ├─ Causa: No entender cómo afecta la distribución lateral
+   └─ Severidad: MODERADA
+
+
+3. PROBLEMAS MENORES (Presentación):
+
+   PROBLEMA 1: Escenarios 3 y 4 confusos en tandem
+   ├─ Razón: Nomenclatura poco clara (Crew_f vs Crew_a)
+   └─ Solución: Mejor documentación
+
+   PROBLEMA 2: Escenarios 3 y 4 idénticos en side-by-side
+   ├─ Razón: Ambos pilotos comparten mismo X
+   └─ Solución: Agregar nota aclaratoria
+
+
+================================================================================
+IMPACTO EN RESULTADOS
+================================================================================
+
+WEIGHT & BALANCE:
+┌─────────────────────────────────────────────────────────────────────┐
+│ Tandem vs Side-by-Side                                              │
+├─────────────────────────────────────────────────────────────────────┤
+│ MTOW:           3,134.50 lb (igual en ambos) ✓                     │
+│ X_cg (Tandem):  2,740.48 mm                                        │
+│ X_cg (SBS):     2,730.66 mm (9.82 mm más adelante)                 │
+│ Diferencia:     0.36% (MÍNIMA - cambio de cockpit es pequeño)      │
+│ Conclusión:     ✓ RESULTADOS VÁLIDOS                              │
+└─────────────────────────────────────────────────────────────────────┘
+
+MOMENTS OF INERTIA:
+┌─────────────────────────────────────────────────────────────────────┐
+│ Wing - Valor Calculado vs Correcto                                  │
+├─────────────────────────────────────────────────────────────────────┤
+│ Ixx:    202.15 kg⋅m² → 166.13 kg⋅m² (error: 21.7% ALTO)           │
+│ Iyy:      3.01 kg⋅m² → 202.02 kg⋅m² (error: -99% CATASTRÓFICO)    │
+│ Izz:    205.16 kg⋅m² → 205.03 kg⋅m² (error: 0.1% bien hecho)      │
+├─────────────────────────────────────────────────────────────────────┤
+│ Conclusión:     ❌ RESULTADOS NO CONFIABLES                        │
+│ Razón:          Iyy completamente incorrecto invalida análisis      │
+└─────────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+COMPARACIÓN: FÓRMULAS USADAS vs CORRECTAS
+================================================================================
+
+WING (Ala):
+───────────
+                    INCORRECTO              CORRECTO                FUENTE
+Ixx     (1/12)×m×(b²+3t²)         (1/12)×m×b²×K_taper        Raymer §2.3
+Iyy     (1/12)×m×c_MAC²            (1/12)×m×b²                Roskam Part 3
+Izz     Ixx + Iyy                  (1/12)×m×(b²+c_MAC²)       Mechanics
+
+FUSELAGE (Fuselaje):
+─────────────────
+Ixx     0.85×(1/2)×m×r²           (1/2)×m×r²                 Mechanics
+Iyy     (1/12)×m×L²                (1/12)×m×L²                ✓ Correcto
+Izz     (variado)                 (1/2)m×r² + (1/12)m×L²    Mechanics
+
+
+================================================================================
+RECOMENDACIONES PRIORITARIAS
+================================================================================
+
+PRIORIDAD 1 (URGENTE - Hacer primero):
+────────────────────────────────────
+1. Agregar encoding UTF-8 a scripts de MOI
+   → # -*- coding: utf-8 -*-
+   → Permite ejecución en Windows
+
+2. Reemplazar caracteres especiales
+   → λ → lambda
+   → ≈ → ~
+   → × → *
+   → Mejora legibilidad
+
+3. Corregir fórmula de Iyy (CRÍTICA)
+   → Cambiar: Iyy = (1/12) × m × c_MAC²
+   → A: Iyy = (1/12) × m × b²
+   → Error actual: +6610%, inutiliza análisis
+
+
+PRIORIDAD 2 (IMPORTANTE - Resolver antes de usar):
+──────────────────────────────────────────────
+4. Corregir fórmula de Ixx (wing)
+   → Agregar factor K_taper para ala trapezoidal
+   → Error actual: +21.7%
+
+5. Revisar y eliminar factores injustificados
+   → concentration_factor = 0.85 (Tandem)
+   → lateral_distribution_factor = 1.15 (SBS)
+   → Ambos son ad-hoc, no basados en ecuaciones
+
+
+PRIORIDAD 3 (BUENA PRÁCTICA - Hacer posteriormente):
+───────────────────────────────────────────────────
+6. Agregar referencias bibliográficas
+   → Citar Raymer, Roskam en cada fórmula
+   → Incluir número de ecuación
+
+7. Crear script de validación
+   → Comparar contra valores tabulados
+   → Verificar sumas de componentes
+
+8. Documentar asunciones
+   → Clarificar qué es aproximación vs exacto
+   → Estimar márgenes de error
+
+
+================================================================================
+ACCIONES CONCRETAS
+================================================================================
+
+TAREA 1: Corregir encoding (15 min)
+├─ Agregar a inicio de moments_of_inertia_tandem.py:
+│  # -*- coding: utf-8 -*-
+├─ Agregar a inicio de moments_of_inertia_sidebyside.py:
+│  # -*- coding: utf-8 -*-
+└─ Reemplazar caracteres en docstrings
+
+TAREA 2: Corregir fórmulas críticas (1 hora)
+├─ En moments_of_inertia_tandem.py, línea ~XX:
+│  CAMBIAR: wing_Iyy = (wing_weight_kg / g) * ((1/12) * (c_mac**2))
+│  POR:     wing_Iyy = (wing_weight_kg / g) * ((1/12) * (b**2))
+├─ En moments_of_inertia_sidebyside.py, línea ~XX:
+│  (mismo cambio)
+└─ Actualizar Izz con fórmula correcta
+
+TAREA 3: Eliminar factores injustificados (30 min)
+├─ En moments_of_inertia_tandem.py:
+│  CAMBIAR: fuselage_Ixx = concentration_factor * (...)
+│  POR:     fuselage_Ixx = (fuselage_weight_kg / g) * ((1/2) * r_fuselage**2)
+├─ En moments_of_inertia_sidebyside.py:
+│  CAMBIAR: fuselage_Ixx = lateral_distribution_factor * (...)
+│  POR:     fuselage_Ixx = (fuselage_weight_kg / g) * ((1/2) * r_fuselage**2)
+│  Y aplicar factor a Izz en su lugar
+└─ Agregar comentario explicativo
+
+TAREA 4: Validar y documentar (2 horas)
+├─ Crear tabla comparativa de resultados
+├─ Comparar contra aeronaves similares (Cessna 172)
+└─ Documentar fuentes de cada fórmula
+
+
+================================================================================
+TIMELINE SUGERIDO
+================================================================================
+
+Semana 1:
+  - Lunes: Tareas 1-2 (correcciones básicas)
+  - Martes: Tarea 3 (factores)
+  - Miércoles: Tarea 4 (validación)
+
+Revisión:
+  - Jueves: Peer review
+  - Viernes: Documentación final
+
+
+================================================================================
+CONCLUSIÓN
+================================================================================
+
+✓ Weight & Balance scripts: APROBADOS
+  → Pueden ser usados para análisis actual
+  → Resultados consistentes y validables
+
+❌ Moments of Inertia scripts: NO APROBADOS
+  → Requieren corrección ANTES de usar
+  → Especialmente Iyy (error de 99%)
+  → Impacto crítico si se usan en control autómata o flutter analysis
+
+RECOMENDACIÓN: Detener uso de MOI scripts hasta correcciones
+
+================================================================================

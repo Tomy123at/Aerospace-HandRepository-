@@ -1,0 +1,285 @@
+================================================================================
+ANÁLISIS CRÍTICO DE LOS 3 SCRIPTS DE CÁLCULO
+================================================================================
+Proyecto: Tayrona I - Aircraft Design
+Fecha: Noviembre 6, 2025
+
+================================================================================
+1. SCRIPT: weight_and_balance.py (TANDEM - ORIGINAL)
+================================================================================
+
+RESULTADOS OBSERVADOS:
+- Peso MTOW: 3,134.50 [lb] ✓
+- X_cg MTOW: 2,740.48 [mm]
+- Y_cg MTOW: 0.00 [mm] ✓
+- Z_cg MTOW: 1,203.71 [mm]
+- Rango CG X: 2502.98 - 2730.66 mm (Δ = 227.68 mm)
+- Envolvente: 28.03% - 42.60% MAC (Rango: 14.57%)
+
+
+ERRORES Y PROBLEMAS IDENTIFICADOS:
+
+A) ERROR CRÍTICO #1: Escenario 3 vs 4 (Peso igual, CG diferente)
+   ❌ PROBLEMA:
+      - Escenario 3: WE + Wtfo + Crew_1 (Student) → X_cg = 2,495.32 mm
+      - Escenario 4: WE + Wtfo + Crew_2 (Instructor) → X_cg = 2,645.72 mm
+      - Ambos tienen peso igual (1521.24 lb) pero CG diferente
+      - Esto es CORRECTO para tandem, pero engañoso en la nomenclatura
+      
+   ✓ CORRECCIÓN NECESARIA:
+      - Cambiar nombres en escenarios para claridad:
+        * '3: WE + Wtfo + Crew_f' → '3: WE + Wtfo + Crew_Forward (2.45m)'
+        * '4: WE + Wtfo + Crew_a' → '4: WE + Wtfo + Crew_Aft (3.49m)'
+
+B) ERROR DE LÓGICA #2: Límites de envolvente
+   ✓ CORRECTO IDENTIFICADO:
+      - Límite más adelantado: Escenario 2 (WE + Wtfo) en 2502.98 mm
+      - Límite más atrasado: Escenario 11 (MTOW) en 2730.66 mm
+      - Este rango está CORRECTO para configuración tandem
+
+C) ASUNCIÓN PROBLEMÁTICA #3: Margen estático
+   ⚠ ADVERTENCIA:
+      - Margen Estático Forward: Se calcula pero no se muestra en salida
+      - Margen Estático Aft: Se calcula pero no se muestra en salida
+      - Necesaria verificación de valores de S.M.
+
+   CÁLCULO VERIFICABLE:
+   - X_LEMAC = 2690 - (0.40 × 1562.63) = 2064.95 mm ✓
+   - c_MAC = 1562.63 mm ✓
+   - S.M. Forward = (2870 - 2502.98) / 1562.63 × 100 = 23.47%
+   - S.M. Aft = (2870 - 2730.66) / 1562.63 × 100 = 8.91%
+   
+   ✓ VALIDACIÓN: Ambos > 0, así que la aeronave es ESTABLE en toda envolvente
+
+
+================================================================================
+2. SCRIPT: weight_and_balance_sidebyside.py (SIDE-BY-SIDE)
+================================================================================
+
+RESULTADOS OBSERVADOS:
+- Peso MTOW: 3,134.50 [lb] ✓ (igual, esperado)
+- X_cg MTOW: 2,730.66 [mm] (vs 2,740.48 tandem = -9.82 mm)
+- Y_cg MTOW: 0.00 [mm] ✓ (sigue siendo simétrico)
+- Z_cg MTOW: 1,203.01 [mm] (vs 1,203.71 tandem = -0.70 mm)
+- Rango CG X: 2502.98 - 2730.66 mm (Δ = 227.68 mm, igual al tandem)
+
+
+ERRORES Y PROBLEMAS IDENTIFICADOS:
+
+A) ERROR CRÍTICO #1: Escenarios 3 y 4 son IDÉNTICOS
+   ❌ PROBLEMA GRAVE:
+      - Escenario 3: WE + Wtfo + Crew_L → X_cg = 2,560.40 mm
+      - Escenario 4: WE + Wtfo + Crew_R → X_cg = 2,560.40 mm
+      - Son IDÉNTICOS porque ambos pilotos tienen la MISMA X (2900mm)
+      - Solo varían en Y (±750mm), pero Y no afecta X_cg
+      
+   ✓ CORRECCIÓN NECESARIA:
+      - Mantener ambos escenarios es CORRECTO (representa realismo)
+      - Pero agregar comentario: "Nota: Iguales porque ambos en X=2900mm"
+      - O considerar eliminar uno para simplificar el análisis
+
+B) ERROR #2: Comparación de Tandem vs Side-by-Side
+   ❌ PROBLEMA:
+      - Escenario 3 (Tandem): X_cg = 2,495.32 mm (solo piloto delantero)
+      - Escenario 3 (Side-by-Side): X_cg = 2,560.40 mm (un piloto)
+      - Diferencia: +65.08 mm (Side-by-Side ADELANTA el CG)
+      
+      - Escenario 4 (Tandem): X_cg = 2,645.72 mm (solo piloto trasero)
+      - Escenario 4 (Side-by-Side): X_cg = 2,560.40 mm (un piloto)
+      - Diferencia: -85.32 mm (Side-by-Side ATRASA el CG)
+   
+   ⚠ CONCLUSIÓN: En side-by-side, los CG individuales están más centrados
+                  porque ambos pilotos comparten X=2900mm (promedio)
+
+C) ASUNCIÓN CORRECTA #3: Y_cg siempre = 0
+   ✓ CORRECTO:
+      - Ambas configuraciones tienen Y_cg = 0.00 mm
+      - Porque todos los componentes están distribuidos simétricamente
+      - Payload, fuel tanks, wing, fuselage: todos simétricos lateralmente
+
+
+================================================================================
+3. SCRIPTS: moments_of_inertia_tandem.py Y moments_of_inertia_sidebyside.py
+================================================================================
+
+PROBLEMAS IDENTIFICADOS:
+
+A) ERROR TÉCNICO #1: Caracteres especiales (Unicode)
+   ❌ PROBLEMA:
+      - Caracteres griegos (λ, %, ≈, ×, ×3) en strings de documentación
+      - Causa UnicodeEncodeError en consola Windows (encoding cp1252)
+      - Script no ejecutable en PowerShell
+   
+   ✓ SOLUCIÓN:
+      - Agregar coding declaration: # -*- coding: utf-8 -*-
+      - O reemplazar caracteres especiales con ASCII:
+        * λ → lambda
+        * ≈ → ~
+        * × → *
+        * ×3 → *3
+        * % → percent
+
+B) ERROR DE FÓRMULA #2: Cálculo de Ixx del ALA (TANDEM y SIDE-BY-SIDE)
+   ❌ PROBLEMA:
+      - Fórmula usada: Ixx = (1/12) × m × (b² + 3×t²)
+      - Esta es fórmula para rectángulo sólido, NO para ala trapezoidal
+      - El ala es trapezoidal en planta (Cr ≠ Ct)
+   
+   ✓ FÓRMULA CORRECTA:
+      - Para ala trapezoidal: Ixx ≈ (1/12) × m × (b²) × factor_corrección
+      - Factor por tapered wing: ~0.95-0.98 (taper_ratio afecta distribución)
+      - Fórmula mejorada:
+        factor_taper = 1 + taper_ratio + taper_ratio²
+        Ixx = (wing_weight_kg / g) × ((1/12) × b² × (2/factor_taper))
+
+C) ERROR DE FÓRMULA #3: Cálculo de Iyy del ALA
+   ❌ PROBLEMA:
+      - Fórmula usada: Iyy ≈ (1/12) × m × c_MAC²
+      - Esta fórmula es para rectángulo respecto a eje longitudinal
+      - NO es dimensionalmente correcta para momento de inercia de alabeo
+   
+   ✓ FÓRMULA CORRECTA:
+      - Iyy (pitch) respecto eje Y: Iyy = ∫∫ (x² + z²) dm
+      - Para ala concentrada en plano XZ: Iyy ≈ (1/12) × m × (L_ref²)
+      - donde L_ref es la dimensión de cuerda promedio
+      - Mejor aproximación: Iyy ≈ (1/36) × m × (c_MAC²)  [factor 1/3 menos]
+
+D) ERROR DE FÓRMULA #4: Aplicación del Teorema de Ejes Paralelos
+   ❌ PROBLEMA:
+      - Se usa: Izz ≈ Ixx + Iyy (sin justificación)
+      - Esto asume que Izz = Ixx + Iyy, pero eso NO es el teorema de ejes paralelos
+      - El teorema de ejes paralelos es: I_O = I_cm + m×d²
+   
+   ✓ FÓRMULA CORRECTA:
+      - Para un cuerpo: Izz = Ixx + Iyy (VÁLIDO si el objeto es aplanado)
+      - PERO: esto es válido solo si la masa está concentrada en un plano
+      - Para un ala real: Izz ≠ Ixx + Iyy necesariamente
+      - Mejor aproximación: Izz ≈ (1/12) × m × (b² + c_MAC²) × factor
+
+E) FACTOR DE CONCENTRACIÓN INCORRECTO (TANDEM)
+   ❌ PROBLEMA:
+      - concentration_factor = 0.85 para reducir Ixx del fuselaje
+      - Justificación: "concentración en cockpit forward y aft"
+      - PERO: en tandem, los pilotos están en eje Y=0 (centerline)
+      - El factor 0.85 es INCORRECTO para eje X
+   
+   ✓ CORRECCIÓN:
+      - Para fuselaje cilíndrico: Ixx = (1/2) × m × r²
+      - Tandem concentración en X NO afecta Ixx (que es alabeo respecto eje X)
+      - Debería mantener: Ixx = (1/2) × m × r² sin factor
+      - Factor solo si hubiera concentración lateral (Y distinto de 0)
+
+F) FACTOR LATERAL INCORRECTO (SIDE-BY-SIDE)
+   ❌ PROBLEMA:
+      - lateral_distribution_factor = 1.15 para aumentar Ixx
+      - Justificación: "distribución lateral de masa"
+      - PERO: los pilotos en Y = ±750mm NO afectan directamente Ixx
+      - Ixx se calcula respecto eje X (no afectado por dispersión en Y)
+   
+   ✓ CORRECCIÓN:
+      - Afecta es IZZ (guiñada), no Ixx (alabeo)
+      - El factor debería aplicarse a Izz, no a Ixx
+      - Ixx = (1/2) × m × r² (sin cambios)
+      - Izz = (1/2) × m × r² + m × L_fuselaje² (por teorema paralelo)
+
+G) FACTOR DE REDUCCIÓN INCORRECTO (SIDE-BY-SIDE)
+   ❌ PROBLEMA:
+      - reduction_factor_pitch = 0.90 para reducir Iyy
+      - Justificación: "ambos pilotos alineados en X similar"
+      - Iyy (cabeceo) SERÍA afectado si los pilotos estuvieran en Z distinto
+      - PERO: en side-by-side están en mismo Z (1540 mm)
+   
+   ✓ CORRECCIÓN:
+      - El alineamiento en X SÍ reduce la varianza de masa longitudinal
+      - Pero la fórmula de Iyy para cilindro es: Iyy = (1/12) × m × L²
+      - Esta ya incluye toda la longitud, independiente de distribución interna
+      - No se debería aplicar factor 0.90 sin justificación teórica sólida
+
+
+================================================================================
+4. VALIDACIÓN DE PESOS Y MOMENTOS
+================================================================================
+
+DATO CRÍTICO: Diferencia MTOW entre scripts
+   Tandem MTOW:         3,134.50 lb ✓
+   Side-by-Side MTOW:   3,134.50 lb ✓
+   Diferencia: 0 lb (CORRECTO - mismo peso de componentes)
+
+VALIDACIÓN DEL COMBUSTIBLE:
+   - Volume: 69 galones
+   - Densidad Jet A: 5.64 lb/gal
+   - Peso total: 69 × 5.64 = 389.16 lb ✓
+   - Dividido: 194.58 lb c/tanque ✓
+
+VALIDACIÓN DE CG EN MTOW:
+
+TANDEM:
+   - X_cg: 2,740.48 mm = 2.740 m ✓ (Entre ala 2.690m y cola 6.120m)
+   - Y_cg: 0.00 mm ✓ (Simétrico)
+   - Z_cg: 1,203.71 mm = 1.204 m ✓ (Razonable para aeronave)
+
+SIDE-BY-SIDE:
+   - X_cg: 2,730.66 mm = 2.731 m (9.82 mm ATRÁS respecto tandem)
+   - Razón: Pilotos más adelantados (2.90m vs 2.45m+3.49m/2=2.97m)
+   - Es CORRECTO el cambio
+
+
+================================================================================
+5. RESUMEN DE ERRORES POR SEVERIDAD
+================================================================================
+
+CRÍTICOS (Impiden validación):
+   1. Unicode en momentos_of_inertia_*.py → Scripts NO EJECUTABLES
+   2. Fórmulas incorrectas de momentos de inercia (Ixx, Iyy, Izz)
+   3. Aplicación incorrecta de factores de corrección
+
+MODERADOS (Causan inexactitud):
+   4. Factor de concentración en Ixx tandem (debería ser 1.0)
+   5. Factor lateral aplicado a Ixx en lugar de Izz (side-by-side)
+   6. Factor de reducción 0.90 en Iyy sin justificación
+
+MENORES (Cuestiones de presentación):
+   7. Nomenclatura confusa en escenarios 3 y 4 (tandem)
+   8. Escenarios 3 y 4 idénticos en side-by-side (redundantes)
+   9. Falta de tabla comparativa tandem vs side-by-side en moments
+
+
+================================================================================
+6. RECOMENDACIONES DE CORRECCIÓN
+================================================================================
+
+IMMEDIATAS (Hacer primero):
+   ✓ Agregar encoding UTF-8 a momentos_of_inertia_*.py
+   ✓ Reemplazar caracteres griegos por ASCII
+
+ESENCIALES:
+   ✓ Revisar y corregir fórmulas de Ixx, Iyy, Izz
+   ✓ Eliminar o justificar factores de corrección
+   ✓ Usar fórmulas estándar de ingeniería aeronáutica
+
+VALIDACIÓN:
+   ✓ Comparar resultados con datos de aeronaves similares
+   ✓ Verificar contra handbook (Roskam, Raymer)
+   ✓ Hacer validación cruzada: tandem vs side-by-side
+
+
+================================================================================
+7. CONCLUSIÓN
+================================================================================
+
+ESTADO GENERAL:
+   - Weight & Balance SCRIPTS: ✓ VÁLIDOS (resultados consistentes)
+   - Moments of Inertia SCRIPTS: ❌ NO CONFIABLES (fórmulas incorrectas)
+
+RECOMENDACIÓN:
+   - Los scripts de W&B pueden usarse para análisis
+   - Los scripts de MOI requieren corrección ANTES de usar en diseño
+   - Especialmente importante si se usarán para control autómata o flutter
+
+PRIORIDAD:
+   1. Corregir Unicode (permite ejecución)
+   2. Revisar fórmulas contra referencias estándar
+   3. Hacer tabla comparativa de resultados
+   4. Validar contra CAD o mediciones reales
+
+================================================================================
