@@ -1,5 +1,6 @@
 import pandas as pd
-
+# ...........................................................................
+# ...........................................................................
 # --- 1. Definición de Constantes y Conversiones ---
 # Las ubicaciones de la carga útil están en metros, las del peso vacío en mm.
 # Convertiremos todo a milímetros [mm] para consistencia.
@@ -7,6 +8,9 @@ M_TO_MM = 1000
 # Peso del combustible (Jet A)
 GAL_TO_LB = 5.64
 
+
+# ...........................................................................
+# ...........................................................................
 # --- 2. Definición de Componentes ---
 # Combinamos los datos de la tabla de peso vacío (imagen) y las especificaciones iniciales.
 
@@ -273,8 +277,50 @@ ax.grid(True, which='both', linestyle=':', linewidth=0.5)
 # Ajustar los límites del eje x para dar espacio
 plt.xlim(fwd_limit_x - 50, aft_limit_x + 50)
 
-# JERO THIS IS THE GRAPH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! LOOK AT ME DUDE
+# JERO THIS IS THE GRAPH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! LOOK AT ME DUDE !!!!!!!!!
+#------------------------------------------------------------------------------
 # Mostrar el gráfico
 #print("Mostrando gráfico... (Cierre la ventana del gráfico para finalizar el script)")
 #plt.show()
+#------------------------------------------------------------------------------
 
+
+# ...........................................................................
+# ...........................................................................
+# --- 3. Verificación de Estabilidad Estática ---
+print("\n\n--- 6. Verificación de Estabilidad Estática (Punto 3) ---")
+
+# Datos del problema
+X_NP_mm = 2.87 * M_TO_MM  # Punto Neutro dado en 2.87 m
+print(f"\n--- Datos de Entrada ---")
+print(f"Punto Neutro (X_NP): {X_NP_mm:.2f} [mm]")
+
+# --- (a) Calcular S.M. en el Límite Adelantado ---
+# (Usa 'forward_limit_scenario' y 'c_mac_mm' del script anterior)
+xcg_fwd_mm = forward_limit_scenario['X_cg [mm]']
+sm_fwd = ((X_NP_mm - xcg_fwd_mm) / c_mac_mm) * 100
+
+print(f"\n--- Condición Más Estable (CG Adelantado) ---")
+print(f"  X_cg (Fwd): {xcg_fwd_mm:.2f} [mm]")
+print(f"  Margen Estático (S.M. fwd): {sm_fwd:.2f} %")
+
+# --- (b) Calcular S.M. en el Límite Atrasado ---
+# (Usa 'rearward_limit_scenario' y 'c_mac_mm' del script anterior)
+xcg_aft_mm = rearward_limit_scenario['X_cg [mm]']
+sm_aft = ((X_NP_mm - xcg_aft_mm) / c_mac_mm) * 100
+
+print(f"\n--- Condición Menos Estable (CG Atrasado) ---")
+print(f"  X_cg (Aft): {xcg_aft_mm:.2f} [mm]")
+print(f"  Margen Estático (S.M. aft): {sm_aft:.2f} %")
+
+# --- (c) Verificación del 15% S.M. ---
+# Calcular qué CG nos daría el 15% S.M. de referencia
+xcg_at_15_sm = X_NP_mm - (0.15 * c_mac_mm)
+print(f"\n--- Verificación de Referencia ---")
+print(f"  El S.M. de 15% se alcanzaría con un X_cg en: {xcg_at_15_sm:.2f} [mm]")
+print(f"  Rango operativo de S.M.: [{sm_aft:.2f}%, {sm_fwd:.2f}%]")
+if float(sm_fwd) > 0 and float(sm_aft) > 0: # type: ignore
+    print(f"\n --------!! VERIFICACIÓN: La aeronave es estable en toda la envolvente (S.M. > 0).")
+else:
+    print(f"\n --------!!!!!!!!!!!!! ALERTA: La aeronave NO es estable en toda la envolvente (S.M. <= 0).")
+    
