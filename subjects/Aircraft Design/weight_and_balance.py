@@ -323,4 +323,4 @@ if float(sm_fwd) > 0 and float(sm_aft) > 0: # type: ignore
     print(f"\n --------!! VERIFICACIÓN: La aeronave es estable en toda la envolvente (S.M. > 0).")
 else:
     print(f"\n --------!!!!!!!!!!!!! ALERTA: La aeronave NO es estable en toda la envolvente (S.M. <= 0).")
-    
+
