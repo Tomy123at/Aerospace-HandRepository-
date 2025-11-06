@@ -1,6 +1,40 @@
 import pandas as pd
 # ...........................................................................
 # ...........................................................................
+# CONFIGURACIÓN: COCKPIT SIDE-BY-SIDE
+# ...........................................................................
+# ...........................................................................
+
+# --- ASUNCIONES DEL DISEÑO (SIDE-BY-SIDE) ---
+# ==================================================================
+# 1. POSICIÓN LONGITUDINAL (X):
+#    - Configuración tandem original: Crew 1 @ X=2.45m, Crew 2 @ X=3.49m
+#    - Configuración side-by-side: Ambos @ X=2.90m (promedio geométrico)
+#    - Justificación: En cockpits side-by-side, los pilotos están alineados
+#      longitudinalmente para mantener visibilidad y acceso a controles.
+#
+# 2. POSICIÓN LATERAL (Y):
+#    - Configuración tandem original: Ambos @ Y=0 (centerline)
+#    - Configuración side-by-side: Crew 1 @ Y=-0.75m (Left), Crew 2 @ Y=+0.75m (Right)
+#    - Separación total: 1.50 m (típico para aeronaves de entrenamiento)
+#    - Justificación: Ancho del fuselaje permite esta separación simétrica.
+#
+# 3. POSICIÓN VERTICAL (Z):
+#    - Configuración tandem original: Crew 1 @ Z=1.52m, Crew 2 @ Z=1.57m
+#    - Configuración side-by-side: Ambos @ Z=1.54m (promedio)
+#    - Justificación: En side-by-side, ambos pilotos comparten la misma línea de visión.
+#
+# 4. PESO DE LA TRIPULACIÓN:
+#    - Cada piloto: 220 lb (sin cambios)
+#    - Total: 440 lb (sin cambios)
+#
+# 5. IMPACTO EN CG:
+#    - CG_Y se desplazará hacia Y=0 (más simétrico lateralmente)
+#    - CG_X se desplazará hacia atrás (~200mm respecto a tandem)
+#    - Esto puede mejorar el margen estático (S.M.) en algunos escenarios
+#
+# ==================================================================
+
 # --- 1. Definición de Constantes y Conversiones ---
 # Las ubicaciones de la carga útil están en metros, las del peso vacío en mm.
 # Convertiremos todo a milímetros [mm] para consistencia.
@@ -33,12 +67,15 @@ data = [
     # === Componentes de Carga Útil (de las especificaciones iniciales) ===
     # Esta es la condición de MTOW
     
-    # --- Tripulación ---
-    {'component': 'Crew 1 (Student)', 'weight_lb': 220.00, 
-     'x_mm': 2.45 * M_TO_MM, 'y_mm': 0, 'z_mm': 1.52 * M_TO_MM},
+    # --- Tripulación (SIDE-BY-SIDE CONFIGURATION) ---
+    # Asunción: Ambos pilotos en X=2.90m (promedio entre 2.45m y 3.49m del tandem)
+    #           Separados lateralmente: -0.75m (izquierda) y +0.75m (derecha)
+    #           Mismo nivel vertical: Z=1.54m (promedio de 1.52m y 1.57m)
+    {'component': 'Crew 1 (Left Pilot)', 'weight_lb': 220.00, 
+     'x_mm': 2.90 * M_TO_MM, 'y_mm': -0.75 * M_TO_MM, 'z_mm': 1.54 * M_TO_MM},
     
-    {'component': 'Crew 2 (Instructor)', 'weight_lb': 220.00, 
-     'x_mm': 3.49 * M_TO_MM, 'y_mm': 0, 'z_mm': 1.57 * M_TO_MM},
+    {'component': 'Crew 2 (Right Pilot)', 'weight_lb': 220.00, 
+     'x_mm': 2.90 * M_TO_MM, 'y_mm': 0.75 * M_TO_MM, 'z_mm': 1.54 * M_TO_MM},
     
     # --- Combustible (dividido en 2 tanques simétricos) ---
     {'component': 'Fuel Tank (Left)', 'weight_lb': total_fuel_weight_lb / 2, 
@@ -80,13 +117,15 @@ mtow_cg_y = total_moment_y / total_weight
 mtow_cg_z = total_moment_z / total_weight
 
 # --- 4. Mostrar Resultados ---
-print("--- Análisis de Peso y Balance: Tayrona I ---")
-print("\n--- 1. Condición de Peso Máximo al Despegue (MTOW) ---")
+print("=" * 80)
+print("--- Análisis de Peso y Balance: Tayrona I (COCKPIT SIDE-BY-SIDE) ---")
+print("=" * 80)
+print("\n--- 1. Condición de Peso Máximo al Despegue (MTOW) - SIDE-BY-SIDE ---")
 print("\nDesglose de Componentes y Momentos:")
 print(df.to_string())
-print("\n--- Resultados Finales (MTOW) ---")
+print("\n--- Resultados Finales (MTOW) - SIDE-BY-SIDE ---")
 print(f"Peso Máximo de Despegue (MTOW): {total_weight:,.2f} [lb]")
-print("\nCentro de Gravedad (CG) en MTOW:")
+print("\nCentro de Gravedad (CG) en MTOW - SIDE-BY-SIDE:")
 print(f"  X_cg (F.S.): {mtow_cg_x:,.2f} [mm]")
 print(f"  Y_cg (B.L.): {mtow_cg_y:,.2f} [mm]")
 print(f"  Z_cg (W.L.): {mtow_cg_z:,.2f} [mm]")
@@ -102,24 +141,28 @@ print(f"  Z_cg (W.L.): {mtow_cg_z:,.2f} [mm]")
 empty_weight_components = ['Wing', 'Horizontal Tail', 'Vertical Tail', 'Fuselaje', 'NLG', 'MLG', 
                            'Engine & Install', 'Propeller', 'Fixed Equipment']
 trapped_fuel_oil = ['Trapped Fuel/Oil']
-crew_front = ['Crew 1 (Student)']
-crew_aft = ['Crew 2 (Instructor)']
+crew_left = ['Crew 1 (Left Pilot)']
+crew_right = ['Crew 2 (Right Pilot)']
 fuel = ['Fuel Tank (Left)', 'Fuel Tank (Right)']
 payload = ['Payload (Left)', 'Payload (Right)']
 
 # Definición de los 14 escenarios del diagrama de excursión
+# MODIFICACIÓN: En lugar de "Crew_f" y "Crew_a" (front/aft), ahora usamos
+# "Crew_left" y "Crew_right" (izquierda/derecha). Sin embargo, para mantener
+# el mismo análisis de envolvente, ambas tripulaciones estarán en la mayoría
+# de escenarios (ya que están lado-a-lado, no es "solo piloto izquierdo" típicamente).
 excursion_scenarios = {
     '1: WE': empty_weight_components,
     '2: WE + Wtfo': empty_weight_components + trapped_fuel_oil,
-    '3: WE + Wtfo + Wcrew_f': empty_weight_components + trapped_fuel_oil + crew_front,
-    '4: WE + Wtfo + Wcrew_a': empty_weight_components + trapped_fuel_oil + crew_aft,
-    '5: WE + Wtfo + Wcrew_f+a': empty_weight_components + trapped_fuel_oil + crew_front + crew_aft,
-    '6: WE + Wtfo + Wcrew_f + Wf': empty_weight_components + trapped_fuel_oil + crew_front + fuel,
-    '7: WE + Wtfo + Wcrew_a + Wf': empty_weight_components + trapped_fuel_oil + crew_aft + fuel,
-    '8: WE + Wtfo + Wcrew_f+a + Wf': empty_weight_components + trapped_fuel_oil + crew_front + crew_aft + fuel,
-    '9: WE + Wtfo + Wcrew_f + Wf + Wpl': empty_weight_components + trapped_fuel_oil + crew_front + fuel + payload,
-    '10: WE + Wtfo + Wcrew_a + Wf + Wpl': empty_weight_components + trapped_fuel_oil + crew_aft + fuel + payload,
-    '11: MTOW': empty_weight_components + trapped_fuel_oil + crew_front + crew_aft + fuel + payload,
+    '3: WE + Wtfo + Wcrew_L': empty_weight_components + trapped_fuel_oil + crew_left,
+    '4: WE + Wtfo + Wcrew_R': empty_weight_components + trapped_fuel_oil + crew_right,
+    '5: WE + Wtfo + Wcrew_L+R': empty_weight_components + trapped_fuel_oil + crew_left + crew_right,
+    '6: WE + Wtfo + Wcrew_L + Wf': empty_weight_components + trapped_fuel_oil + crew_left + fuel,
+    '7: WE + Wtfo + Wcrew_R + Wf': empty_weight_components + trapped_fuel_oil + crew_right + fuel,
+    '8: WE + Wtfo + Wcrew_L+R + Wf': empty_weight_components + trapped_fuel_oil + crew_left + crew_right + fuel,
+    '9: WE + Wtfo + Wcrew_L + Wf + Wpl': empty_weight_components + trapped_fuel_oil + crew_left + fuel + payload,
+    '10: WE + Wtfo + Wcrew_R + Wf + Wpl': empty_weight_components + trapped_fuel_oil + crew_right + fuel + payload,
+    '11: MTOW': empty_weight_components + trapped_fuel_oil + crew_left + crew_right + fuel + payload,
     '12: WE + Wtfo + Wf': empty_weight_components + trapped_fuel_oil + fuel,
     '13: WE + Wtfo + Wpl': empty_weight_components + trapped_fuel_oil + payload,
     '14: WE + Wtfo + Wf + Wpl': empty_weight_components + trapped_fuel_oil + fuel + payload,
@@ -138,11 +181,11 @@ for name, components in excursion_scenarios.items():
 
 results_df = pd.DataFrame(results)
 
-print("\n\n--- 2. Límites del Centro de Gravedad (x_cg) para Escenarios Operacionales ---")
+print("\n\n--- 2. Límites del Centro de Gravedad (x_cg) para Escenarios Operacionales - SIDE-BY-SIDE ---")
 print(results_df.to_string(index=False))
 
 # --- 6. Encontrar los Límites de la Envolvente ---
-print("\n\n--- 3. Límites de la Envolvente x_cg ---")
+print("\n\n--- 3. Límites de la Envolvente x_cg - SIDE-BY-SIDE ---")
 
 # Encontrar el x_cg mínimo (más adelantado)
 forward_limit_scenario = results_df.loc[results_df['X_cg [mm]'].idxmin()]
@@ -165,7 +208,7 @@ print(f"   Rango total de x_cg: {cg_range:.2f} [mm]")
 
 # ----------------------------- SUPOSICIONES -.........----------------
 # --- 7. Conversión a %MAC (Basado en Asunciones) ---
-print("\n\n--- 4. Límites de la Envolvente en %MAC ---")
+print("\n\n--- 4. Límites de la Envolvente en %MAC - SIDE-BY-SIDE ---")
 
 # --- (a) Calcular Longitud de la c_MAC ---
 # Datos de geometría del ala (de las especificaciones iniciales)
@@ -215,7 +258,7 @@ aft_limit_mac = convert_fs_to_mac_percent(
 
 range_mac = aft_limit_mac - fwd_limit_mac
 
-print("\n--- Resultados Finales de la Envolvente (en %MAC) ---")
+print("\n--- Resultados Finales de la Envolvente (en %MAC) - SIDE-BY-SIDE ---")
 print(f"\n Límite MÁS ADELANTADO (Forward): {fwd_limit_mac:.2f} %MAC")
 print(f" Límite MÁS ATRASADO (Aft/Rearward): {aft_limit_mac:.2f} %MAC")
 print(f"\n Rango total en %MAC: {range_mac:.2f} %")
@@ -223,7 +266,7 @@ print(f"\n Rango total en %MAC: {range_mac:.2f} %")
 # --- 8. Generar Diagrama de Envolvente (Excursión) ---
 import matplotlib.pyplot as plt
 
-print("\n\n--- 5. Generando Diagrama de Envolvente ---")
+print("\n\n--- 5. Generando Diagrama de Envolvente - SIDE-BY-SIDE ---")
 
 # Definir las 8 secuencias operativas (usando los números de paso 1-14)
 # (Basado en la imagen 'Possible operational scenarios')
@@ -271,7 +314,7 @@ ax.axvline(x=fwd_limit_x, color='red', linestyle='--', label=f'Límite Fwd ({fwd
 ax.axvline(x=aft_limit_x, color='green', linestyle='--', label=f'Límite Aft ({aft_limit_x:.2f} mm)') # type: ignore
 
 # --- (d) Configuración y visualización del gráfico ---
-ax.set_title('Diagrama de Envolvente (Excursión) de CG - Tayrona I', fontsize=16)
+ax.set_title('Diagrama de Envolvente (Excursión) de CG - Tayrona I (SIDE-BY-SIDE)', fontsize=16)
 ax.set_xlabel('Posición del X_cg (F.S.) [mm]', fontsize=12)
 ax.set_ylabel('Peso Total de la Aeronave [lb]', fontsize=12)
 ax.legend(loc='best', fontsize=8)
@@ -291,7 +334,7 @@ plt.xlim(fwd_limit_x - 50, aft_limit_x + 50)
 # ...........................................................................
 # ...........................................................................
 # --- 3. Verificación de Estabilidad Estática ---
-print("\n\n--- 6. Verificación de Estabilidad Estática (Punto 3) ---")
+print("\n\n--- 6. Verificación de Estabilidad Estática (Punto 3) - SIDE-BY-SIDE ---")
 
 # Datos del problema
 X_NP_mm = 2.87 * M_TO_MM  # Punto Neutro dado en 2.87 m
@@ -303,7 +346,7 @@ print(f"Punto Neutro (X_NP): {X_NP_mm:.2f} [mm]")
 xcg_fwd_mm = forward_limit_scenario['X_cg [mm]']
 sm_fwd = ((X_NP_mm - xcg_fwd_mm) / c_mac_mm) * 100
 
-print(f"\n--- Condición Más Estable (CG Adelantado) ---")
+print(f"\n--- Condición Más Estable (CG Adelantado) - SIDE-BY-SIDE ---")
 print(f"  X_cg (Fwd): {xcg_fwd_mm:.2f} [mm]")
 print(f"  Margen Estático (S.M. fwd): {sm_fwd:.2f} %")
 
@@ -312,7 +355,7 @@ print(f"  Margen Estático (S.M. fwd): {sm_fwd:.2f} %")
 xcg_aft_mm = rearward_limit_scenario['X_cg [mm]']
 sm_aft = ((X_NP_mm - xcg_aft_mm) / c_mac_mm) * 100
 
-print(f"\n--- Condición Menos Estable (CG Atrasado) ---")
+print(f"\n--- Condición Menos Estable (CG Atrasado) - SIDE-BY-SIDE ---")
 print(f"  X_cg (Aft): {xcg_aft_mm:.2f} [mm]")
 print(f"  Margen Estático (S.M. aft): {sm_aft:.2f} %")
 
@@ -327,4 +370,36 @@ if float(sm_fwd) > 0 and float(sm_aft) > 0: # type: ignore
 else:
     print(f"\n --------!!!!!!!!!!!!! ALERTA: La aeronave NO es estable en toda la envolvente (S.M. <= 0).")
 
+# ...........................................................................
+# --- 7. COMPARACIÓN CON CONFIGURACIÓN TANDEM (ORIGINAL) ---
+# ...........................................................................
+print("\n\n" + "=" * 80)
+print("--- CAMBIOS INTRODUCIDOS POR CONFIGURACIÓN SIDE-BY-SIDE ---")
+print("=" * 80)
 
+print("\nRESUMEN DE CAMBIOS EN POSICIONAMIENTO DE TRIPULACIÓN:")
+print("-" * 80)
+print("Parámetro              | Tandem (Original)  | Side-by-Side       | Cambio")
+print("-" * 80)
+print(f"Crew 1 - X [mm]        | {2.45*M_TO_MM:>17.0f} | {2.90*M_TO_MM:>17.0f} | {(2.90-2.45)*M_TO_MM:>+7.0f}")
+print(f"Crew 1 - Y [mm]        | {0:>17.0f} | {-0.75*M_TO_MM:>17.0f} | {-0.75*M_TO_MM:>+7.0f}")
+print(f"Crew 2 - X [mm]        | {3.49*M_TO_MM:>17.0f} | {2.90*M_TO_MM:>17.0f} | {(2.90-3.49)*M_TO_MM:>+7.0f}")
+print(f"Crew 2 - Y [mm]        | {0:>17.0f} | {0.75*M_TO_MM:>17.0f} | {0.75*M_TO_MM:>+7.0f}")
+print("-" * 80)
+
+print("\nIMPACTO EN EL CENTRO DE GRAVEDAD (CG):")
+print("-" * 80)
+print(f"CG_X (MTOW):           {mtow_cg_x:.2f} mm")
+print(f"CG_Y (MTOW):           {mtow_cg_y:.2f} mm  (más simétrico que tandem)")
+print(f"CG_Z (MTOW):           {mtow_cg_z:.2f} mm")
+print("-" * 80)
+
+print("\nCAMBIOS EN ENVOLVENTE Y ESTABILIDAD:")
+print("-" * 80)
+print(f"Rango de CG (X):       {cg_range:.2f} mm")
+print(f"Rango en %MAC:         {range_mac:.2f} %")
+print(f"Margen Estático (Fwd): {sm_fwd:.2f} %")
+print(f"Margen Estático (Aft): {sm_aft:.2f} %")
+print("-" * 80)
+
+print("\n" + "=" * 80)
