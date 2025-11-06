@@ -273,6 +273,8 @@ ax.grid(True, which='both', linestyle=':', linewidth=0.5)
 # Ajustar los límites del eje x para dar espacio
 plt.xlim(fwd_limit_x - 50, aft_limit_x + 50)
 
+# JERO THIS IS THE GRAPH!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! LOOK AT ME DUDE
 # Mostrar el gráfico
-print("Mostrando gráfico... (Cierre la ventana del gráfico para finalizar el script)")
-plt.show()
+#print("Mostrando gráfico... (Cierre la ventana del gráfico para finalizar el script)")
+#plt.show()
+
