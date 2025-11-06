@@ -155,3 +155,124 @@ print(f"   Escenario: {rearward_limit_scenario['Scenario']}")
 cg_range = rearward_limit_scenario['X_cg [mm]'] - forward_limit_scenario['X_cg [mm]']
 print(f"\n--- Resumen del Rango ---")
 print(f"   Rango total de x_cg: {cg_range:.2f} [mm]")
+
+# ----------------------------- SUPOSICIONES -.........----------------
+# --- 7. Conversión a %MAC (Basado en Asunciones) ---
+print("\n\n--- 4. Límites de la Envolvente en %MAC ---")
+
+# --- (a) Calcular Longitud de la c_MAC ---
+# Datos de geometría del ala (de las especificaciones iniciales)
+c_root_ft = 6.234  # Cuerda en la raíz [ft]
+taper_ratio = 0.614 # Estrechamiento [lambda]
+ft_to_mm = 304.8   # Conversión de pies a mm
+
+# Fórmula para la longitud de la MAC en un ala trapezoidal
+# c_MAC = (2/3) * c_r * (1 + lambda + lambda^2) / (1 + lambda)
+c_mac_ft = (2/3) * c_root_ft * (1 + taper_ratio + taper_ratio**2) / (1 + taper_ratio)
+c_mac_mm = c_mac_ft * ft_to_mm
+
+print(f"\n--- Asunciones Geométricas (Paso 1) ---")
+print(f"Longitud de c_MAC (calculada): {c_mac_mm:.2f} [mm] ({c_mac_ft:.3f} [ft])")
+
+# --- (b) Calcular Ubicación de la X_LEMAC ---
+# Asunción: El CG del componente "Ala" (x_mm = 2690) está al 40% de la c_MAC ------------------------------------------------
+# Justificación: Rango estándar de 35-42% (segun la diapositiva 15)
+wing_comp_cg_x = 2690.0  # [mm] (de la tabla de pesos vacíos)
+assumed_wing_cg_perc = 0.40 # 40%
+
+# X_LEMAC = X_cg_ala - (perc_asumido * long_c_MAC)
+x_lemac_mm = wing_comp_cg_x - (assumed_wing_cg_perc * c_mac_mm)
+
+print(f"Ubicación X_LEMAC (asumida al 40%): {x_lemac_mm:.2f} [mm]")
+
+# --- (c) Función de Conversión ---
+def convert_fs_to_mac_percent(xcg_mm, x_lemac, c_mac):
+    """Convierte una ubicación F.S. (mm) a %MAC"""
+    return ((xcg_mm - x_lemac) / c_mac) * 100
+
+# --- (d) Calcular Límites Finales en %MAC ---
+# Se usan las variables 'forward_limit_scenario' y 'rearward_limit_scenario'
+# que ya se calcularon en la sección anterior (Paso 6).
+
+fwd_limit_mac = convert_fs_to_mac_percent(
+    forward_limit_scenario['X_cg [mm]'], 
+    x_lemac_mm, 
+    c_mac_mm
+)
+
+aft_limit_mac = convert_fs_to_mac_percent(
+    rearward_limit_scenario['X_cg [mm]'], 
+    x_lemac_mm, 
+    c_mac_mm
+)
+
+range_mac = aft_limit_mac - fwd_limit_mac
+
+print("\n--- Resultados Finales de la Envolvente (en %MAC) ---")
+print(f"\n Límite MÁS ADELANTADO (Forward): {fwd_limit_mac:.2f} %MAC")
+print(f" Límite MÁS ATRASADO (Aft/Rearward): {aft_limit_mac:.2f} %MAC")
+print(f"\n Rango total en %MAC: {range_mac:.2f} %")
+
+# --- 8. Generar Diagrama de Envolvente (Excursión) ---
+import matplotlib.pyplot as plt
+
+print("\n\n--- 5. Generando Diagrama de Envolvente ---")
+
+# Definir las 8 secuencias operativas (usando los números de paso 1-14)
+# (Basado en la imagen 'Possible operational scenarios')
+scenarios_list = [
+    [1, 2, 3, 6, 9],
+    [1, 2, 4, 5, 8, 11],
+    [1, 2, 4, 7, 10],
+    [1, 2, 12, 6],
+    [1, 2, 12, 7],
+    [1, 2, 13, 14, 9],
+    [1, 2, 13, 14, 10],
+    [1, 2, 13, 14, 11]
+]
+
+# Crear la figura y los ejes
+plt.figure(figsize=(12, 8))
+ax = plt.gca()
+
+# --- (a) Trazar las 8 secuencias operativas ---
+# Iterar sobre cada una de las 8 secuencias para trazar las líneas
+for i, scenario_steps in enumerate(scenarios_list):
+    # Convertir los números de paso (1-14) a índices del DataFrame (0-13)
+    indices = [step - 1 for step in scenario_steps]
+    
+    # Extraer los datos de X (CG) y Y (Peso) para esta secuencia
+    x_cg_values = results_df.loc[indices]['X_cg [mm]']
+    y_weight_values = results_df.loc[indices]['Total Weight [lb]']
+    
+    # Trazar la línea de la secuencia
+    ax.plot(x_cg_values, y_weight_values, marker='o', linestyle='-', label=f'Secuencia {i+1}')
+
+# --- (b) Anotar todos los 14 puntos de carga ---
+# Usamos el results_df completo
+for index, row in results_df.iterrows():
+    step_label = str(index + 1) # type: ignore # Etiqueta '1', '2', ... '14'
+    # Colocar la etiqueta numérica en el gráfico
+    ax.text(row['X_cg [mm]'] + 5, row['Total Weight [lb]'], step_label, fontsize=9, ha='left')
+
+# --- (c) Dibujar los límites de la envolvente ---
+# (Usamos las variables 'forward_limit_scenario' y 'rearward_limit_scenario' del Paso 6)
+fwd_limit_x = forward_limit_scenario['X_cg [mm]']
+aft_limit_x = rearward_limit_scenario['X_cg [mm]']
+
+ax.axvline(x=fwd_limit_x, color='red', linestyle='--', label=f'Límite Fwd ({fwd_limit_x:.2f} mm)') # type: ignore
+ax.axvline(x=aft_limit_x, color='green', linestyle='--', label=f'Límite Aft ({aft_limit_x:.2f} mm)') # type: ignore
+
+# --- (d) Configuración y visualización del gráfico ---
+ax.set_title('Diagrama de Envolvente (Excursión) de CG - Tayrona I', fontsize=16)
+ax.set_xlabel('Posición del X_cg (F.S.) [mm]', fontsize=12)
+ax.set_ylabel('Peso Total de la Aeronave [lb]', fontsize=12)
+ax.legend(loc='best', fontsize=8)
+ax.grid(True, which='both', linestyle=':', linewidth=0.5)
+
+# Ajustar los límites del eje x para dar espacio
+plt.xlim(fwd_limit_x - 50, aft_limit_x + 50)
+
+# Mostrar el gráfico
+print("Mostrando gráfico... (Cierre la ventana del gráfico para finalizar el script)")
+plt.show()
