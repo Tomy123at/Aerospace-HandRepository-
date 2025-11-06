@@ -9,8 +9,7 @@ M_TO_MM = 1000
 GAL_TO_LB = 5.64
 
 
-# ...........................................................................
-# ...........................................................................
+
 # --- 2. Definición de Componentes ---
 # Combinamos los datos de la tabla de peso vacío (imagen) y las especificaciones iniciales.
 
@@ -93,7 +92,11 @@ print(f"  Y_cg (B.L.): {mtow_cg_y:,.2f} [mm]")
 print(f"  Z_cg (W.L.): {mtow_cg_z:,.2f} [mm]")
 
 
-# --- 5. Análisis de Escenarios Operacionales (Diagrama de Excursión) ---
+
+# ...........................................................................
+# ...........................................................................
+
+# --- 2) Análisis de Escenarios Operacionales (Diagrama de Excursión) ---
 
 # Definición de grupos de componentes según el diagrama
 empty_weight_components = ['Wing', 'Horizontal Tail', 'Vertical Tail', 'Fuselaje', 'NLG', 'MLG', 
@@ -323,4 +326,10 @@ if float(sm_fwd) > 0 and float(sm_aft) > 0: # type: ignore
     print(f"\n --------!! VERIFICACIÓN: La aeronave es estable en toda la envolvente (S.M. > 0).")
 else:
     print(f"\n --------!!!!!!!!!!!!! ALERTA: La aeronave NO es estable en toda la envolvente (S.M. <= 0).")
+
+
+
+# ...........................................................................
+# ...........................................................................
+print("\n\n--- 4. ANÁLISIS DE ENVOLVENTE CON TREN RETRAÍDO (Punto 4) ---")
 
