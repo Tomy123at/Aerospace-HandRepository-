@@ -67,7 +67,7 @@ GEOMETRIA DEL ALA:
 
 DISTRIBUCION DE MASA:
    - Peso total: 320 lb = 145.15 kg
-   - Centro de gravedad: X=2690mm, Y=0mm, Z=1280mm
+   - Centro de gravedad: X=2080mm, Y=0mm, Z=1280mm
    - Densidad: uniforme sobre el area
 
 MOMENTOS DE INERCIA CALCULADOS:

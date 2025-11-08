@@ -53,7 +53,7 @@ total_fuel_weight_lb = fuel_volume_gal * GAL_TO_LB  # 389.16 lb
 
 data = [
     # === Componentes del Peso Vacío (de la tabla de la imagen) ===
-    {'component': 'Wing', 'weight_lb': 320.00, 'x_mm': 2690, 'y_mm': 0, 'z_mm': 1280},
+    {'component': 'Wing', 'weight_lb': 320.00, 'x_mm': 2080, 'y_mm': 0, 'z_mm': 1280},
     {'component': 'Horizontal Tail', 'weight_lb': 74.00, 'x_mm': 6120, 'y_mm': 0, 'z_mm': 1480},
     {'component': 'Vertical Tail', 'weight_lb': 26.00, 'x_mm': 6630, 'y_mm': 0, 'z_mm': 2010},
     {'component': 'Fuselaje', 'weight_lb': 230.00, 'x_mm': 3120, 'y_mm': 0, 'z_mm': 1410},
@@ -225,9 +225,9 @@ print(f"\n--- Asunciones Geométricas (Paso 1) ---")
 print(f"Longitud de c_MAC (calculada): {c_mac_mm:.2f} [mm] ({c_mac_ft:.3f} [ft])")
 
 # --- (b) Calcular Ubicación de la X_LEMAC ---
-# Asunción: El CG del componente "Ala" (x_mm = 2690) está al 40% de la c_MAC ------------------------------------------------
+# Asunción: El CG del componente "Ala" (x_mm = 2080) está al 40% de la c_MAC ------------------------------------------------
 # Justificación: Rango estándar de 35-42% (segun la diapositiva 15)
-wing_comp_cg_x = 2690.0  # [mm] (de la tabla de pesos vacíos)
+wing_comp_cg_x = 2080.0  # [mm] (de la tabla de pesos vacíos)
 assumed_wing_cg_perc = 0.40 # 40%
 
 # X_LEMAC = X_cg_ala - (perc_asumido * long_c_MAC)
